@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Flux-capacitr
 
 [Heroku link][heroku]
@@ -92,4 +91,3 @@ collections, but they will fetch from the new `search` routes.
 
 =======
 # Capstone-Project
->>>>>>> c1075fa70b01d137b90fad3f7cb0e6f168fbe067
