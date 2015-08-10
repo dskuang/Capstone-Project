@@ -1,4 +1,4 @@
-# Phase 1: User Authentication, Basic Blogs and Posts
+# Phase 1: User Authentication, Blog Creation/Newsfeed
 
 ## Rails
 ### Models
@@ -9,20 +9,34 @@
 ### Controllers
 * UsersController (create, new)
 * SessionsController (create, new, destroy)
-* BlogsController (create, new, show)
-* PostsController (create, new, show)
+* Api::BlogsController (create, destroy, show)
+* Api::PostsController (create, destroy, show, update, index)
+* Api::FeedController (create, index, update)
+
 
 ### Views
 * users/new.html.erb
 * session/new.html.erb
-* blogs/new.html.erb
-* blogs/show.html.erb
+* blogs/show.json.jbuilder
+* posts/index.json.jbuilder
+* posts/feed.json.jbuilder
+
 
 ## Backbone
 ### Models
+* Post.js
+* Blog.js
 
 ### Collections
+* Posts.js
+
 
 ### Views
+* BlogForm
+* NewsFeed
+* BlogShow (composite view, contains PostsIndex subview)
+* PostsIndex (composite view, contains PostsIndexItem subviews)
+* PostsIndexItem
+* PostShow
 
 ## Gems/Libraries

@@ -1,21 +1,24 @@
-# Flux-capacitr
+# Aardvark
 
 [Heroku link][heroku]
 
-[heroku]: http://flux-capacitr.herokuapp.com
+[heroku]: http://tumblrapplication.herokuapp.com/
 
 ## Minimum Viable Product
-Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
+Tumblir is a clone of Tumblr built on Rails and Backbone. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [x] Create accounts
-- [x] Create sessions (log in)
-- [x] Create blogs
-- [x] Create blog posts
+- [ ] Create accounts
+- [ ] Create sessions (log in)
+- [ ] Create blogs
+- [ ] Create blog posts
 - [ ] View blogs and posts
-- [ ] Subscribe to blogs
-- [ ] View a feed of subscribed blogs
+- [ ] View a feed
+- [ ] Follow Users
+- [ ] Follow users
+- [ ] Reblog posts
+- [ ] Like posts
 - [ ] Tag blog posts
 - [ ] Search for blogs by title
 - [ ] Search for posts by tag
@@ -29,58 +32,63 @@ Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
 
 ## Implementation Timeline
 
-### Phase 1: User Authentication, Blog Creation (~1 day)
+### Phase 1: User Authentication, Blog/Newsfeed/Posts creation (~2 day)
 I will implement user authentication in Rails based on the practices learned at
 App Academy. By the end of this phase, users will be able to create blogs using
-a simple text form in a Rails view. The most important part of this phase will
-be pushing the app to Heroku and ensuring that everything works before moving on
-to phase 2.
+a simple text form in a Rails view. This is a basic functionality of a newsfeed.
+Users will also be able to see posts on their own newsfeed page and the index page
+as well. The most important part of this phase will be to have my API routes
+ready to serve blog and post data as JSON and adding a Backbone models
+and collections for fetching data.
 
 [Details][phase-one]
 
-### Phase 2: Viewing Blogs and Posts (~2 days)
-I will add API routes to serve blog and post data as JSON, then add Backbone
-models and collections that fetch data from those routes. By the end of this
-phase, users will be able to create blogs and view both blogs and posts, all
-inside a single Backbone app.
+### Phase 2: Follows/Reblog/Likes (~2 days)
+With the basic functionality of newsfeed for users and the index newsfeed setup,
+I will create a follows relation so that users can follow other users. This will
+allow the users to show other people's blog posts in their newsfeed. Since this
+functionality is similar to reblogging. I will also attempt to allow users to
+post a blog on their own blog by clicking on a reblog button, and to also
+like a blog with a like button. At this point, I don't believe I will have any
+editing functionality done. However, with this completed, the general
+functionality of tumblr is done.
 
 [Details][phase-two]
 
-### Phase 3: Editing and Displaying Posts (~2 days)
-I plan to use third-party libraries to add functionality to the `PostForm` and
-`PostShow` views in this phase. First I'll need to add a Markdown editor to the
-`PostForm`, and make sure that the Markdown is properly escaped and formatted in
-the `PostShow` view. I also plan to integrate Filepicker for file upload so
-users can add images to blog posts.
+### Phase 3: Editing and Setting Up Different Posts (~1-2 day)
+I plan to add functionality to the postforms so
+that users can edit blogs and also edit blogs that are reblogged. I will also
+allow users to submit different types of blogs. This includes images, quotes,
+links, and perhaps video. In order to do this I may have to have different
+types of collections of posts to hold different models ex. textPostModel,
+photoPostModel, quotePostModel. I may be able to store the different types
+as one model if I allow a model to have all types of attributes but allow
+everything except title to be null. This way a post will only have certain
+attributes once entered in; however, it will have a type attribute so that it
+knows what it is.
 
 [Details][phase-three]
 
-### Phase 4: User Feeds (~1-2 days)
-I'll start by adding a `feed` route that uses the `current_user`'s
-`subscribed_blogs` association to serve a list of blog posts ordered
-chronologically. On the Backbone side, I'll make a `FeedShow` view whose `posts`
-collection fetches from the new route.  Ultimately, this will be the page users
-see after logging in.
+### Phase 4:   (~1 day)
+I'll create functionality to create taggings in posts. This will allow users to
+find all posts related to the tag when he or she clicks on the tag. PostForm
+will now have an area for tag input.
 
 [Details][phase-four]
 
 ### Phase 5: Searching for Blogs and Posts (~2 days)
 I'll need to add `search` routes to both the Blogs and Posts controllers. On the
-Backbone side, there will be a `SearchResults` composite view has `BlogsIndex`
+Backbone side, there will be a `SearchResults` composite view which has `BlogsIndex`
 and `PostsIndex` subviews. These views will use plain old `blogs` and `posts`
 collections, but they will fetch from the new `search` routes.
 
 [Details][phase-five]
 
-### Bonus Features (TBD)
-- [ ] "Like" button and counter for posts
+### Bonus Features (TBD
+- [ ] Create Messaging System
 - [ ] Custom blog urls
+- [ ] pop-out different user showpage
 - [ ] Pagination/infinite scroll
-- [ ] Activity history (e.g. likes, reblogs, taggings)
-- [ ] Post types (image posts, quote posts, etc)
-- [ ] Reblogging
-- [ ] Multiple sessions/session management
-- [ ] User avatars
 - [ ] Typeahead search bar
 
 [phase-one]: ./docs/phases/phase1.md
@@ -88,4 +96,3 @@ collections, but they will fetch from the new `search` routes.
 [phase-three]: ./docs/phases/phase3.md
 [phase-four]: ./docs/phases/phase4.md
 [phase-five]: ./docs/phases/phase5.md
-

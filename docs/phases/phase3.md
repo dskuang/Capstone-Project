@@ -1,14 +1,16 @@
-# Phase 3: Editing and Displaying Posts
+# Phase 3: Editing and Setting Up Different Posts (~1-2 day)
 
 ## Rails
 ### Models
+* posts
 
 ### Controllers
+* postsController
 
 ### Views
 
 ## Backbone
-### Models
+### Models   
 
 ### Collections
 
@@ -17,5 +19,3 @@
 
 ## Gems/Libraries
 * Filepicker
-* Markdown-js
-* Bootstrap Markdown

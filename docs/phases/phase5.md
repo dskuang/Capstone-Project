@@ -19,4 +19,3 @@ Api::PostsController (search)
 * SearchShow (composite view, contains BlogsIndex and PostsIndex subviews)
 
 ## Gems/Libraries
-
