@@ -7,14 +7,28 @@ Tumblr.Routers.Router = Backbone.Router.extend({
   },
 
   routes: {
-    "blogs/:id": "blogShow"
+    "": "postIndex",
+    "blogs/:id": "blogShow",
+    "feed/": "feedIndex",
   },
 
   blogShow: function(id) {
     var blogModel = this.blogCollection.getOrFetch(id);
-    // debugger
-    var view = new Tumblr.NewsFeed.newsFeed({model: blogModel})
-    var view = new Tumblr.Views.blogShow({model: blogModel, collection: this.blogCollection});
+    var view = new Tumblr.Views.blogShow({model: blogModel});
+    this._swapView(view);
+  },
+
+  feedIndex: function() {
+    this.feedCollection = new Tumblr.Collections.NewsFeeds();
+    this.feedCollection.fetch();
+    var view = new Tumblr.Views.newsFeed({collection: this.feedCollection})
+    this._swapView(view);
+  },
+
+  postIndex: function() {
+    this.postCollection = new Tumblr.Collections.Posts();
+    this.postCollection.fetch();
+    var view = new Tumblr.Views.postIndex({collection: this.postCollection})
     this._swapView(view);
   },
 
@@ -24,6 +38,7 @@ Tumblr.Routers.Router = Backbone.Router.extend({
     this.$rootEl.html(this.currentView.$el);
     this.currentView.render();
   }
+
 
 
 });

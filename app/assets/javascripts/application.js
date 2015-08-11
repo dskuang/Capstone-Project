@@ -16,6 +16,7 @@
 //= require backbone
 //= require serialize_json
 //= require tumblr
+//= require_tree ./util
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./collections

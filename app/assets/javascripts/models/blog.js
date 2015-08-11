@@ -11,9 +11,9 @@ Tumblr.Models.Blog = Backbone.Model.extend({
 
   posts: function () {
     if (!this._posts) {
-      this._lists = new Trello.Collections.Posts([], { board: this });
+      this._posts = new Tumblr.Collections.Posts([], { blog: this });
     }
 
-    return this._lists;
+    return this._posts;
   },
 });
