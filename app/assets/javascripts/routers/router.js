@@ -13,6 +13,7 @@ Tumblr.Routers.Router = Backbone.Router.extend({
   blogShow: function(id) {
     var blogModel = this.blogCollection.getOrFetch(id);
     // debugger
+    var view = new Tumblr.NewsFeed.newsFeed({model: blogModel})
     var view = new Tumblr.Views.blogShow({model: blogModel, collection: this.blogCollection});
     this._swapView(view);
   },

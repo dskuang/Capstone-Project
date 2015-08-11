@@ -11,6 +11,7 @@ class Api::BlogsController < ApplicationController
 
   def create
     @blog = Blog.new(board_params)
+    @blod.user_id = current_user.id
     if @blog.save
       render :json => @blog
     else
@@ -35,7 +36,7 @@ class Api::BlogsController < ApplicationController
  end
 
  def blog_params
-   params.require(:board).permit(:title, :user_id)
+   params.require(:board).permit(:title)
  end
 
 end
