@@ -5,7 +5,9 @@ window.Tumblr = {
   Routers: {},
   initialize: function() {
     var $rootEl = $("#content");
-    
+    var router = new Tumblr.Routers.Router({$rootEl: $rootEl});
+    Backbone.history.start();
+
   }
 };
 

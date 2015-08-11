@@ -644,3 +644,3152 @@ Processing by SessionsController#new as HTML
   Rendered sessions/new.html.erb within layouts/application (0.5ms)
   [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
 Completed 200 OK in 155ms (Views: 153.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/session/new" for ::1 at 2015-08-10 20:31:26 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (22.1ms)
+Completed 500 Internal Server Error in 699ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'serialize_json' with type 'application/javascript'):
+    3: <head>
+    4:   <title>Tumblr</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+    6:   <%= javascript_include_tag 'application' %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/assets/javascripts/application.js:17
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__1260637679490210818_70230136289160'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.2ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (141.7ms)
+
+
+Started GET "/session/new" for ::1 at 2015-08-10 20:32:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (51.3ms)
+  [1m[35mUser Load (19.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 1844ms (Views: 1777.6ms | ActiveRecord: 21.5ms)
+
+
+Started GET "/assets/tumblr.self-121e1829d6afba13500c810288de0ed6e6ace701c98f62defbf3d9c900d91698.js?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/blogShow.self-60ac40a90916546a33c845bde891a5b1e6a464e1d66dfa7ecfbf9b652cf80420.js?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/collections/blogs.self-1ff50fa33cccd5fcdf236da57d007b97d4f56c40b9acfa03bbd73238769980aa.js?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/routers/router.self-5fdab18ea3dd8f9353f19018f13af02f757b3217c0f3ee4907c26f8b68e146c5.js?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/views/blogShow.self-d1787d6f5978c5d139240441b7f779886872a584c62ea00c34f4d4c36afecaab.js?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/models/blog.self-33c377da6b8a6fdf3f6c91a20a7d7908de17ae9f75f49347e152a0611076c709.js?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:32:35 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:32:36 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:32:36 -0700
+
+
+Started GET "/session/new" for ::1 at 2015-08-10 20:33:11 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 329ms (Views: 327.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/blogShow.self-60ac40a90916546a33c845bde891a5b1e6a464e1d66dfa7ecfbf9b652cf80420.js?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/models/blog.self-33c377da6b8a6fdf3f6c91a20a7d7908de17ae9f75f49347e152a0611076c709.js?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/collections/blogs.self-1ff50fa33cccd5fcdf236da57d007b97d4f56c40b9acfa03bbd73238769980aa.js?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/views/blogShow.self-d1787d6f5978c5d139240441b7f779886872a584c62ea00c34f4d4c36afecaab.js?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/routers/router.self-5fdab18ea3dd8f9353f19018f13af02f757b3217c0f3ee4907c26f8b68e146c5.js?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:33:11 -0700
+
+
+Started GET "/session/new" for ::1 at 2015-08-10 20:34:20 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 451ms (Views: 449.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/models/blog.self-d957e0556b0840cbb06a3ddd2332a1963a9794d4b1982f7f1afa3ca9610bdd96.js?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/blogShow.self-60ac40a90916546a33c845bde891a5b1e6a464e1d66dfa7ecfbf9b652cf80420.js?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/views/blogShow.self-d1787d6f5978c5d139240441b7f779886872a584c62ea00c34f4d4c36afecaab.js?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/routers/router.self-5fdab18ea3dd8f9353f19018f13af02f757b3217c0f3ee4907c26f8b68e146c5.js?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:34:21 -0700
+
+
+Started GET "/session/new" for ::1 at 2015-08-10 20:35:45 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 463ms (Views: 462.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/views/blogShow.self-23537679fbac7803e02c81c2d1624342f369fe0f88a07403f7900d472c967a4d.js?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/routers/router.self-3a42c588763cb976213d99eed4efce5eb4e122d0f9cd90db5143b68488e30ce0.js?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/blogShow.self-60ac40a90916546a33c845bde891a5b1e6a464e1d66dfa7ecfbf9b652cf80420.js?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/models/blog.self-d957e0556b0840cbb06a3ddd2332a1963a9794d4b1982f7f1afa3ca9610bdd96.js?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:35:45 -0700
+
+
+Started GET "/session/new" for ::1 at 2015-08-10 20:35:59 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 245ms (Views: 243.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/views/blogShow.self-c14e046f76779b12733f82a1e3f060f7a0ce4556e5110b62d405225716277049.js?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/blogShow.self-60ac40a90916546a33c845bde891a5b1e6a464e1d66dfa7ecfbf9b652cf80420.js?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/models/blog.self-d957e0556b0840cbb06a3ddd2332a1963a9794d4b1982f7f1afa3ca9610bdd96.js?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/routers/router.self-3a42c588763cb976213d99eed4efce5eb4e122d0f9cd90db5143b68488e30ce0.js?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:35:59 -0700
+
+
+Started GET "/session/new" for ::1 at 2015-08-10 20:36:18 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 413ms (Views: 411.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:36:18 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:36:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:36:18 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:36:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:36:18 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:36:18 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:36:18 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:36:18 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:36:18 -0700
+
+
+Started GET "/assets/blogShow.self-60ac40a90916546a33c845bde891a5b1e6a464e1d66dfa7ecfbf9b652cf80420.js?body=1" for ::1 at 2015-08-10 20:36:18 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:36:19 -0700
+
+
+Started GET "/assets/models/blog.self-d957e0556b0840cbb06a3ddd2332a1963a9794d4b1982f7f1afa3ca9610bdd96.js?body=1" for ::1 at 2015-08-10 20:36:19 -0700
+
+
+Started GET "/assets/routers/router.self-444ca7f9e7ab907b815a59d25cc8b49631469cef1f17e170d5d051c785481012.js?body=1" for ::1 at 2015-08-10 20:36:19 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:36:19 -0700
+
+
+Started GET "/assets/views/blogShow.self-c14e046f76779b12733f82a1e3f060f7a0ce4556e5110b62d405225716277049.js?body=1" for ::1 at 2015-08-10 20:36:19 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:36:19 -0700
+
+
+Started GET "/session/new" for ::1 at 2015-08-10 20:37:07 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 462ms (Views: 460.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/blogShow.self-60ac40a90916546a33c845bde891a5b1e6a464e1d66dfa7ecfbf9b652cf80420.js?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/models/blog.self-d957e0556b0840cbb06a3ddd2332a1963a9794d4b1982f7f1afa3ca9610bdd96.js?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/views/blogShow.self-c14e046f76779b12733f82a1e3f060f7a0ce4556e5110b62d405225716277049.js?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/assets/routers/router.self-444ca7f9e7ab907b815a59d25cc8b49631469cef1f17e170d5d051c785481012.js?body=1" for ::1 at 2015-08-10 20:37:07 -0700
+
+
+Started GET "/session/new" for ::1 at 2015-08-10 20:39:53 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 610ms (Views: 608.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/routers/router.self-95295af8744220bc3680adc3acb7237df555bf5d6c2ba53cf052a9fc338a9544.js?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/blogShow.self-60ac40a90916546a33c845bde891a5b1e6a464e1d66dfa7ecfbf9b652cf80420.js?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/models/blog.self-d957e0556b0840cbb06a3ddd2332a1963a9794d4b1982f7f1afa3ca9610bdd96.js?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/views/blogShow.self-c14e046f76779b12733f82a1e3f060f7a0ce4556e5110b62d405225716277049.js?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:39:54 -0700
+  [1m[36mBlog Load (53.8ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  [1m[35m (35.1ms)[0m  BEGIN
+  [1m[36mSQL (84.5ms)[0m  [1mINSERT INTO "blogs" ("title", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "blog1"], ["user_id", 1], ["created_at", "2015-08-11 03:43:44.264666"], ["updated_at", "2015-08-11 03:43:44.264666"]]
+  [1m[35m (38.3ms)[0m  COMMIT
+
+
+Started GET "/session/new" for ::1 at 2015-08-10 20:43:50 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 405ms (Views: 403.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:43:50 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:43:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:43:50 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:43:50 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:43:50 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:43:50 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:43:50 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:43:51 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:43:51 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:43:51 -0700
+
+
+Started GET "/assets/blogShow.self-60ac40a90916546a33c845bde891a5b1e6a464e1d66dfa7ecfbf9b652cf80420.js?body=1" for ::1 at 2015-08-10 20:43:51 -0700
+
+
+Started GET "/assets/models/blog.self-d957e0556b0840cbb06a3ddd2332a1963a9794d4b1982f7f1afa3ca9610bdd96.js?body=1" for ::1 at 2015-08-10 20:43:51 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:43:51 -0700
+
+
+Started GET "/assets/views/blogShow.self-c14e046f76779b12733f82a1e3f060f7a0ce4556e5110b62d405225716277049.js?body=1" for ::1 at 2015-08-10 20:43:51 -0700
+
+
+Started GET "/assets/routers/router.self-95295af8744220bc3680adc3acb7237df555bf5d6c2ba53cf052a9fc338a9544.js?body=1" for ::1 at 2015-08-10 20:43:51 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:43:51 -0700
+
+
+Started POST "/session" for ::1 at 2015-08-10 20:43:54 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"sHfcCfkv5UfreURy10IHgcvLi7nKnogLEjSp6gM5zI+/kmNe72iTRSTRb6tH5viDaMKQojdMcHpNjo0pZ4QpHw==", "user"=>{"username"=>"a", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (34.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1[0m  [["username", "a"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (12.8ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"], ["updated_at", "2015-08-11 03:43:54.385037"], ["id", 1]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 195ms (ActiveRecord: 53.2ms)
+
+
+Started GET "/users/1" for ::1 at 2015-08-10 20:43:54 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 122ms (Views: 89.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 20:44:00 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 80ms (Views: 78.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 20:44:12 -0700
+
+ActionController::RoutingError (uninitialized constant Api::BlogsController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (29.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (56.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (105.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 20:44:19 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 381ms (Views: 379.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/models/blog.self-d957e0556b0840cbb06a3ddd2332a1963a9794d4b1982f7f1afa3ca9610bdd96.js?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/views/blogShow.self-c14e046f76779b12733f82a1e3f060f7a0ce4556e5110b62d405225716277049.js?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/routers/router.self-95295af8744220bc3680adc3acb7237df555bf5d6c2ba53cf052a9fc338a9544.js?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:44:20 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 20:44:20 -0700
+
+ActionController::RoutingError (uninitialized constant Api::BlogsController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (6.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (130.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 20:45:46 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 460ms (Views: 458.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/views/blogShow.self-b3b80d38ddd05bb777cee3d0f41c6b0772b1a643f0d437c982a83567fca64453.js?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/routers/router.self-95295af8744220bc3680adc3acb7237df555bf5d6c2ba53cf052a9fc338a9544.js?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:45:47 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 20:45:47 -0700
+
+ActionController::RoutingError (uninitialized constant Api::BlogsController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (6.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (74.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (142.5ms)
+  [1m[36mBlog Load (0.7ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users"
+
+
+Started GET "/" for ::1 at 2015-08-10 20:46:42 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 489ms (Views: 487.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/views/blogShow.self-b3b80d38ddd05bb777cee3d0f41c6b0772b1a643f0d437c982a83567fca64453.js?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/routers/router.self-95295af8744220bc3680adc3acb7237df555bf5d6c2ba53cf052a9fc338a9544.js?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:46:43 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 20:46:43 -0700
+
+ActionController::RoutingError (uninitialized constant Api::BlogsController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (5.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (91.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 20:47:23 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 578ms (Views: 576.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/views/blogShow.self-2449641c6ba18d9d66a83ef21b4bcceb95de3b0046d5f91dc1cf8d23f69cf30a.js?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/routers/router.self-95295af8744220bc3680adc3acb7237df555bf5d6c2ba53cf052a9fc338a9544.js?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:47:24 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 20:47:24 -0700
+
+ActionController::RoutingError (uninitialized constant Api::BlogsController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (5.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (38.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (85.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 20:47:50 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 785ms (Views: 783.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/views/blogShow.self-8b1f8627d642bfd55d21b45c9c8fdae98c7b22d3d65eff88a29fe40b921d2174.js?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/routers/router.self-95295af8744220bc3680adc3acb7237df555bf5d6c2ba53cf052a9fc338a9544.js?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:47:51 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 20:47:51 -0700
+
+ActionController::RoutingError (uninitialized constant Api::BlogsController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (6.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (147.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (238.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 20:49:25 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 572ms (Views: 570.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/routers/router.self-0bc6c2979027ead4955331c81fadf5ef2f2c801e9e1879a9e88fe6656d118d02.js?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/views/blogShow.self-8b1f8627d642bfd55d21b45c9c8fdae98c7b22d3d65eff88a29fe40b921d2174.js?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:49:26 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 20:49:26 -0700
+
+ActionController::RoutingError (uninitialized constant Api::BlogsController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (5.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (87.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 20:50:31 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 464ms (Views: 463.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/routers/router.self-21e8525ea0e2523c720877019b846708cd137a3816c95913b6c0518b2ebba65f.js?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/collections/blogs.self-0fd004ed73931473daf51f7577b2af6df84249da94c909e6326a47097ee505ed.js?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/views/blogShow.self-2449641c6ba18d9d66a83ef21b4bcceb95de3b0046d5f91dc1cf8d23f69cf30a.js?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 20:50:31 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 20:50:31 -0700
+
+ActionController::RoutingError (uninitialized constant Api::BlogsController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (7.8ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (97.6ms)
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 20:50:32 -0700
+
+ActionController::RoutingError (uninitialized constant Api::BlogsController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:263:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (4.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.3ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (36.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:19:15 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 1377ms (Views: 1157.5ms | ActiveRecord: 184.3ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/collections/blogs.self-fa7d4d7f64f2f4cfe77db59b3fe0abb56db508cd2a1ee54f39d57fafb51e2cdb.js?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/routers/router.self-21e8525ea0e2523c720877019b846708cd137a3816c95913b6c0518b2ebba65f.js?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/views/blogShow.self-2449641c6ba18d9d66a83ef21b4bcceb95de3b0046d5f91dc1cf8d23f69cf30a.js?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:19:19 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:19:20 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[35mBlog Load (1.1ms)[0m  SELECT "blogs".* FROM "blogs"
+Completed 200 OK in 655ms (Views: 5.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:19:20 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[36mBlog Load (0.4ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:20:19 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 1756ms (Views: 1754.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/collections/blogs.self-fa7d4d7f64f2f4cfe77db59b3fe0abb56db508cd2a1ee54f39d57fafb51e2cdb.js?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/views/blogShow.self-2449641c6ba18d9d66a83ef21b4bcceb95de3b0046d5f91dc1cf8d23f69cf30a.js?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/routers/router.self-61145d1ae13c2ae51b1ab15a2df56390eb0f6f355db284b1b9b38a8bb2569808.js?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:20:21 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:20:21 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[35mBlog Load (1.3ms)[0m  SELECT "blogs".* FROM "blogs"
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:20:21 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[36mBlog Load (0.4ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:22:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 762ms (Views: 757.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/collections/blogs.self-e87d6c8b5eb28f5364b18a35ac764d2902d1651dda89d8b5216a5d82b1cd1071.js?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/views/blogShow.self-2449641c6ba18d9d66a83ef21b4bcceb95de3b0046d5f91dc1cf8d23f69cf30a.js?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/routers/router.self-61145d1ae13c2ae51b1ab15a2df56390eb0f6f355db284b1b9b38a8bb2569808.js?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:22:13 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:22:13 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[35mBlog Load (0.7ms)[0m  SELECT "blogs".* FROM "blogs"
+Completed 200 OK in 77ms (Views: 32.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:22:13 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[36mBlog Load (0.4ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:24:12 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[35mBlog Load (0.5ms)[0m  SELECT "blogs".* FROM "blogs"
+Completed 200 OK in 19ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:24:13 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 721ms (Views: 719.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/collections/blogs.self-e68dee0b2d947514c8f24d7db15d79dd9d409154a1f85a27b74fda0ee5b055b3.js?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/routers/router.self-4061a17f8afc68136cc83a1c6f3ae7401e65fce8abd985e8a06dc271a65d951b.js?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/views/blogShow.self-2449641c6ba18d9d66a83ef21b4bcceb95de3b0046d5f91dc1cf8d23f69cf30a.js?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:24:14 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:24:14 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[36mBlog Load (1.0ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 1.0ms)
+  [1m[36mBlog Load (1.4ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:25:35 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[35mBlog Load (0.5ms)[0m  SELECT "blogs".* FROM "blogs"
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:25:35 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[36mBlog Load (0.5ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:25:36 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 649ms (Views: 648.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/views/blogShow.self-2449641c6ba18d9d66a83ef21b4bcceb95de3b0046d5f91dc1cf8d23f69cf30a.js?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/routers/router.self-4061a17f8afc68136cc83a1c6f3ae7401e65fce8abd985e8a06dc271a65d951b.js?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:25:37 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:25:37 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[35mBlog Load (0.4ms)[0m  SELECT "blogs".* FROM "blogs"
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:25:46 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (22.7ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.7ms)
+  Rendered api/blogs/show.json.jbuilder (195.3ms)
+Completed 200 OK in 249ms (Views: 224.0ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:25:49 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 68ms (Views: 66.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:25:49 -0700
+
+
+Started GET "/assets/views/blogShow.self-2449641c6ba18d9d66a83ef21b4bcceb95de3b0046d5f91dc1cf8d23f69cf30a.js?body=1" for ::1 at 2015-08-10 21:25:50 -0700
+
+
+Started GET "/assets/routers/router.self-4061a17f8afc68136cc83a1c6f3ae7401e65fce8abd985e8a06dc271a65d951b.js?body=1" for ::1 at 2015-08-10 21:25:50 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:25:50 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:25:50 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[35mBlog Load (0.7ms)[0m  SELECT "blogs".* FROM "blogs"
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:26:01 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (2.3ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:26:30 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 531ms (Views: 530.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/routers/router.self-1efea1e010af2fb297915b37e3ded697d9a5697a5ac870d16bf2451c41f8fac0.js?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/collections/blogs.self-c7107b21d8c5ee37ed186bc283fc428d7c958f85bf191eaa6af9740d79dc7e20.js?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/views/blogShow.self-2449641c6ba18d9d66a83ef21b4bcceb95de3b0046d5f91dc1cf8d23f69cf30a.js?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:26:31 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:26:31 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[35mBlog Load (0.8ms)[0m  SELECT "blogs".* FROM "blogs"
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:26:31 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (38.7ms)
+Completed 200 OK in 66ms (Views: 64.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:27:24 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mBlog Load (1.5ms)[0m  SELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (1.7ms)
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:27:54 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 981ms (Views: 980.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/collections/blogs.self-c7107b21d8c5ee37ed186bc283fc428d7c958f85bf191eaa6af9740d79dc7e20.js?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/views/blogShow.self-8b1f8627d642bfd55d21b45c9c8fdae98c7b22d3d65eff88a29fe40b921d2174.js?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/routers/router.self-1efea1e010af2fb297915b37e3ded697d9a5697a5ac870d16bf2451c41f8fac0.js?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:27:55 -0700
+
+
+Started GET "/api/blogs" for ::1 at 2015-08-10 21:27:55 -0700
+Processing by Api::BlogsController#index as JSON
+  [1m[36mBlog Load (0.5ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:27:56 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mBlog Load (0.9ms)[0m  SELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (0.9ms)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:29:35 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 536ms (Views: 534.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/views/blogShow.self-815f9bc0eeab1eac5ce5acd711f010ea223bffeacf4b32b9b8f51ef36e4e613b.js?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/routers/router.self-4edcfdd507a31d8e166d0c65348443329007e4eb1f2fff9a14b3c777c531fb0c.js?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:29:36 -0700
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:29:36 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (34.4ms)
+Completed 200 OK in 67ms (Views: 63.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:29:38 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/views/blogShow.self-815f9bc0eeab1eac5ce5acd711f010ea223bffeacf4b32b9b8f51ef36e4e613b.js?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/routers/router.self-4edcfdd507a31d8e166d0c65348443329007e4eb1f2fff9a14b3c777c531fb0c.js?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:29:39 -0700
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:29:39 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mBlog Load (0.4ms)[0m  SELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (1.1ms)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:30:48 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 404ms (Views: 403.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:30:48 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:30:48 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/views/blogShow.self-815f9bc0eeab1eac5ce5acd711f010ea223bffeacf4b32b9b8f51ef36e4e613b.js?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/routers/router.self-4edcfdd507a31d8e166d0c65348443329007e4eb1f2fff9a14b3c777c531fb0c.js?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:30:49 -0700
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:30:49 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.3ms)
+  Rendered api/blogs/show.json.jbuilder (17.8ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:31:05 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 359ms (Views: 357.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/blogShow.self-5eb726f0446005acd19588879c58eccc95faf11b0503bf7aefd77ca7749de59d.js?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/views/blogShow.self-815f9bc0eeab1eac5ce5acd711f010ea223bffeacf4b32b9b8f51ef36e4e613b.js?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/routers/router.self-4edcfdd507a31d8e166d0c65348443329007e4eb1f2fff9a14b3c777c531fb0c.js?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:31:05 -0700
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:31:06 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mBlog Load (0.3ms)[0m  SELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (33.3ms)
+Completed 200 OK in 69ms (Views: 66.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:31:42 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 551ms (Views: 550.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:33:19 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 1043ms (Views: 1042.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/blogShow.self-4bd54cf7c3b78fd0ade42cdd49d9d3410deafd5009ebbe77a771a0e4341ed9e2.js?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/views/blogShow.self-c3a7c1b2cd81335ac631ac6ee5cebeb971e9ebfc4980c2e35589f3384bab5651.js?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/routers/router.self-4edcfdd507a31d8e166d0c65348443329007e4eb1f2fff9a14b3c777c531fb0c.js?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:33:20 -0700
+
+
+Started GET "/blogs/1" for ::1 at 2015-08-10 21:33:23 -0700
+
+ActionController::RoutingError (No route matches [GET] "/blogs/1"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (330.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (431.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (470.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (659.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:33:27 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 69ms (Views: 68.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:33:28 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (16.1ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:33:41 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 342ms (Views: 340.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/blogShow.self-3c2b0bcfbb6db8c551cbcd89d6a33db91e69c7c19fab107d9a91ec9531bb145d.js?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/views/blogShow.self-c3a7c1b2cd81335ac631ac6ee5cebeb971e9ebfc4980c2e35589f3384bab5651.js?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/routers/router.self-4edcfdd507a31d8e166d0c65348443329007e4eb1f2fff9a14b3c777c531fb0c.js?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:33:42 -0700
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:33:42 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mBlog Load (0.5ms)[0m  SELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.2ms)
+  Rendered api/blogs/show.json.jbuilder (28.4ms)
+Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:34:03 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 88ms (Views: 87.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/blogShow.self-4bd54cf7c3b78fd0ade42cdd49d9d3410deafd5009ebbe77a771a0e4341ed9e2.js?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/views/blogShow.self-c3a7c1b2cd81335ac631ac6ee5cebeb971e9ebfc4980c2e35589f3384bab5651.js?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/routers/router.self-4edcfdd507a31d8e166d0c65348443329007e4eb1f2fff9a14b3c777c531fb0c.js?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:34:03 -0700
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:34:03 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (17.4ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:34:15 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 270ms (Views: 268.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/views/blogShow.self-d98933e838f2a892d082d6bab21944d8d8fb3f81efa5cd5fc4afe02164a9d5c4.js?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/blogShow.self-4bd54cf7c3b78fd0ade42cdd49d9d3410deafd5009ebbe77a771a0e4341ed9e2.js?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/routers/router.self-4edcfdd507a31d8e166d0c65348443329007e4eb1f2fff9a14b3c777c531fb0c.js?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:34:15 -0700
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:34:15 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mBlog Load (0.3ms)[0m  SELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (0.9ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:35:57 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (15.0ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:38:00 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 607ms (Views: 605.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/views/blogShow.self-2d1a3091d5b3fbd38e391396bfdfeafdd4416ff8d8475abf0bfd3eecabdf2d98.js?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/blogShow.self-4bd54cf7c3b78fd0ade42cdd49d9d3410deafd5009ebbe77a771a0e4341ed9e2.js?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/routers/router.self-4edcfdd507a31d8e166d0c65348443329007e4eb1f2fff9a14b3c777c531fb0c.js?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:38:01 -0700
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:38:01 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mBlog Load (0.3ms)[0m  SELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (15.4ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:38:06 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 218ms (Views: 217.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/blogShow.self-4bd54cf7c3b78fd0ade42cdd49d9d3410deafd5009ebbe77a771a0e4341ed9e2.js?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/views/blogShow.self-ab422f1ec588e3a761719953475d4d748615de78634912702964338dafe8ddb9.js?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/routers/router.self-4edcfdd507a31d8e166d0c65348443329007e4eb1f2fff9a14b3c777c531fb0c.js?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:38:06 -0700
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:38:06 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.4ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (0.9ms)
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:38:13 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 184ms (Views: 182.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/views/blogShow.self-fb1719c3f05db3bbff93cba7a871dd7846ab42b71ed35564214b227c096dc0a9.js?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/blogShow.self-4bd54cf7c3b78fd0ade42cdd49d9d3410deafd5009ebbe77a771a0e4341ed9e2.js?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/routers/router.self-4edcfdd507a31d8e166d0c65348443329007e4eb1f2fff9a14b3c777c531fb0c.js?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:38:13 -0700
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:38:13 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mBlog Load (0.6ms)[0m  SELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (0.8ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 21:38:17 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "l4LykOF0jRqCljgGr1vS0g"]]
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/api/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/blogShow.self-4bd54cf7c3b78fd0ade42cdd49d9d3410deafd5009ebbe77a771a0e4341ed9e2.js?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/models/blog.self-5af2802d434e417148ad6e51c0abe58709ee4dda90f73459731e0103f941f466.js?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/views/blogShow.self-ab422f1ec588e3a761719953475d4d748615de78634912702964338dafe8ddb9.js?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/routers/router.self-4edcfdd507a31d8e166d0c65348443329007e4eb1f2fff9a14b3c777c531fb0c.js?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/assets/application.self-7c44b34571f9c6f50024ec815db695a00182b9937b48d97c4ac1515ab6b385a0.js?body=1" for ::1 at 2015-08-10 21:38:18 -0700
+
+
+Started GET "/api/blogs/1" for ::1 at 2015-08-10 21:38:18 -0700
+Processing by Api::BlogsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (1.1ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/blogs/_blog.json.jbuilder (0.1ms)
+  Rendered api/blogs/show.json.jbuilder (1.4ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 1.1ms)

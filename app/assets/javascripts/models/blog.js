@@ -1,4 +1,5 @@
-Tumblr.Models.Blog = Backbone.Model.extends({
-  urlRoot: "/api/blogs",
+Tumblr.Models.Blog = Backbone.Model.extend({
+
+  urlRoot: "/api/blogs"
 
 });
