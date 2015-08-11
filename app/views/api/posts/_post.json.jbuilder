@@ -1,7 +1,15 @@
 json.extract!(
   post,
   :title,
-  :body,
   :blog_id,
-  :id
+  :id,
+  :body,
+
+)
+
+json.followState current_user.followers.include?(post.user)
+
+json.extract!(
+    post.user,
+    :username
 )

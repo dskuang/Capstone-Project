@@ -2,6 +2,12 @@ class User < ActiveRecord::Base
   validates :username, presence: true
   validates :password, length: {minimum: 6, allow_nil: true}
   before_validation :ensure_session_token
+
+  has_many :in_follows, class_name: "Follow", foreign_key: "followee_id"
+  has_many :out_follows, class_name: "Follow", foreign_key: "follower_id"
+  has_many :followers, through: :in_follows, source: :follower
+  has_many :followees, through: :out_follows, source: :followee
+
   attr_reader :password
 
   def self.find_by_credentials(username, password)
