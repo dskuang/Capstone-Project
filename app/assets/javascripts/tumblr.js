@@ -4,7 +4,8 @@ window.Tumblr = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+    var $rootEl = $("#content");
+    
   }
 };
 

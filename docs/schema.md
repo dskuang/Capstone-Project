@@ -15,6 +15,7 @@ id          | integer   | not null, primary key
 owner_id    | integer   | not null, foreign key (references users)
 title       | string    | not null
 
+
 ## posts
 column name | data type | details
 ------------|-----------|-----------------------
@@ -25,6 +26,7 @@ body        | string    |
 image_url   | string    |
 quote       | string    |
 link        | string    |
+blog_id     | integer   | not null, foreign key (references blogs)
 
 ## followings
 column name | data type | details
