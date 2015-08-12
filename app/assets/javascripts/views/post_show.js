@@ -7,7 +7,8 @@ Tumblr.Views.postShow = Backbone.View.extend({
   template: JST['postShow'],
 
   events: {
-    "click .follow-button": "toggleFollow"
+    "click .follow-button": "toggleFollow",
+    "click .like-button": "toggleLike"
   },
 
   render: function(){
@@ -20,16 +21,12 @@ Tumblr.Views.postShow = Backbone.View.extend({
   toggleFollow: function(e) {
     e.preventDefault();
     var followID = this.model.get("follow_relation_id");
-    // debugger
     this.model.follow().set({followee_id: this.model.get("user_id")});
     if(followID == null) {
       this.model.follow().save({}, {
         success: function() {
-          // debugger
-          // this.model.follow().set({followState: "followed"});
           this.model.set({follow_relation_id: 1});
           this.$el.find(".follow-button").text("unFollow");
-          // this.render;
         }.bind(this)
       });
     } else {
@@ -38,16 +35,15 @@ Tumblr.Views.postShow = Backbone.View.extend({
           this.model.destroyFollow();
           this.model.set({follow_relation_id: null})
           this.$el.find(".follow-button").text("Follow");
-          // this.render;
-          // debugger
-          // this.$el
-          // this.render();
-          // this.model.remove()
 
         }.bind(this)
       });
     }
+  },
 
+  toggleLike: function(e) {
+    e.preventDefault();
+    debugger
   }
 
 

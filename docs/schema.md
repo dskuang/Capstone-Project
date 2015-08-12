@@ -48,13 +48,13 @@ id          | integer   | not null, primary key
 post_id     | integer   | not null, foreign key (references posts)
 tag_id      | integer   | not null, foreign key (references tags)
 
-## likes
+<!-- ## likes
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-like_id     | integer   | not null, foreign key (references like)
+like_id     | integer   | not null, foreign key (references like) -->
 
-## liking
+## likes
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key

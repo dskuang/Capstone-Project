@@ -7,11 +7,15 @@ json.extract!(
   :user_id
 )
 
-id = Follow.find_follow_by_user(current_user.id, post.user_id)[0]
-id = id ? id.id : nil
+follow_id = Follow.find_follow_by_user(current_user.id, post.user_id)[0]
+follow_id = follow_id ? follow_id.id : nil
 
-json.follow_relation_id id
+json.follow_relation_id follow_id
 
+like_id = Like.find_like_by_user(current_user.id, post.id)[0]
+like_id = like_id ? like_id.id : nil
+
+json.like_relation_id like_id
 
 json.extract!(
     post.user,
