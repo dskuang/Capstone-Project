@@ -8,7 +8,7 @@ Tumblr.Models.Post = Backbone.Model.extend({
       // delete payload.followState;
     }
     if(payload.like_relation_id) {
-      this.like().set({id: payload.like_relation_id}, {parse: true});
+      this.like().set({id: payload.like_relation_id, post_id: payload.id}, {parse: true});
     }
     return payload;
   },
@@ -25,6 +25,10 @@ Tumblr.Models.Post = Backbone.Model.extend({
       this._like = new Tumblr.Models.Like();
     }
     return this._like;
+  },
+
+  destroyLike: function() {
+    this._like = null;
   },
 
   destroyFollow: function () {

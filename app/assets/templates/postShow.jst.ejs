@@ -4,9 +4,15 @@
     <% var followState = "Follow"; %>
   <% } %>
 
+  <% if (post.get("like_relation_id") !== null) { %>
+    <% var likeState = "unLike"; %>
+  <% } else { %>
+    <% var likeState = "Like"; %>
+  <% } %>
+
 
   <button class="follow-button"><%= followState %></button>
-  <button class="like-button">Like</button>
+  <button class="like-button"><%= likeState %></button>
   <%= post.escape("title") %>
   <%= post.escape("username") %>
   <%= post.escape("body") %>

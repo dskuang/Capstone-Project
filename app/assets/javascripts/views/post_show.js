@@ -1,6 +1,7 @@
 Tumblr.Views.postShow = Backbone.View.extend({
   initialize: function() {
-    this.listenTo(this.model.follow(), "all", this.render);
+    this.listenTo(this.model.follow(), "sync", this.render);
+    this.listenTo(this.model.like(), "sync remove", this.render);
   },
   tagName: "li",
   className: "post-item",
@@ -43,7 +44,25 @@ Tumblr.Views.postShow = Backbone.View.extend({
 
   toggleLike: function(e) {
     e.preventDefault();
-    debugger
+    var likeID = this.model.get("like_relation_id");
+      this.model.like().set({post_id: this.model.get("id")})
+    if(likeID == null) {
+      // debugger
+      this.model.like().save({}, {
+        success: function() {
+          this.model.set({like_relation_id: 1})
+          this.$el.find(".like-button").text("unLike");
+        }.bind(this)
+      });
+    } else {
+      this.model.like().destroy({
+        success: function() {
+          this.model.destroyLike();
+          this.model.set({like_relation_id: null})
+          this.$el.find(".like_button").text("Like");
+        }.bind(this)
+      });
+    }
   }
 
 
