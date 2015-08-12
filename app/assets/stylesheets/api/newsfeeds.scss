@@ -1,3 +1,10 @@
 // Place all the styles related to the api/newsfeeds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.newsfeed-posts {
+  margin:0 auto;
+    padding: 0;
+    list-style-type: none;
+    width: 300px;
+    height: 300px;
+}

@@ -15,6 +15,7 @@
 //= require underscore
 //= require backbone
 //= require serialize_json
+//= require bootstrap
 //= require tumblr
 //= require_tree ./util
 //= require_tree ../templates

@@ -10,9 +10,15 @@
     <% var likeState = "Like"; %>
   <% } %>
 
+<div class= "post-item-border">
+  <div class='post-header'>
+    <%= post.escape("username") %>
+    <%= post.escape("title") %>
+    <button class="follow-button"><%= followState %></button>
+  </div>
+  <div class="post-body">
+    <%= post.escape("body") %>
+    <button class="like-button"><%= likeState %></button>
+  </div>
 
-  <button class="follow-button"><%= followState %></button>
-  <button class="like-button"><%= likeState %></button>
-  <%= post.escape("title") %>
-  <%= post.escape("username") %>
-  <%= post.escape("body") %>
+</div>

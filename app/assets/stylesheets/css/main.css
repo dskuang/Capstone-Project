@@ -1,0 +1,78 @@
+
+
+
+
+
+	.session-form {
+		width: 300px;
+		margin: 0 auto;
+		height: 300px;
+	}
+	.session-form label{
+		height: 46px;
+	}
+
+	.session-form input{
+		height:53px;
+		line-height:18px;
+		width: 300px;
+	}
+
+	.sign-in-button{
+		background-color:none;
+		width:300px;
+		height: 50px;
+		margin-top: 20px;
+	}
+
+	.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+	}
+
+	.middle {
+	    display: table-cell;
+	    vertical-align: middle;
+	}
+
+	.inner {
+	    margin-left: auto;
+	    margin-right: auto;
+	    width: 300px;
+	}
+
+	.session-form-container {
+		position: absolute;
+		top: 50%;
+		margin-top: -200px;/* half of #content height*/
+		left: 0;
+		width: 100%;
+	}
+
+	.topcorner{
+    position:absolute;
+    top:10px;
+    right: 10px;
+ }
+
+ .credential-background {
+	 height: 1000px;
+	 width: 2000px;
+	 background-position: center;
+	 background-size: auto;
+	 background-image: url("/images/camera-girl.jpeg");
+ }
+
+ .credential-div a {
+	 text-decoration: none;
+
+ }
+
+
+/*.opacity-fill {
+	height: 400px;
+	width: 400px;
+	background-color:rgba(0, 0, 0, 0.5);
+}*/

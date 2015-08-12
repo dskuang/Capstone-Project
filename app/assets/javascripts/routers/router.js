@@ -8,6 +8,7 @@ Tumblr.Routers.Router = Backbone.Router.extend({
 
   routes: {
     "": "postIndex",
+    "": "postNew",
     "blogs/:id": "blogShow",
     "feed/": "feedIndex",
   },
@@ -15,6 +16,12 @@ Tumblr.Routers.Router = Backbone.Router.extend({
   blogShow: function(id) {
     var blogModel = this.blogCollection.getOrFetch(id);
     var view = new Tumblr.Views.blogShow({model: blogModel});
+    this._swapView(view);
+  },
+
+  postNew: function() {
+    var postModel = new Tumblr.Models.Post();
+    var view = new Tumblr.Views.postNew({model: postModel});
     this._swapView(view);
   },
 

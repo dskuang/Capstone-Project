@@ -15,7 +15,6 @@ Tumblr.Views.postShow = Backbone.View.extend({
   },
 
   render: function(){
-    // debugger
     var content = this.template({post: this.model});
     this.$el.html(content);
     return this;
@@ -29,7 +28,6 @@ Tumblr.Views.postShow = Backbone.View.extend({
       this.model.follow().save({}, {
         success: function() {
           this.model.collection.fetch();
-          // this.model.set({follow_relation_id: 1});
           this.$el.find(".follow-button").text("unFollow");
         }.bind(this)
       });
@@ -38,7 +36,6 @@ Tumblr.Views.postShow = Backbone.View.extend({
         success: function () {
           this.model.destroyFollow();
           this.model.collection.fetch();
-          // this.model.set({follow_relation_id: null})
           this.$el.find(".follow-button").text("Follow");
 
         }.bind(this)
@@ -51,10 +48,8 @@ Tumblr.Views.postShow = Backbone.View.extend({
     var likeID = this.model.get("like_relation_id");
       this.model.like().set({post_id: this.model.get("id")})
     if(likeID == null) {
-      // debugger
       this.model.like().save({}, {
         success: function() {
-          // this.model.set({like_relation_id: 1})
           this.model.fetch();
           this.$el.find(".like-button").text("unLike");
         }.bind(this)
@@ -63,7 +58,6 @@ Tumblr.Views.postShow = Backbone.View.extend({
       this.model.like().destroy({
         success: function() {
           this.model.destroyLike();
-          // this.model.set({like_relation_id: null})
           this.model.fetch();
           this.$el.find(".like_button").text("Like");
         }.bind(this)
