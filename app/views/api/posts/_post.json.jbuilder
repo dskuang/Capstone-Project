@@ -7,19 +7,19 @@ json.extract!(
   :user_id
 )
 
+id = Follow.find_follow_by_user(current_user.id, post.user_id)[0]
+id = id ? id.id : nil
 
-json.follow_relation_id Follow.find_follow_by_user(current_user.id, post.user_id)
+json.follow_relation_id id
 
-
-if (current_user.followees.include?(post.user))
-  json.followState "followed"
-else
-  json.followState "unfollowed"
-end
 
 json.extract!(
     post.user,
     :username
 )
 
-# json.currentUser current_user.id
+# if (current_user.followees.include?(post.user))
+#   json.followState "followed"
+# else
+#   json.followState "unfollowed"
+# end

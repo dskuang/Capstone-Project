@@ -5,8 +5,8 @@ Tumblr.Models.Post = Backbone.Model.extend({
     // debugger
     if(payload.follow_relation_id) {
       // if(payload.followState == "followed"){
-      var attrs = {followState: payload.followState}
-      this.follow().set(attrs, {parse: true});
+      // var attrs = {followState: "followed"}
+      this.follow().set({id: payload.follow_relation_id}, {parse: true});
       delete payload.followState;
     }
     return payload;
@@ -16,6 +16,7 @@ Tumblr.Models.Post = Backbone.Model.extend({
     if (!this._follow) {
       this._follow = new Tumblr.Models.Follow();
     }
+    
 
     return this._follow;
   },

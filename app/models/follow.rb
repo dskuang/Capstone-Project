@@ -6,7 +6,7 @@ class Follow < ActiveRecord::Base
   validates :follower, uniqueness: { scope: :followee }
 
   def self.find_follow_by_user(user1, user2)
-    Follow.where(follower_id: user1, followee_id: user2)
+    Follow.select(:id).where(follower_id: user1, followee_id: user2)
   end
 
 end

@@ -9,16 +9,19 @@ class Api::FollowsController < ApplicationController
     end
   end
 
-  
+  def show
+    @follow = Follow.find(params[:id]);
+    render :json => @follow
+  end
 
- def destroy
-   @follow = Follow.find_by(current_user.id)
+  def destroy
+   @follow = Follow.find(params[:id])
    @follow.follower_id = current_user.id
    @follow.destroy if @follow
    render :json => {}
- end
+  end
 
- def follow_params
-   params.require(:follow).permit(:followee_id)
- end
+  def follow_params
+    params.require(:follow).permit(:followee_id)
+  end
 end
