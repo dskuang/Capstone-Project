@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     resources :blogs, only: [:index, :create, :show, :destroy]
     resources :posts
     resource :newsfeed
+    resources :follows, only:[:create, :new, :destroy]
   end
 end

@@ -1,9 +1,11 @@
-  <% if (post.get("followState") === true) { %>
+  <% if (post.follow().get("followState") === "followed") { %>
     <% var state = "unFollow"; %>
   <% } else { %>
     <% var state = "Follow"; %>
   <% } %>
-  <button class="follow_button"><%= state %></button>
+
+
+  <button class="follow-button" data-id="<%= post.follow().escape("followee_id") %>"><%= state %></button>
   <%= post.escape("title") %>
   <%= post.escape("username") %>
   <%= post.escape("body") %>

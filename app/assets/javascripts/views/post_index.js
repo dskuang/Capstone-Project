@@ -8,6 +8,7 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
   template: JST["postIndex"],
 
   render: function() {
+    // debugger
     var content = this.template({posts: this.collection});
     this.$el.html(content);
     this.attachSubviews();
