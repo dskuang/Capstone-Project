@@ -2,6 +2,8 @@ Tumblr.Routers.Router = Backbone.Router.extend({
   initialize: function(options) {
     this.$rootEl = options.$rootEl;
     this.blogCollection = new Tumblr.Collections.Blogs();
+    this.feedCollection = new Tumblr.Collections.NewsFeeds();
+    this.postCollection = new Tumblr.Collections.Posts();
     // this.blogCollection.fetch();
     // debugger
   },
@@ -19,21 +21,13 @@ Tumblr.Routers.Router = Backbone.Router.extend({
     this._swapView(view);
   },
 
-  postNew: function() {
-    var postModel = new Tumblr.Models.Post();
-    var view = new Tumblr.Views.postNew({model: postModel});
-    this._swapView(view);
-  },
-
   feedIndex: function() {
-    this.feedCollection = new Tumblr.Collections.NewsFeeds();
     this.feedCollection.fetch();
-    var view = new Tumblr.Views.newsFeed({collection: this.feedCollection})
+    var view = new Tumblr.Views.newsFeed({postCollection: this.postCollection, feedCollection: this.feedCollection})
     this._swapView(view);
   },
 
   postIndex: function() {
-    this.postCollection = new Tumblr.Collections.Posts();
     this.postCollection.fetch();
     var view = new Tumblr.Views.postIndex({collection: this.postCollection})
     this._swapView(view);

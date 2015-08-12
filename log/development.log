@@ -55032,3 +55032,2907 @@ Processing by Api::PostsController#index as JSON
   Rendered api/posts/_post.json.jbuilder (3.7ms)
   Rendered api/posts/index.json.jbuilder (785.3ms)
 Completed 200 OK in 812ms (Views: 535.9ms | ActiveRecord: 275.2ms)
+
+
+Started GET "/users/1" for ::1 at 2015-08-12 13:12:17 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (76.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (18.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 1468ms (Views: 1343.4ms | ActiveRecord: 94.6ms)
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/postNew.self-92d714001d7364fe49c660934928846840e395167998f4e560666e84bbc086f0.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/views/newsfeed.self-60f2d978089aa34a0f7a1c5b30853dcfee86dc2b6e49e777d5cbce3cc8cf81fb.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/views/post_new.self-8e0cbbb7e72ddc7cbd1ef2cb7d407a1b22cd66ada6226b8e0690156a15b30bc6.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/routers/router.self-445d1f00fd75377e3a9d121df424ac4fe9620e6a8c7ae1a4f921f940ec2d5e5f.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:12:20 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:12:21 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:12:21 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:12:21 -0700
+
+
+Started GET "/" for ::1 at 2015-08-12 13:12:31 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 223ms (Views: 221.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:12:41 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (140.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (1.8ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.4ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (37.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (2.8ms)
+  Rendered api/newsfeeds/show.json.jbuilder (69.8ms)
+Completed 200 OK in 246ms (Views: 75.2ms | ActiveRecord: 143.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 13:15:53 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 524ms (Views: 522.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/views/newsfeed.self-112c1503aa9d5e6a34a25719d196a3c4faf3edf4fb64461f7215e973649b4e7e.js?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:15:53 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/postNew.self-92d714001d7364fe49c660934928846840e395167998f4e560666e84bbc086f0.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/views/post_new.self-8e0cbbb7e72ddc7cbd1ef2cb7d407a1b22cd66ada6226b8e0690156a15b30bc6.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/routers/router.self-445d1f00fd75377e3a9d121df424ac4fe9620e6a8c7ae1a4f921f940ec2d5e5f.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:15:54 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:15:54 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.4ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.3ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (237.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (243.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.2ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (4.0ms)
+  Rendered api/newsfeeds/show.json.jbuilder (248.6ms)
+Completed 200 OK in 254ms (Views: 12.1ms | ActiveRecord: 239.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 13:24:02 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 687ms (Views: 685.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/views/newsfeed.self-a8f2aa48761301d76e054c1db672a8462a879fab9b6e3223371705e6cb87f4e7.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/routers/router.self-445d1f00fd75377e3a9d121df424ac4fe9620e6a8c7ae1a4f921f940ec2d5e5f.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/views/post_new.self-8e0cbbb7e72ddc7cbd1ef2cb7d407a1b22cd66ada6226b8e0690156a15b30bc6.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:24:03 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:24:03 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (12.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.5ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (5.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.2ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (3.0ms)
+  Rendered api/newsfeeds/show.json.jbuilder (82.6ms)
+Completed 200 OK in 146ms (Views: 128.0ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/?post%5Btitle%5D=&post%5Bbody%5D=" for ::1 at 2015-08-12 13:24:05 -0700
+Processing by StaticPagesController#root as HTML
+  Parameters: {"post"=>{"title"=>"", "body"=>""}}
+  Rendered static_pages/root.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 173ms (Views: 171.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:24:05 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.5ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (5.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.2ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (4.5ms)
+  Rendered api/newsfeeds/show.json.jbuilder (11.4ms)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/?post%5Btitle%5D=&post%5Bbody%5D=" for ::1 at 2015-08-12 13:24:42 -0700
+Processing by StaticPagesController#root as HTML
+  Parameters: {"post"=>{"title"=>"", "body"=>""}}
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 504ms (Views: 502.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/views/newsfeed.self-fb6d4127bb213db8a469633e145f367c3bcf5239519fddf4b22efb22aa241dd7.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/views/post_new.self-8e0cbbb7e72ddc7cbd1ef2cb7d407a1b22cd66ada6226b8e0690156a15b30bc6.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/routers/router.self-445d1f00fd75377e3a9d121df424ac4fe9620e6a8c7ae1a4f921f940ec2d5e5f.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:24:43 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:24:43 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.4ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.3ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (8.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (5.2ms)
+  Rendered api/newsfeeds/show.json.jbuilder (54.4ms)
+Completed 200 OK in 82ms (Views: 76.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/?post%5Btitle%5D=&post%5Bbody%5D=" for ::1 at 2015-08-12 13:25:47 -0700
+Processing by StaticPagesController#root as HTML
+  Parameters: {"post"=>{"title"=>"", "body"=>""}}
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 483ms (Views: 481.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/views/newsfeed.self-85f3cfdf1f4e07692404804580282dae830e0575c05fa0a36159ca34dcb476e3.js?body=1" for ::1 at 2015-08-12 13:25:47 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:25:47 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:25:47 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:25:47 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:25:47 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:25:47 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:25:47 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:25:47 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:25:47 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/views/post_new.self-8e0cbbb7e72ddc7cbd1ef2cb7d407a1b22cd66ada6226b8e0690156a15b30bc6.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/routers/router.self-445d1f00fd75377e3a9d121df424ac4fe9620e6a8c7ae1a4f921f940ec2d5e5f.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:25:48 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:25:48 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.9ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.3ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (7.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.5ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (5.1ms)
+  Rendered api/newsfeeds/show.json.jbuilder (41.5ms)
+Completed 200 OK in 64ms (Views: 56.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/?post%5Btitle%5D=&post%5Bbody%5D=" for ::1 at 2015-08-12 13:27:45 -0700
+Processing by StaticPagesController#root as HTML
+  Parameters: {"post"=>{"title"=>"", "body"=>""}}
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 495ms (Views: 494.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/views/post_new.self-8e0cbbb7e72ddc7cbd1ef2cb7d407a1b22cd66ada6226b8e0690156a15b30bc6.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/views/newsfeed.self-85f3cfdf1f4e07692404804580282dae830e0575c05fa0a36159ca34dcb476e3.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/routers/router.self-020b2e6b3284eb6d415735ab9f1339a99316fed3ade16ce8a9c49420b2c2d14b.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:27:46 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:27:46 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.5ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.3ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (5.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (4.1ms)
+  Rendered api/newsfeeds/show.json.jbuilder (39.6ms)
+Completed 200 OK in 68ms (Views: 61.6ms | ActiveRecord: 2.6ms)
+  [1m[36mBlog Load (10.7ms)[0m  [1mSELECT "blogs"."id" FROM "blogs" WHERE "blogs"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35mBlog Load (54.4ms)[0m  SELECT "blogs"."id" FROM "blogs" WHERE "blogs"."user_id" = $1  [["user_id", 2]]
+
+
+Started GET "/?post%5Btitle%5D=&post%5Bbody%5D=" for ::1 at 2015-08-12 13:36:34 -0700
+Processing by StaticPagesController#root as HTML
+  Parameters: {"post"=>{"title"=>"", "body"=>""}}
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 949ms (Views: 940.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/views/post_new.self-51fd8391d65575f44550bbfc226033b5f8eb53326f862409f2a1d93afd4f4e39.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/views/newsfeed.self-e53164235a4f80e4f4658855f71ec9442ea5660f8e782475d42c12d64c741c07.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/routers/router.self-020b2e6b3284eb6d415735ab9f1339a99316fed3ade16ce8a9c49420b2c2d14b.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:36:35 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:36:35 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.2ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.3ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (42.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.2ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (3.0ms)
+  Rendered api/newsfeeds/show.json.jbuilder (75.4ms)
+Completed 200 OK in 172ms (Views: 79.6ms | ActiveRecord: 30.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 13:44:58 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 772ms (Views: 766.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/views/newsfeed.self-c76c837a03ef39e1305106c6d9a5cc363f96f80012325552dbe937a72269e3d3.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/routers/router.self-aa269166bb6dfab4f2e7bb2c157014616750805e1c442d05f5cad2f33aacd05b.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/views/post_new.self-2d3506d16a0580cb6e95fd1a99e9aa1a2693b287cf1f96c1073ccb5d30a10e4c.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:44:59 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:44:59 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (1.4ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.7ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (14.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.4ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (6.2ms)
+  Rendered api/newsfeeds/show.json.jbuilder (51.9ms)
+Completed 200 OK in 72ms (Views: 62.9ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/api/posts" for ::1 at 2015-08-12 13:45:16 -0700
+Processing by Api::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"title 3", "body"=>"body1"}}
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `current_user' for #<Class:0x007fd961b6b1c8>):
+  app/models/user.rb:38:in `find_blog_by_user'
+  app/controllers/api/posts_controller.rb:13:in `create'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.0ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd95adb45a8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd95adb42d8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd95a41bf00 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-08-12 13:46:31 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 752ms (Views: 747.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:46:32 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/views/newsfeed.self-c76c837a03ef39e1305106c6d9a5cc363f96f80012325552dbe937a72269e3d3.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/views/post_new.self-2d3506d16a0580cb6e95fd1a99e9aa1a2693b287cf1f96c1073ccb5d30a10e4c.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/routers/router.self-aa269166bb6dfab4f2e7bb2c157014616750805e1c442d05f5cad2f33aacd05b.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:46:33 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:46:33 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (2.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.3ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.3ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (135.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.2ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (4.7ms)
+  Rendered api/newsfeeds/show.json.jbuilder (169.3ms)
+Completed 200 OK in 249ms (Views: 192.2ms | ActiveRecord: 10.4ms)
+
+
+Started POST "/api/posts" for ::1 at 2015-08-12 13:47:06 -0700
+Processing by Api::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"asdf", "body"=>"asdffasdasd"}}
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `current_user' for #<Class:0x007fd964498b18>):
+  app/models/user.rb:38:in `find_blog_by_user'
+  app/controllers/api/posts_controller.rb:13:in `create'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (515.6ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd95adb45a8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd95adb42d8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd95a41bf00 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-08-12 13:48:08 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 936ms (Views: 930.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:48:10 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/views/newsfeed.self-c76c837a03ef39e1305106c6d9a5cc363f96f80012325552dbe937a72269e3d3.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/routers/router.self-aa269166bb6dfab4f2e7bb2c157014616750805e1c442d05f5cad2f33aacd05b.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/views/post_new.self-2d3506d16a0580cb6e95fd1a99e9aa1a2693b287cf1f96c1073ccb5d30a10e4c.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:48:11 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:48:11 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.8ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (1.2ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (16.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (4.0ms)
+  Rendered api/newsfeeds/show.json.jbuilder (49.7ms)
+Completed 200 OK in 71ms (Views: 58.0ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/api/posts" for ::1 at 2015-08-12 13:48:26 -0700
+Processing by Api::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"rt", "body"=>""}}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `current_user' for #<Class:0x007fd964498b18>):
+  app/models/user.rb:38:in `find_blog_by_user'
+  app/controllers/api/posts_controller.rb:13:in `create'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.2ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (23.3ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd95adb45a8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd95adb42d8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd95a41bf00 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-08-12 13:49:36 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 384ms (Views: 377.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:49:36 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:49:36 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:49:36 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:49:36 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:49:36 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:49:36 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:49:36 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:49:36 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:49:36 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/views/newsfeed.self-c76c837a03ef39e1305106c6d9a5cc363f96f80012325552dbe937a72269e3d3.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/views/post_new.self-2d3506d16a0580cb6e95fd1a99e9aa1a2693b287cf1f96c1073ccb5d30a10e4c.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/routers/router.self-aa269166bb6dfab4f2e7bb2c157014616750805e1c442d05f5cad2f33aacd05b.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:49:37 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:49:37 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.3ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.3ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (87.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (3.2ms)
+  Rendered api/newsfeeds/show.json.jbuilder (120.5ms)
+Completed 200 OK in 188ms (Views: 134.8ms | ActiveRecord: 10.7ms)
+
+
+Started POST "/api/posts" for ::1 at 2015-08-12 13:49:41 -0700
+Processing by Api::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"fsdfsd", "body"=>"fsdfsdf"}}
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `current_user' for #<Class:0x007fd96526aef8>):
+  app/models/user.rb:38:in `find_blog_by_user'
+  app/controllers/api/posts_controller.rb:13:in `create'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (19.1ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd95adb45a8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd95adb42d8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd95a41bf00 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-08-12 13:50:01 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 224ms (Views: 223.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/views/newsfeed.self-c76c837a03ef39e1305106c6d9a5cc363f96f80012325552dbe937a72269e3d3.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/views/post_new.self-2d3506d16a0580cb6e95fd1a99e9aa1a2693b287cf1f96c1073ccb5d30a10e4c.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/routers/router.self-aa269166bb6dfab4f2e7bb2c157014616750805e1c442d05f5cad2f33aacd05b.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:50:01 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:50:01 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.3ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (4.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.6ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (4.1ms)
+  Rendered api/newsfeeds/show.json.jbuilder (10.2ms)
+Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/api/posts" for ::1 at 2015-08-12 13:50:05 -0700
+Processing by Api::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"edsfs", "body"=>"dfsdf"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `current_user' for #<Class:0x007fd96526aef8>):
+  app/models/user.rb:38:in `find_blog_by_user'
+  app/controllers/api/posts_controller.rb:13:in `create'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (15.5ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd95adb45a8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd95adb42d8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd95a41bf00 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-08-12 13:50:31 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 463ms (Views: 457.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:50:32 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:50:33 -0700
+
+
+Started GET "/assets/views/newsfeed.self-c76c837a03ef39e1305106c6d9a5cc363f96f80012325552dbe937a72269e3d3.js?body=1" for ::1 at 2015-08-12 13:50:33 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:50:33 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:50:33 -0700
+
+
+Started GET "/assets/views/post_new.self-2d3506d16a0580cb6e95fd1a99e9aa1a2693b287cf1f96c1073ccb5d30a10e4c.js?body=1" for ::1 at 2015-08-12 13:50:33 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:50:33 -0700
+
+
+Started GET "/assets/routers/router.self-aa269166bb6dfab4f2e7bb2c157014616750805e1c442d05f5cad2f33aacd05b.js?body=1" for ::1 at 2015-08-12 13:50:33 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:50:33 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:50:33 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (3.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.4ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.6ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (46.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (5.4ms)
+  Rendered api/newsfeeds/show.json.jbuilder (81.4ms)
+Completed 200 OK in 157ms (Views: 99.9ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 13:51:32 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 228ms (Views: 222.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/views/newsfeed.self-c76c837a03ef39e1305106c6d9a5cc363f96f80012325552dbe937a72269e3d3.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/views/post_new.self-2d3506d16a0580cb6e95fd1a99e9aa1a2693b287cf1f96c1073ccb5d30a10e4c.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/routers/router.self-aa269166bb6dfab4f2e7bb2c157014616750805e1c442d05f5cad2f33aacd05b.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:51:33 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:51:33 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.4ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.4ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (50.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (4.7ms)
+  Rendered api/newsfeeds/show.json.jbuilder (61.0ms)
+Completed 200 OK in 77ms (Views: 61.3ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/api/posts" for ::1 at 2015-08-12 13:51:37 -0700
+Processing by Api::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"asd", "body"=>""}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35m (27.7ms)[0m  BEGIN
+  [1m[36mSQL (81.3ms)[0m  [1mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "asd"], ["body", ""], ["user_id", 1], ["created_at", "2015-08-12 20:51:37.308087"], ["updated_at", "2015-08-12 20:51:37.308087"]]
+PG::NotNullViolation: ERROR:  null value in column "blog_id" violates not-null constraint
+DETAIL:  Failing row contains (4, 1, null, 2015-08-12 20:51:37.308087, 2015-08-12 20:51:37.308087, asd, ).
+: INSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 111.9ms)
+
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "blog_id" violates not-null constraint
+DETAIL:  Failing row contains (4, 1, null, 2015-08-12 20:51:37.308087, 2015-08-12 20:51:37.308087, asd, ).
+: INSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"):
+  app/controllers/api/posts_controller.rb:17:in `create'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (19.7ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd95adb45a8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd95adb42d8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd95a41bf00 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/api/posts" for ::1 at 2015-08-12 13:51:45 -0700
+Processing by Api::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"asd", "body"=>"rtsdtsdg"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "asd"], ["body", "rtsdtsdg"], ["user_id", 1], ["created_at", "2015-08-12 20:51:45.693161"], ["updated_at", "2015-08-12 20:51:45.693161"]]
+PG::NotNullViolation: ERROR:  null value in column "blog_id" violates not-null constraint
+DETAIL:  Failing row contains (5, 1, null, 2015-08-12 20:51:45.693161, 2015-08-12 20:51:45.693161, asd, rtsdtsdg).
+: INSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 3.9ms)
+
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "blog_id" violates not-null constraint
+DETAIL:  Failing row contains (5, 1, null, 2015-08-12 20:51:45.693161, 2015-08-12 20:51:45.693161, asd, rtsdtsdg).
+: INSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"):
+  app/controllers/api/posts_controller.rb:17:in `create'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (17.4ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd95adb45a8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd95adb42d8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd95a41bf00 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-08-12 13:51:50 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 338ms (Views: 337.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/views/newsfeed.self-c76c837a03ef39e1305106c6d9a5cc363f96f80012325552dbe937a72269e3d3.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/views/post_new.self-2d3506d16a0580cb6e95fd1a99e9aa1a2693b287cf1f96c1073ccb5d30a10e4c.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/routers/router.self-aa269166bb6dfab4f2e7bb2c157014616750805e1c442d05f5cad2f33aacd05b.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:51:51 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:51:51 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.7ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.6ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (8.5ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (5.3ms)
+  Rendered api/newsfeeds/show.json.jbuilder (43.9ms)
+Completed 200 OK in 59ms (Views: 52.7ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/api/posts" for ::1 at 2015-08-12 13:51:57 -0700
+Processing by Api::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"fsdfsdf", "body"=>""}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (31.7ms)[0m  [1mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "fsdfsdf"], ["body", ""], ["user_id", 1], ["created_at", "2015-08-12 20:51:57.223714"], ["updated_at", "2015-08-12 20:51:57.223714"]]
+PG::NotNullViolation: ERROR:  null value in column "blog_id" violates not-null constraint
+DETAIL:  Failing row contains (6, 1, null, 2015-08-12 20:51:57.223714, 2015-08-12 20:51:57.223714, fsdfsdf, ).
+: INSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 32.6ms)
+
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "blog_id" violates not-null constraint
+DETAIL:  Failing row contains (6, 1, null, 2015-08-12 20:51:57.223714, 2015-08-12 20:51:57.223714, fsdfsdf, ).
+: INSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"):
+  app/controllers/api/posts_controller.rb:17:in `create'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (20.5ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fd95adb45a8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fd95adb42d8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fd95a41bf00 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+  [1m[36mBlog Load (0.4ms)[0m  [1mSELECT "blogs"."id" FROM "blogs" WHERE "blogs"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35mBlog Load (0.5ms)[0m  SELECT "blogs"."id" FROM "blogs" WHERE "blogs"."user_id" = $1  [["user_id", 1]]
+
+
+Started GET "/" for ::1 at 2015-08-12 13:56:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 368ms (Views: 363.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:56:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/views/newsfeed.self-c76c837a03ef39e1305106c6d9a5cc363f96f80012325552dbe937a72269e3d3.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/views/post_new.self-2d3506d16a0580cb6e95fd1a99e9aa1a2693b287cf1f96c1073ccb5d30a10e4c.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/routers/router.self-aa269166bb6dfab4f2e7bb2c157014616750805e1c442d05f5cad2f33aacd05b.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:56:14 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:56:14 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mFollow Load (0.5ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (41.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.3ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (5.2ms)
+  Rendered api/newsfeeds/show.json.jbuilder (91.2ms)
+Completed 200 OK in 162ms (Views: 123.6ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/api/posts" for ::1 at 2015-08-12 13:56:18 -0700
+Processing by Api::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"asdasd", "body"=>"sdsaasdafdf"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mBlog Load (1.0ms)[0m  SELECT "blogs"."id" FROM "blogs" WHERE "blogs"."user_id" = $1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (56.7ms)[0m  [1mINSERT INTO "posts" ("title", "body", "user_id", "blog_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "asdasd"], ["body", "sdsaasdafdf"], ["user_id", 1], ["blog_id", 1], ["created_at", "2015-08-12 20:56:18.955153"], ["updated_at", "2015-08-12 20:56:18.955153"]]
+  [1m[35m (1.5ms)[0m  COMMIT
+Completed 200 OK in 102ms (Views: 0.6ms | ActiveRecord: 63.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 13:56:43 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 528ms (Views: 526.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/views/newsfeed.self-8fe351821e8716106ff882664f5b015401de8ac386bacdd7ade169f35cd1a242.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/views/post_new.self-2d3506d16a0580cb6e95fd1a99e9aa1a2693b287cf1f96c1073ccb5d30a10e4c.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/routers/router.self-aa269166bb6dfab4f2e7bb2c157014616750805e1c442d05f5cad2f33aacd05b.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:56:44 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:56:44 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.3ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (5.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.2ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (3.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.4ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (7.5ms)
+  Rendered api/newsfeeds/show.json.jbuilder (49.9ms)
+Completed 200 OK in 72ms (Views: 65.1ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/api/posts" for ::1 at 2015-08-12 13:57:01 -0700
+Processing by Api::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Title4", "body"=>"Body4"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mBlog Load (0.6ms)[0m  SELECT "blogs"."id" FROM "blogs" WHERE "blogs"."user_id" = $1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "body", "user_id", "blog_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Title4"], ["body", "Body4"], ["user_id", 1], ["blog_id", 1], ["created_at", "2015-08-12 20:57:01.132788"], ["updated_at", "2015-08-12 20:57:01.132788"]]
+  [1m[35m (25.7ms)[0m  COMMIT
+Completed 200 OK in 34ms (Views: 0.8ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 13:57:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+Completed 200 OK in 507ms (Views: 505.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/api/blogs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/api/follows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/views/newsfeed.self-485f218275d963abd704c7a09595db8836e800d2b05c1155c705b73cc019195e.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/api/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/api/posts.self-8cd6e6b36edd4d56e91d0c01e06fff06ac70d4b95ce5020fedcc3198d662e330.css?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/css/font-awesome.min.self-6bb04114c00dc0f2115b700bce976c1d368c4c641247d3f2bd520b3067efef45.css?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/css/main.self-f36d37e49196d25f3a2a47957ba8ee3d9ed74db6efadd4b71957b01a0680e82d.css?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/api/newsfeeds.self-96268fd3a938af01a9d2335fce53fc18bf4a8336aabbb033516366249fe069ba.css?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/application.self-18ca9eaf3a4c35ddfd6966af6d19654ec140ff4c2259b7f9391a380e9cfc89f2.css?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/serialize_json.self-f1f8d607ceafcdff4d28094a1a0e603c7a82edcb5fd81960120017b1c6e6bf4e.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/bootstrap.self-87996c7aaed34213f00c54789f834fa341d0ef1049159a9ab965efae75901d71.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/tumblr.self-7f81a8edc3d08503059bb1c4c7339f7f35ef9a68e57f89bc5b0145e9c6af01c8.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/util/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/blogShow.self-8f92cae52403eaeafa8e7a68bd96d0f8f9338ad719520be2292a08187b2ef020.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/newsFeed.self-421d4f3ab15c3dbbac793037eb26590fd8dc53b41fa28237f351378901b86e97.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/postIndex.self-10d9a18d2c2a65929c3eb628582e9fa5fe4722af965f27cac83a3111713f515e.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/postNew.self-5c833ed8723d043a2aa915ea421107bed79d172483be8ad2ffed69ff02aa4390.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/postShow.self-0b092247c6c5898e1002dd7912a513743b407eb776d9fc23fceaddef89168bb2.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/models/blog.self-6271c22e6af8b2c8caac522607432e817db53bf9aa8ba856e470b6c4d931350a.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/models/likes.self-aeb7bbecba5c9a1b198144b38d9b5065444abed0600409f26ada7463f2a1bc72.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/collections/newsfeeds.self-a0724b4fcaf21caedd1dca908f58f1af7df4b22d6f2c63f59aee39f9a20dd03b.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/models/post.self-c76273a29db1025420de7151005b1b2f54322d9db63eb11234152d0221864655.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/collections/blogs.self-4fc8386ba63db9cdf24ccf58019c37241f34ed63caa1da585a1ebc49896cc69c.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/models/follow.self-dd1715e9ac2028e18859ac40f9290bac90380f1eff9817d7a30d8b69d2367741.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/collections/posts.self-86a14c15a08c52a4ed7769f053172481023038b67dc62a3e0b18ccbd383d1cca.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/views/blog_show.self-33a0b3340b15bead0d68eccb31648ac756460405455e647d750bc08ef3d2f1bf.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/views/post_index.self-0b5f425342164f9a4967ad50938153ee1b9e2dee4a9655ba2534ad743064acf3.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/views/post_new.self-2d3506d16a0580cb6e95fd1a99e9aa1a2693b287cf1f96c1073ccb5d30a10e4c.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/views/post_show.self-910bdc40cb9dfee87907ed676638d45b2021feefb90e2200e83dee6a3c7ed602.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/routers/router.self-aa269166bb6dfab4f2e7bb2c157014616750805e1c442d05f5cad2f33aacd05b.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/assets/application.self-55d2f88127dcaaa99d5c6a5261f9015880991431c520781213525a199c900f0d.js?body=1" for ::1 at 2015-08-12 13:57:30 -0700
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:57:30 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mFollow Load (0.2ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.2ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (4.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.4ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (4.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.6ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (7.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (22.2ms)
+  Rendered api/newsfeeds/show.json.jbuilder (69.1ms)
+Completed 200 OK in 88ms (Views: 81.1ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/api/posts" for ::1 at 2015-08-12 13:57:45 -0700
+Processing by Api::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"title5", "body"=>"title5"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mBlog Load (0.4ms)[0m  SELECT "blogs"."id" FROM "blogs" WHERE "blogs"."user_id" = $1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "body", "user_id", "blog_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "title5"], ["body", "title5"], ["user_id", 1], ["blog_id", 1], ["created_at", "2015-08-12 20:57:45.069174"], ["updated_at", "2015-08-12 20:57:45.069174"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/newsfeed" for ::1 at 2015-08-12 13:57:45 -0700
+Processing by Api::NewsfeedsController#show as JSON
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mFollow Load (0.4ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (5.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (4.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.3ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (5.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2  [["follower_id", 1], ["followee_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[35mLike Load (0.2ms)[0m  SELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2  [["user_id", 1], ["post_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (3.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "follows"."id" FROM "follows" WHERE "follows"."follower_id" = $1 AND "follows"."followee_id" = $2[0m  [["follower_id", 1], ["followee_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "YzWClU4ieSxs_5dK3a4jtg"]]
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT "likes"."id" FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."post_id" = $2[0m  [["user_id", 1], ["post_id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/posts/_post.json.jbuilder (2.5ms)
+  Rendered api/newsfeeds/show.json.jbuilder (24.6ms)
+Completed 200 OK in 31ms (Views: 24.0ms | ActiveRecord: 3.1ms)

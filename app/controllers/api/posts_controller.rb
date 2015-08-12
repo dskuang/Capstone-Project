@@ -10,8 +10,10 @@ class Api::PostsController < ApplicationController
   end
 
   def create
+    blog_id = User.find_blog_by_user(current_user.id)[0].id
     @post = Post.new(post_params)
     @post.user_id = current_user.id
+    @post.blog_id = blog_id
     if @post.save
       render :json => @post
     else
@@ -36,6 +38,6 @@ class Api::PostsController < ApplicationController
  end
 
  def post_params
-   params.require(:post).permit(:title, :blog_id, :body)
+   params.require(:post).permit(:title, :body)
  end
 end

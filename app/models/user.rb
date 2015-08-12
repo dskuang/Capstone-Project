@@ -34,4 +34,8 @@ class User < ActiveRecord::Base
     self.password_digest = BCrypt::Password.create(password)
   end
 
+  def self.find_blog_by_user(id)
+    Blog.select(:id).where(user_id: id)
+  end
+
 end
