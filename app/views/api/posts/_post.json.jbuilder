@@ -12,6 +12,12 @@ json.extract!(
   :linkbody
 )
 
+json.tags do
+  json.array! post.tags do |tag|
+    json.partial!("api/tags/tag", tag: tag)
+  end
+end
+
 follow_id = Follow.find_follow_by_user(current_user.id, post.user_id)[0]
 follow_id = follow_id ? follow_id.id : nil
 

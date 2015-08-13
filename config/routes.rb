@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     resource :newsfeed
     resources :likes
     resources :follows, only:[:create, :new, :destroy, :show]
+    resources :tags
+    resources :taggings
   end
 end

@@ -1,4 +1,4 @@
-<div class = "no-shade">
+
 <input class="form-control"
           type = "hidden"
           name='post[attr]'
@@ -12,13 +12,19 @@
            id='title'
            value=''
            placeholder="Title"><br>
-  <label for='body'>Body</label><br>
+  <label for='body'></label><br>
     <textarea class="body-input form-control"
           type='text'
           name='post[body]'
           id='title'
           value=''
           placeholder="Body"></textarea><br>
+    <input class="form-control tag-input"
+          type='text'
+          name='post[tag]'
+          id='tag'
+          placeholder="Tags"
+          value=''><br>
   <button class="submit-post">Submit</button>
   <button class="cancel-post">Cancel</button>
 
@@ -38,6 +44,12 @@
           name='post[quotesource]'
           id='quotesource'
           placeholder="-source"
+          value=''><br>
+    <input class="form-control tag-input"
+          type='text'
+          name='post[tag]'
+          id='tag'
+          placeholder="Tags"
           value=''><br>
   <button class="submit-post">Submit</button>
   <button class="cancel-post">Cancel</button>
@@ -59,7 +71,12 @@
           id='linkbody'
           value=''
           placeholder="Description"></textarea><br>
+    <input class="form-control tag-input"
+          type='text'
+          name='post[tag]'
+          id='tag'
+          placeholder="Tags"
+          value=''><br>
   <button class="submit-post">Submit</button>
   <button class="cancel-post">Cancel</button>
 <% } %>
-</div>

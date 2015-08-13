@@ -53,17 +53,44 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   },
 
   createPost: function(e) {
-    // debugger
     e.preventDefault();
     var formData= $('.new-post').serializeJSON();
-
+    var regex = /(#[A-Za-z][A-Z]+)/ig
+    var tags = this.findHashtags(formData.post.tag)
+    debugger
     var postModel = new Tumblr.Models.Post(formData);
-
     postModel.save({}, { success: function() {
+      this.createTagsAndTaggings(postModel, tags);
       this.postCollection.add(postModel);
       this.feedCollection.add(postModel);
       Backbone.history.navigate("#/feed/", {trigger: true})
     }.bind(this)});
+
+  },
+
+  createTagsAndTaggings: function(postModel, tags) {
+    tags.forEach(function(tag) {
+      var tagModel = new Tumblr.Models.Tag({label: tag});
+      tagModel.save({}, {
+        success: function() {
+          debugger
+          postModel.tags().add(tagModel);
+          var taggingModel = new Tumblr.Models.Tagging();
+          taggingModel.set({tag_id: tagModel.id, post_id: postModel.id});
+          taggingModel.save();
+        }
+      });
+    })
+  },
+
+  findHashtags: function(searchText) {
+    var regexp = /#([a-z0-9]+)\b(?!;)/igm
+    searchText = searchText.split(" ").join("");
+    var result = searchText.match(regexp);
+    if (result) {
+        result = result.map(function(s){ return s.trim();});
+    }
+    return result;
 
   }
 
