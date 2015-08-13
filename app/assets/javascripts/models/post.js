@@ -31,7 +31,7 @@ Tumblr.Models.Post = Backbone.Model.extend({
 
   tags: function() {
     if(!this._tags) {
-      this._tags = new Tumblr.Collections.Tags();
+      this._tags = new Tumblr.Collections.Tags([], {post: this});
     }
     return this._tags;
   },

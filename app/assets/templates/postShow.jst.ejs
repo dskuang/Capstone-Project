@@ -36,5 +36,9 @@
 
     <button class="like-button"><%= likeState %></button>
   </div>
-
+  <div class="tag-container">
+    <% post.tags().forEach(function(tag) { %>
+      <%= tag.escape("label") %>
+    <% }) %>
+  </div>
 </div>

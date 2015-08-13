@@ -73,7 +73,6 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
       var tagModel = new Tumblr.Models.Tag({label: tag});
       tagModel.save({}, {
         success: function() {
-          debugger
           postModel.tags().add(tagModel);
           var taggingModel = new Tumblr.Models.Tagging();
           taggingModel.set({tag_id: tagModel.id, post_id: postModel.id});
@@ -93,8 +92,6 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     return result;
 
   }
-
-
 
 
 });
