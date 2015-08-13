@@ -5,13 +5,33 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     this.listenTo(this.feedCollection, "sync add", this.render);
     this.listenTo(this.feedCollection, 'add', this.addPostView);
     this.feedCollection.each(this.addPostView.bind(this));
-    this.addNewPostView();
+
   },
 
   template: JST["newsFeed"],
 
   events: {
-    "click .submit-post": "createPost"
+    "click .submit-post": "createPost",
+    "click .text-post": "renderNewForm",
+    "click .quote-post": "renderNewForm",
+    "click .link-post": "renderNewForm",
+    "click .cancel-post": "removeNewPostView"
+  },
+
+  renderNewForm: function(e) {
+    this.removeNewPostView();
+    // this.$el.find(":not(.new-post)").addClass("shade");
+    // this.$el.find(".div-hider").removeClass("hide");
+    var attr = $(e.currentTarget).text()
+    // debugger
+    this.addNewPostView({attr: attr});
+    // this.render();
+  },
+
+  removeNewPostView: function() {
+    if (this.postModel) {
+      this.removeModelSubview(".new-form", this.postModel);
+    }
   },
 
   render: function() {
@@ -26,9 +46,9 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     this.addSubview(".newsfeed-posts", subPostView)
   },
 
-  addNewPostView: function() {
-    var postModel = new Tumblr.Models.Post();
-    var subPostView = new Tumblr.Views.postNew({model: postModel})
+  addNewPostView: function(attr) {
+    this.postModel = new Tumblr.Models.Post(attr);
+    var subPostView = new Tumblr.Views.postNew({model: this.postModel})
     this.addSubview(".new-form", subPostView)
   },
 
@@ -36,7 +56,9 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     // debugger
     e.preventDefault();
     var formData= $('.new-post').serializeJSON();
+
     var postModel = new Tumblr.Models.Post(formData);
+
     postModel.save({}, { success: function() {
       this.postCollection.add(postModel);
       this.feedCollection.add(postModel);

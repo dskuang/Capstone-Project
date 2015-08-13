@@ -13,5 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ // @import "api/newsfeed"
+
+ body {
+   background-color: #36465D;
+ }
+
+ .header-input{
+   margin:0 auto;
+   width:500px;
+ }
+
+ .body-input{
+   margin:0 auto;
+   width:500px;
+ }

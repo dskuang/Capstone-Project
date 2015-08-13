@@ -1,14 +1,65 @@
-<h1>New Post</h1>
+<div class = "no-shade">
+<input class="form-control"
+          type = "hidden"
+          name='post[attr]'
+          value= "<%= post.escape("attr") %>" >
+<%if (post.get("attr") === "Text") {%>
+  <h1>New Text Post</h1>
+  <label for='title'></label><br>
+    <input class="header-input form-control"
+           type='text'
+           name='post[title]'
+           id='title'
+           value=''
+           placeholder="Title"><br>
+  <label for='body'>Body</label><br>
+    <textarea class="body-input form-control"
+          type='text'
+          name='post[body]'
+          id='title'
+          value=''
+          placeholder="Body"></textarea><br>
+  <button class="submit-post">Submit</button>
+  <button class="cancel-post">Cancel</button>
 
-<label for='title'>Title</label><br>
-  <input type='text'
-         name='post[title]'
-         id='title'
-         value=''><br>
-<label for='body'>Body</label><br>
-  <input type='text'
-        name='post[body]'
-        id='title'
-        value=''><br>
 
-<button class="submit-post">Submit</button>
+<% } else if (post.get("attr") === "Quote") { %>
+  <h1>New Quote Post</h1>
+  <label for='quotetitle'></label><br>
+    <input class="form-control header-input"
+           type='text'
+           name='post[quotetitle]'
+           id='quotetitle'
+           placeholder="Quote"
+           value=''><br>
+  <label for='quotesource'></label><br>
+    <input class="form-control body-input"
+          type='text'
+          name='post[quotesource]'
+          id='quotesource'
+          placeholder="-source"
+          value=''><br>
+  <button class="submit-post">Submit</button>
+  <button class="cancel-post">Cancel</button>
+
+
+<% } else if (post.get("attr") === "Link") { %>
+  <h1>New Link</h1>
+  <label for='linkurl'></label><br>
+    <input class="form-control header-input"
+           type='text'
+           name='post[linkurl]'
+           id='linkurl'
+           value=''
+           placeholder="Url"><br>
+  <label for='linkbody'></label><br>
+    <textarea class="form-control body-input"
+          type='text'
+          name='post[linkbody]'
+          id='linkbody'
+          value=''
+          placeholder="Description"></textarea><br>
+  <button class="submit-post">Submit</button>
+  <button class="cancel-post">Cancel</button>
+<% } %>
+</div>

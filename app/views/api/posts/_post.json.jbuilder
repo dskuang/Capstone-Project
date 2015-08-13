@@ -4,7 +4,12 @@ json.extract!(
   :blog_id,
   :id,
   :body,
-  :user_id
+  :user_id,
+  :attr,
+  :quotesource,
+  :quotetitle,
+  :linkurl,
+  :linkbody
 )
 
 follow_id = Follow.find_follow_by_user(current_user.id, post.user_id)[0]

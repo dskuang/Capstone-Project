@@ -2,22 +2,53 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .post-header {
-  border: 1px solid black;
-  width: 100px;
-  height: 100px;
+  // border: 1px solid black;
+  width: 100%;
+  // height: 100%;
+  min-height: 55px;
   margin:0 auto;
   margin-top: 20px;
+  padding: 20px 20px
 }
 
 .post-body{
-  border: 1px solid blue;
-  width: 100px;
-  height: 100px;
+  // border: 1px solid blue;
+  min-height: 20px;
+
+  width: 100%;
+  padding: 20px 20px;
+  // height: 100%;
   margin: 0 auto;
 }
 
 .post-item-border {
-  border: 1px solid green;
+  height: 325px;
+}
 
-  height: 400px;
+
+.new-form{
+  position: absolute;
+  text-align:center;
+  width:600px;
+  height: 300px;
+  margin:0 auto;
+  position: absolute;
+}
+
+.post-item{
+  border-radius: 5px;
+  background: #FFF;
+}
+
+.post-item:last-child{
+  margin-bottom: 95px;
+
+}
+
+.new-post {
+  text-align:center;
+  // width:300px;
+  z-index:1001;
+  height:285px;
+  border: 1px solid black
 }
