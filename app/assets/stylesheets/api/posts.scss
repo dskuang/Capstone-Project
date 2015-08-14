@@ -2,9 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .post-header {
-  // border: 1px solid black;
+
   width: 100%;
-  // height: 100%;
+
   min-height: 55px;
   margin:0 auto;
   margin-top: 20px;
@@ -12,23 +12,16 @@
 }
 
 .post-body{
-  // border: 1px solid blue;
+
   min-height: 20px;
   padding-left: 50px;
   padding-right: 50px;
   width: 100%;
-  // padding: 20px 20px;
+
   word-break: break-all;
   // height: 100%;
   margin: 0 auto;
 }
-//
-// .post-item-border {
-//   position: relative;
-//   min-height: 325px;
-//   overflow: hidden;
-// }
-
 
 .new-form{
   position: absolute;
@@ -37,7 +30,7 @@
   height: 300px;
   margin:0 auto;
   position: absolute;
-  z-index: 1000;
+
 }
 
 /*post-item for feed*/
@@ -60,21 +53,25 @@
 }
 
 .new-post {
-  position: fixed;
-  background-color: #36465D;
+  background-color: #364672;
+  position: relative;
   text-align:center;
-  // width:300px;
-  z-index:1001;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 200px;
   height:338px;
   border-radius: 5px;
 }
 
-.post-index{
-  // margin:0 auto;
-  width: 520px;
-  // max-width: 1200px;
+.posts-index{
+  // width: 520px;
+  position: relative;
 }
 
+.index{
+  width: 1600px;
+  margin: 0 auto;
+}
 /*post item css for index page*/
 .posts-index > div {
   border-radius: 5px;
@@ -84,20 +81,14 @@
   // min-height: 325px;
   overflow: hidden;
   margin-bottom:20px;
-  margin-left: 150px;
-  margin-top: 150px;
-
 }
-// .posts-index > div {
-//   // float:left;
-//   position: absolute;
-//   margin-right:30px;
-//   width: 300px;
-//   margin-bottom: 20px;
-// }
+
 
 .inner-post-frame {
   margin: 0 auto;
-  padding-left: 200px;
-  padding-right: 200px;
+}
+
+.image-input {
+  width:500px;
+  margin: 0 auto;
 }

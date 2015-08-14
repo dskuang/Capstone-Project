@@ -20,8 +20,12 @@
         <%= post.escape("quotetitle") %>
       <% } else if(post.get("attr") === "Link") { %>
         <%= post.escape("linkurl") %>
-      <% } %>
     </p>
+    <div>
+      <% } else if(post.get("attr") === "Image") { %>
+        <img src="<%= post.get("imageUrl") %>">
+      <% } %>
+    </div>
     <button class="follow-button"><%= followState %></button>
   </div>
   <div class="post-body">

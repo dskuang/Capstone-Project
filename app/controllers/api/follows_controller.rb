@@ -1,4 +1,5 @@
 class Api::FollowsController < ApplicationController
+  before_action :require_login
   def create
     @follow = Follow.new(follow_params)
     @follow.follower_id = current_user.id
@@ -24,4 +25,11 @@ class Api::FollowsController < ApplicationController
   def follow_params
     params.require(:follow).permit(:followee_id)
   end
+  private
+
+   def require_login
+     unless logged_in?
+        render json: ["Unauthorized"], status: 400
+     end
+   end
 end

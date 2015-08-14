@@ -10,7 +10,18 @@ json.extract!(
   :quotetitle,
   :linkurl,
   :linkbody
+
 )
+
+
+# json.user do
+#   json.post.user do |user|
+#     json.extract!(
+#     user,
+#     :username)
+#   end
+# end
+
 
 json.tags do
   json.array! post.tags do |tag|
@@ -29,11 +40,6 @@ if current_user
 
   json.like_relation_id like_id
 end
-
-json.extract!(
-    post.user,
-    :username
-)
 
 # if (current_user.followees.include?(post.user))
 #   json.followState "followed"

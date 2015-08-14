@@ -5,8 +5,9 @@ json.extract!(
   :user_id
 )
 
-json.posts do
-  json.array! posts do |post|
-      json.partial!("api/posts/post", post: post)
+
+  json.posts do
+    json.array! posts do |post|
+        json.partial!("api/posts/post", post: post)
+    end
   end
-end

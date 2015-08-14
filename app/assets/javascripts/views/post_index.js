@@ -7,15 +7,17 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
     this.colCount = 0;
     this.margin = 20;
     this.colWidth = 0;
-    this.windowWidth = $(window).width();
+    // $(window).resize(setupBlocks)
     // this.listenTo(this.model.follow(), "sync remove", this.render);
 
     this.collection.each(this.addPostView.bind(this));
+    $(window).on("resize", this.render.bind(this))
   },
   className: "index",
   template: JST["postIndex"],
 
   setupBlocks: function() {
+    this.windowWidth = $(window).width();
     this.colWidth = $('.post-item').outerWidth();
     this.colCount = Math.floor(this.windowWidth/(this.colWidth+this.margin));
     this.blocks = [];

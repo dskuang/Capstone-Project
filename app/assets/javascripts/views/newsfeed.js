@@ -23,18 +23,19 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   },
 
   renderNewForm: function(e) {
-    this.removeNewPostView();
-    // this.$el.find(":not(.new-post)").addClass("shade");
-    // this.$el.find(".div-hider").removeClass("hide");
+    e.preventDefault();
+    if(this.subNewView) {
+      this.removeNewPostView();
+    }
     var attr = $(e.currentTarget).data("attr");
-    // debugger
     this.addNewPostView({attr: attr});
-    // this.render();
   },
 
-  removeNewPostView: function() {
+  removeNewPostView: function(e) {
+    e.preventDefault();
     if (this.postModel) {
       this.removeModelSubview(".new-form-view", this.postModel);
+      this.subNewView = null;
     }
   },
 
@@ -46,14 +47,14 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   },
 
   addPostView: function(post) {
-    var subPostView = new Tumblr.Views.postShow({model: post})
-    this.addSubview(".newsfeed-posts", subPostView)
+    var subPostView = new Tumblr.Views.postShow({model: post});
+    this.addSubview(".newsfeed-posts", subPostView);
   },
 
   addNewPostView: function(attr) {
     this.postModel = new Tumblr.Models.Post(attr);
-    var subPostView = new Tumblr.Views.postNew({model: this.postModel})
-    this.addSubview(".new-form-view", subPostView)
+    this.subNewView = new Tumblr.Views.postNew({model: this.postModel});
+    this.addSubview(".new-form-view", this.subNewView);
   },
 
   createPost: function(e) {

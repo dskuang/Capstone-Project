@@ -10,12 +10,20 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      @blog = Blog.new
+      # debugger
+      @blog.user_id = @user.id
+      @blog.save
       login(@user)
-      redirect_to user_url(@user)
+      redirect_to ("/#feed/")
     else
       flash[:errors] = @user.errors.full_messages
-      redirect_to user_url(@user)
+      redirect_to new_user_url
     end
+  end
+
+  def blog_params
+    # params.require(:blog).permit(:title)
   end
 
 end

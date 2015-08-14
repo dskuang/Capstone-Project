@@ -1,4 +1,5 @@
 class Api::TagsController < ApplicationController
+  before_action :require_login
   def show
     @tag = Tag.find(params[:id])
     render "show"
@@ -22,4 +23,13 @@ class Api::TagsController < ApplicationController
   def tag_params
     params.require(:tag).permit(:label)
   end
+
+  private
+
+   def require_login
+     unless logged_in?
+       render json: ["Unauthorized"], status: 400
+      #  redirect_to new_session_url
+     end
+   end
 end

@@ -1,113 +1,114 @@
+<div class="shade">
+
+    <form class="new-post">
+    <input class="form-control"
+              type = "hidden"
+              name='post[attr]'
+              value= "<%= post.escape("attr") %>" >
+    <%if (post.get("attr") === "Text") {%>
+      <h1>New Text Post</h1>
+      <label for='title'></label><br>
+        <input class="header-input form-control"
+               type='text'
+               name='post[title]'
+               id='title'
+               value=''
+               placeholder="Title"><br>
+      <label for='body'></label><br>
+        <textarea class="body-input form-control"
+              type='text'
+              name='post[body]'
+              id='title'
+              value=''
+              placeholder="Body"></textarea><br>
+        <input class="form-control tag-input"
+              type='text'
+              name='post[tag]'
+              id='tag'
+              placeholder="Tags"
+              value=''><br>
+      <button class="submit-post">Submit</button>
+      <button class="cancel-post">Cancel</button>
+
+
+    <% } else if (post.get("attr") === "Quote") { %>
+      <h1>New Quote Post</h1>
+      <label for='quotetitle'></label><br>
+        <input class="form-control header-input"
+               type='text'
+               name='post[quotetitle]'
+               id='quotetitle'
+               placeholder="Quote"
+               value=''><br>
+      <label for='quotesource'></label><br>
+        <input class="form-control body-input"
+              type='text'
+              name='post[quotesource]'
+              id='quotesource'
+              placeholder="-source"
+              value=''><br>
+        <input class="form-control tag-input"
+              type='text'
+              name='post[tag]'
+              id='tag'
+              placeholder="Tags"
+              value=''><br>
+      <button class="submit-post">Submit</button>
+      <button class="cancel-post">Cancel</button>
+
+    <% } else if (post.get("attr") === "Link") { %>
+      <h1>New Link</h1>
+      <label for='linkurl'></label><br>
+        <input class="form-control header-input"
+               type='text'
+               name='post[linkurl]'
+               id='linkurl'
+               value=''
+               placeholder="Url"><br>
+      <label for='linkbody'></label><br>
+        <textarea class="form-control body-input"
+              type='text'
+              name='post[linkbody]'
+              id='linkbody'
+              value=''
+              placeholder="Description"></textarea><br>
+        <input class="form-control tag-input"
+              type='text'
+              name='post[tag]'
+              id='tag'
+              placeholder="Tags"
+              value=''><br>
+      <button class="submit-post">Submit</button>
+      <button class="cancel-post">Cancel</button>
+    <% } else if (post.get("attr") === "Image") { %>
+
+        <h1>New Image</h1>
+        <button class="filepicker-button btn btn-primary"></button>
+        <input class= "image-input form-control"
+                name='post[imageUrl]'
+                type='text'
+                id = 'imageurl' value=''
+                placeholder="Image Url">
+                 <br>
+        <label for='imagebody'></label><br>
+          <textarea class="form-control body-input"
+                type='text'
+                name='post[imagebody]'
+                id='imagebody'
+                value=''
+                placeholder="Description"></textarea><br>
+          <input class="form-control tag-input"
+                type='text'
+                name='post[tag]'
+                id='tag'
+                placeholder="Tags"
+                value=''><br>
+        <button class="submit-post">Submit</button>
+        <button class="cancel-post">Cancel</button>
+      <% } %>
+
+    </form>
 
 
 
-<form class="new-post">
-<input class="form-control"
-          type = "hidden"
-          name='post[attr]'
-          value= "<%= post.escape("attr") %>" >
-<%if (post.get("attr") === "Text") {%>
-  <h1>New Text Post</h1>
-  <label for='title'></label><br>
-    <input class="header-input form-control"
-           type='text'
-           name='post[title]'
-           id='title'
-           value=''
-           placeholder="Title"><br>
-  <label for='body'></label><br>
-    <textarea class="body-input form-control"
-          type='text'
-          name='post[body]'
-          id='title'
-          value=''
-          placeholder="Body"></textarea><br>
-    <input class="form-control tag-input"
-          type='text'
-          name='post[tag]'
-          id='tag'
-          placeholder="Tags"
-          value=''><br>
-  <button class="submit-post">Submit</button>
-  <button class="cancel-post">Cancel</button>
-
-
-<% } else if (post.get("attr") === "Quote") { %>
-  <h1>New Quote Post</h1>
-  <label for='quotetitle'></label><br>
-    <input class="form-control header-input"
-           type='text'
-           name='post[quotetitle]'
-           id='quotetitle'
-           placeholder="Quote"
-           value=''><br>
-  <label for='quotesource'></label><br>
-    <input class="form-control body-input"
-          type='text'
-          name='post[quotesource]'
-          id='quotesource'
-          placeholder="-source"
-          value=''><br>
-    <input class="form-control tag-input"
-          type='text'
-          name='post[tag]'
-          id='tag'
-          placeholder="Tags"
-          value=''><br>
-  <button class="submit-post">Submit</button>
-  <button class="cancel-post">Cancel</button>
-
-<% } else if (post.get("attr") === "Link") { %>
-  <h1>New Link</h1>
-  <label for='linkurl'></label><br>
-    <input class="form-control header-input"
-           type='text'
-           name='post[linkurl]'
-           id='linkurl'
-           value=''
-           placeholder="Url"><br>
-  <label for='linkbody'></label><br>
-    <textarea class="form-control body-input"
-          type='text'
-          name='post[linkbody]'
-          id='linkbody'
-          value=''
-          placeholder="Description"></textarea><br>
-    <input class="form-control tag-input"
-          type='text'
-          name='post[tag]'
-          id='tag'
-          placeholder="Tags"
-          value=''><br>
-  <button class="submit-post">Submit</button>
-  <button class="cancel-post">Cancel</button>
-<% } else if (post.get("attr") === "Image") { %>
-
-    <h1>New Image</h1>
-    <input class= "form-control header-input image-input"
-            name='post[imageUrl]'
-            type="filepicker" data-fp-apikey="AUFVQVaVETU6OvUyumfqUz"
-            onchange="alert(event.fpfile.url)"
-            id = 'imageurl' value = '' >
-             <br>
-    <label for='imagebody'></label><br>
-      <textarea class="form-control body-input"
-            type='text'
-            name='post[imagebody]'
-            id='imagebody'
-            value=''
-            placeholder="Description"></textarea><br>
-      <input class="form-control tag-input"
-            type='text'
-            name='post[tag]'
-            id='tag'
-            placeholder="Tags"
-            value=''><br>
-    <button class="submit-post">Submit</button>
-    <button class="cancel-post">Cancel</button>
-  <% } %>
-
-</form>
 </div>
-
-<div class="shade"></div>

@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       redirect_to ("/#feed/")
     else
       flash[:errors] = ["Invalid Login"]
-      render :new
+      redirect_to new_session_url
     end
   end
 

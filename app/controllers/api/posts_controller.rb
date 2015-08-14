@@ -1,4 +1,5 @@
 class Api::PostsController < ApplicationController
+  before_action :require_login
   def index
     @posts = Post.all
     render "index"
@@ -38,6 +39,14 @@ class Api::PostsController < ApplicationController
  end
 
  def post_params
-   params.require(:post).permit(:title, :body, :attr, :quotetitle, :quotesource, :linkurl, :linkbody)
+   params.require(:post).permit(:title, :body, :attr, :quotetitle, :quotesource,
+   :linkurl, :linkbody, :imageUrl, :imagebody, :songUrl, :songbody)
  end
+ private
+
+  def require_login
+    unless logged_in?
+      render json: ["Unauthorized"], status: 400
+    end
+  end
 end

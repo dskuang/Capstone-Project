@@ -1,7 +1,12 @@
 class Api::BlogsController < ApplicationController
+  before_action :require_login
   def index
-    @blogs = Blog.all
-    render :json => @blogs
+    if params[:query].present?
+      @blogs = Blog.where("title ~ ?", params[:query])
+    else
+      @blogs = Blog.all
+    end
+    render "index"
   end
 
   def show
@@ -11,7 +16,7 @@ class Api::BlogsController < ApplicationController
   end
 
   def create
-    @blog = Blog.new(board_params)
+    @blog = Blog.new(blog_params)
     @blod.user_id = current_user.id
     if @blog.save
       render :json => @blog
@@ -19,18 +24,6 @@ class Api::BlogsController < ApplicationController
       render :json => @blog.errors.full_messages, :status => 422
     end
   end
-
-  def search
-    if params[:query].present?
-      @blogs = Blog.where("title ~ ?", params[:query])
-    else
-      @blogs = Blog.none
-    end
-
-    render "search"
-
-  end
-
 
   def update
    @blog = Blog.find(params[:id])
@@ -50,6 +43,15 @@ class Api::BlogsController < ApplicationController
  def blog_params
    params.require(:blog).permit(:title)
  end
+
+
+ private
+
+  def require_login
+    unless logged_in?
+      render json: ["Unauthorized"], status: 400
+    end
+  end
 
 
 end

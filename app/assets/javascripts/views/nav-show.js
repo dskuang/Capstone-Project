@@ -17,12 +17,14 @@ Tumblr.Views.NavShow = Backbone.View.extend({
     this.$el.find("." + routeName).addClass("active");
   },
 
-  renderFeed: function() {
+  renderFeed: function(e) {
+    e.preventDefault();
     Backbone.history.navigate("#/feed/", {trigger: true})
     this.render();
   },
 
-  renderIndex: function() {
+  renderIndex: function(e) {
+    e.preventDefault();
     Backbone.history.navigate("#", {trigger: true})
     this.render();
   },
@@ -31,17 +33,18 @@ Tumblr.Views.NavShow = Backbone.View.extend({
     e.preventDefault();
     var formData = $(".navbar-form").serializeJSON();
     // debugger
-    var searchModel = new Tumblr.Models.Search();
+    var searchCollection = new Tumblr.Collections.Blogs();
     // debugger;
-    searchModel.save(formData, {success: function(data) {
-      debugger;
-    }});
+    searchCollection.fetch({data: formData, processData:true,
+      success: function () {
+        console.log(searchCollection);
+
+      }
+    });
   },
 
   render: function () {
-    var content = this.template({
-
-    });
+    var content = this.template({});
     this.$el.html(content);
     return this;
   }
