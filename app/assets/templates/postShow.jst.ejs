@@ -13,27 +13,27 @@
 <div class= "post-item-border">
   <div class='post-header'>
     <%= post.escape("username") %>
-
-    <% if (post.get("attr") === "Text") {%>
-      <%= post.escape("title") %>
-    <% } else if (post.get("attr") === "Quote") { %>
-      <%= post.escape("quotetitle") %>
-    <% } else if(post.get("attr") === "Link") { %>
-      <%= post.escape("linkurl") %>
-    <% } %>
-
+    <p class="post-text-header">
+      <% if (post.get("attr") === "Text") {%>
+        <%= post.escape("title") %>
+      <% } else if (post.get("attr") === "Quote") { %>
+        <%= post.escape("quotetitle") %>
+      <% } else if(post.get("attr") === "Link") { %>
+        <%= post.escape("linkurl") %>
+      <% } %>
+    </p>
     <button class="follow-button"><%= followState %></button>
   </div>
   <div class="post-body">
-
-  <% if (post.get("attr") === "Text") {%>
-    <%= post.escape("body") %>
-  <% } else if (post.get("attr") === "Quote") { %>
-    <%= post.escape("quotesource") %>
-  <% } else if(post.get("attr") === "Link") { %>
-    <%= post.escape("linkbody") %>
-  <% } %>
-
+  <p class="post-text-body">
+    <% if (post.get("attr") === "Text") {%>
+      <%= post.escape("body") %>
+    <% } else if (post.get("attr") === "Quote") { %>
+      <%= post.escape("quotesource") %>
+    <% } else if(post.get("attr") === "Link") { %>
+      <%= post.escape("linkbody") %>
+    <% } %>
+  </p>
     <button class="like-button"><%= likeState %></button>
   </div>
   <div class="tag-container">

@@ -1,8 +1,5 @@
 
 
-
-
-
 	.session-form {
 		width: 300px;
 		margin: 0 auto;
@@ -67,12 +64,211 @@
 
  .credential-div a {
 	 text-decoration: none;
+ }
+
+ .post-text-image {
+	 height: 107px;
+	 width: 109px;
+	 display:block;
+	 background-image: url("/images/icons4.png");
+	 background-size: 690px;
+	 background-position: 163px 157px;
+	 float:left;
+ }
+
+ .post-quote-image {
+		height: 107px;
+		width: 109px;
+		display:block;
+		background-image: url("/images/icons4.png");
+		background-size: 690px;
+		background-position: 283px 279px;
+		float:left;
+
+ }
+
+ .post-link-image {
+		height: 107px;
+		width: 109px;
+		display:block;
+		background-image: url("/images/icons4.png");
+		background-size: 690px;
+		background-position: 404px 399px;
+		float:left;
+
+ }
+
+ .post-picture-image {
+	 height: 107px;
+	 width: 109px;
+	 display:block;
+	 background-image: url("/images/icons4.png");
+	 background-size: 690px;
+	 background-position: 646px 400px;
+	 float:left;
+
+ }
+
+ .post-song-image {
+	 height: 107px;
+	 width: 109px;
+	 display:block;
+	 background-image: url("/images/icons4.png");
+	 background-size: 690px;
+	 background-position: 645px 279px;
+	 float:left;
 
  }
 
 
-/*.opacity-fill {
-	height: 400px;
-	width: 400px;
-	background-color:rgba(0, 0, 0, 0.5);
-}*/
+
+
+
+
+ @-webkit-keyframes pulse {
+     0% {
+       -webkit-transform: scale(1) rotate(0deg);
+     }
+     50% {
+       -webkit-transform: scale(1.1) rotate(-5deg);
+     }
+     100% {
+       -webkit-transform: scale(1) rotate(0deg);
+     }
+ }
+ @-o-keyframes pulse {
+     0% {
+       -o-transform: scale(1) rotate(0deg);
+     }
+     50% {
+       -o-transform: scale(1.1) rotate(-5deg);
+     }
+     100% {
+       -o-transform: scale(1) rotate(0deg);
+     }
+ }
+ @-moz-keyframes pulse {
+     0% {
+       -moz-transform: scale(1) rotate(0deg);
+     }
+     50% {
+       -moz-transform: scale(1.1) rotate(-5deg);
+     }
+     100% {
+       -moz-transform: scale(1) rotate(0deg);
+     }
+ }
+ @keyframes pulse {
+     0% {
+       transform: scale(1) rotate(0deg);
+     }
+     50% {
+       transform: scale(1.1) rotate(-5deg);
+     }
+     100% {
+       transform: scale(1) rotate(0deg);
+     }
+ }
+
+ @-webkit-keyframes bump {
+   0% {
+       top: 0;
+   }
+   5% {
+       top: 3px;
+   }
+   10% {
+       top:0;
+   }
+   100% {
+       top:0;
+   }
+ }
+ @-o-keyframes bump {
+   0% {
+       top: 0;
+   }
+   5% {
+       top: 3px;
+   }
+   10% {
+       top:0;
+   }
+   100% {
+       top:0;
+   }
+ }
+ @-moz-keyframes bump {
+   0% {
+       top: 0;
+   }
+   5% {
+       top: 3px;
+   }
+   10% {
+       top:0;
+   }
+   100% {
+       top:0;
+   }
+ }
+ @keyframes bump {
+   0% {
+       top: 0;
+   }
+   5% {
+       top: 3px;
+   }
+   10% {
+       top:0;
+   }
+   100% {
+       top:0;
+   }
+ }
+
+
+
+ .ball:hover {
+     -webkit-animation: pulse 1s ease 0s infinite normal;
+     -o-animation: pulse 1s ease 0s infinite normal;
+     -moz-animation: pulse 1s ease 0s infinite normal;
+     animation: pulse 1s ease 0s infinite normal;
+ }
+
+
+ .home-icon {
+	 height: 47px;
+	 width: 43px;
+	 display:block;
+	 background-image: url("/images/icons5.png");
+	 background-size: 310px;
+	 background-position: 215px 67px;
+	 float:left;
+	 margin-right: 20px;
+
+ }
+ .explore-icon {
+	height: 47px;
+	width: 43px;
+	display:block;
+	background-image: url("/images/icons5.png");
+	background-size: 310px;
+	background-position: 63px 220px;
+	float:left;
+	margin-right: 20px;
+	
+
+ }
+
+
+.log-icon {
+		height: 47px;
+		width: 43px;
+		display:block;
+		background-image: url("/images/icons5.png");
+		background-size: 310px;
+		background-position: 215px 219px;
+		float:left;
+
+}

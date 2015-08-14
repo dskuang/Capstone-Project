@@ -2,8 +2,8 @@ Tumblr.Views.postNew = Backbone.CompositeView.extend({
   initialize: function() {
     // this.listenTo(this.model, "sync", this.render)
   },
-  tagName: "form",
-  className: "new-post",
+
+
 
   template: JST["postNew"],
 

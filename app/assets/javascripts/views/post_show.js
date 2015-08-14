@@ -2,10 +2,12 @@ Tumblr.Views.postShow = Backbone.View.extend({
   initialize: function() {
     this.listenTo(this.model.follow(), "sync", this.render);
     this.listenTo(this.model.like(), "sync remove", this.render);
-    this.listenTo(this.model, "all", this.render);
-    this.listenTo(this.model.collection, "all", this.render);
+    this.listenTo(this.model, "sync add remove", this.render);
+    this.listenTo(this.model.collection, "sync add remove", this.render);
+    this.listenTo(this.model.tags(), "sync add", this.render);
   },
-  tagName: "li",
+
+  
   className: "post-item",
   template: JST['postShow'],
 

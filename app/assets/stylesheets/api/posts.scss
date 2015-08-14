@@ -14,17 +14,20 @@
 .post-body{
   // border: 1px solid blue;
   min-height: 20px;
-
+  padding-left: 50px;
+  padding-right: 50px;
   width: 100%;
-  padding: 20px 20px;
+  // padding: 20px 20px;
+  word-break: break-all;
   // height: 100%;
   margin: 0 auto;
 }
-
-.post-item-border {
-  position: relative;
-  height: 325px;
-}
+//
+// .post-item-border {
+//   position: relative;
+//   min-height: 325px;
+//   overflow: hidden;
+// }
 
 
 .new-form{
@@ -34,11 +37,21 @@
   height: 300px;
   margin:0 auto;
   position: absolute;
+  z-index: 1000;
 }
 
+/*post-item for feed*/
 .post-item{
   border-radius: 5px;
   background: #FFF;
+  // position: absolute;
+  width: 600px;
+  margin-bottom: 30px;
+
+  // overflow: hidden;
+
+  margin: 0 auto;
+
 }
 
 .post-item:last-child{
@@ -47,9 +60,44 @@
 }
 
 .new-post {
+  position: fixed;
+  background-color: #36465D;
   text-align:center;
   // width:300px;
   z-index:1001;
-  height:285px;
-  border: 1px solid black
+  height:338px;
+  border-radius: 5px;
+}
+
+.post-index{
+  // margin:0 auto;
+  width: 520px;
+  // max-width: 1200px;
+}
+
+/*post item css for index page*/
+.posts-index > div {
+  border-radius: 5px;
+  background: #FFF;
+  position: absolute;
+  width: 300px;
+  // min-height: 325px;
+  overflow: hidden;
+  margin-bottom:20px;
+  margin-left: 150px;
+  margin-top: 150px;
+
+}
+// .posts-index > div {
+//   // float:left;
+//   position: absolute;
+//   margin-right:30px;
+//   width: 300px;
+//   margin-bottom: 20px;
+// }
+
+.inner-post-frame {
+  margin: 0 auto;
+  padding-left: 200px;
+  padding-right: 200px;
 }

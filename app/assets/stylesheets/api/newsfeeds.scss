@@ -1,18 +1,12 @@
 // Place all the styles related to the api/newsfeeds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#content {
-    // margin: auto 10px;
-    // width: auto;
-    // height: 2000px;
-    // background-color: #36465D;
-}
 
 .newsfeed-posts {
   margin:0 auto;
   padding: 0;
   list-style-type: none;
-  width: 550px;
+  width: 600px;
   height: 300px;
 }
 
@@ -24,9 +18,18 @@
 
 .post-nav {
   margin:0 auto;
-  width: 300px;
-  height: 200px;
+  width: 605px;
+  height: 106px;
+  margin-bottom: 60px;
   display: flex;
+  background: black;
+  border-radius: 23px;
+}
+.post-nav:after{
+  clear:both;
+  content:'';
+  display:block;
+
 }
 
 .text-post{
@@ -46,20 +49,15 @@
 
 }
 
-.post-nav > button{
-  height: 100px;
-}
 
 .shade{
   background-color:rgba(0,0,0,0.4);
-  // z-index: 10;
   display: block;
   position: fixed;
   width:100%;
   height: 100%;
   opacity: 0.5;
-
-  top: 22%;
+  top: 27%;
   left: 0%;
 }
 
@@ -70,7 +68,8 @@
 .hide {
   display: none;
 }
-
-.reveal {
-
+.post-nav > div {
+  margin-right: 14px;
+  margin-left: 7px;
+  margin-right:6px;
 }

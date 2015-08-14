@@ -6,6 +6,9 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     this.listenTo(this.feedCollection, 'add', this.addPostView);
     this.feedCollection.each(this.addPostView.bind(this));
 
+    // this.listenTo(this.postModel, "sync", this.render);
+    // this.listenTo(this.postModel.tags(), "sync add", this.render);
+
   },
 
   template: JST["newsFeed"],
@@ -22,7 +25,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     this.removeNewPostView();
     // this.$el.find(":not(.new-post)").addClass("shade");
     // this.$el.find(".div-hider").removeClass("hide");
-    var attr = $(e.currentTarget).text()
+    var attr = $(e.currentTarget).data("attr");
     // debugger
     this.addNewPostView({attr: attr});
     // this.render();
@@ -30,7 +33,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
 
   removeNewPostView: function() {
     if (this.postModel) {
-      this.removeModelSubview(".new-form", this.postModel);
+      this.removeModelSubview(".new-form-view", this.postModel);
     }
   },
 
@@ -49,7 +52,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   addNewPostView: function(attr) {
     this.postModel = new Tumblr.Models.Post(attr);
     var subPostView = new Tumblr.Views.postNew({model: this.postModel})
-    this.addSubview(".new-form", subPostView)
+    this.addSubview(".new-form-view", subPostView)
   },
 
   createPost: function(e) {
@@ -57,10 +60,11 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     var formData= $('.new-post').serializeJSON();
     var regex = /(#[A-Za-z][A-Z]+)/ig
     var tags = this.findHashtags(formData.post.tag)
-    debugger
-    var postModel = new Tumblr.Models.Post(formData);
+    postModel = new Tumblr.Models.Post(formData);
     postModel.save({}, { success: function() {
-      this.createTagsAndTaggings(postModel, tags);
+      if(tags) {
+        this.createTagsAndTaggings(postModel, tags);
+      }
       this.postCollection.add(postModel);
       this.feedCollection.add(postModel);
       Backbone.history.navigate("#/feed/", {trigger: true})
@@ -69,6 +73,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   },
 
   createTagsAndTaggings: function(postModel, tags) {
+    // this.listenTo(postModel.tags(), "sync add", this.render)
     tags.forEach(function(tag) {
       var tagModel = new Tumblr.Models.Tag({label: tag});
       tagModel.save({}, {
@@ -84,7 +89,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
 
   findHashtags: function(searchText) {
     var regexp = /#([a-z0-9]+)\b(?!;)/igm
-    searchText = searchText.split(" ").join("");
+    searchText = searchText.split(" ").join("").split(",").join("");
     var result = searchText.match(regexp);
     if (result) {
         result = result.map(function(s){ return s.trim();});

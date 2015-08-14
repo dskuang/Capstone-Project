@@ -1,9 +1,10 @@
 class Api::NewsfeedsController < ApplicationController
   def show
-    @posts = Post.all
-    # debugger
-    @posts = @posts.select{|post| post.user_id == current_user.id}
-
+    @posts = []
+    current_user.followees.each do |followee|
+      @posts += followee.posts
+    end
+    @posts += current_user.posts
     render "show"
   end
 

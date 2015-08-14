@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     @user = User.find_by_credentials(user_params[:username], user_params[:password])
     if @user
       login(@user)
-      redirect_to user_url(@user)
+      redirect_to ("/#feed/")
     else
       flash[:errors] = ["Invalid Login"]
       render :new

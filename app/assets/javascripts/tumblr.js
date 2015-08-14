@@ -15,4 +15,6 @@ window.Tumblr = {
 
 $(document).ready(function(){
   Tumblr.initialize();
+  // $(window).resize(setup);
+  // window.positionBlocks();
 });

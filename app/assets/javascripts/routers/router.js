@@ -10,7 +10,6 @@ Tumblr.Routers.Router = Backbone.Router.extend({
 
   routes: {
     "": "postIndex",
-    "": "postNew",
     "blogs/:id": "blogShow",
     "feed/": "feedIndex",
   },
