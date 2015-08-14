@@ -4,7 +4,12 @@ Tumblr.Views.NavShow = Backbone.View.extend({
   initialize: function (options) {
     this.router = options.router;
     this.listenTo(this.router, "route", this.handleRoute);
-    // this.listenTo(this.collection, "add remove", this.updateCount);
+  },
+
+  events: {
+    "click .home-icon": "renderFeed",
+    "click .explore-icon": "renderIndex",
+    "click .blog-search": "findBlog"
   },
 
   handleRoute: function (routeName, params) {
@@ -12,7 +17,26 @@ Tumblr.Views.NavShow = Backbone.View.extend({
     this.$el.find("." + routeName).addClass("active");
   },
 
+  renderFeed: function() {
+    Backbone.history.navigate("#/feed/", {trigger: true})
+    this.render();
+  },
 
+  renderIndex: function() {
+    Backbone.history.navigate("#", {trigger: true})
+    this.render();
+  },
+
+  findBlog: function(e) {
+    e.preventDefault();
+    var formData = $(".navbar-form").serializeJSON();
+    // debugger
+    var searchModel = new Tumblr.Models.Search();
+    // debugger;
+    searchModel.save(formData, {success: function(data) {
+      debugger;
+    }});
+  },
 
   render: function () {
     var content = this.template({

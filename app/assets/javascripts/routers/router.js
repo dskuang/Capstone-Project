@@ -12,6 +12,7 @@ Tumblr.Routers.Router = Backbone.Router.extend({
     "": "postIndex",
     "blogs/:id": "blogShow",
     "feed/": "feedIndex",
+    "/blogs/search": "blogSearch"
   },
 
   blogShow: function(id) {

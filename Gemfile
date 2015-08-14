@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt'
 gem 'serialize_json-rails'
 gem 'bootstrap-sass'
+gem 'filepicker-rails', '~> 2.0.0'
 
 
 # Use ActiveModel has_secure_password

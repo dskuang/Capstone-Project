@@ -34,21 +34,26 @@
 
 .text-post{
   margin: 0 auto;
-  z-index:1001;
+
 }
 
 .link-post{
   margin: 0 auto;
-  z-index:1001;
 
 }
 
 .quote-post{
   margin:0 auto;
-  z-index:1001;
 
 }
 
+.remove-zindex{
+  z-index: 0;
+}
+
+.add-zindex{
+  z-index: 500;
+}
 
 .shade{
   background-color:rgba(0,0,0,0.4);

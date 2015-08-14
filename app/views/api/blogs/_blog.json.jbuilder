@@ -1,5 +1,6 @@
 json.extract!(
   blog,
+  :id,
   :title,
   :user_id
 )

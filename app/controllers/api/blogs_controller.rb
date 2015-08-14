@@ -20,6 +20,17 @@ class Api::BlogsController < ApplicationController
     end
   end
 
+  def search
+    if params[:query].present?
+      @blogs = Blog.where("title ~ ?", params[:query])
+    else
+      @blogs = Blog.none
+    end
+
+    render "search"
+
+  end
+
 
   def update
    @blog = Blog.find(params[:id])
@@ -37,7 +48,8 @@ class Api::BlogsController < ApplicationController
  end
 
  def blog_params
-   params.require(:board).permit(:title)
+   params.require(:blog).permit(:title)
  end
+
 
 end

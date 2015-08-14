@@ -18,6 +18,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     "click .text-post": "renderNewForm",
     "click .quote-post": "renderNewForm",
     "click .link-post": "renderNewForm",
+    "click .picture-post": "renderNewForm",
     "click .cancel-post": "removeNewPostView"
   },
 

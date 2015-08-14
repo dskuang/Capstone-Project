@@ -1,5 +1,6 @@
 
 
+
 <form class="new-post">
 <input class="form-control"
           type = "hidden"
@@ -56,7 +57,6 @@
   <button class="submit-post">Submit</button>
   <button class="cancel-post">Cancel</button>
 
-
 <% } else if (post.get("attr") === "Link") { %>
   <h1>New Link</h1>
   <label for='linkurl'></label><br>
@@ -81,7 +81,31 @@
           value=''><br>
   <button class="submit-post">Submit</button>
   <button class="cancel-post">Cancel</button>
-<% } %>
+<% } else if (post.get("attr") === "Image") { %>
+
+    <h1>New Image</h1>
+    <input class= "form-control header-input image-input"
+            name='post[imageUrl]'
+            type="filepicker" data-fp-apikey="AUFVQVaVETU6OvUyumfqUz"
+            onchange="alert(event.fpfile.url)"
+            id = 'imageurl' value = '' >
+             <br>
+    <label for='imagebody'></label><br>
+      <textarea class="form-control body-input"
+            type='text'
+            name='post[imagebody]'
+            id='imagebody'
+            value=''
+            placeholder="Description"></textarea><br>
+      <input class="form-control tag-input"
+            type='text'
+            name='post[tag]'
+            id='tag'
+            placeholder="Tags"
+            value=''><br>
+    <button class="submit-post">Submit</button>
+    <button class="cancel-post">Cancel</button>
+  <% } %>
 
 </form>
 </div>
