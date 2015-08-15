@@ -7,17 +7,19 @@
     <% var followState = "Follow"; %>
   <% } %>
 
-  <!-- <% if (post.get("like_relation_id") !== null) { %>
+  <% if (post.get("like_relation_id") !== null) { %>
     <% var likeState = "unLike"; %>
 
   <% } else { %>
     <% var likeState = "Like"; %>
-  <% } %> -->
+  <% } %>
 
 <div class= "post-item-border">
 
   <div class='post-header'>
     <%= post.escape("username") %>
+      <div class="home-icon"></div>
+      <button class="follow-button"><%= followState %></button>
     <p class="post-text-header">
       <% if (post.get("attr") === "Text") {%>
         <%= post.escape("title") %>
@@ -29,7 +31,7 @@
     </p>
     <div>
       <% } else if(post.get("attr") === "Image") { %>
-        <img src="<%= post.get("imageUrl") %>">
+        <img class = "index-post-image" src="<%= post.get("imageUrl") %>">
       <% } else if(post.get("attr") === "Song") { %>
         <audio class= "audio-post"
           src="<%= post.get("songUrl") %>" controls></audio>
@@ -38,7 +40,7 @@
           src="<%= post.get("videoUrl") %>" controls></video>
       <% } %>
     </div>
-    <button class="follow-button"><%= followState %></button>
+
   </div>
 
   <div class="post-body">
@@ -55,22 +57,17 @@
         <%= post.escape("songbody") %>
       <% } %>
     </p>
-    <% if (post.get("like_relation_id") !== null) { %>
-      <div class="red-heart like-button "></div>
-
-
-    <% } else { %>
-      <div class="like-button reg-heart"></div>
-
-    <% } %>
   </div>
 
   <div class="tag-container">
     <% post.tags().forEach(function(tag) { %>
       <%= tag.escape("label") %>
     <% }) %>
+  <div class="bottom-right-container">
+    <div class="reblog-image" data-post-id="<%=post.id%>"></div>
+    <button class="btn btn-primary like-button"><%= likeState %></button>
   </div>
-
+  </div>
 </div>
 
 <%if(post.get("attr") === "Image") { %>

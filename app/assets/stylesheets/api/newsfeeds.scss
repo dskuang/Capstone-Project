@@ -24,6 +24,7 @@
   display: flex;
   border-radius: 23px;
 }
+
 .post-nav:after{
   clear:both;
   content:'';
@@ -104,4 +105,28 @@
   -o-transform: translate(200px,0px);
   -moz-transform: translate(200px,0px);
   transform: translate(200px,0px);
+}
+
+.newsfeed-posts .bottom-right-container {
+  margin-left: 454px;
+  width:117px;
+  padding-bottom: 28px;
+}
+
+.newsfeed-posts .like-button {
+  float:left;
+  margin-left:10px;
+}
+
+.newsfeed-posts .reblog-image {
+  float:left;
+  left:20px;
+}
+
+.newsfeed-posts .follow-button {
+  margin-left: 454px;
+  padding: 0;
+  background: none;
+  border: none;
+
 }

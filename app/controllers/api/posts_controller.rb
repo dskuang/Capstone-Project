@@ -11,7 +11,8 @@ class Api::PostsController < ApplicationController
   end
 
   def create
-    blog_id = User.find_blog_by_user(current_user.id)[0].id
+    # blog_id = User.find_blog_by_user(current_user.id)[0].id
+    blog_id = current_user.blog.id
     @post = Post.new(post_params)
     @post.user_id = current_user.id
     @post.blog_id = blog_id
@@ -43,7 +44,7 @@ class Api::PostsController < ApplicationController
    :linkurl, :linkbody, :imageUrl, :imagebody, :songUrl, :songbody, :videoUrl,
    :videobody)
  end
- 
+
  private
 
   def require_login

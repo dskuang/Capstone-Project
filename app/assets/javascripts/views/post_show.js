@@ -13,7 +13,8 @@ Tumblr.Views.postShow = Backbone.View.extend({
 
   events: {
     "click .follow-button": "toggleFollow",
-    "click .like-button": "toggleLike"
+    "click .like-button": "toggleLike",
+    "click .reblog-image": "reblogPost"
   },
 
   render: function(){
@@ -53,6 +54,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
       this.model.like().save({}, {
         success: function() {
           this.model.fetch();
+           this.$el.find(".like-button").text("unLike");
 
         }.bind(this)
       });
@@ -61,10 +63,39 @@ Tumblr.Views.postShow = Backbone.View.extend({
         success: function() {
           this.model.destroyLike();
           this.model.fetch();
-        
+           this.$el.find(".like_button").text("Like");
+
         }.bind(this)
       });
     }
+  },
+
+  reblogPost: function(e){
+    var that = this;
+    e.preventDefault();
+    var postID = $(e.currentTarget).data("post-id");
+    // var getBlogModel = new Tumblr.Models.Post();
+    this.model.fetch({id: postID,
+      success: function(){
+
+        var attrs = that.model.attributes;
+        var reblogModel = new Tumblr.Models.Post(attrs);
+        reblogModel.set({user_id: Tumblr.CURRENT_USER.id,
+                        blog_id: Tumblr.CURRENT_USER.blog_id,
+                        follow_relation_id: null,
+                        like_relation_id: null,
+                        id: null
+                      })
+        reblogModel.save({}, {
+          success: function() {
+            that.model.collection.add(reblogModel);
+            that.render();
+          }
+        })
+        debugger
+      }
+    });
+
   }
 
 

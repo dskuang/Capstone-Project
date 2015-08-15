@@ -1,9 +1,11 @@
 <script>
-$(document).ready(function(){
-  Tumblr.initialize();
-  // $(window).resize(setup);
-  // window.positionBlocks();
-});
+  $(document).ready(function(){
+    Tumblr.CURRENT_USER = {id: "<%= current_user.id %>",
+                          username: "<%= current_user.username %>",
+                          blog_id: "<%= current_user.blog.id %>"};
+    Tumblr.initialize();
+
+  });
 </script>
 
 

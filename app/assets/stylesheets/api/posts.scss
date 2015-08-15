@@ -4,7 +4,7 @@
 .post-header {
 
   width: 100%;
-
+  // padding-left: 50px;
   min-height: 55px;
   margin:0 auto;
   margin-top: 20px;
@@ -48,6 +48,17 @@
 
 }
 
+.post-item .home-icon {
+  height: 23px;
+  width: 17px;
+  display:block;
+  background-image: url("/images/icons3.png");
+  background-size: 118px;
+  background-position: 109px 30px;
+
+}
+
+
 .post-item:last-child{
   margin-bottom: 95px;
 
@@ -90,6 +101,36 @@
 
 }
 
+.posts-index .index-post-image {
+   max-height: 50%;
+  max-width: 100%;
+}
+
+
+.posts-index .audio-post {
+  // width:0px;
+  // max-height: 50%;
+  // max-width: 50%;
+  // margin-left: 0px;
+}
+
+
+.posts-index .like-button {
+  right: 14px;
+  bottom: 12px;
+  position:absolute;
+
+}
+
+.posts-index .follow-button {
+  top: 13px;
+  right: 14px;
+  position: absolute;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
 .song-input{
   width:500px;
   margin: 0 auto;
@@ -105,12 +146,27 @@
   margin: 0 auto;
 }
 
+.reblog-image {
+  height: 26px;
+  width: 30px;
+  display:block;
+  background-image: url("/images/reblog.png");
+  background-size: 30px;
+
+}
+
 .post-text-header {
 
   margin: 0 auto;
 }
 
+.bottom-right-container{
+  right: 0;
+  bottom: 0;
+  // position: absolute;
+}
+
 .audio-post {
-  width: 500px;
-  margin-left: 55px;
+  // width: 500px;
+  // margin-left: 55px;
 }

@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   has_many :followees, through: :out_follows, source: :followee
   has_many :likes
   has_many :posts
+  has_one :blog
 
   attr_reader :password
 
@@ -35,8 +36,8 @@ class User < ActiveRecord::Base
     self.password_digest = BCrypt::Password.create(password)
   end
 
-  def self.find_blog_by_user(id)
-    Blog.select(:id).where(user_id: id)
-  end
+  # def self.find_blog_by_user(id)
+  #   Blog.select(:id).where(user_id: id)
+  # end
 
 end

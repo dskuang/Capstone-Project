@@ -19,14 +19,14 @@ Tumblr.Views.NavShow = Backbone.View.extend({
 
   renderFeed: function(e) {
     e.preventDefault();
+    Backbone.history.navigate("#/feed/")
     this.router.feedIndex();
-    // Backbone.history.navigate("#/feed/", {trigger: true})
   },
 
   renderIndex: function(e) {
     e.preventDefault();
+    Backbone.history.navigate("#")
     this.router.postIndex();
-    // Backbone.history.navigate("#", {trigger: true})
   },
 
   findBlog: function(e) {
