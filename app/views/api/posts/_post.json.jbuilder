@@ -9,16 +9,22 @@ json.extract!(
   :quotesource,
   :quotetitle,
   :linkurl,
-  :linkbody
+  :linkbody,
+  :imagebody,
+  :imageUrl,
+  :songUrl,
+  :songbody,
+  :videoUrl,
+  :videobody
 
 )
 
 
 # json.user do
 #   json.post.user do |user|
-#     json.extract!(
-#     user,
-#     :username)
+    json.extract!(
+    post.user,
+    :username)
 #   end
 # end
 

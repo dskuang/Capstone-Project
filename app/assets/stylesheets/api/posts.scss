@@ -8,7 +8,8 @@
   min-height: 55px;
   margin:0 auto;
   margin-top: 20px;
-  padding: 20px 20px
+  padding-top: 26px;
+  margin-top: 38px;
 }
 
 .post-body{
@@ -51,7 +52,6 @@
   margin-bottom: 95px;
 
 }
-
 .new-post {
   background-color: #364672;
   position: relative;
@@ -78,9 +78,21 @@
   background: #FFF;
   position: absolute;
   width: 300px;
+  // display: inline block;
   // min-height: 325px;
   overflow: hidden;
   margin-bottom:20px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+}
+
+.song-input{
+  width:500px;
+  margin: 0 auto;
 }
 
 
@@ -91,4 +103,14 @@
 .image-input {
   width:500px;
   margin: 0 auto;
+}
+
+.post-text-header {
+
+  margin: 0 auto;
+}
+
+.audio-post {
+  width: 500px;
+  margin-left: 55px;
 }

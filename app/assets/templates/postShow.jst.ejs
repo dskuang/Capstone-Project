@@ -1,3 +1,6 @@
+<%if(post.get("attr") === "Image") { %>
+  <div class="resize">
+<% } %>
   <% if (post.get("follow_relation_id") !== null) { %>
     <% var followState = "unFollow"; %>
   <% } else { %>
@@ -11,6 +14,7 @@
   <% } %>
 
 <div class= "post-item-border">
+
   <div class='post-header'>
     <%= post.escape("username") %>
     <p class="post-text-header">
@@ -20,29 +24,44 @@
         <%= post.escape("quotetitle") %>
       <% } else if(post.get("attr") === "Link") { %>
         <%= post.escape("linkurl") %>
+
     </p>
     <div>
       <% } else if(post.get("attr") === "Image") { %>
         <img src="<%= post.get("imageUrl") %>">
+      <% } else if(post.get("attr") === "Song") { %>
+        <audio class= "audio-post"
+               src="<%= post.get("songUrl") %>" controls></audio>
       <% } %>
     </div>
     <button class="follow-button"><%= followState %></button>
   </div>
+
   <div class="post-body">
-  <p class="post-text-body">
-    <% if (post.get("attr") === "Text") {%>
-      <%= post.escape("body") %>
-    <% } else if (post.get("attr") === "Quote") { %>
-      <%= post.escape("quotesource") %>
-    <% } else if(post.get("attr") === "Link") { %>
-      <%= post.escape("linkbody") %>
-    <% } %>
-  </p>
+    <p class="post-text-body">
+      <% if (post.get("attr") === "Text") {%>
+        <%= post.escape("body") %>
+      <% } else if (post.get("attr") === "Quote") { %>
+        <%= post.escape("quotesource") %>
+      <% } else if(post.get("attr") === "Link") { %>
+        <%= post.escape("linkbody") %>
+      <% } else if(post.get("attr") === "Image") { %>
+        <%= post.escape("imagebody") %>
+      <% } else if(post.get("attr") === "Song") { %>
+        <%= post.escape("songbody") %>
+      <% } %>
+    </p>
     <button class="like-button"><%= likeState %></button>
   </div>
+
   <div class="tag-container">
     <% post.tags().forEach(function(tag) { %>
       <%= tag.escape("label") %>
     <% }) %>
   </div>
+
 </div>
+
+<%if(post.get("attr") === "Image") { %>
+  </div>
+<% } %>

@@ -146,6 +146,17 @@
 
  }
 
+ .post-video-image {
+	 height: 107px;
+	 width: 109px;
+	 display:block;
+	 background-image: url("/images/icons4.png");
+	 background-size: 690px;
+	 background-position: 645px 279px;
+	 float:left;
+
+ }
+
  @-webkit-keyframes pulse {
      0% {
        -webkit-transform: scale(1) rotate(0deg);

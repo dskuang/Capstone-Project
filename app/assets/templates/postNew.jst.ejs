@@ -83,7 +83,8 @@
     <% } else if (post.get("attr") === "Image") { %>
 
         <h1>New Image</h1>
-        <button class="filepicker-button btn btn-primary"></button>
+        <button data-attr="Image"
+                class="filepicker-button btn btn-primary"></button>
         <input class= "image-input form-control"
                 name='post[imageUrl]'
                 type='text'
@@ -105,7 +106,34 @@
                 value=''><br>
         <button class="submit-post">Submit</button>
         <button class="cancel-post">Cancel</button>
-      <% } %>
+
+        <% } else if (post.get("attr") === "Song") { %>
+
+            <h1>New Song</h1>
+            <button data-attr= "Song"
+                    class="filepicker-button btn btn-primary"></button>
+            <input class= "song-input form-control"
+                    name='post[songUrl]'
+                    type='text'
+                    id = 'songurl' value=''
+                    placeholder="Song Url">
+                     <br>
+            <label for='songbody'></label><br>
+              <textarea class="form-control body-input"
+                    type='text'
+                    name='post[songbody]'
+                    id='songbody'
+                    value=''
+                    placeholder="Description"></textarea><br>
+              <input class="form-control tag-input"
+                    type='text'
+                    name='post[tag]'
+                    id='tag'
+                    placeholder="Tags"
+                    value=''><br>
+            <button class="submit-post">Submit</button>
+            <button class="cancel-post">Cancel</button>
+          <% } %>
 
     </form>
 

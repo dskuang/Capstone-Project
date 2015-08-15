@@ -11,10 +11,3 @@ window.Tumblr = {
     Backbone.history.start();
   }
 }
-
-
-$(document).ready(function(){
-  Tumblr.initialize();
-  // $(window).resize(setup);
-  // window.positionBlocks();
-});

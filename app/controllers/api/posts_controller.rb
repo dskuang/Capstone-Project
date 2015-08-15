@@ -1,7 +1,7 @@
 class Api::PostsController < ApplicationController
   before_action :require_login
   def index
-    @posts = Post.all
+    @posts = Post.includes(:likes, :taggings).all
     render "index"
   end
 
@@ -40,8 +40,10 @@ class Api::PostsController < ApplicationController
 
  def post_params
    params.require(:post).permit(:title, :body, :attr, :quotetitle, :quotesource,
-   :linkurl, :linkbody, :imageUrl, :imagebody, :songUrl, :songbody)
+   :linkurl, :linkbody, :imageUrl, :imagebody, :songUrl, :songbody, :videoUrl,
+   :videobody)
  end
+ 
  private
 
   def require_login

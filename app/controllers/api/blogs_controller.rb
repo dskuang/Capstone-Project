@@ -17,7 +17,7 @@ class Api::BlogsController < ApplicationController
 
   def create
     @blog = Blog.new(blog_params)
-    @blod.user_id = current_user.id
+    @blog.user_id = current_user.id
     if @blog.save
       render :json => @blog
     else

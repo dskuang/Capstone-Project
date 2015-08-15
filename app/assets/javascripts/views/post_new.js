@@ -5,6 +5,7 @@ Tumblr.Views.postNew = Backbone.CompositeView.extend({
 
   events: {
     "click .filepicker-button": "pickFile"
+
   },
 
 
@@ -19,12 +20,24 @@ Tumblr.Views.postNew = Backbone.CompositeView.extend({
     return this;
   },
 
-  pickFile: function (event) {
-    event.preventDefault();
+  pickFile: function (e) {
+    e.preventDefault();
+    var attr = $(e.currentTarget).data("attr")
     // filepicker.set()
-    filepicker.pick({mimetype: 'image/*', service: "computer"},
+    // debugger
+    var type;
+    var selector;
+    if(attr === "Image"){
+      type = {mimetype: 'image/*'};
+      selector = $(".image-input");
+    } else if (attr === "Song") {
+      type = {mimetype: 'audio/*'};
+      selector = $(".song-input");
+    }
+    filepicker.pick({type, service: "computer"},
       function(Blob) {
-        $(".image-input").val(Blob.url);
+        // debugger
+          selector.val(Blob.url);
       }.bind(this)
     );
   },

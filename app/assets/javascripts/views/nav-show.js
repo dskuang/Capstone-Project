@@ -19,14 +19,14 @@ Tumblr.Views.NavShow = Backbone.View.extend({
 
   renderFeed: function(e) {
     e.preventDefault();
-    Backbone.history.navigate("#/feed/", {trigger: true})
-    this.render();
+    this.router.feedIndex();
+    // Backbone.history.navigate("#/feed/", {trigger: true})
   },
 
   renderIndex: function(e) {
     e.preventDefault();
-    Backbone.history.navigate("#", {trigger: true})
-    this.render();
+    this.router.postIndex();
+    // Backbone.history.navigate("#", {trigger: true})
   },
 
   findBlog: function(e) {
@@ -35,7 +35,7 @@ Tumblr.Views.NavShow = Backbone.View.extend({
     // debugger
     var searchCollection = new Tumblr.Collections.Blogs();
     // debugger;
-    searchCollection.fetch({data: formData, processData:true,
+    searchCollection.fetch({data: {query: [1,2,3,4]}, processData:true,
       success: function () {
         console.log(searchCollection);
 
