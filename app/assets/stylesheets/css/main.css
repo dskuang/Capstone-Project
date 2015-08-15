@@ -272,24 +272,24 @@
 
 
  .home-icon {
-	 height: 47px;
-	 width: 43px;
+	 height: 51px;
+	 width: 44px;
 	 display:block;
-	 background-image: url("/images/icons5.png");
-	 background-size: 310px;
-	 background-position: 215px 67px;
+	 background-image: url("/images/icons3.png");
+	 background-size: 214px;
+	 background-position: 206px 60px;
 	 float:left;
 	 margin-right: 20px;
 
  }
 
  .explore-icon {
-	height: 47px;
-	width: 43px;
+	height: 46px;
+	width: 65px;
 	display:block;
-	background-image: url("/images/icons5.png");
+	background-image: url("/images/icons3.png");
 	background-size: 310px;
-	background-position: 63px 220px;
+	background-position: 224px 291px;
 	float:left;
 	margin-right: 20px;
 
@@ -300,8 +300,41 @@
 		height: 47px;
 		width: 43px;
 		display:block;
-		background-image: url("/images/icons5.png");
-		background-size: 310px;
-		background-position: 215px 219px;
+		background-image: url("/images/icons3.png");
+		background-size: 252px;
+		background-position: 118px 240px;
 		float:left;
+}
+
+.red-heart:hover{
+	height: 29px;
+	width: 35px;
+	display:block;
+	background-image: url("/images/hover-heart.png");
+	background-size: 35px;
+}
+
+.reg-heart:hover{
+	height: 29px;
+	width: 35px;
+	display:block;
+	background-image: url("/images/hover-heart.png");
+	background-size: 35px;
+}
+
+.red-heart{
+	height: 29px;
+	width: 35px;
+	display:block;
+	background-image: url("/images/red-heart.png");
+	background-size: 35px;
+}
+
+.reg-heart{
+	height: 34px;
+	width: 36px;
+	display:block;
+	background-image: url("/images/icons2.png");
+	background-size: 189px;
+	background-position: -101px 181px;
 }

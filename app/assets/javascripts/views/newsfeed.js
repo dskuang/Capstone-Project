@@ -28,11 +28,14 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
 
   performSlide: function(e) {
     e.preventDefault();
+
+
     $("#leftSideMenuIcon").toggleClass("active");
     $('#leftSideBar').toggle("slide", {
       "direction": "left",
       "distance": "200px"
-    }, "fast");
+    }, "fast");0
+    $('#parent-form').toggleClass('left-float')
     $("#leftSideMenuIcon").toggleClass("pushObjectsForSidebar");
   },
 
@@ -54,6 +57,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   },
 
   render: function() {
+
     var content = this.template({posts: this.feedCollection});
     $('#leftSideBar').hide();
     this.$el.html(content);

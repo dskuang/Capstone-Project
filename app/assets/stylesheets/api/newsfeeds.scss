@@ -85,7 +85,12 @@
   cursor: pointer;
 }
 
+.left-float {
+  float: left;
+}
+
 #leftSideBar {
+  display: none;
   height: 200px;
   width: 200px;
   background-color: green;

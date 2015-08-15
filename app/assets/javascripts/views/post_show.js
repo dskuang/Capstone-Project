@@ -7,7 +7,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
     this.listenTo(this.model.tags(), "sync add", this.render);
   },
 
-  
+
   className: "post-item",
   template: JST['postShow'],
 
@@ -53,7 +53,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
       this.model.like().save({}, {
         success: function() {
           this.model.fetch();
-          this.$el.find(".like-button").text("unLike");
+
         }.bind(this)
       });
     } else {
@@ -61,7 +61,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
         success: function() {
           this.model.destroyLike();
           this.model.fetch();
-          this.$el.find(".like_button").text("Like");
+        
         }.bind(this)
       });
     }

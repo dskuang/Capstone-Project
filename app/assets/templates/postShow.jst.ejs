@@ -7,11 +7,12 @@
     <% var followState = "Follow"; %>
   <% } %>
 
-  <% if (post.get("like_relation_id") !== null) { %>
+  <!-- <% if (post.get("like_relation_id") !== null) { %>
     <% var likeState = "unLike"; %>
+
   <% } else { %>
     <% var likeState = "Like"; %>
-  <% } %>
+  <% } %> -->
 
 <div class= "post-item-border">
 
@@ -54,7 +55,14 @@
         <%= post.escape("songbody") %>
       <% } %>
     </p>
-    <button class="like-button"><%= likeState %></button>
+    <% if (post.get("like_relation_id") !== null) { %>
+      <div class="red-heart like-button "></div>
+
+
+    <% } else { %>
+      <div class="like-button reg-heart"></div>
+
+    <% } %>
   </div>
 
   <div class="tag-container">
