@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150815010149) do
+ActiveRecord::Schema.define(version: 20150815182105) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 20150815010149) do
     t.string   "songbody"
     t.string   "videoUrl"
     t.string   "videobody"
+    t.integer  "reblogged"
   end
 
   add_index "posts", ["blog_id"], name: "index_posts_on_blog_id", using: :btree

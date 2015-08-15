@@ -1,5 +1,6 @@
 Tumblr.Views.postShow = Backbone.View.extend({
-  initialize: function() {
+  initialize: function(options) {
+    this.feedCollection = options.feedCollection;
     this.listenTo(this.model.follow(), "sync", this.render);
     this.listenTo(this.model.like(), "sync remove", this.render);
     this.listenTo(this.model, "sync add remove", this.render);
@@ -86,13 +87,13 @@ Tumblr.Views.postShow = Backbone.View.extend({
                         like_relation_id: null,
                         id: null
                       })
+                      debugger
         reblogModel.save({}, {
           success: function() {
-            that.model.collection.add(reblogModel);
-            that.render();
+            that.feedCollection.add(reblogModel);
           }
         })
-        debugger
+        // debugger
       }
     });
 

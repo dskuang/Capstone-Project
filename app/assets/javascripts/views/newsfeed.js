@@ -18,20 +18,20 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     "click .submit-post": "createPost",
     "click .button-post": "renderNewForm",
     "click .cancel-post": "removeNewPostView",
-    "click #leftSideMenuIcon": "performSlide"
+    "click .post-item .home-icon": "performSlide"
   },
 
   performSlide: function(e) {
     e.preventDefault();
 
 
-    $("#leftSideMenuIcon").toggleClass("active");
+    // $("#leftSideMenuIcon").toggleClass("active");
     $('#leftSideBar').toggle("slide", {
       "direction": "left",
-      "distance": "200px"
-    }, "fast");0
+      "distance": "575px"
+    }, "fast");
     $('#parent-form').toggleClass('left-float')
-    $("#leftSideMenuIcon").toggleClass("pushObjectsForSidebar");
+    // $("#leftSideMenuIcon").toggleClass("pushObjectsForSidebar");
   },
 
   renderNewForm: function(e) {
@@ -54,14 +54,14 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   render: function() {
 
     var content = this.template({posts: this.feedCollection});
-    $('#leftSideBar').hide();
+    // $('#leftSideBar').hide();
     this.$el.html(content);
     this.attachSubviews();
     return this;
   },
 
   addPostView: function(post) {
-    var subPostView = new Tumblr.Views.postShow({model: post});
+    var subPostView = new Tumblr.Views.postShow({model: post, feedCollection: this.feedCollection});
     this.addSubview(".newsfeed-posts", subPostView);
   },
 

@@ -35,10 +35,10 @@ Tumblr.Views.NavShow = Backbone.View.extend({
     // debugger
     var searchCollection = new Tumblr.Collections.Blogs();
     // debugger;
-    searchCollection.fetch({data: {query: [1,2,3,4]}, processData:true,
+    searchCollection.fetch({data: formData, processData:true,
       success: function () {
         console.log(searchCollection);
-
+          debugger;
       }
     });
   },

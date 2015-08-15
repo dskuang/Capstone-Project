@@ -1,7 +1,5 @@
-<%if(post.get("attr") === "Image") { %>
-  <div class="resize">
-<% } %>
-  <% if (post.get("follow_relation_id") !== null) { %>
+
+<% if (post.get("follow_relation_id") !== null) { %>
     <% var followState = "unFollow"; %>
   <% } else { %>
     <% var followState = "Follow"; %>
@@ -69,7 +67,3 @@
   </div>
   </div>
 </div>
-
-<%if(post.get("attr") === "Image") { %>
-  </div>
-<% } %>
