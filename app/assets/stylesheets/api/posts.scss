@@ -4,7 +4,6 @@
 .post-header {
 
   width: 100%;
-  // padding-left: 50px;
   min-height: 55px;
   margin:0 auto;
   margin-top: 20px;
@@ -20,7 +19,6 @@
   width: 100%;
 
   word-break: break-all;
-  // height: 100%;
   margin: 0 auto;
 }
 
@@ -38,12 +36,8 @@
 .post-item{
   border-radius: 5px;
   background: #FFF;
-  // position: absolute;
   width: 600px;
   margin-bottom: 30px;
-
-  // overflow: hidden;
-
   margin: 0 auto;
 
 }
@@ -75,7 +69,6 @@
 }
 
 .posts-index{
-  // width: 520px;
   position: relative;
 }
 
@@ -106,13 +99,6 @@
   max-width: 100%;
 }
 
-
-.posts-index .audio-post {
-  // width:0px;
-  // max-height: 50%;
-  // max-width: 50%;
-  // margin-left: 0px;
-}
 
 
 .posts-index .like-button {
@@ -163,10 +149,4 @@
 .bottom-right-container{
   right: 0;
   bottom: 0;
-  // position: absolute;
-}
-
-.audio-post {
-  // width: 500px;
-  // margin-left: 55px;
 }
