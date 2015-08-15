@@ -31,7 +31,10 @@
         <img src="<%= post.get("imageUrl") %>">
       <% } else if(post.get("attr") === "Song") { %>
         <audio class= "audio-post"
-               src="<%= post.get("songUrl") %>" controls></audio>
+          src="<%= post.get("songUrl") %>" controls></audio>
+      <% } else if(post.get("attr") === "Video") { %>
+        <video class= "video-post"
+          src="<%= post.get("videoUrl") %>" controls></video>
       <% } %>
     </div>
     <button class="follow-button"><%= followState %></button>

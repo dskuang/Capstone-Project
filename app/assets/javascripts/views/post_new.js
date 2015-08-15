@@ -33,6 +33,9 @@ Tumblr.Views.postNew = Backbone.CompositeView.extend({
     } else if (attr === "Song") {
       type = {mimetype: 'audio/*'};
       selector = $(".song-input");
+    } else if (attr === "Video") {
+      type = {mimetype: 'video/*'};
+      selector = $(".video-input");
     }
     filepicker.pick({type, service: "computer"},
       function(Blob) {

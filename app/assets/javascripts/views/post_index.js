@@ -43,7 +43,7 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
   },
 
   min: function(array) {
-      return Math.min.apply(Math, array);
+    return Math.min.apply(Math, array);
   },
 
   render: function() {

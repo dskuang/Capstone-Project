@@ -9,5 +9,6 @@ window.Tumblr = {
     var nav = new Tumblr.Views.NavShow({router: router});
     $("#navbar").html(nav.render().$el);
     Backbone.history.start();
+      // $('#leftSideBar').hide();
   }
 }

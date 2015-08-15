@@ -82,20 +82,47 @@
       <button class="cancel-post">Cancel</button>
     <% } else if (post.get("attr") === "Image") { %>
 
-        <h1>New Image</h1>
-        <button data-attr="Image"
-                class="filepicker-button btn btn-primary"></button>
-        <input class= "image-input form-control"
-                name='post[imageUrl]'
-                type='text'
-                id = 'imageurl' value=''
-                placeholder="Image Url">
-                 <br>
-        <label for='imagebody'></label><br>
+      <h1>New Image</h1>
+      <button data-attr="Image"
+              class="filepicker-button btn btn-primary"></button>
+      <input class= "image-input form-control"
+              name='post[imageUrl]'
+              type='text'
+              id = 'imageurl' value=''
+              placeholder="Image Url">
+             <br>
+      <label for='imagebody'></label><br>
+        <textarea class="form-control body-input"
+              type='text'
+              name='post[imagebody]'
+              id='imagebody'
+              value=''
+              placeholder="Description"></textarea><br>
+        <input class="form-control tag-input"
+              type='text'
+              name='post[tag]'
+              id='tag'
+              placeholder="Tags"
+              value=''><br>
+      <button class="submit-post">Submit</button>
+      <button class="cancel-post">Cancel</button>
+
+      <% } else if (post.get("attr") === "Song") { %>
+
+          <h1>New Song</h1>
+          <button data-attr= "Song"
+                  class="filepicker-button btn btn-primary"></button>
+          <input class= "song-input form-control"
+                  name='post[songUrl]'
+                  type='text'
+                  id = 'songurl' value=''
+                  placeholder="Song Url">
+                   <br>
+          <label for='songbody'></label><br>
           <textarea class="form-control body-input"
                 type='text'
-                name='post[imagebody]'
-                id='imagebody'
+                name='post[songbody]'
+                id='songbody'
                 value=''
                 placeholder="Description"></textarea><br>
           <input class="form-control tag-input"
@@ -106,37 +133,35 @@
                 value=''><br>
         <button class="submit-post">Submit</button>
         <button class="cancel-post">Cancel</button>
+    <% } else if (post.get("attr") === "Video") { %>
 
-        <% } else if (post.get("attr") === "Song") { %>
+        <h1>New Video</h1>
+        <button data-attr= "Video"
+                class="filepicker-button btn btn-primary"></button>
+        <input class= "video-input form-control"
+                name='post[videoUrl]'
+                type='text'
+                id = 'videourl' value=''
+                placeholder="Video Url">
+                 <br>
+        <label for='videobody'></label><br>
+        <textarea class="form-control body-input"
+              type='text'
+              name='post[videobody]'
+              id='videobody'
+              value=''
+              placeholder="Description"></textarea><br>
+        <input class="form-control tag-input"
+              type='text'
+              name='post[tag]'
+              id='tag'
+              placeholder="Tags"
+              value=''><br>
+      <button class="submit-post">Submit</button>
+      <button class="cancel-post">Cancel</button>
+    <% } %>
 
-            <h1>New Song</h1>
-            <button data-attr= "Song"
-                    class="filepicker-button btn btn-primary"></button>
-            <input class= "song-input form-control"
-                    name='post[songUrl]'
-                    type='text'
-                    id = 'songurl' value=''
-                    placeholder="Song Url">
-                     <br>
-            <label for='songbody'></label><br>
-              <textarea class="form-control body-input"
-                    type='text'
-                    name='post[songbody]'
-                    id='songbody'
-                    value=''
-                    placeholder="Description"></textarea><br>
-              <input class="form-control tag-input"
-                    type='text'
-                    name='post[tag]'
-                    id='tag'
-                    placeholder="Tags"
-                    value=''><br>
-            <button class="submit-post">Submit</button>
-            <button class="cancel-post">Cancel</button>
-          <% } %>
-
-    </form>
-
+</form>
 
 
 </div>

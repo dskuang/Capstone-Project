@@ -93,66 +93,66 @@
  }
 
  .post-text-image {
-	 height: 107px;
-	 width: 109px;
+	 height: 104px;
+	 width: 113px;
 	 display:block;
 	 background-image: url("/images/icons4.png");
-	 background-size: 690px;
-	 background-position: 163px 157px;
+	 background-size: 644px;
+	 background-position: 153px 150px;
 	 float:left;
  }
 
  .post-quote-image {
-		height: 107px;
-		width: 109px;
+		height: 102px;
+		width: 108px;
 		display:block;
 		background-image: url("/images/icons4.png");
-		background-size: 690px;
-		background-position: 283px 279px;
+		background-size: 644px;
+		background-position: 262px 262px;
 		float:left;
 
  }
 
  .post-link-image {
-		height: 107px;
+		height: 103px;
 		width: 109px;
 		display:block;
 		background-image: url("/images/icons4.png");
-		background-size: 690px;
-		background-position: 404px 399px;
+		background-size: 644px;
+		background-position: 375px 375px;
 		float:left;
 
  }
 
  .post-picture-image {
-	 height: 107px;
+	 height: 103px;
 	 width: 109px;
 	 display:block;
 	 background-image: url("/images/icons4.png");
-	 background-size: 690px;
-	 background-position: 646px 400px;
+	 background-size: 644px;
+	 background-position: 601px 376px;
 	 float:left;
 
  }
 
  .post-song-image {
 	 height: 107px;
-	 width: 109px;
+	 width: 108px;
 	 display:block;
 	 background-image: url("/images/icons4.png");
-	 background-size: 690px;
-	 background-position: 645px 279px;
+	 background-size: 644px;
+	 background-position: 601px 264px;
 	 float:left;
 
  }
 
  .post-video-image {
-	 height: 107px;
-	 width: 109px;
+	 height: 103px;
+	 width: 113px;
 	 display:block;
 	 background-image: url("/images/icons4.png");
-	 background-size: 690px;
-	 background-position: 645px 279px;
+	 background-size: 644px;
+	 background-position: 600px 151px;
 	 float:left;
 
  }

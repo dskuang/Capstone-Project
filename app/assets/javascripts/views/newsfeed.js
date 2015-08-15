@@ -6,6 +6,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     this.listenTo(this.feedCollection, 'add', this.addPostView);
     this.feedCollection.each(this.addPostView.bind(this));
 
+
     // this.listenTo(this.postModel, "sync", this.render);
     // this.listenTo(this.postModel.tags(), "sync add", this.render);
 
@@ -20,7 +21,19 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     "click .link-post": "renderNewForm",
     "click .picture-post": "renderNewForm",
     "click .song-post": "renderNewForm",
-    "click .cancel-post": "removeNewPostView"
+    "click .video-post": "renderNewForm",
+    "click .cancel-post": "removeNewPostView",
+    "click #leftSideMenuIcon": "performSlide"
+  },
+
+  performSlide: function(e) {
+    e.preventDefault();
+    $("#leftSideMenuIcon").toggleClass("active");
+    $('#leftSideBar').toggle("slide", {
+      "direction": "left",
+      "distance": "200px"
+    }, "fast");
+    $("#leftSideMenuIcon").toggleClass("pushObjectsForSidebar");
   },
 
   renderNewForm: function(e) {
@@ -42,6 +55,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
 
   render: function() {
     var content = this.template({posts: this.feedCollection});
+    $('#leftSideBar').hide();
     this.$el.html(content);
     this.attachSubviews();
     return this;
