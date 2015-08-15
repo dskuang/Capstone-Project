@@ -1,5 +1,5 @@
 class Api::TaggingsController < ApplicationController
-  before_action :require_login
+  
 
   def index
     @taggings = Tagging.all

@@ -1,5 +1,4 @@
 class Api::BlogsController < ApplicationController
-  before_action :require_login
   def index
     if params[:query].present?
       @blogs = Blog.where("title ~ ?", params[:query])

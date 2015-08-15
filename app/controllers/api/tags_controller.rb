@@ -1,5 +1,5 @@
 class Api::TagsController < ApplicationController
-  before_action :require_login
+
   def show
     @tag = Tag.find(params[:id])
     render "show"

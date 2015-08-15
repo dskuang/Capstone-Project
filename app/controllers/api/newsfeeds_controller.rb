@@ -1,5 +1,5 @@
 class Api::NewsfeedsController < ApplicationController
-  before_action :require_login
+
   def show
     # @posts = []
     # if current_user.followees

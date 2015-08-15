@@ -1,5 +1,5 @@
 class Api::LikesController < ApplicationController
-  before_action :require_login
+
   def create
     @like = Like.new(like_params)
     @like.user_id = current_user.id
