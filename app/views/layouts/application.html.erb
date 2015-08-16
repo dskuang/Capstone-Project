@@ -3,7 +3,7 @@
 <head>
   <script type="text/javascript" src="//api.filepicker.io/v2/filepicker.js"></script>
   <script> filepicker.setKey("<%=ENV["filepicker"]%>") </script>
-  
+
 
   <title>Tumblr</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -11,10 +11,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<!-- <% if logged_in? %>
-<%= current_user.username %>
-<%= button_to "Sign Out", session_url, method: :delete %>
-<% end %> -->
 
 <% if flash[:errors] %>
 <% flash[:errors].each do |error| %>

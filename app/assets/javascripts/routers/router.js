@@ -4,8 +4,6 @@ Tumblr.Routers.Router = Backbone.Router.extend({
     this.blogCollection = new Tumblr.Collections.Blogs();
     this.feedCollection = new Tumblr.Collections.NewsFeeds();
     this.postCollection = new Tumblr.Collections.Posts();
-    // this.blogCollection.fetch();
-    // debugger
   },
 
   routes: {
