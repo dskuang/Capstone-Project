@@ -16,8 +16,8 @@ Tumblr.Views.blogShow = Backbone.CompositeView.extend({
   },
 
   addPostView: function(post) {
-    var subPostView = new Tumblr.Views.postShow({model: post})
-    this.addSubview(".posts", subPostView)
+    var subPostView = new Tumblr.Views.postShow({model: post});
+    this.addSubview(".posts", subPostView);
   },
 
 
