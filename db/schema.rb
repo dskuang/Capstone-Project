@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150815182105) do
+ActiveRecord::Schema.define(version: 20150816181447) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,13 @@ ActiveRecord::Schema.define(version: 20150815182105) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "notes", force: :cascade do |t|
+    t.integer  "post_id",    null: false
+    t.string   "note_text",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "posts", force: :cascade do |t|
     t.integer  "user_id",     null: false
     t.integer  "blog_id",     null: false
@@ -60,7 +67,7 @@ ActiveRecord::Schema.define(version: 20150815182105) do
     t.string   "songbody"
     t.string   "videoUrl"
     t.string   "videobody"
-    t.integer  "reblogged"
+    t.integer  "og_post_id"
   end
 
   add_index "posts", ["blog_id"], name: "index_posts_on_blog_id", using: :btree

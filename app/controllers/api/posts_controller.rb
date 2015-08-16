@@ -1,7 +1,7 @@
 class Api::PostsController < ApplicationController
 
   def index
-    @posts = Post.includes(:likes, :taggings).all
+    @posts = Post.includes(:likes, :taggings).where(og_post_id: nil)
     render "index"
   end
 
@@ -42,7 +42,7 @@ class Api::PostsController < ApplicationController
  def post_params
    params.require(:post).permit(:title, :body, :attr, :quotetitle, :quotesource,
    :linkurl, :linkbody, :imageUrl, :imagebody, :songUrl, :songbody, :videoUrl,
-   :videobody)
+   :videobody, :og_post_id)
  end
 
  private

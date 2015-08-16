@@ -35,6 +35,12 @@ json.tags do
   end
 end
 
+json.notes do
+  json.array! post.notes do |note|
+    json.partial!("api/notes/note", note: note)
+  end
+end
+
 if current_user
   follow_id = Follow.find_follow_by_user(current_user.id, post.user_id)[0]
   follow_id = follow_id ? follow_id.id : nil

@@ -12,8 +12,21 @@ Tumblr.Models.Post = Backbone.Model.extend({
       this.tags().set(payload.tags, {parse: true});
       delete payload.tags;
     }
+
+    if(payload.notes) {
+      this.notes().set(payload.notes, {parse: true});
+      delete payload.notes;
+    }
     return payload;
   },
+
+  notes: function() {
+    if(!this._notes) {
+      this._notes = new Tumblr.Collections.Notes([], {post: this});
+    }
+    return this._notes;
+  },
+
 
   follow: function () {
     if (!this._follow) {

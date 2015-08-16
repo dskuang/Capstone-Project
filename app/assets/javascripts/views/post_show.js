@@ -85,7 +85,8 @@ Tumblr.Views.postShow = Backbone.View.extend({
                         blog_id: Tumblr.CURRENT_USER.blog_id,
                         follow_relation_id: null,
                         like_relation_id: null,
-                        id: null
+                        id: null,
+                        og_post_id: attrs.id
                       })
                       debugger
         reblogModel.save({}, {
