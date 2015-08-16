@@ -1,5 +1,8 @@
-<script>
-  $(document).ready(function(){
+
+<div id='navbar'></div>
+<div id='content'></div>
+<script type="text/javascript">
+  $(function(){
     Tumblr.CURRENT_USER = {id: "<%= current_user.id %>",
                           username: "<%= current_user.username %>",
                           blog_id: "<%= current_user.blog.id %>"};
@@ -7,7 +10,3 @@
 
   });
 </script>
-
-
-<div id='navbar'></div>
-<div id='content'></div>
