@@ -2,10 +2,9 @@ Tumblr.Views.blogShow = Backbone.CompositeView.extend({
   initialize: function(options) {
 
     this.listenTo(this.model, "sync", this.render);
-    this.listenTo(this.model.posts(), "sync", this.render)
+    this.listenTo(this.model.posts(), "sync", this.render);
     this.listenTo(this.model.posts(), 'add', this.addPostView);
     this.model.posts().each(this.addPostView.bind(this));
-    // this.postModel = new Tumblr.Models.Post();
   },
   className: "blog-show",
   template: JST["blogShow"],
