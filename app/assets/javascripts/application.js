@@ -17,7 +17,6 @@
 //= require serialize_json
 //= require bootstrap
 //= require tumblr
-
 //= require_tree ./util
 //= require_tree ../templates
 //= require_tree ./models
