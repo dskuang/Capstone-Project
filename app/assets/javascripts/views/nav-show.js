@@ -10,8 +10,8 @@ Tumblr.Views.NavShow = Backbone.View.extend({
   events: {
     "click .home-icon": "renderFeed",
     "click .explore-icon": "renderIndex",
-    "click .blog-search": "findBlog",
-    "input input[name=query]": "findBlog"
+    "input input[name=query]": "findBlog",
+    "blur .search-input": "resetSearch"
   },
 
   handleRoute: function (routeName, params) {
@@ -29,6 +29,12 @@ Tumblr.Views.NavShow = Backbone.View.extend({
     e.preventDefault();
     Backbone.history.navigate("#")
     this.router.postIndex();
+  },
+
+  resetSearch: function(e) {
+    e.preventDefault();
+    $(".search-input").val("");
+    this.renderResults([]);
   },
 
   findBlog: function(e) {
