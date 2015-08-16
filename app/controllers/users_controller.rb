@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
   def new
-
   end
 
   def show
@@ -11,7 +10,6 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       @blog = Blog.new
-      # debugger
       @blog.user_id = @user.id
       @blog.save
       login(@user)
@@ -22,8 +20,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def blog_params
-    # params.require(:blog).permit(:title)
-  end
+
 
 end
