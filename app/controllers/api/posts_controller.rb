@@ -1,7 +1,7 @@
 class Api::PostsController < ApplicationController
 
   def index
-    @posts = Post.includes(:likes, :taggings).where(og_post_id: nil)
+    @posts = Post.includes(:likes, :taggings, :tags, :notes).where(og_post_id: nil)
     render "index"
   end
 

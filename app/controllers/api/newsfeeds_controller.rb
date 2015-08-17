@@ -8,7 +8,7 @@ class Api::NewsfeedsController < ApplicationController
     #   end
     # end
     # @posts += current_user.posts
-    @posts = Post.includes(:tags, :likes, :user).where(user_id: current_user.followee_ids + [current_user.id]).order(created_at: :desc)
+    @posts = Post.includes(:tags, :likes, :user, :taggings, :notes).where(user_id: current_user.followee_ids + [current_user.id]).order(created_at: :desc)
 
     render "show"
   end

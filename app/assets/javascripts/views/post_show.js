@@ -6,6 +6,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
     this.listenTo(this.model, "sync add remove", this.render);
     this.listenTo(this.model.collection, "sync add remove", this.render);
     this.listenTo(this.model.tags(), "sync add", this.render);
+    this.listenTo(this.model.notes(), "sync add", this.render);
   },
 
 
@@ -78,6 +79,13 @@ Tumblr.Views.postShow = Backbone.View.extend({
     // var getBlogModel = new Tumblr.Models.Post();
     this.model.fetch({id: postID,
       success: function(){
+        var og_post_id;
+
+        if(attrs.og_post_id) {
+          og_post_id = attrs.og_post_id;
+        } else {
+          og_post_id = attrs.id;
+        }
 
         var attrs = that.model.attributes;
         var reblogModel = new Tumblr.Models.Post(attrs);
@@ -86,12 +94,36 @@ Tumblr.Views.postShow = Backbone.View.extend({
                         follow_relation_id: null,
                         like_relation_id: null,
                         id: null,
-                        og_post_id: attrs.id
-                      })
-                      debugger
+                        og_post_id: og_post_id
+                      });
+
         reblogModel.save({}, {
           success: function() {
-            that.feedCollection.add(reblogModel);
+            debugger
+            that.model.fetch({id: og_post_id}, {success: function() {
+            var reblogCollection = new Tumblr.Collections.Posts();
+            reblogCollection.where({og_post_id: that.model.id}, {success: function() {
+              debugger
+              var attrs = {post_id: that.model.id, note_text: Tumblr.CURRENT_USER.username + "reblogged" + that.model.id}
+              var note = new Tumblr.Models.Note(attrs);
+              note.save({}, {success: function() {
+                that.model.notes().add(note);
+              }});
+
+              for(var i = 0; i < reblogCollection.length; i++) {
+                var mod = reblogCollection.at(i);
+                var attrs = {post_id: mod.id, note_text: Tumblr.CURRENT_USER.username + "reblogged" + mod.id}
+                var note = new Tumblr.Models.Note(attrs);
+                note.save({}, { success: function() {
+                  mod.notes().add(note);
+                }});
+              }
+
+
+              var attrs = {post_id: reblogModel}
+              that.feedCollection.add(reblogModel);
+            }});
+          }});
           }
         })
         // debugger

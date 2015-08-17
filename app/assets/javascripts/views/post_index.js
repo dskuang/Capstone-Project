@@ -3,7 +3,7 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
     this.feedCollection = options.feedCollection
     this.listenTo(this.collection, "change sync", this.render);
     this.listenTo(this.collection, 'add', this.addPostView);
-
+    this.listenTo(this.collection, "remove", this.removePostView);
     this.colCount = 0;
     this.margin = 20;
     this.colWidth = 0;
@@ -56,6 +56,16 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
     var subPostView = new Tumblr.Views.postShow({model: post, feedCollection: this.feedCollection});
 
     this.addSubview(".posts-index", subPostView);
+  },
+
+  remove: function () {
+    $(window).off("resize");
+    Backbone.CompositeView.prototype.remove.call(this);
+  },
+
+  removePostView: function(post) {
+    this.removeModelSubview(".posts-index", post);
   }
+
 
 });
