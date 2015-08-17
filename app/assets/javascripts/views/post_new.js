@@ -11,7 +11,7 @@ Tumblr.Views.postNew = Backbone.View.extend({
   template: JST["postNew"],
 
   render: function() {
-    // debugger
+
     var content = this.template({post: this.model});
     this.$el.html(content);
     return this;

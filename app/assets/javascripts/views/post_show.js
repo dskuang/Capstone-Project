@@ -76,9 +76,9 @@ Tumblr.Views.postShow = Backbone.View.extend({
 
   createNewNote: function() {
     this.newNote = new Tumblr.Models.Note();
-    var noteText = Tumblr.CURRENT_USER.username + " liked this"
-    var attrs = {post_id: this.model.id, note_text: noteText, like_id: this.model.like().id}
-  
+    var noteText = Tumblr.CURRENT_USER.username + " liked this";
+    var attrs = {post_id: this.model.id, note_text: noteText, like_id: this.model.like().id};
+
     this.newNote.save(attrs, {success: function() {
 
       this.model.notes().add(this.newNote);
@@ -94,7 +94,6 @@ Tumblr.Views.postShow = Backbone.View.extend({
     var that = this;
     e.preventDefault();
     var postID = $(e.currentTarget).data("post-id");
-    // var getBlogModel = new Tumblr.Models.Post();
     this.model.fetch({id: postID,
       success: function(){
         var og_post_id;
@@ -127,7 +126,6 @@ Tumblr.Views.postShow = Backbone.View.extend({
                     newTaggingModel.save({post_id: reblogModel.id, tag_id: newTag.id});
                   }
                 });
-                // reblogModel.tags().add(new Backbone.Model(tag.toJSON()));
               });
             that.feedCollection.add(reblogModel);
         }});

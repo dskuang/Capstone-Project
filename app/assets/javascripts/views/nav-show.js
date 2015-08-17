@@ -44,12 +44,10 @@ Tumblr.Views.NavShow = Backbone.View.extend({
         return;
     }
     var formData = $(".navbar-form").serializeJSON();
-    // debugger
     var searchCollection = new Tumblr.Collections.Blogs();
-    // debugger;
     searchCollection.fetch({data: formData, processData:true,
       success: function () {
-        this.renderResults(searchCollection)
+        this.renderResults(searchCollection);
       }.bind(this)
     });
   },
@@ -61,12 +59,10 @@ Tumblr.Views.NavShow = Backbone.View.extend({
       var blogModel = searchCollection.at(i);
       var $a = $("<a></a>");
       $a.text(blogModel.get('title'));
-      // debugger
       $a.attr("href", "#blogs/" + blogModel.id);
       var $li = $("<li></li>");
-      $li.addClass("search-list-item")
+      $li.addClass("search-list-item");
       $li.append($a);
-      // $li.append($followToggle);
       this.$ul.append($li);
     }
   },

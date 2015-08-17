@@ -54,7 +54,6 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
 
   addPostView: function(post) {
     var subPostView = new Tumblr.Views.postShow({model: post, feedCollection: this.feedCollection});
-
     this.addSubview(".posts-index", subPostView);
   },
 

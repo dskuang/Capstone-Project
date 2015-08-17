@@ -27,8 +27,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
       "direction": "left",
       "distance": "575px"
     }, "fast");
-    $('#parent-form').toggleClass('left-float')
-    // $("#leftSideMenuIcon").toggleClass("pushObjectsForSidebar");
+    $('#parent-form').toggleClass('left-float');
   },
 
   renderNewForm: function(e) {
@@ -85,7 +84,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
       this.postCollection.add(postModel);
       this.feedCollection.add(postModel);
       // postModel.fetch();
-      Backbone.history.navigate("#/feed/", {trigger: true})
+      Backbone.history.navigate("#/feed/", {trigger: true});
     }.bind(this)});
 
   },
