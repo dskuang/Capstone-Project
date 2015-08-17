@@ -93,66 +93,63 @@
  }
 
  .post-text-image {
-	 height: 104px;
-	 width: 113px;
+	 margin-right: -279px;
+	 height: 123px;
+	 width: 99px;
 	 display:block;
-	 background-image: url("/images/icons4.png");
-	 background-size: 644px;
-	 background-position: 153px 150px;
+	 background-image: url("/images/icons/text-icon.png");
+	 background-size: 104px;
 	 float:left;
  }
 
  .post-quote-image {
-		height: 102px;
-		width: 108px;
+	  margin-right: -279px;
+		height: 123px;
+		width: 94px;
+		background-size: 95px;
 		display:block;
-		background-image: url("/images/icons4.png");
-		background-size: 644px;
-		background-position: 262px 262px;
+		background-image: url("/images/icons/quote-icon.png");
 		float:left;
 
  }
 
  .post-link-image {
-		height: 103px;
-		width: 109px;
+	 margin-right: -1px;
+		 height: 123px;
+		 width: 96px;
+		 background-size: 95px;
 		display:block;
-		background-image: url("/images/icons4.png");
-		background-size: 644px;
-		background-position: 375px 375px;
+		background-image: url("/images/icons/link-icon.png");
 		float:left;
 
  }
 
  .post-picture-image {
-	 height: 103px;
-	 width: 109px;
+	 height: 123px;
+	 width: 96px;
+	 background-size: 96px;
 	 display:block;
-	 background-image: url("/images/icons4.png");
-	 background-size: 644px;
-	 background-position: 601px 376px;
+	 background-image: url("/images/icons/image-icon.png");
 	 float:left;
 
  }
 
  .post-song-image {
-	 height: 107px;
-	 width: 108px;
+	 height: 123px;
+	 width: 95px;
+	 background-size: 96px;
 	 display:block;
-	 background-image: url("/images/icons4.png");
-	 background-size: 644px;
-	 background-position: 601px 264px;
+	 background-image: url("/images/icons/audio-icon.png");
 	 float:left;
 
  }
 
  .post-video-image {
-	 height: 103px;
-	 width: 113px;
+	 height: 123px;
+	 width: 103px;
+	 background-size: 97px;
 	 display:block;
-	 background-image: url("/images/icons4.png");
-	 background-size: 644px;
-	 background-position: 600px 151px;
+	 background-image: url("/images/icons/video-icon.png");
 	 float:left;
 
  }

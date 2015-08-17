@@ -6,4 +6,12 @@ Tumblr.Collections.Notes = Backbone.Collection.extend({
   url: "/api/notes",
   model: Tumblr.Models.Note,
 
+  fetchByLike: function(like_id) {
+    var filtered = this.filter(function(note) {
+      return note.get("like_id") === like_id;
+    });
+    return new Tumblr.Collections.Notes(filtered);
+  }
+
+
 });

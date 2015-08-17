@@ -5,6 +5,11 @@ json.extract!(
   :user_id
 )
 
+json.extract!(
+  blog.user,
+  :username
+)
+
 
   json.posts do
     json.array! posts do |post|

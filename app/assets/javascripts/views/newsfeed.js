@@ -1,11 +1,13 @@
 Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   initialize: function(options) {
+    this.blogCollection = options.blogCollection;
     this.postCollection = options.postCollection;
     this.feedCollection = options.feedCollection;
     this.listenTo(this.feedCollection, "sync add", this.render);
     this.listenTo(this.feedCollection, 'add', this.addPostView);
     this.feedCollection.each(this.addPostView.bind(this));
     this.listenTo(this.feedCollection, "remove", this.removePostView);
+    this.addTrendingBlogs();
 
 
   },
@@ -82,10 +84,13 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
       }
       this.postCollection.add(postModel);
       this.feedCollection.add(postModel);
+      // postModel.fetch();
       Backbone.history.navigate("#/feed/", {trigger: true})
     }.bind(this)});
 
   },
+
+
 
   createTagsAndTaggings: function(postModel, tags) {
     // this.listenTo(postModel.tags(), "sync add", this.render)
@@ -111,6 +116,12 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     }
     return result;
 
+  },
+
+  addTrendingBlogs: function() {
+
+    this.trendingView = new Tumblr.Views.trendingBlogs({blogCollection: this.blogCollection});
+    this.addSubview("#rightSideContent", this.trendingView);
   }
 
 

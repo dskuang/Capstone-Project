@@ -2,6 +2,8 @@ class Api::BlogsController < ApplicationController
   def index
     if params[:query].present?
       @blogs = Blog.where("title ~ ?", params[:query])
+    elsif params[:trending].present?
+      @blogs = Blog.joins(:posts).joins(:notes).group(:id).order(:count).limit(5)
     else
       @blogs = Blog.all
     end

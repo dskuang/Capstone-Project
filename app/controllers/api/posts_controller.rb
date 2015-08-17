@@ -17,7 +17,7 @@ class Api::PostsController < ApplicationController
     @post.user_id = current_user.id
     @post.blog_id = blog_id
     if @post.save
-      render :json => @post
+      render "show"
     else
       render :json => @post.errors.full_messages, :status => 422
     end

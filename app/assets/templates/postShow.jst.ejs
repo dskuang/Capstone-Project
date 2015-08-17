@@ -61,9 +61,19 @@
     <% post.tags().forEach(function(tag) { %>
       <%= tag.escape("label") %>
     <% }) %>
-  <div class="bottom-right-container">
-    <div class="reblog-image" data-post-id="<%=post.id%>"></div>
-    <button class="btn btn-primary like-button"><%= likeState %></button>
+    <% var notetext = post.notes().length === 1 ? "Note" : "Notes" %>
+    <p><%=post.notes().length%> <%=notetext%> <p>
+
+    <ul class="notes-ul">
+      <% post.notes().forEach(function(note) { %>
+        <!-- <li class="notes-li"><%= note.escape("note_text") %></li> -->
+      <% }) %>
+    <ul>
+
+    <div class="bottom-right-container">
+      <div class="reblog-image" data-post-id="<%=post.id%>"></div>
+      <button class="btn btn-primary like-button"><%= likeState %></button>
+    </div>
   </div>
-  </div>
+
 </div>

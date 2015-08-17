@@ -20,13 +20,11 @@ json.extract!(
 )
 
 
-# json.user do
-#   json.post.user do |user|
-    json.extract!(
-    post.user,
-    :username)
-#   end
-# end
+json.extract!(
+  post.user,
+  :username
+)
+
 
 
 json.tags do
@@ -41,21 +39,14 @@ json.notes do
   end
 end
 
-if current_user
-  follow_id = Follow.find_follow_by_user(current_user.id, post.user_id)[0]
-  follow_id = follow_id ? follow_id.id : nil
 
-  json.follow_relation_id follow_id
+follow_id = Follow.find_follow_by_user(current_user.id, post.user_id)[0]
+follow_id = follow_id ? follow_id.id : nil
 
-  like_id = post.likes.select { |like| like.user_id == current_user.id }[0]
-  # like_id = Like.find_like_by_user(current_user.id, post.id)[0]
-  like_id = like_id ? like_id.id : nil
+json.follow_relation_id follow_id
 
-  json.like_relation_id like_id
-end
+like_id = post.likes.select { |like| like.user_id == current_user.id }[0]
+# like_id = Like.find_like_by_user(current_user.id, post.id)[0]
+like_id = like_id ? like_id.id : nil
 
-# if (current_user.followees.include?(post.user))
-#   json.followState "followed"
-# else
-#   json.followState "unfollowed"
-# end
+json.like_relation_id like_id

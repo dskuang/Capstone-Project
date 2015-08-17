@@ -18,11 +18,12 @@
 
 .post-nav {
   margin:0 auto;
-  width: 605px;
+  width: 1136px;
   height: 106px;
   margin-bottom: 60px;
   display: flex;
   border-radius: 23px;
+  padding-right:35px;
 }
 
 .post-nav:after{
@@ -72,7 +73,7 @@
 
 #leftSideBar {
   display: none;
-  height: 699px;
+  height: 638px;
   width: 579px;
   border-radius: 10px;
   background-color: white;
@@ -84,9 +85,9 @@
 
 
 .newsfeed-posts .bottom-right-container {
-  margin-left: 454px;
+  margin-left: 368px;
   width:117px;
-  padding-bottom: 28px;
+  padding-bottom: 22px;
 }
 
 .newsfeed-posts .like-button {

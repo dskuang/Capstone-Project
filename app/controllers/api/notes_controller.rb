@@ -25,7 +25,7 @@ class Api::NotesController < ApplicationController
   end
 
   def note_params
-    params.require(:note).permit(:note_text, :post_id)
+    params.require(:note).permit(:note_text, :post_id, :like_id)
   end
 
 end

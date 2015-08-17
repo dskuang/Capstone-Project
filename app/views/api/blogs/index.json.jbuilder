@@ -6,4 +6,8 @@ json.array! @blogs do |blog|
     :title,
     :user_id
   )
+  json.extract!(
+    blog.user,
+    :username
+  )
 end
