@@ -1,6 +1,6 @@
 Tumblr.Views.postIndex = Backbone.CompositeView.extend({
   initialize: function(options) {
-    this.feedCollection = options.feedCollection
+    this.feedCollection = options.feedCollection;
     this.listenTo(this.collection, "change sync", this.render);
     this.listenTo(this.collection, 'add', this.addPostView);
     this.listenTo(this.collection, "remove", this.removePostView);
