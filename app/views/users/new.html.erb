@@ -1,11 +1,11 @@
 <div class="credential-background">
   <div class= "credential-div topcorner">
-    <button class="button btn btn-primary"><a href="/session/new">Log in</a></button>
-    <button class="button btn btn-primary"><a href="/users/new">Sign up</a></button>
+    <button class="button"><a href="/session/new">Log in</a></button>
+    <button class="button"><a href="/users/new">Sign up</a></button>
   </div>
 
     <div class="session-form-container">
-      <!-- <div class="opacity-fill"> -->
+
       <div class="session-form">
         <form action="<%=users_url%>" method="post">
           <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
@@ -17,6 +17,6 @@
           <input class="sign-in-button btn btn-primary" type ="submit" value = "Sign Up">
         </form>
       </div>
-    
+
   </div>
 </div>
