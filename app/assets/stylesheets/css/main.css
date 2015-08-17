@@ -50,7 +50,7 @@
 
 	.topcorner{
     position:absolute;
-    top:10px;
+    top: 10px;
     right: 10px;
  }
 
@@ -353,7 +353,7 @@
 }
 
 .button:after{
-	color:#e9e6e4;
+	color: #e9e6e4;
 	content: "";
 	display: block;
 	font-size: 30px;
@@ -392,25 +392,25 @@
 .button:hover{
 	background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
 	background-image: linear-gradient(top, #fff, #f4f1ee);
-	color:#0088cc;
+	color: #0088cc;
 }
 
 .heart:hover:after{
-	color:#f94e66;
-	text-shadow:0px 0px 6px #f94e66;
+	color: #f94e66;
+	text-shadow: 0px 0px 6px #f94e66;
 }
 
 .flower:hover:after{
-	color:#f99e4e;
-	text-shadow:0px 0px 6px #f99e4e;
+	color: #f99e4e;
+	text-shadow: 0px 0px 6px #f99e4e;
 }
 
 .tick:hover:after{
 	color:#83d244;
-	text-shadow:0px 0px 6px #83d244;
+	text-shadow: 0px 0px 6px #83d244;
 }
 
 .cross:hover:after{
 	color:#eb2f2f;
-	text-shadow:0px 0px 6px #eb2f2f;
+	text-shadow: 0px 0px 6px #eb2f2f;
 }
