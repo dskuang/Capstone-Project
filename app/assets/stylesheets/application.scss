@@ -59,3 +59,18 @@
   width:500px;
   margin: 0 auto;
 }
+
+.navbar-right {
+  width: 217px;
+}
+
+.navbar-right:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+
+.search-input {
+  background-color: #36465D
+}

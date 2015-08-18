@@ -8,37 +8,40 @@
 }
 
 
+
+
 .home-icon {
-  height: 51px;
-  width: 44px;
+  margin-top: 12px;
+  height: 26px;
+  width: 25px;
   display:block;
-  background-image: url("/images/icons3.png");
-  background-size: 214px;
-  background-position: 206px 60px;
+  background-image: url("/images/icons/home-icon.png");
+  background-size: 25px;
+
   float:left;
-  margin-right: 20px;
+  margin-right: 42px;
 
 }
 
 .explore-icon {
- height: 46px;
- width: 65px;
- display:block;
- background-image: url("/images/icons3.png");
- background-size: 310px;
- background-position: 224px 291px;
- float:left;
- margin-right: 20px;
+   height: 30px;
+   width: 30px;
+   display:block;
+   background-image: url("/images/icons/explore-icon.png");
 
+   float:left;
+   margin-right: 44px;
+   background-size: 30px;
+   margin-top: 10px;
 
 }
 
 .log-icon {
-   height: 47px;
-   width: 43px;
+   margin-top: 12px;
+   height: 26px;
+   width: 21px;
    display:block;
-   background-image: url("/images/icons3.png");
-   background-size: 252px;
-   background-position: 118px 240px;
+   background-image: url("/images/icons/profile-icon.png");
+   background-size: 21px;
    float:left;
 }
