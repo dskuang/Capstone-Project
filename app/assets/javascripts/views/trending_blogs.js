@@ -1,6 +1,6 @@
 Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
   initialize: function(options) {
-    this.postCollection = options.postCollection;
+    this.postCollection = new Tumblr.Collections.TrendingPosts();
     this.blogCollection = options.blogCollection;
     this.listenTo(this.blogCollection, "sync", this.render);
     this.listenTo(this.postCollection, "sync", this.addPostView);
@@ -13,6 +13,8 @@ Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
         // debugger
       }.bind(this)
     });
+    // this.addPostView();
+    // this.listenTo(this.postCollection, "remove", this.removePostView);
     // this.addPostView();
   },
 
@@ -37,6 +39,10 @@ Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
     // debugger
     var subPostView = new Tumblr.Views.postShow({model: post});
     this.addSubview(".rightSubPost", subPostView);
+  },
+
+  removePostView: function(post) {
+      this.removeModelSubView(".rightSubPost", post)
   },
 
 });

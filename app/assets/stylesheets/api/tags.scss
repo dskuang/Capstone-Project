@@ -1,9 +1,18 @@
 // Place all the styles related to the api/tags controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.tag-container {
+.bottom-container {
   padding: 20px 20px;
   left: 0;
   bottom: 0;
   color: #ccc;
+  height: 72px;
+  position: relative;
+
+}
+
+.bottom-container:after{
+  clear: both;
+  display: both;
+  content: "";
 }

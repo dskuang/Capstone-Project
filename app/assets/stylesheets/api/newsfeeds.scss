@@ -18,7 +18,7 @@
 
 .post-nav {
   margin: 0 auto;
-  width: 1136px;
+  width: 1154px;
   height: 106px;
   margin-bottom: 60px;
   display: flex;
@@ -45,7 +45,6 @@
 
 .quote-post{
   margin: 0 auto;
-
 }
 
 
@@ -58,6 +57,7 @@
   height: 100%;
   top: 0%;
   left: 0%;
+  z-index: 5;
 }
 
 
@@ -85,20 +85,15 @@
 
 
 .newsfeed-posts .post-header{
-  width: 100%;
- min-height: 55px;
- margin: 0 auto;
- margin-top: 20px;
- padding-top: 26px;
- margin-top: 22px;
+   width: 100%;
+   min-height: 55px;
+   margin: 0 auto;
+   margin-top: 20px;
+
+   margin-top: 22px;
 
 }
 
-.newsfeed-posts .bottom-right-container {
-  margin-left: 368px;
-  width: 117px;
-  padding-bottom: 22px;
-}
 
 .newsfeed-posts .like-button {
   float:left;
@@ -111,9 +106,68 @@
 }
 
 .newsfeed-posts .follow-button {
-  margin-left: 454px;
   padding: 0;
   background: none;
   border: none;
+  float: left;
+  right: 19px;
+  top: -9px;
+  position: absolute;
 
+}
+
+.newsfeed-posts .user-header {
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative;
+}
+
+.newsfeed-posts .user-header:after {
+  clear: both;
+  content: "";
+  display: block;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.newsfeed-posts .username-header {
+  float:left;
+
+}
+
+.newsfeed-posts .post-text-header {
+  padding-left: 24px;
+}
+
+.newsfeed-posts .post-body{
+
+  min-height: 20px;
+  padding-left: 54px;
+  padding-right: 54px;
+  width: 100%;
+
+  word-break: break-all;
+  margin: 0 auto;
+}
+
+.newsfeed-posts .tag-notes {
+  float: left;
+}
+
+.newsfeed-posts .bottom-right-container{
+  width: 96px;
+  float: left;
+  bottom: -11px;
+  right: 13px;
+  position: absolute;
+  padding-bottom: 22px;
+}
+
+.newsfeed-posts .index-post-image {
+  max-height: 100%;
+  max-width: 96%;
+}
+
+.newsfeed-posts .audio-post {
+  width: 552px;
 }

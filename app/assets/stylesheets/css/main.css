@@ -93,63 +93,69 @@
  }
 
  .post-text-image {
-	 margin-right: -279px;
-	 height: 123px;
-	 width: 99px;
+	 margin-right: -281px;
+	 height: 118px;
+	 width: 103px;
 	 display:block;
 	 background-image: url("/images/icons/text-icon.png");
-	 background-size: 104px;
+	 background-size: 83px;
+	 background-position: 6px 11px;
 	 float:left;
  }
 
  .post-quote-image {
-	  margin-right: -279px;
-		height: 123px;
-		width: 94px;
-		background-size: 95px;
+	  margin-right: -280px;
+		height: 118px;
+		width: 99px;
+		background-size: 82px;
 		display:block;
 		background-image: url("/images/icons/quote-icon.png");
 		float:left;
+		background-position: 8px 4px;
 
  }
 
  .post-link-image {
-	 margin-right: -1px;
-		 height: 123px;
-		 width: 96px;
-		 background-size: 95px;
+	 margin-right: 0px;
+		 height: 118px;
+		 width: 99px;
+		 background-size: 83px;
 		display:block;
 		background-image: url("/images/icons/link-icon.png");
 		float:left;
+		background-position: 8px 4px;
 
  }
 
  .post-picture-image {
-	 height: 123px;
-	 width: 96px;
-	 background-size: 96px;
+	 height: 118px;
+	 width: 99px;
+	 background-size: 86px;
 	 display:block;
 	 background-image: url("/images/icons/image-icon.png");
 	 float:left;
+	 background-position: 7px 1px;
 
  }
 
  .post-song-image {
-	 height: 123px;
-	 width: 95px;
-	 background-size: 96px;
+	 height: 118px;
+	 width: 99px;
+	 background-size: 86px;
 	 display:block;
 	 background-image: url("/images/icons/audio-icon.png");
 	 float:left;
+	  background-position: 7px 1px;
 
  }
 
  .post-video-image {
-	 height: 123px;
+	 height: 118px;
 	 width: 103px;
-	 background-size: 97px;
+	 background-size: 86px;
 	 display:block;
 	 background-image: url("/images/icons/video-icon.png");
+	 background-position: 9px 3px;
 	 float:left;
 
  }
@@ -268,7 +274,7 @@
  }
 
 
- 
+
 .red-heart:hover{
 	height: 29px;
 	width: 35px;

@@ -388,6 +388,8 @@
  }
 
  .post-text-image {
+   border-top-left-radius: 7px;
+   border-bottom-left-radius: 7px;
 	 margin-right: -279px;
 	 height: 123px;
 	 width: 99px;
@@ -440,6 +442,8 @@
  }
 
  .post-video-image {
+   border-top-right-radius: 7px;
+   border-bottom-right-radius: 7px;
 	 height: 123px;
 	 width: 103px;
 	 background-size: 97px;

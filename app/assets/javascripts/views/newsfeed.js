@@ -17,7 +17,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     "click .submit-post": "createPost",
     "click .button-post": "renderNewForm",
     "click .cancel-post": "removeNewPostView",
-    "click .post-item .home-icon": "performSlide"
+    "click .post-item .user-blog-icon": "performSlide"
   },
 
   performSlide: function(e) {
@@ -117,7 +117,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   addTrendingBlogs: function() {
 
     this.trendingView = new Tumblr.Views.trendingBlogs({
-     postCollection: this.postCollection, blogCollection: this.blogCollection});
+                        blogCollection: this.blogCollection });
     this.addSubview("#rightSideContent", this.trendingView);
   }
 
