@@ -53,7 +53,9 @@
         <%= post.escape("imagebody") %>
       <% } else if(post.get("attr") === "Song") { %>
         <%= post.escape("songbody") %>
-      <% } %>
+      <% } else if(post.get("attr") === "Video") { %>
+        <%= post.escape("videobody") %>
+      <% }%>
     </p>
   </div>
 

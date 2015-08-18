@@ -1,7 +1,11 @@
 class Api::PostsController < ApplicationController
 
   def index
-    @posts = Post.includes(:likes, :taggings, :tags, :notes).where(og_post_id: nil)
+    if params[:trending].present?
+      @posts = Post.joins(:notes).group(:id).order(:count).last(5)
+    else
+      @posts = Post.includes(:likes, :taggings, :tags, :notes).where(og_post_id: nil)
+    end
     render "index"
   end
 

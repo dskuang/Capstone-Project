@@ -9,7 +9,6 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     this.listenTo(this.feedCollection, "remove", this.removePostView);
     this.addTrendingBlogs();
 
-
   },
 
   template: JST["newsFeed"],
@@ -90,9 +89,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   },
 
 
-
   createTagsAndTaggings: function(postModel, tags) {
-    // this.listenTo(postModel.tags(), "sync add", this.render)
     tags.forEach(function(tag) {
       var tagModel = new Tumblr.Models.Tag({label: tag});
       tagModel.save({}, {
@@ -119,7 +116,8 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
 
   addTrendingBlogs: function() {
 
-    this.trendingView = new Tumblr.Views.trendingBlogs({blogCollection: this.blogCollection});
+    this.trendingView = new Tumblr.Views.trendingBlogs({
+     postCollection: this.postCollection, blogCollection: this.blogCollection});
     this.addSubview("#rightSideContent", this.trendingView);
   }
 

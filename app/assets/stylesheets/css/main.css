@@ -268,41 +268,7 @@
  }
 
 
- .home-icon {
-	 height: 51px;
-	 width: 44px;
-	 display:block;
-	 background-image: url("/images/icons3.png");
-	 background-size: 214px;
-	 background-position: 206px 60px;
-	 float:left;
-	 margin-right: 20px;
-
- }
-
- .explore-icon {
-	height: 46px;
-	width: 65px;
-	display:block;
-	background-image: url("/images/icons3.png");
-	background-size: 310px;
-	background-position: 224px 291px;
-	float:left;
-	margin-right: 20px;
-
-
- }
-
-.log-icon {
-		height: 47px;
-		width: 43px;
-		display:block;
-		background-image: url("/images/icons3.png");
-		background-size: 252px;
-		background-position: 118px 240px;
-		float:left;
-}
-
+ 
 .red-heart:hover{
 	height: 29px;
 	width: 35px;
@@ -413,4 +379,10 @@
 .cross:hover:after{
 	color:#eb2f2f;
 	text-shadow: 0px 0px 6px #eb2f2f;
+}
+
+.solid-line {
+	height: 1px;
+	width: 10px;
+	background: #ccc
 }

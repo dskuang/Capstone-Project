@@ -1,9 +1,12 @@
 <p>Recommended Blogs</p>
 <% blogs.each(function(blog) { %>
-<p><a href="#/blogs/<%= blog.id %>"> </a> 
-
-  <%=blog.escape("title")%>
-  <br>
-  <%=blog.escape("username")%>
-</p>
+<div class="rec-blog">
+  <p><a href="#/blogs/<%= blog.id %>"><%= blog.escape("title") %>
+    <br>
+    <%=blog.escape("username")%>
+  </a></p>
+</div>
 <% }) %>
+<br>
+<p>Radar</p>
+<div class="rightSubPost"></div>
