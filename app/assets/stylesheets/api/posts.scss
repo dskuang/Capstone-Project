@@ -157,3 +157,9 @@
   right: 0;
   bottom: 0;
 }
+
+.clear {
+  clear: both;
+  content: "";
+  display: block;
+}
