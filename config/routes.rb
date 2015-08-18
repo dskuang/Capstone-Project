@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   root to: 'static_pages#root'
-  resources :users
   resource :session
+  resources :users
 
   namespace :api, defaults:{format: :json} do
     resources :blogs, only: [:index, :create, :show, :destroy]
-
+    resources :users
     resources :posts
     resource :newsfeed
     resources :likes
