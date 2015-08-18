@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :users
 
   namespace :api, defaults:{format: :json} do
-    resources :blogs, only: [:index, :create, :show, :destroy]
+    resources :blogs, only: [:index, :create, :show, :destroy, :update]
     resources :users
     resources :posts
     resource :newsfeed

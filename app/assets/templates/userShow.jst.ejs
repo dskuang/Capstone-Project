@@ -1,3 +1,5 @@
-<p class="user-text"><%= user.escape("username") %></p>
-<p class="title-text"><%= user.escape("title") %></p>
-<img src="<%= user.escape("profileUrl") %>">
+<p class="user-name" value=" <%= user.escape("username") %> "> <%= user.escape("username") %> </p>
+<p class="user-blog" value=" <%= user.blog().escape("title") %> "> <%= user.blog().escape("title") %> </p>
+<div class="user-img">
+  <img class= "profile-pic" name= "user[profileUrl]" src="<%= user.escape("profileUrl") %>" width="160" height="160"  value="">
+</div>

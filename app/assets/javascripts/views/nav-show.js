@@ -45,7 +45,7 @@ Tumblr.Views.NavShow = Backbone.View.extend({
     }
     var formData = $(".navbar-form").serializeJSON();
     var searchCollection = new Tumblr.Collections.Blogs();
-    searchCollection.fetch({data: formData, processData:true,
+    searchCollection.fetch({data: formData, processData: true,
       success: function () {
         this.renderResults(searchCollection);
       }.bind(this)

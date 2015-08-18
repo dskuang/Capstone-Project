@@ -5,8 +5,11 @@ json.extract!(
   :profileUrl
 
 )
-
-json.extract!(
-  user.blog,
-  :title
-)
+json.blog do
+  json.extract!(
+    user.blog,
+    :id,
+    :title,
+    :user_id
+  )
+end

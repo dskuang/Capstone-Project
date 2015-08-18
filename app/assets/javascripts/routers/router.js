@@ -36,7 +36,6 @@ Tumblr.Routers.Router = Backbone.Router.extend({
 
   userShow: function(id) {
     this.userModel = this.userCollection.getOrFetch(id);
-    debugger
     var view = new Tumblr.Views.userShow({model: this.userModel});
     this._swapView(view);
   },
