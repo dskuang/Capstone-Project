@@ -14,25 +14,68 @@
 
 }
 
-.rightSubPost .post-item{
-  width: 187px;
-  height: 317px;
+.rightSubPost {
+  .post-item {
+    width: 187px;
+    height: 317px;
+    font-size: 1em;
+  }
+
+  .index-post-image { max-width: 100%; }
+  .video-post { max-width: 100%; }
+  .like-button { float: right; }
+  .reblog-image { float: left; }
+  .post-text-header{ min-height: 67px; margin-top: 20px; }
+  .follow-button {
+    padding: 0;
+    position: relative;
+    background: none;
+    border: none;
+    right: -57px;
+    top: -23px;
+
+  }
+  .post-body {
+    height: 165px;
+    padding-left: 13px;
+    padding-right: 13px;
+    overflow-y: auto;
+  }
+  .tag-notes {
+    position: absolute;
+    left: 18%;
+    top: -310%;
+    transform: translate(-50%, -50%);
+  }
+  .post-body::-webkit-scrollbar { display: none; }
+
+  .bottom-container {
+      padding: 50px 0px;
+      left: 0;
+      bottom: 0;
+      color: #ccc;
+      height: 72px;
+      position: relative;
+  }
+  .user-header {
+    position: relative;
+  }
+  .username-header {
+    position: absolute;
+    left: 76px;
+  }
+  .user-blog-icon {
+    position: absolute;
+    left: 35px;
+  }
+
+
 }
 
-.rightSubPost .post-text-header{
-  min-height: 67px;
-}
 
 .rec-blog {
   margin: 0 auto;
   width: 147px;
   border-bottom: 1px solid grey;
   margin-top: 5px;
-}
-
-.rightSubPost .follow-button {
-  padding: 0;
-  background: none;
-  border: none;
-
 }

@@ -10,12 +10,12 @@ Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
     });
     this.postCollection.fetch({data: {trending: true}, processData:true,
       success: function () {
-        // debugger
+
       }.bind(this)
     });
-    // this.addPostView();
+
     // this.listenTo(this.postCollection, "remove", this.removePostView);
-    // this.addPostView();
+
   },
 
   template: JST["trending"],
@@ -24,10 +24,14 @@ Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
 
     var content = this.template({blogs: this.blogCollection,
                                  posts: this.postCollection});
-
     this.$el.html(content);
     this.attachSubviews();
+
     return this;
+  },
+
+  invokeResizeFont: function() {
+      $(".rightSubPost .post-item").textfill(10);
   },
 
   getRandomInt: function(min, max) {

@@ -21,7 +21,7 @@
         <button class="follow-button"><%= followState %></button>
       </div>
 
-    <p class="post-text-header">
+    <div class="post-text-header">
       <% if (post.get("attr") === "Text") {%>
         <%= post.escape("title") %>
       <% } else if (post.get("attr") === "Quote") { %>
@@ -29,8 +29,8 @@
       <% } else if(post.get("attr") === "Link") { %>
         <%= post.escape("linkurl") %>
 
-    </p>
-    <div>
+    <!-- </div> -->
+    <!-- <div> -->
       <% } else if(post.get("attr") === "Image") { %>
         <img class = "index-post-image" src="<%= post.get("imageUrl") %>">
       <% } else if(post.get("attr") === "Song") { %>

@@ -93,6 +93,9 @@
  }
 
  .post-text-image {
+	 border-bottom-left-radius: 7px;
+	 border-top-left-radius: 7px;
+
 	 margin-right: -281px;
 	 height: 118px;
 	 width: 103px;
@@ -150,6 +153,8 @@
  }
 
  .post-video-image {
+	 border-bottom-right-radius: 7px;
+	 border-top-right-radius: 7px;
 	 height: 118px;
 	 width: 103px;
 	 background-size: 86px;

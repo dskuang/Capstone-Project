@@ -8,6 +8,9 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
     this.margin = 20;
     this.colWidth = 0;
     this.collection.each(this.addPostView.bind(this));
+    $(window).load(function () {
+      this.onRender();
+    }.bind(this));
     $(window).on("resize", this.render.bind(this));
   },
 
@@ -47,8 +50,18 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
     var content = this.template({posts: this.collection});
     this.$el.html(content);
     this.attachSubviews();
-    this.onRender();
+    // this.invokeMasonry();
+    this.setupBlocks();
+    this.positionBlocks();
+    // this.onRender();
     return this;
+  },
+
+  invokeMasonry: function() {
+    $('.grid').masonry({
+      itemSelector: '.post-item',
+      columnWidth: 200
+    });
   },
 
   onRender: function () {
