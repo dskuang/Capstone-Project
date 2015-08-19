@@ -30,14 +30,8 @@ Tumblr.Views.postShow = Backbone.View.extend({
   renderTagPostIndex: function(e) {
     e.preventDefault();
     var tag = $(e.currentTarget).data("tag");
-    var postCollection = new Tumblr.Collections.TagPosts();
-    postCollection.fetch({data: {tag: tag}, processData:true,
-      success: function () {
-        var view = new Tumblr.Views.postIndex({
-          collection: postCollection, feedCollection: this.feedCollection});
-        
-      }.bind(this)
-    });
+    Backbone.history.navigate("#tags/" + tag, {trigger: true});
+    
   },
 
   toggleFollow: function(e) {

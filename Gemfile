@@ -28,6 +28,7 @@ gem 'serialize_json-rails'
 gem 'bootstrap-sass'
 gem 'filepicker-rails', '~> 2.0.0'
 gem 'figaro'
+gem 'jquery-ui-rails'
 
 
 # Use ActiveModel has_secure_password

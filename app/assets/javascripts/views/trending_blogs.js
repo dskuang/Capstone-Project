@@ -14,8 +14,6 @@ Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
       }.bind(this)
     });
 
-    // this.listenTo(this.postCollection, "remove", this.removePostView);
-
   },
 
   template: JST["trending"],

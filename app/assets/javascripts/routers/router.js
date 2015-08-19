@@ -11,7 +11,8 @@ Tumblr.Routers.Router = Backbone.Router.extend({
     "": "postIndex",
     "feed/": "feedIndex",
     "blogs/:id": "blogShow",
-    "user/:id": "userShow"
+    "user/:id": "userShow",
+    "tags/:tag_name": "postsForTag"
   },
 
   blogShow: function(id) {
@@ -31,6 +32,15 @@ Tumblr.Routers.Router = Backbone.Router.extend({
     this.postCollection.fetch();
     var view = new Tumblr.Views.postIndex({blogCollection: this.blogCollection,
       collection: this.postCollection, feedCollection: this.feedCollection});
+    this._swapView(view);
+  },
+
+  postsForTag: function(tag) {
+    var postCollection = new Tumblr.Collections.TagPosts();
+    postCollection.fetch({data: {tag: tag}, processData: true });
+    var view = new Tumblr.Views.postIndex({blogCollection: this.blogCollection,
+      collection: postCollection, feedCollection: this.feedCollection});
+      // debugger
     this._swapView(view);
   },
 

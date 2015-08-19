@@ -12,10 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require underscore
 //= require backbone
 //= require serialize_json
 //= require bootstrap
+//= require bootstrap-tokenfield
 //= require tumblr
 //= require_tree ./util
 //= require_tree ../templates

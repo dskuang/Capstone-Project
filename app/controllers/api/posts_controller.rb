@@ -4,7 +4,7 @@ class Api::PostsController < ApplicationController
     if params[:trending].present?
       @posts = Post.joins(:notes).group(:id).order(:count).last(5)
     elsif params[:tag].present?
-      @posts = Post.joins(:tags).where(tags: {label: "#tagagag"})
+      @posts = Post.joins(:tags).where(tags: {label: params[:tag]})
 
     else
       @posts = Post.includes(:likes, :taggings, :tags, :notes).where(og_post_id: nil)

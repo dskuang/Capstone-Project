@@ -1,6 +1,7 @@
 Tumblr.Views.postIndex = Backbone.CompositeView.extend({
   initialize: function(options) {
     this.feedCollection = options.feedCollection;
+    this.blogCollection = options.blogCollection;
     this.listenTo(this.collection, "change sync", this.render);
     this.listenTo(this.collection, 'add', this.addPostView);
     this.listenTo(this.collection, "remove", this.removePostView);
@@ -14,9 +15,48 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
     $(window).on("resize", this.render.bind(this));
   },
 
-  className: "index",
+  events: {
+    "click .post-item .user-blog-icon": "performSlide",
+    "click .blog-shade": "removeSlide"
+  },
 
   template: JST["postIndex"],
+
+  performSlide: function(e) {
+    e.preventDefault();
+    var blog_id = $(e.currentTarget).data("blog-id");
+    this.addSideView(blog_id);
+    this.$shadediv = $("<div class='blog-shade'></div>");
+    this.$el.append(this.$shadediv);
+    $('.leftSideBar').toggle("slide", {
+      "direction": "left",
+      "distance": "575px"
+    }, "fast");
+    $('#parent-form').toggleClass('left-float');
+  },
+
+  removeSlide: function(e) {
+    e.preventDefault();
+    this.$shadediv.remove();
+    this.removeSideView();
+    $('.leftSideBar').toggle("slide", {
+      "direction": "left",
+      "distance": "575px"
+    }, "fast");
+    $('#parent-form').toggleClass('left-float');
+
+  },
+
+  addSideView: function(id) {
+    this.blogModel = this.blogCollection.getOrFetch(id);
+    this.subSideView = new Tumblr.Views.blogShow({model: this.blogModel});
+    this.addSubview(".leftSideBar", this.subSideView);
+  },
+
+  removeSideView: function() {
+    this.removeModelSubview(".leftSideBar", this.blogModel);
+    this.subSideView = null;
+  },
 
   setupBlocks: function() {
     this.windowWidth = $(window).width();
@@ -70,7 +110,7 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
   },
 
   addPostView: function(post) {
-    var subPostView = new Tumblr.Views.postShow({model: post, feedCollection: this.feedCollection});
+    var subPostView = new Tumblr.Views.postShow({blogcollection: this.blogCollection, model: post, feedCollection: this.feedCollection});
     this.addSubview(".posts-index", subPostView);
   },
 

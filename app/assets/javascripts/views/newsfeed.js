@@ -27,7 +27,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     this.addSideView(blog_id);
     this.$shadediv = $("<div class='blog-shade'></div>");
     this.$el.append(this.$shadediv);
-    $('#leftSideBar').toggle("slide", {
+    $('.leftSideBar').toggle("slide", {
       "direction": "left",
       "distance": "575px"
     }, "fast");
@@ -38,7 +38,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     e.preventDefault();
     this.$shadediv.remove();
     this.removeSideView();
-    $('#leftSideBar').toggle("slide", {
+    $('.leftSideBar').toggle("slide", {
       "direction": "left",
       "distance": "575px"
     }, "fast");
@@ -49,11 +49,11 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   addSideView: function(id) {
     this.blogModel = this.blogCollection.getOrFetch(id);
     this.subSideView = new Tumblr.Views.blogShow({model: this.blogModel});
-    this.addSubview("#leftSideBar", this.subSideView);
+    this.addSubview(".leftSideBar", this.subSideView);
   },
 
   removeSideView: function() {
-    this.removeModelSubview("#leftSideBar", this.blogModel);
+    this.removeModelSubview(".leftSideBar", this.blogModel);
     this.subSideView = null;
   },
 
@@ -67,8 +67,8 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   },
 
   removeNewPostView: function(e) {
-     e.preventDefault();
     if (this.postModel) {
+      e.preventDefault();
       this.removeModelSubview(".new-form-view", this.postModel);
       this.subNewView = null;
     }
@@ -94,22 +94,25 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     this.postModel = new Tumblr.Models.Post(attr);
     this.subNewView = new Tumblr.Views.postNew({model: this.postModel});
     this.addSubview(".new-form-view", this.subNewView);
+    $('#tokenfield').tokenfield();
   },
 
   createPost: function(e) {
     e.preventDefault();
+    var tokens = $('#tokenfield').tokenfield('getTokens').map(function(token){
+                  return token.value;
+                });
     var formData= $('.new-post').serializeJSON();
-    var regex = /(#[A-Za-z][A-Z]+)/ig
-    var tags = this.findHashtags(formData.post.tag)
+    formData.post.tag = tokens;
     postModel = new Tumblr.Models.Post(formData);
     postModel.save({}, { success: function() {
-      if(tags) {
-        this.createTagsAndTaggings(postModel, tags);
+      if(tokens.length > 0) {
+        this.createTagsAndTaggings(postModel, tokens);
       }
       this.postCollection.add(postModel);
       this.feedCollection.add(postModel);
     }.bind(this)});
-    this.removeNewPostView();
+    this.removeNewPostView(e);
   },
 
 
@@ -127,19 +130,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     })
   },
 
-  findHashtags: function(searchText) {
-    var regexp = /#([a-z0-9]+)\b(?!;)/igm
-    searchText = searchText.split(" ").join("").split(",").join("");
-    var result = searchText.match(regexp);
-    if (result) {
-        result = result.map(function(s){ return s.trim();});
-    }
-    return result;
-
-  },
-
   addTrendingBlogs: function() {
-
     this.trendingView = new Tumblr.Views.trendingBlogs({
                         blogCollection: this.blogCollection });
     this.addSubview("#rightSideContent", this.trendingView);
