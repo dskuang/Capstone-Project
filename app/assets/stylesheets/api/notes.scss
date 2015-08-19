@@ -1,3 +1,20 @@
 // Place all the styles related to the api/notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.notes-ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+.notes-li{
+  width:100px;
+  height: 27px;
+  display:none;
+}
+
+.tag-notes:hover  .notes-li{
+  display:block;
+  background: white;
+}

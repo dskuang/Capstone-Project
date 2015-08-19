@@ -5,40 +5,40 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-User.create({username: "user1", password: 123456})
+User.create({username: "user1", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
 Blog.create({user_id: 1, title: "blog 1"})
 
-User.create({username: "user2", password: 123456})
+User.create({username: "user2", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
 Blog.create({user_id: 2, title: "blog 2"})
 
-User.create({username: "user3", password: 123456})
+User.create({username: "user3", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
 Blog.create({user_id: 3, title: "blog 3"})
 
-User.create({username: "user4", password: 123456})
+User.create({username: "user4", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
 Blog.create({user_id: 4, title: "blog 4"})
 
-User.create({username: "user5", password: 123456})
+User.create({username: "user5", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
 Blog.create({user_id: 5, title: "blog 5"})
 
-User.create({username: "user6", password: 123456})
+User.create({username: "user6", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
 Blog.create({user_id: 6, title: "blog 6"})
 
-User.create({username: "user7", password: 123456})
+User.create({username: "user7", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
 Blog.create({user_id: 7, title: "blog 7"})
 
-User.create({username: "user8", password: 123456})
+User.create({username: "user8", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
 Blog.create({user_id: 8, title: "blog 8"})
 
-User.create({username: "user9", password: 123456})
+User.create({username: "user9", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
 Blog.create({user_id: 9, title: "blog 9"})
 
-User.create({username: "user10", password: 123456})
+User.create({username: "user10", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
 Blog.create({user_id: 10, title: "blog 10"})
 
-User.create({username: "user11", password: 123456})
+User.create({username: "user11", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
 Blog.create({user_id: 11, title: "blog 11"})
 
-User.create({username: "user12", password: 123456})
+User.create({username: "user12", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
 Blog.create({user_id: 12, title: "blog 12"})
 
 

@@ -1,12 +1,22 @@
 <p>Recommended Blogs</p>
-<% blogs.each(function(blog) { %>
-<div class="rec-blog">
-  <p><a href="#/blogs/<%= blog.id %>"><%= blog.escape("title") %>
-    <br>
-    <%=blog.escape("username")%>
-  </a></p>
+<div class="blog-container">
+
+  <% blogs.each(function(blog) { %>
+    <div class="blog-item-content">
+      <div class="user-thumbnail-pic">
+        <img class = "thumbnail-user" src="<%= blog.get("profileUrl") %>">
+      </div>
+      <div class="rec-blog">
+        <p><a href="#/blogs/<%= blog.id %>"><%= blog.escape("title") %>
+          <br>
+          <%=blog.escape("username")%>
+        </a></p>
+      </div>
+    </div>
+
+  <% }) %>
+
 </div>
-<% }) %>
 <br>
 <p class="radar-text">Radar</p>
 <div class="rightSubPost"></div>

@@ -34,6 +34,7 @@ Tumblr.Views.postNew = Backbone.View.extend({
     }
     filepicker.pick({type, service: "computer"},
       function(Blob) {
+        debugger
           selector.val(Blob.url);
       }.bind(this)
     );

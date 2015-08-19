@@ -25,11 +25,19 @@
  .header-input{
    margin:0 auto;
    width:500px;
+   height: 49px;
+   width: 500px;
+   margin-bottom: -25px;
  }
 
  .body-input{
    margin:0 auto;
-   width:500px;
+   width: 500px;
+   height: 125px;
+ }
+
+ textarea.form-control {
+   height: 125px;
  }
 
  .tag-input{

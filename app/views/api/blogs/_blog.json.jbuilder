@@ -7,7 +7,8 @@ json.extract!(
 
 json.extract!(
   blog.user,
-  :username
+  :username,
+  :profileUrl
 )
 
 

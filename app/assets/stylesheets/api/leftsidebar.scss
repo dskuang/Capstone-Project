@@ -1,0 +1,57 @@
+#leftSideBar {
+
+    display: none;
+    height: 942px;
+    width: 579px;
+    z-index: 10;
+    background-color: white;
+    top: 1px;
+    position: fixed;
+    overflow-y: scroll;
+    background-color: #36465D;
+
+
+  .post-item {
+    border-radius: 5px;
+    background: #FFF;
+    width: 485px;
+    margin: 0;
+    border: 1px black solid;
+    margin-bottom: 15px;
+  }
+
+  .follow-button {
+    display: none;
+  }
+
+  .user-blog-icon{
+    display: none;
+  }
+
+  .username-header{
+    display: none;
+  }
+
+  .bottom-right-container{
+    right: 0;
+    bottom: 17px;
+    position: absolute;
+    width: 100px;
+  }
+
+  .reblog-image{
+    float: left;
+  }
+  .like-button{
+    float: left;
+  }
+
+  .blog-title{
+    width: 547px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+  }
+}

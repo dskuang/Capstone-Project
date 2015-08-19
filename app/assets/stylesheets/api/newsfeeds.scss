@@ -6,7 +6,7 @@
   margin:0 auto;
   padding: 0;
   list-style-type: none;
-  width: 600px;
+  width: 601px;
   height: 300px;
 }
 
@@ -50,7 +50,19 @@
 
 
 .shade{
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.7);
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 5;
+}
+
+
+.blog-shade{
+  background-color: rgba(0,0,0,0.7);
   display: block;
   position: fixed;
   width: 100%;
@@ -71,18 +83,28 @@
   float: left;
 }
 
-#leftSideBar {
-  display: none;
-  height: 638px;
-  width: 579px;
-  border-radius: 10px;
-  background-color: white;
-  top: 169px;
-  position: fixed;
-  box-shadow: inset 0 0 0 25px #53a7ea;
+
+
+
+.newsfeed-posts .user-profile-pic{
+  float: left;
 }
 
+.newsfeed-posts .thumbnail-user{
+  width: 80px;
+  height: 71px;
+  position: absolute;
+  margin-left: -89px;
 
+}
+.newsfeed-posts .post-item-border{
+  border-radius: 5px;
+  background: #FFF;
+  width: 600px;
+  margin: 0 auto;
+  float: left;
+  margin-bottom: 21px;
+}
 
 .newsfeed-posts .post-header{
    width: 100%;
@@ -92,6 +114,11 @@
 
    margin-top: 22px;
 
+}
+.newsfeed-posts .post-item:after{
+  clear:both;
+  content: '';
+  display: block;
 }
 
 
@@ -152,6 +179,7 @@
 
 .newsfeed-posts .tag-notes {
   float: left;
+  position: absolute;
 }
 
 .newsfeed-posts .bottom-right-container{

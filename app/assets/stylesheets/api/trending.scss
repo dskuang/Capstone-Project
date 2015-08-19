@@ -7,10 +7,12 @@
 
 #rightSideContent p{
   color: #A7AEB0;
+  width: 136px;
 }
 
 .radar-text {
   margin-bottom: -29px;
+  padding-right: 99px;
 
 }
 
@@ -19,13 +21,15 @@
     width: 187px;
     height: 317px;
     font-size: 1em;
+    background-color: white
   }
 
+  .thumbnail-user {display: none;}
   .index-post-image { max-width: 100%; }
   .video-post { max-width: 100%; }
   .like-button { float: right; }
   .reblog-image { float: left; }
-  .post-text-header{ min-height: 67px; margin-top: 20px; }
+  .post-text-header{ min-height: 67px; }
   .follow-button {
     padding: 0;
     position: relative;
@@ -50,7 +54,7 @@
   .post-body::-webkit-scrollbar { display: none; }
 
   .bottom-container {
-      padding: 50px 0px;
+      padding: 32px 0px;
       left: 0;
       bottom: 0;
       color: #ccc;
@@ -72,10 +76,31 @@
 
 }
 
-
+.blog-container{
+  .thumbnail-user{
+    width: 61px;
+  }
+}
+.blog-container:after{
+  clear: both;
+  content: "";
+  display: block;
+}
 .rec-blog {
   margin: 0 auto;
-  width: 147px;
+  width: 81px;
+  float: left;
+}
+
+.user-thumbnail-pic{
+  float: left;
+  margin-right: -23px;
+}
+
+.blog-item-content{
+  margin-bottom: 10px;
+  width:144px;
+  height: 51px;
   border-bottom: 1px solid grey;
-  margin-top: 5px;
+
 }

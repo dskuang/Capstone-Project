@@ -35,11 +35,7 @@
 
 /*post-item for feed*/
 .post-item{
-  border-radius: 5px;
-  background: #FFF;
-  width: 600px;
-  margin-bottom: 30px;
-  margin: 0 auto;
+width: 601px;
 
 }
 
@@ -60,13 +56,13 @@
 
 }
 .new-post {
-  background-color: #364672;
+  background-color: white;
   position: relative;
   text-align:center;
-  width: 600px;
+  width: 545px;
   margin: 0 auto;
   margin-top: 200px;
-  height: 338px;
+  height: 322px;
   border-radius: 5px;
 }
 
@@ -93,6 +89,10 @@
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 
+}
+
+.posts-index .thumbnail-user{
+  display:none;
 }
 
 .posts-index .index-post-image {
@@ -163,8 +163,28 @@
   bottom: 0;
 }
 
+.submit-post {
+  margin-left: 374px;
+}
+
 .clear {
   clear: both;
   content: "";
   display: block;
+}
+
+.new-post textarea{
+
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+.new-post input{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+
 }

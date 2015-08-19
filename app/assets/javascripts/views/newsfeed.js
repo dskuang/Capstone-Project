@@ -17,16 +17,44 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     "click .submit-post": "createPost",
     "click .button-post": "renderNewForm",
     "click .cancel-post": "removeNewPostView",
-    "click .post-item .user-blog-icon": "performSlide"
+    "click .post-item .user-blog-icon": "performSlide",
+    "click .blog-shade": "removeSlide"
   },
 
   performSlide: function(e) {
     e.preventDefault();
+    var blog_id = $(e.currentTarget).data("blog-id");
+    this.addSideView(blog_id);
+    this.$shadediv = $("<div class='blog-shade'></div>");
+    this.$el.append(this.$shadediv);
     $('#leftSideBar').toggle("slide", {
       "direction": "left",
       "distance": "575px"
     }, "fast");
     $('#parent-form').toggleClass('left-float');
+  },
+
+  removeSlide: function(e) {
+    e.preventDefault();
+    this.$shadediv.remove();
+    this.removeSideView();
+    $('#leftSideBar').toggle("slide", {
+      "direction": "left",
+      "distance": "575px"
+    }, "fast");
+    $('#parent-form').toggleClass('left-float');
+
+  },
+
+  addSideView: function(id) {
+    this.blogModel = this.blogCollection.getOrFetch(id);
+    this.subSideView = new Tumblr.Views.blogShow({model: this.blogModel});
+    this.addSubview("#leftSideBar", this.subSideView);
+  },
+
+  removeSideView: function() {
+    this.removeModelSubview("#leftSideBar", this.blogModel);
+    this.subSideView = null;
   },
 
   renderNewForm: function(e) {
@@ -39,7 +67,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   },
 
   removeNewPostView: function(e) {
-    e.preventDefault();
+     e.preventDefault();
     if (this.postModel) {
       this.removeModelSubview(".new-form-view", this.postModel);
       this.subNewView = null;
@@ -47,9 +75,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   },
 
   render: function() {
-
     var content = this.template({posts: this.feedCollection});
-    // $('#leftSideBar').hide();
     this.$el.html(content);
     this.attachSubviews();
     return this;
@@ -82,10 +108,8 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
       }
       this.postCollection.add(postModel);
       this.feedCollection.add(postModel);
-      // postModel.fetch();
-      Backbone.history.navigate("#/feed/", {trigger: true});
     }.bind(this)});
-
+    this.removeNewPostView();
   },
 
 

@@ -22,7 +22,8 @@ json.extract!(
 
 json.extract!(
   post.user,
-  :username
+  :username,
+  :profileUrl
 )
 
 
@@ -38,7 +39,6 @@ json.notes do
     json.partial!("api/notes/note", note: note)
   end
 end
-
 
 follow_id = Follow.find_follow_by_user(current_user.id, post.user_id)[0]
 follow_id = follow_id ? follow_id.id : nil

@@ -1,7 +1,7 @@
 Tumblr.Views.postShow = Backbone.View.extend({
   initialize: function(options) {
     this.feedCollection = options.feedCollection;
-    this.listenTo(this.model.follow(), "sync", this.render);
+    this.listenTo(this.model.follow(), "sync remove", this.render);
     this.listenTo(this.model.like(), "sync remove", this.render);
     this.listenTo(this.model, "sync add remove", this.render);
     this.listenTo(this.model.collection, "sync add remove", this.render);
@@ -17,13 +17,27 @@ Tumblr.Views.postShow = Backbone.View.extend({
   events: {
     "click .follow-button": "toggleFollow",
     "click .like-button": "toggleLike",
-    "click .reblog-image": "reblogPost"
+    "click .reblog-image": "reblogPost",
+    "click .tag-post-index": "renderTagPostIndex"
   },
 
   render: function(){
     var content = this.template({post: this.model});
     this.$el.html(content);
     return this;
+  },
+
+  renderTagPostIndex: function(e) {
+    e.preventDefault();
+    var tag = $(e.currentTarget).data("tag");
+    var postCollection = new Tumblr.Collections.TagPosts();
+    postCollection.fetch({data: {tag: tag}, processData:true,
+      success: function () {
+        var view = new Tumblr.Views.postIndex({
+          collection: postCollection, feedCollection: this.feedCollection});
+        
+      }.bind(this)
+    });
   },
 
   toggleFollow: function(e) {
@@ -130,7 +144,8 @@ Tumblr.Views.postShow = Backbone.View.extend({
             that.feedCollection.add(reblogModel);
         }});
       }});
-    }
+    },
+
 
 
 

@@ -11,13 +11,15 @@
   <% } else { %>
     <% var likeState = "Like"; %>
   <% } %>
-
+<div class="user-profile-pic">
+  <img class = "thumbnail-user" src="<%= post.get("profileUrl") %>">
+</div>
 <div class= "post-item-border">
 
   <div class='post-header'>
       <div class="user-header">
         <p class="username-header"><%= post.escape("username") %></p>
-        <div class="user-blog-icon"></div>
+        <div class="user-blog-icon" data-blog-id="<%=post.get("blog_id")%>"></div>
         <button class="follow-button"><%= followState %></button>
       </div>
 
@@ -28,9 +30,6 @@
         <%= post.escape("quotetitle") %>
       <% } else if(post.get("attr") === "Link") { %>
         <%= post.escape("linkurl") %>
-
-    <!-- </div> -->
-    <!-- <div> -->
       <% } else if(post.get("attr") === "Image") { %>
         <img class = "index-post-image" src="<%= post.get("imageUrl") %>">
       <% } else if(post.get("attr") === "Song") { %>
@@ -65,14 +64,14 @@
   <div class="bottom-container">
     <div class="tag-notes">
       <% post.tags().forEach(function(tag) { %>
-        <%= tag.escape("label") %>
+        <a data-tag="<%= tag.escape("label") %>" class="tag-post-index"><%= tag.escape("label") %></a>
       <% }) %>
       <% var notetext = post.notes().length === 1 ? "Note" : "Notes" %>
       <p><%=post.notes().length%> <%=notetext%> </p>
 
       <ul class="notes-ul">
         <% post.notes().forEach(function(note) { %>
-          <!-- <li class="notes-li"><%= note.escape("note_text") %></li> -->
+          <li class="notes-li"><%= note.escape("note_text") %></li>
         <% }) %>
       </ul>
     </div>
