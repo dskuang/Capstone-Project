@@ -11,3 +11,13 @@
 .blog-title{
   width: 120px;
 }
+
+.blog-show{
+  .thumbnail-user{
+    display: none;
+  }
+
+  .index-post-image{
+    max-width: 100%;
+  }
+}
