@@ -24,12 +24,14 @@
       </div>
 
     <div class="post-text-header">
-      <% if (post.get("attr") === "Text") {%>
-        <%= post.escape("title") %>
-      <% } else if (post.get("attr") === "Quote") { %>
-        <%= post.escape("quotetitle") %>
-      <% } else if(post.get("attr") === "Link") { %>
-        <%= post.escape("linkurl") %>
+        <% if (post.get("attr") === "Text") {%>
+      <p>
+          <%= post.escape("title") %>
+        <% } else if (post.get("attr") === "Quote") { %>
+          <%= post.escape("quotetitle") %>
+        <% } else if(post.get("attr") === "Link") { %>
+          <%= post.escape("linkurl") %>
+      </p>
       <% } else if(post.get("attr") === "Image") { %>
         <img class = "index-post-image" src="<%= post.get("imageUrl") %>">
       <% } else if(post.get("attr") === "Song") { %>

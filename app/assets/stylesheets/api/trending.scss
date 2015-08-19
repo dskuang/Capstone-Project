@@ -18,43 +18,64 @@
 
 .rightSubPost {
   .post-item {
-    width: 187px;
-    height: 317px;
+    width: 199px;
+    height: 362px;
     font-size: 1em;
     background-color: white
   }
 
   .thumbnail-user {display: none;}
-  .index-post-image { max-width: 100%; }
-  .video-post { max-width: 100%; }
-  .like-button { float: right; }
+  .index-post-image {
+    width: 200px;
+    margin-left: -99px;
+    margin-top: 8px;
+    position: absolute;
+  }
+
+  .video-post {
+     width: 200px;
+     margin-left: -99px;
+     margin-top: 8px;
+     position: absolute;
+  }
+
+  .like-button {
+    float: right;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+
+  }
   .reblog-image { float: left; }
-  .post-text-header{ min-height: 67px; }
+  .post-text-header{ min-height: 147px;  }
+  .post-text-header p {
+    margin: 0 auto;
+  }
   .follow-button {
     padding: 0;
     position: relative;
     background: none;
     border: none;
-    right: -57px;
+    right: -73px;
     top: -23px;
 
   }
   .post-body {
     height: 165px;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 30px;
     overflow-y: auto;
   }
   .tag-notes {
     position: absolute;
-    left: 18%;
-    top: -310%;
+    top: -472%;
+    width: 68px;
+    left: 0%;
     transform: translate(-50%, -50%);
   }
   .post-body::-webkit-scrollbar { display: none; }
 
   .bottom-container {
-      padding: 32px 0px;
+      padding: 11px 0px;
       left: 0;
       bottom: 0;
       color: #ccc;
@@ -66,11 +87,14 @@
   }
   .username-header {
     position: absolute;
-    left: 76px;
+    left: 104px;
   }
   .user-blog-icon {
     position: absolute;
-    left: 35px;
+    left: 90px;
+  }
+  .tag-notes p{
+    width: 67px;
   }
 
 
