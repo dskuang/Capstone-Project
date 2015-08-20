@@ -1,14 +1,9 @@
 class Api::NewsfeedsController < ApplicationController
 
   def show
-    # @posts = []
-    # if current_user.followees
-    #   current_user.followees.each do |followee|
-    #     @posts += followee.posts
-    #   end
-    # end
-    # @posts += current_user.posts
-    @posts = Post.includes(:tags, :likes, :user, :taggings, :notes).where(user_id: current_user.followee_ids + [current_user.id]).order(created_at: :desc)
+    @posts = Post.includes(:tags, :likes, :user, :taggings, :notes)
+    .where(user_id: current_user.followee_ids + [current_user.id]).order(created_at: :desc)
+    # .page(params[:page]).per(10)
 
     render "show"
   end

@@ -6,7 +6,7 @@
   left: 0;
   bottom: 0;
   color: #ccc;
-  height: 72px;
+  min-height: 72px;
   position: relative;
 
 }
@@ -15,4 +15,29 @@
   clear: both;
   display: both;
   content: "";
+}
+
+.index-tag-label {
+  display:inline-block;
+}
+
+.index-tag-label:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.trending-tag-label{
+  display:inline-block;
+  font-weight:bold;
+}
+
+.trending-tags{
+  color: grey;
+  width: 2000px;
+  position: absolute;
+  left: 0;
+  padding-left: 226px;
+  padding-top: 13px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }

@@ -1,5 +1,14 @@
 class Api::LikesController < ApplicationController
 
+  def index
+    if params[:user].present?
+      @likes = current_user.post_likes
+    else
+      @likes = Like.all
+    end
+    render "index"
+  end
+
   def create
     @like = Like.new(like_params)
     @like.user_id = current_user.id

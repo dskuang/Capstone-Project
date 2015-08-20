@@ -11,6 +11,17 @@ Tumblr.Collections.Users = Backbone.Collection.extend({
     userModel.fetch();
 
     return userModel;
+  },
+
+  fetchByUser: function(partial) {
+    var filtered = this.filter(function(user) {
+      var re = new RegExp(partial);
+      var matches = user.get("username").match(re);
+      if(matches) {
+        return user.get("username") ;
+      }
+    });
+    return filtered;
   }
 
 })

@@ -12,16 +12,19 @@
     <% var likeState = "Like"; %>
   <% } %>
 <div class="user-profile-pic">
-  <img class = "thumbnail-user" src="<%= post.get("profileUrl") %>">
+  <img class = "thumbnail-user" src="<%= post.get("profileUrl") %>"
+       data-blog-id="<%=post.get("blog_id")%>">
 </div>
 <div class= "post-item-border">
 
   <div class='post-header'>
+
       <div class="user-header">
         <p class="username-header"><%= post.escape("username") %></p>
         <div class="user-blog-icon" data-blog-id="<%=post.get("blog_id")%>"></div>
         <button class="follow-button"><%= followState %></button>
       </div>
+
 
     <div class="post-text-header">
         <% if (post.get("attr") === "Text") {%>

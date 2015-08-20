@@ -1,4 +1,12 @@
 class Api::TagsController < ApplicationController
+  def index
+    if params[:trending].present?
+      @tags = Tag.joins(:taggings).select(:label).group(:label).order(:count).reverse_order.limit(8)
+    else
+      @tags = Tag.all
+    end
+    render "index"
+  end
 
   def show
     @tag = Tag.find(params[:id])
@@ -28,8 +36,7 @@ class Api::TagsController < ApplicationController
 
    def require_login
      unless logged_in?
-       render json: ["Unauthorized"], status: 400
-      #  redirect_to new_session_url
+      redirect_to new_session_url
      end
    end
 end

@@ -1,0 +1,7 @@
+<p class="trending-tag-label">Trending Tags</p>
+<% tags.each(function(tag) { %>
+  <p data-tag="<%=tag.escape("label")%>" class="index-tag-label">
+      <%=tag.escape("label")%>
+
+  </p>
+<% }) %>

@@ -169,3 +169,25 @@ end
   Note.create({post_id: 25, like_id: like_id, note_text: "liked"})
   like_id += 1
 end
+
+40.times do |num|
+  Tag.create!(label: Faker::Address.city)
+end
+
+#29posts
+value = 1
+40.times do |repeat|
+  post_count = rand(29)
+  post_count.times do |num|
+    Tagging.create({post_id: num + 1, tag_id: repeat + 1})
+  end
+end
+
+#11users
+8.times do |num|
+  Follow.create({followee_id: 1, follower_id: num + 2});
+end
+
+8.times do |num|
+  Follow.create({followee_id: num + 2, follower_id: 1});
+end

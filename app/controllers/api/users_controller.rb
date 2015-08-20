@@ -1,7 +1,13 @@
 class Api::UsersController < ApplicationController
 
   def index
-    @user = User.all
+    if params[:followees].present?
+      @users = current_user.followees
+    elsif params[:followers].present?
+      @users = current_user.followers
+    else
+      @users = User.all
+    end
     render "index"
   end
 

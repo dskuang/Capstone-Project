@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   has_many :followees, through: :out_follows, source: :followee
   has_many :likes
   has_many :posts
+  has_many :post_likes, through: :posts, source: :likes
   has_one :blog
 
   attr_reader :password

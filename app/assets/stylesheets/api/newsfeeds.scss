@@ -110,9 +110,7 @@
    width: 100%;
    min-height: 55px;
    margin: 0 auto;
-   margin-top: 20px;
-
-   margin-top: 22px;
+   margin-top: -7px;
 
 }
 .newsfeed-posts .post-item:after{
@@ -162,6 +160,11 @@
 
 }
 
+.newsfeed-posts .post-text-header {
+  margin-top: 5px;
+  margin-bottom: 13px;
+}
+
 .newsfeed-posts .post-text-header p{
   padding-left: 24px;
 }
@@ -169,8 +172,8 @@
 .newsfeed-posts .post-body{
 
   min-height: 20px;
-  padding-left: 54px;
-  padding-right: 54px;
+  padding-left: 24px;
+  padding-right: 24px;
   width: 100%;
 
   word-break: break-all;
@@ -178,8 +181,7 @@
 }
 
 .newsfeed-posts .tag-notes {
-  float: left;
-  position: absolute;
+
 }
 
 .newsfeed-posts .bottom-right-container{

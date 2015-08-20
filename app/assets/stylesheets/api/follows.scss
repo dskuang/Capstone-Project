@@ -1,3 +1,29 @@
 // Place all the styles related to the api/follows controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.follow-container{
+  float: left;
+  width:400px;
+}
+
+
+.follows-index{
+  width: 1600px;
+  margin:0 auto;
+}
+
+.follow-username{
+  text-align:center;
+  color: white;
+}
+
+.follow-page-search {
+  width:1600px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.follow-search{
+  margin: 0 auto;
+}

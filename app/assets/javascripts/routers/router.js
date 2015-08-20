@@ -12,7 +12,9 @@ Tumblr.Routers.Router = Backbone.Router.extend({
     "feed/": "feedIndex",
     "blogs/:id": "blogShow",
     "user/:id": "userShow",
-    "tags/:tag_name": "postsForTag"
+    "tags/:tag_name": "postsForTag",
+    "followers/": "followerIndex",
+    "followees/": "followeeIndex"
   },
 
   blogShow: function(id) {
@@ -40,7 +42,6 @@ Tumblr.Routers.Router = Backbone.Router.extend({
     postCollection.fetch({data: {tag: tag}, processData: true });
     var view = new Tumblr.Views.postIndex({blogCollection: this.blogCollection,
       collection: postCollection, feedCollection: this.feedCollection});
-      // debugger
     this._swapView(view);
   },
 
@@ -48,6 +49,22 @@ Tumblr.Routers.Router = Backbone.Router.extend({
     this.userModel = this.userCollection.getOrFetch(id);
     var view = new Tumblr.Views.userShow({model: this.userModel});
     this._swapView(view);
+  },
+
+  followerIndex: function() {
+    var followers = new Tumblr.Collections.Users();
+    followers.fetch({data: {followers: true}, processData: true });
+    var view = new Tumblr.Views.followShow({follows: followers, attr: "followers"});
+    this._swapView(view);
+
+  },
+
+  followeeIndex: function() {
+    var followees = new Tumblr.Collections.Users();
+    followees.fetch({data: {followees: true}, processData: true });
+    var view = new Tumblr.Views.followShow({follows: followees, attr: "followees"});
+    this._swapView(view);
+
   },
 
   _swapView: function(view) {

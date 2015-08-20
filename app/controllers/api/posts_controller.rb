@@ -5,7 +5,6 @@ class Api::PostsController < ApplicationController
       @posts = Post.joins(:notes).group(:id).order(:count).last(5)
     elsif params[:tag].present?
       @posts = Post.joins(:tags).where(tags: {label: params[:tag]})
-
     else
       @posts = Post.includes(:likes, :taggings, :tags, :notes).where(og_post_id: nil)
     end
@@ -18,7 +17,6 @@ class Api::PostsController < ApplicationController
   end
 
   def create
-    # blog_id = User.find_blog_by_user(current_user.id)[0].id
     blog_id = current_user.blog.id
     @post = Post.new(post_params)
     @post.user_id = current_user.id
@@ -43,7 +41,7 @@ class Api::PostsController < ApplicationController
  def destroy
    @post = Post.find(params[:id])
    @post.destroy if @post
-   render :json => {}
+   render :json => @post
  end
 
  def post_params

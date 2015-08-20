@@ -19,12 +19,10 @@ Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
   template: JST["trending"],
 
   render: function() {
-
     var content = this.template({blogs: this.blogCollection,
                                  posts: this.postCollection});
     this.$el.html(content);
     this.attachSubviews();
-
     return this;
   },
 

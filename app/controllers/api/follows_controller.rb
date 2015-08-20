@@ -1,5 +1,13 @@
 class Api::FollowsController < ApplicationController
-  
+
+  def index
+    if params[:user].present?
+      @followers = current_user.followers
+      @followees = current_user.followees
+    end
+    render "index"
+  end
+
   def create
     @follow = Follow.new(follow_params)
     @follow.follower_id = current_user.id

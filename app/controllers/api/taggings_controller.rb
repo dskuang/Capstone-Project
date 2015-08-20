@@ -1,8 +1,7 @@
 class Api::TaggingsController < ApplicationController
-  
-
   def index
     @taggings = Tagging.all
+    render "index"
   end
 
   def show

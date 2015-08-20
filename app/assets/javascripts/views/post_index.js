@@ -13,10 +13,11 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
       this.onRender();
     }.bind(this));
     $(window).on("resize", this.render.bind(this));
+    this.addTrendingTags();
   },
 
   events: {
-    "click .post-item .user-blog-icon": "performSlide",
+    "click .post-item .thumbnail-user": "performSlide",
     "click .blog-shade": "removeSlide"
   },
 
@@ -33,6 +34,11 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
       "distance": "575px"
     }, "fast");
     $('#parent-form').toggleClass('left-float');
+  },
+
+  addTrendingTags: function() {
+    var subPostView = new Tumblr.Views.trendingTags();
+    this.addSubview(".trending-tags", subPostView);
   },
 
   removeSlide: function(e) {
@@ -89,6 +95,7 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
   render: function() {
     var content = this.template({posts: this.collection});
     this.$el.html(content);
+    // this.addTrendingTags();
     this.attachSubviews();
     // this.invokeMasonry();
     this.setupBlocks();
