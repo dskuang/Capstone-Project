@@ -13,6 +13,11 @@ class Api::LikesController < ApplicationController
     @like = Like.new(like_params)
     @like.user_id = current_user.id
     if @like.save
+      @note = Note.new
+      @note.post_id = params[:post_id]
+      @note.like_id = @like.id
+      @note.note_text = current_user.username + " liked this"
+      @note.save
       render :json => @like
     else
       render :json => @like.errors.full_messages, :status => 422

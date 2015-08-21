@@ -7,10 +7,10 @@
         <img class = "thumbnail-user" src="<%= blog.get("profileUrl") %>">
       </div>
       <div class="rec-blog">
-        <p><a href="#/blogs/<%= blog.id %>"><%= blog.escape("title") %>
+        <a class="side-title" href="#/blogs/<%= blog.id %>"><%= blog.escape("title") %>
           <br>
-          <%=blog.escape("username")%>
-        </a></p>
+          <p class="side-username"><%=blog.escape("username")%></p>
+        </a>
       </div>
     </div>
 

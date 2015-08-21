@@ -2,11 +2,11 @@ class Api::PostsController < ApplicationController
 
   def index
     if params[:trending].present?
-      @posts = Post.joins(:notes).group(:id).order(:count).last(5)
+      @posts = Post.includes(:tags, :likes, :user, :taggings, :notes).group(:id).order(:count).limit(5)
     elsif params[:tag].present?
-      @posts = Post.joins(:tags).where(tags: {label: params[:tag]})
+      @posts = Post.includes(:likes, :taggings, :tags, :notes, :user).references(:tags).where(tags: {label: params[:tag]})
     else
-      @posts = Post.includes(:likes, :taggings, :tags, :notes).where(og_post_id: nil)
+      @posts = Post.includes(:likes, :taggings, :tags, :notes, :user).where(og_post_id: nil)
     end
     render "index"
   end

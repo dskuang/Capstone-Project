@@ -7,10 +7,10 @@ Tumblr.Views.postShow = Backbone.View.extend({
     this.listenTo(this.model.collection, "sync add remove", this.render);
 
     // this.listenTo(this.model.collection, 'remove', this.remove);
-    this.listenTo(this.model.notes(), "sync remove", this.render);
+    // this.listenTo(this.model.notes(), "sync remove", this.render);
     this.listenTo(this.model.tags(), "sync add", this.render);
     this.listenTo(this.note, "sync destroy", this.render);
-    this.listenTo(this.newNote, "sync destroy", this.render);
+    // this.listenTo(this.newNote, "sync destroy", this.render);
   },
 
 
@@ -98,17 +98,18 @@ Tumblr.Views.postShow = Backbone.View.extend({
     if(likeID == null) {
       this.model.like().save({}, {
         success: function() {
-          this.createNewNote();
+          // this.createNewNote();
           this.model.fetch();
           this.$el.find(".like-button").text("unLike");
         }.bind(this)
       });
     } else {
+      var likeId = this.model.like().id
       this.model.like().destroy({
         success: function() {
-          this.destroyNote();
+          this.destroyNote(likeId);
           this.model.destroyLike();
-          this.model.fetch();
+          // this.model.fetch();
           this.$el.find(".like_button").text("Like");
 
         }.bind(this)
@@ -120,18 +121,24 @@ Tumblr.Views.postShow = Backbone.View.extend({
     this.newNote = new Tumblr.Models.Note();
     var noteText = Tumblr.CURRENT_USER.username + " liked this";
     var attrs = {post_id: this.model.id, note_text: noteText, like_id: this.model.like().id};
+    this.model.set('notes', this.model.escape('notes') + 1);
 
     this.newNote.save(attrs, {success: function() {
-      debugger
+      // debugger
       this.model.notes().add(this.newNote);
     }.bind(this)});
   },
 
-  destroyNote: function() {
-    this.note = this.model.notes().fetchByLike(this.model.like().id).at(0);
-    this.note.destroy();
-    this.note = new Tumblr.Models.Note();
-    this.model.destroyNote();
+  destroyNote: function(id) {
+
+    this.model.notes().fetch({success: function() {
+      this.note = this.model.notes().fetchByLike(id).at(0);
+      this.note.destroy();
+      // this.note = new Tumblr.Models.Note();
+      this.model.destroyNote();
+      this.model.fetch();
+
+    }.bind(this)});
 
   },
 

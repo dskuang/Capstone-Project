@@ -120,7 +120,7 @@
   padding: 0;
   background: none;
   border: none;
-  color: blue;
+  color: #659BCF
 }
 
 .posts-index .user-header{
@@ -190,4 +190,24 @@
 
 .quote-source{
   color: #ccc;
+}
+
+.link-square{
+  height: 175px;
+  width: 175px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.square {
+  margin: auto 0;
+  text-align: center;
+  background-color: #1a82f7;
+  background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(#2F2727));
+  padding-top: 65px;
+  padding-bottom: 88px;
+  color: white;
+  border-radius: 10px;
+
 }

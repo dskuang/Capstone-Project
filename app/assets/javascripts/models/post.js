@@ -58,6 +58,6 @@ Tumblr.Models.Post = Backbone.Model.extend({
   },
 
   destroyNote: function() {
-    this.notes = null;
+    this._notes = null;
   }
 });

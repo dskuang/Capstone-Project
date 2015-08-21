@@ -33,7 +33,12 @@
         <% } else if (post.get("attr") === "Quote") { %>
         <em class="quote-text">"<%= post.escape("quotetitle") %>" </em>
         <% } else if(post.get("attr") === "Link") { %>
-          <%= post.escape("linkurl") %>
+          <div class="link-square">
+              <div class="square">
+                <%= post.escape("linkurl") %>
+            <a href="<%= post.escape('linkurl') %>" ></a>
+            </div>
+          </div>
       </p>
       <% } else if(post.get("attr") === "Image") { %>
         <img class = "index-post-image" src="<%= post.get("imageUrl") %>">

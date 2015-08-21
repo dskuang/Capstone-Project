@@ -18,6 +18,7 @@
  @import "bootstrap";
  @import "bootstrap-tokenfield";
 
+
  // @import "api/newsfeed"
 
  body {
@@ -48,7 +49,8 @@
  }
 
 .navbar-default{
-  background-color: #36465D
+  background-color: #36465D;
+  border-color: #505E72;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
@@ -139,4 +141,11 @@
 .cancel-post{
   background-color: grey;
   border-color: grey;
+}
+
+.side-title a{
+  color: #9CA2AE;
+  font-weight: bold;
+  text-decoration:none;
+  // padding-left: 40px;
 }

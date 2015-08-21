@@ -29,7 +29,7 @@
     width: 71px;
     position: absolute;
     left: 1309px;
-    bottom: 462px;
+    bottom: 466px;
   }
 
   .index-post-image {
@@ -53,6 +53,8 @@
     right: 0px;
 
   }
+
+  .side-username{color: #717A8C; font-weight: normal;}
   .reblog-image { float: left; cursor: pointer; }
   .post-text-header {
     min-height: 114px;
@@ -132,7 +134,7 @@
 }
 .rec-blog {
   margin: 0 auto;
-  width: 81px;
+  width: 140px;
   float: left;
 }
 
@@ -143,7 +145,7 @@
 
 .blog-item-content{
   margin-bottom: 10px;
-  width:144px;
+  width:199px;
   height: 51px;
   border-bottom: 1px solid grey;
 
