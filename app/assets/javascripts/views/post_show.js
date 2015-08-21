@@ -10,7 +10,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
     // this.listenTo(this.model.notes(), "sync remove", this.render);
     this.listenTo(this.model.tags(), "sync add", this.render);
     this.listenTo(this.note, "sync destroy", this.render);
-    // this.listenTo(this.newNote, "sync destroy", this.render);
+
   },
 
 
@@ -109,7 +109,6 @@ Tumblr.Views.postShow = Backbone.View.extend({
         success: function() {
           this.destroyNote(likeId);
           this.model.destroyLike();
-          // this.model.fetch();
           this.$el.find(".like_button").text("Like");
 
         }.bind(this)
@@ -130,13 +129,11 @@ Tumblr.Views.postShow = Backbone.View.extend({
   },
 
   destroyNote: function(id) {
-
     this.model.notes().fetch({success: function() {
-      this.note = this.model.notes().fetchByLike(id).at(0);
-      this.note.destroy();
-      // this.note = new Tumblr.Models.Note();
-      this.model.destroyNote();
-      this.model.fetch();
+    this.note = this.model.notes().fetchByLike(id).at(0);
+    this.note.destroy();
+    this.model.destroyNote();
+    this.model.fetch();
 
     }.bind(this)});
 
@@ -168,7 +165,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
         reblogModel.save({}, {
             success: function() {
               that.model.tags().each(function(tag) {
-                debugger
+                // debugger
                 var label = {label: tag.attributes.label};
                 var newTag = new Tumblr.Models.Tag(label);
                 newTag.save({}, {

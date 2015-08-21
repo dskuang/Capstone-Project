@@ -133,7 +133,8 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   addTrendingBlogs: function() {
     var blogCol = new Tumblr.Collections.TrendingBlogs();
     this.trendingView = new Tumblr.Views.trendingBlogs({
-                        blogCollection: blogCol });
+                        blogCollection: blogCol,
+                        feedCollection: this.feedCollection});
     this.addSubview("#rightSideContent", this.trendingView);
   }
 
