@@ -18,6 +18,8 @@
 //= require serialize_json
 //= require bootstrap
 //= require bootstrap-tokenfield
+//= require ParallaxScroll
+//= require ParallaxScroll.min.js
 //= require tumblr
 //= require_tree ./util
 //= require_tree ../templates

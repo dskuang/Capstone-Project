@@ -9,11 +9,7 @@
 		height: 46px;
 	}
 
-	.session-form input{
-		height:53px;
-		line-height:18px;
-		width: 300px;
-	}
+	
 
 	.sign-in-button{
 		background-color:none;
@@ -95,7 +91,7 @@
  .post-text-image {
 	 border-bottom-left-radius: 7px;
 	 border-top-left-radius: 7px;
-
+	 cursor: pointer;
 	 margin-right: -281px;
 	 height: 118px;
 	 width: 103px;
@@ -107,6 +103,7 @@
  }
 
  .post-quote-image {
+	 cursor: pointer;
 	  margin-right: -280px;
 		height: 118px;
 		width: 99px;
@@ -119,6 +116,7 @@
  }
 
  .post-link-image {
+	 cursor: pointer;
 	 margin-right: 0px;
 		 height: 118px;
 		 width: 99px;
@@ -131,6 +129,7 @@
  }
 
  .post-picture-image {
+	 cursor: pointer;
 	 height: 118px;
 	 width: 99px;
 	 background-size: 86px;
@@ -142,6 +141,7 @@
  }
 
  .post-song-image {
+	 cursor: pointer;
 	 height: 118px;
 	 width: 99px;
 	 background-size: 86px;
@@ -153,6 +153,7 @@
  }
 
  .post-video-image {
+	 cursor: pointer;
 	 border-bottom-right-radius: 7px;
 	 border-top-right-radius: 7px;
 	 height: 118px;

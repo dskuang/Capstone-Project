@@ -6,12 +6,10 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-
-
   def create
     @user = User.new(user_params)
     if @user.save
-      @blog = Blog.new
+      @blog = Blog.new(blog_params)
       @blog.user_id = @user.id
       @blog.save
       login(@user)
@@ -22,6 +20,9 @@ class UsersController < ApplicationController
     end
   end
 
+  def blog_params
+    params.require(:blog).permit(:title)
+  end
 
 
 end

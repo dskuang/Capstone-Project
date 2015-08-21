@@ -3,7 +3,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     this.blogCollection = options.blogCollection;
     this.postCollection = options.postCollection;
     this.feedCollection = options.feedCollection;
-    this.listenTo(this.feedCollection, "sync", this.render);
+    this.listenTo(this.feedCollection, "sync add remove change", this.render);
     this.listenTo(this.feedCollection, 'add', this.addPostView);
     this.feedCollection.each(this.addPostView.bind(this));
     this.listenTo(this.feedCollection, "remove", this.removePostView);
@@ -87,7 +87,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   },
 
   removePostView: function(post) {
-    this.removeModelSubView(".newsfeed-posts", post)
+    this.removeModelSubview(".newsfeed-posts", post)
   },
 
   addNewPostView: function(attr) {

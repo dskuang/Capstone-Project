@@ -1,6 +1,10 @@
 class Api::NotesController < ApplicationController
   def index
-    @notes = Notes.all
+    if params[:post_id].present?
+      @notes = Note.where(post_id: params[:post_id])
+    else
+      @notes = Note.all
+    end
     render 'index'
   end
 

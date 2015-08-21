@@ -1,22 +1,35 @@
-<div class="credential-background">
-  <div class= "credential-div topcorner">
-    <button class="button"><a href="/session/new">Log in</a></button>
-    <button class="button"><a href="/users/new">Sign up</a></button>
+<section class="full-height bg1" data-type="parallax" data-bg-height="500">
+  <div style="height: 800px;">
+    <div class="session-container">
+
+             <div class= "credential-div topcorner">
+               <button class="cred-button btn btn-primary"><a href="/session/new">Log in</a></button>
+               <button class="cred-button btn btn-primary"><a href="/users/new">Sign up</a></button>
+             </div>
+
+             <div class="session-form-container">
+               <div class="session-form">
+                 <form action="<%=users_url%>" method="post">
+                     <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+                   <label class="username-input">
+                     <input class="form-control input-lg" style= "" type="text" name="user[username]" placeholder="Username"></label>
+                   <label class= "password-input">
+                     <input class="form-control input-lg" style= "" type="password" name="user[password]" placeHolder= "Password"></label>
+                   <label class= "blog-title-input">
+                     <input class="form-control input-lg" style= "" type="text" name="blog[title]" placeHolder= "Title - optional"></label>
+                     <input class="sign-in-button btn btn-primary" type ="submit" value = "Sign Up">
+                 </form>
+               </div>
+             </div>
+    </div>
   </div>
-
-    <div class="session-form-container">
-
-      <div class="session-form">
-        <form action="<%=users_url%>" method="post">
-          <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
-
-          <label class="username-input">
-            <input type="text" name="user[username]" placeholder="Username"></label>
-          <label class= "password-input">
-            <input type="password" name="user[password]" placeHolder= "Password"></label>
-          <input class="sign-in-button btn btn-primary" type ="submit" value = "Sign Up">
-        </form>
-      </div>
-
-  </div>
+</section>
+<!-- Section #2 -->
+<section class="fixed-height bg2" data-type="parallax">
+  <article></article>
+</section>
+<!-- Section #3 -->
+<section class="bg3" data-type="parallax">
+  <div style="height:600px;">
 </div>
+</section>

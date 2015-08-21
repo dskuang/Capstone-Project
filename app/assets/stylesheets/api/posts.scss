@@ -34,27 +34,7 @@
 }
 
 /*post-item for feed*/
-.post-item{
-width: 601px;
 
-}
-
-.post-item .user-blog-icon {
-  height: 23px;
-  width: 17px;
-  display: block;
-  background-image: url("/images/icons3.png");
-  background-size: 118px;
-  background-position: 109px 30px;
-  float: left;
-
-}
-
-
-.post-item:last-child{
-  margin-bottom: 95px;
-
-}
 .new-post {
   background-color: white;
   position: relative;
@@ -151,22 +131,11 @@ width: 601px;
 }
 
 
-
-.song-input{
-  width: 500px;
-  margin: 0 auto;
-}
-
-
 .inner-post-frame {
   margin: 0 auto;
   width: 1272px;
 }
 
-.image-input {
-  width: 500px;
-  margin: 0 auto;
-}
 
 .reblog-image {
   height: 26px;

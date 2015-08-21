@@ -31,15 +31,17 @@ Tumblr.Views.followShow = Backbone.CompositeView.extend({
       }.bind(this) });
     }
     if ($(".follow-search").val() === "") {
-      if (this.attr === "followers"){
-        this.follows.fetch({data: {followers: true}, processData: true });
-      } else {
-        this.follows.fetch({data: {followees: true}, processData: true });
-      }
+      this.reRender();
     }
 
+  },
 
-
+  reRender: function() {
+    if (this.attr === "followers"){
+      this.follows.fetch({data: {followers: true}, processData: true });
+    } else {
+      this.follows.fetch({data: {followees: true}, processData: true });
+    }
   },
 
   addFollowView: function() {
@@ -48,9 +50,9 @@ Tumblr.Views.followShow = Backbone.CompositeView.extend({
 
   },
 
-  resetSearch: function(e) {
+  resetSearch: function() {
     $(".follow-search").val("");
-    this.findFollow();
+    this.reRender();
   },
 
 

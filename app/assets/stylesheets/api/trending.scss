@@ -27,14 +27,14 @@
   .thumbnail-user {display: none;}
   .index-post-image {
     width: 200px;
-    margin-left: -99px;
+    margin-left: -100px;
     margin-top: 8px;
     position: absolute;
   }
 
   .video-post {
      width: 200px;
-     margin-left: -99px;
+     margin-left: -100px;
      margin-top: 8px;
      position: absolute;
   }
@@ -46,7 +46,7 @@
     right: 0px;
 
   }
-  .reblog-image { float: left; }
+  .reblog-image { float: left; cursor: pointer; }
   .post-text-header{ min-height: 147px;  }
   .post-text-header p {
     margin: 0 auto;

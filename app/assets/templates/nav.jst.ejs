@@ -33,15 +33,16 @@
 
           <div class="home-icon"></div>
           <div class="explore-icon"></div>
-        <li class="dropdown log-icon">
+          <li class="dropdown log-icon">
+
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> </a>
           <ul class="dropdown-menu">
             <li><a data-method="get" href="#user/<%=Tumblr.CURRENT_USER.id%>">Profile</a></li>
-            <li class="likes-filler"><%=likes.length%> Likes</li>
             <% if (followObj) { %>
-              <li class="followers-filler"><%=followObj.followers.length%> Followers</li>
-              <li class="followees-filler"><%=followObj.followees.length%> Followed</li>
+              <li class="followers-filler"><a><%=followObj.followers.length%> Followers</a> </li>
+              <li class="followees-filler"><a><%=followObj.followees.length%> Followed</a> </li>
             <% } %>
+            <li class="likes-filler"><a><%=likes.length%> Likes</a></li>
             <li role="separator" class="divider"></li>
             <li><a rel="nofollow" data-method="delete" href="/session">Logout</a></li>
           </ul>

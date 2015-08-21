@@ -4,6 +4,8 @@ Tumblr.Models.Post = Backbone.Model.extend({
   parse: function(payload) {
     if(payload.follow_relation_id) {
       this.follow().set({id: payload.follow_relation_id}, {parse: true});
+    } else {
+      this._follow = null;
     }
     if(payload.like_relation_id) {
       this.like().set({id: payload.like_relation_id, post_id: payload.id}, {parse: true});
@@ -13,10 +15,6 @@ Tumblr.Models.Post = Backbone.Model.extend({
       delete payload.tags;
     }
 
-    if(payload.notes) {
-      this.notes().set(payload.notes, {parse: true});
-      delete payload.notes;
-    }
     return payload;
   },
 

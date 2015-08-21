@@ -71,13 +71,11 @@
       <% post.tags().forEach(function(tag) { %>
         <a data-tag="<%= tag.escape("label") %>" class="tag-post-index"><%= tag.escape("label") %></a>
       <% }) %>
-      <% var notetext = post.notes().length === 1 ? "Note" : "Notes" %>
-      <p><%=post.notes().length%> <%=notetext%> </p>
+      <% var notetext = post.notes === 1 ? "Note" : "Notes" %>
+      <p class="note-text"><%=post.escape("notes")%> <%=notetext%> </p>
 
-      <ul class="notes-ul">
-        <% post.notes().forEach(function(note) { %>
-          <li class="notes-li"><%= note.escape("note_text") %></li>
-        <% }) %>
+      <ul data-id="<%=post.id%>" class="notes-ul">
+
       </ul>
     </div>
     <div class="bottom-right-container">

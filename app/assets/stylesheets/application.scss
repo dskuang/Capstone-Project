@@ -62,16 +62,19 @@
 .image-input {
   width:500px;
   margin: 0 auto;
+  margin-bottom: -20px;
 }
 
 .song-input{
   width:500px;
   margin: 0 auto;
+  margin-bottom: -20px;
 }
 
 .video-input {
   width:500px;
   margin: 0 auto;
+  margin-bottom: -20px;
 }
 
 .navbar-right {
@@ -94,4 +97,41 @@
   background-color: #36465D;
   color: white;
   font-weight: lighter;
+}
+
+.tokenfield {
+  border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+
+.sign-in-button{
+  background-color: #3292B2;
+  border-color: #3292B2;
+  border-radius: 2px;
+
+}
+
+.session-form input{
+  height:51px;
+  line-height:18px;
+  width: 300px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cred-button {
+  color: white;
+  border-radius: 2px;
+}
+
+.cred-button a{
+  color: white;
+}
+
+.cred-button a:hover{
+  text-decoration: none !important;
 }

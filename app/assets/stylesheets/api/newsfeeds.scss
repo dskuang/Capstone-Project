@@ -84,7 +84,28 @@
 }
 
 
+.newsfeed-posts .post-item{
+width: 601px;
 
+}
+
+.newsfeed-posts .post-item .user-blog-icon {
+  height: 23px;
+  width: 17px;
+  display: block;
+  background-image: url("/images/icons3.png");
+  background-size: 118px;
+  background-position: 109px 30px;
+  float: left;
+  cursor: pointer;
+
+}
+
+
+.newsfeed-posts .post-item:last-child{
+  margin-bottom: 95px;
+
+}
 
 .newsfeed-posts .user-profile-pic{
   float: left;
@@ -119,6 +140,10 @@
   display: block;
 }
 
+.newsfeed-posts .video-post{
+  width: 100%;
+}
+
 
 .newsfeed-posts .like-button {
   float:left;
@@ -128,6 +153,7 @@
 .newsfeed-posts .reblog-image {
   float:left;
   left:20px;
+  cursor: pointer;
 }
 
 .newsfeed-posts .follow-button {
@@ -199,5 +225,5 @@
 }
 
 .newsfeed-posts .audio-post {
-  width: 552px;
+  width: 100%;
 }

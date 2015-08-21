@@ -1,12 +1,15 @@
 Tumblr.Views.postShow = Backbone.View.extend({
   initialize: function(options) {
     this.feedCollection = options.feedCollection;
-    this.listenTo(this.model.follow(), "sync remove", this.render);
+    this.listenTo(this.model.follow(), "sync", this.render);
     this.listenTo(this.model.like(), "sync remove", this.render);
     this.listenTo(this.model, "sync add remove", this.render);
     this.listenTo(this.model.collection, "sync add remove", this.render);
+
+    // this.listenTo(this.model.collection, 'remove', this.remove);
+
     this.listenTo(this.model.tags(), "sync add", this.render);
-    this.listenTo(this.model.notes(), "sync add remove", this.render);
+    this.listenTo(this.note, "sync", this.render);
     this.listenTo(this.newNote, "sync", this.render);
   },
 
@@ -18,7 +21,8 @@ Tumblr.Views.postShow = Backbone.View.extend({
     "click .follow-button": "toggleFollow",
     "click .like-button": "toggleLike",
     "click .reblog-image": "reblogPost",
-    "click .tag-post-index": "renderTagPostIndex"
+    "click .tag-post-index": "renderTagPostIndex",
+    "click .note-text": "fetchNotes"
   },
 
   render: function(){
@@ -31,7 +35,29 @@ Tumblr.Views.postShow = Backbone.View.extend({
     e.preventDefault();
     var tag = $(e.currentTarget).data("tag");
     Backbone.history.navigate("#tags/" + tag, {trigger: true});
-    
+
+  },
+
+  fetchNotes: function(e) {
+    this.model.notes().fetch({data: {"post_id": this.model.id}, processData: true,
+    success: function() {
+          this.renderNotes();
+    }.bind(this)});
+
+  },
+
+  renderNotes: function() {
+    $ul = $("*[data-id='"+ this.model.id +"']")
+    // debugger
+
+      this.model.notes().each(function(note) {
+
+        $li = $("<li></li>");
+        $li.addClass("notes-li");
+        $li.text(note.get("note_text"));
+        $ul.append($li)
+      });
+
   },
 
   toggleFollow: function(e) {
@@ -41,6 +67,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
     if(followID == null) {
       this.model.follow().save({}, {
         success: function() {
+          // this.model.fetch();
           this.model.collection.fetch();
           this.$el.find(".follow-button").text("unFollow");
         }.bind(this)
@@ -48,8 +75,10 @@ Tumblr.Views.postShow = Backbone.View.extend({
     } else {
       this.model.follow().destroy({
         success: function () {
-          this.model.destroyFollow();
+          // this.model.fetch();
           this.model.collection.fetch();
+          this.model.destroyFollow();
+          // this.model.collection.remove(this.model);
           this.$el.find(".follow-button").text("Follow");
 
         }.bind(this)
@@ -88,14 +117,14 @@ Tumblr.Views.postShow = Backbone.View.extend({
     var attrs = {post_id: this.model.id, note_text: noteText, like_id: this.model.like().id};
 
     this.newNote.save(attrs, {success: function() {
-
       this.model.notes().add(this.newNote);
     }.bind(this)});
   },
 
   destroyNote: function() {
-    var note = this.model.notes().fetchByLike(this.model.like().id).at(0);
-    note.destroy();
+    this.note = this.model.notes().fetchByLike(this.model.like().id).at(0);
+    this.note.destroy();
+
   },
 
   reblogPost: function(e){

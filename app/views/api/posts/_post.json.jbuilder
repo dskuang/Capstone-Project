@@ -30,15 +30,16 @@ json.extract!(
 
 json.tags do
   json.array! post.tags do |tag|
-    json.partial!("api/tags/tag", tag: tag)
+    json.extract!(
+      tag,
+      :id,
+      :label
+    )
+    # json.partial!("api/tags/tag", tag: tag)
   end
 end
 
-json.notes do
-  json.array! post.notes do |note|
-    json.partial!("api/notes/note", note: note)
-  end
-end
+json.notes post.notes.length
 
 follow_id = Follow.find_follow_by_user(current_user.id, post.user_id)[0]
 follow_id = follow_id ? follow_id.id : nil

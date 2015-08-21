@@ -15,7 +15,7 @@
   display:block;
   background-image: url("/images/icons/home-icon.png");
   background-size: 25px;
-
+  cursor: pointer;
   float:left;
   margin-right: 42px;
 
@@ -26,7 +26,7 @@
    width: 30px;
    display:block;
    background-image: url("/images/icons/explore-icon.png");
-
+   cursor: pointer;
    float:left;
    margin-right: 44px;
    background-size: 30px;
@@ -45,18 +45,14 @@
 }
 
 .likes-filler {
-  width: 70px;
-  margin-left: 15px;
 }
 
 .followers-filler {
-  width: 91px;
-  margin-left: 23px;
+  cursor: pointer;
 
 }
 
 .followees-filler {
-  width: 91px;
-  margin-left: 24px;
+  cursor: pointer;
 
 }

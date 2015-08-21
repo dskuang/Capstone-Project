@@ -35,9 +35,5 @@ class Api::FollowsController < ApplicationController
   end
   private
 
-   def require_login
-     unless logged_in?
-        render json: ["Unauthorized"], status: 400
-     end
-   end
+
 end
