@@ -7,10 +7,10 @@ Tumblr.Views.postShow = Backbone.View.extend({
     this.listenTo(this.model.collection, "sync add remove", this.render);
 
     // this.listenTo(this.model.collection, 'remove', this.remove);
-
+    this.listenTo(this.model.notes(), "sync remove", this.render);
     this.listenTo(this.model.tags(), "sync add", this.render);
-    this.listenTo(this.note, "sync", this.render);
-    this.listenTo(this.newNote, "sync", this.render);
+    this.listenTo(this.note, "sync destroy", this.render);
+    this.listenTo(this.newNote, "sync destroy", this.render);
   },
 
 
@@ -22,7 +22,9 @@ Tumblr.Views.postShow = Backbone.View.extend({
     "click .like-button": "toggleLike",
     "click .reblog-image": "reblogPost",
     "click .tag-post-index": "renderTagPostIndex",
-    "click .note-text": "fetchNotes"
+    "click .note-text": "fetchNotes",
+    "mouseout .notes-li": "removeNotes",
+    "mouseout .newsfeed-posts": "removeNotes"
   },
 
   render: function(){
@@ -48,8 +50,6 @@ Tumblr.Views.postShow = Backbone.View.extend({
 
   renderNotes: function() {
     $ul = $("*[data-id='"+ this.model.id +"']")
-    // debugger
-
       this.model.notes().each(function(note) {
 
         $li = $("<li></li>");
@@ -60,6 +60,13 @@ Tumblr.Views.postShow = Backbone.View.extend({
 
   },
 
+  removeNotes: function() {
+
+    $ul = $("*[data-id='"+ this.model.id +"']")
+    $ul.empty();
+    this.model.notes().reset(null)
+  },
+
   toggleFollow: function(e) {
     e.preventDefault();
     var followID = this.model.get("follow_relation_id");
@@ -67,7 +74,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
     if(followID == null) {
       this.model.follow().save({}, {
         success: function() {
-          // this.model.fetch();
+
           this.model.collection.fetch();
           this.$el.find(".follow-button").text("unFollow");
         }.bind(this)
@@ -75,10 +82,8 @@ Tumblr.Views.postShow = Backbone.View.extend({
     } else {
       this.model.follow().destroy({
         success: function () {
-          // this.model.fetch();
           this.model.collection.fetch();
           this.model.destroyFollow();
-          // this.model.collection.remove(this.model);
           this.$el.find(".follow-button").text("Follow");
 
         }.bind(this)
@@ -117,6 +122,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
     var attrs = {post_id: this.model.id, note_text: noteText, like_id: this.model.like().id};
 
     this.newNote.save(attrs, {success: function() {
+      debugger
       this.model.notes().add(this.newNote);
     }.bind(this)});
   },
@@ -124,6 +130,8 @@ Tumblr.Views.postShow = Backbone.View.extend({
   destroyNote: function() {
     this.note = this.model.notes().fetchByLike(this.model.like().id).at(0);
     this.note.destroy();
+    this.note = new Tumblr.Models.Note();
+    this.model.destroyNote();
 
   },
 

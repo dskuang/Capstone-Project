@@ -17,6 +17,7 @@
 }
 
 .rightSubPost {
+
   .post-item {
     width: 199px;
     height: 362px;
@@ -24,7 +25,13 @@
     background-color: white
   }
 
-  .thumbnail-user {display: none;}
+  .thumbnail-user {
+    width: 71px;
+    position: absolute;
+    left: 1309px;
+    bottom: 462px;
+  }
+
   .index-post-image {
     width: 200px;
     margin-left: -100px;
@@ -47,7 +54,11 @@
 
   }
   .reblog-image { float: left; cursor: pointer; }
-  .post-text-header{ min-height: 147px;  }
+  .post-text-header {
+    min-height: 114px;
+    margin-top: 52px;
+    overflow-y: auto;
+  }
   .post-text-header p {
     margin: 0 auto;
   }
@@ -62,21 +73,24 @@
     border: none;
     right: -73px;
     top: -23px;
+    display: none;
 
   }
   .post-body {
-    height: 165px;
+    height: 142px;
     padding-left: 30px;
     overflow-y: auto;
+    margin-top: 21px;
   }
   .tag-notes {
     position: absolute;
-    top: -472%;
+    top: -470%;
     width: 68px;
-    left: 0%;
+    left: 65%;
     transform: translate(-50%, -50%);
   }
   .post-body::-webkit-scrollbar { display: none; }
+  .post-text-header::-webkit-scrollbar { display: none; }
 
   .bottom-container {
       padding: 11px 0px;
@@ -91,11 +105,13 @@
   }
   .username-header {
     position: absolute;
-    left: 104px;
+    top: 9px;
+    left: 60px;
   }
   .user-blog-icon {
     position: absolute;
     left: 90px;
+    display: none;
   }
   .tag-notes p{
     width: 67px;

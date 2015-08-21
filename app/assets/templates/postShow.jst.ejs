@@ -31,7 +31,7 @@
       <p>
           <%= post.escape("title") %>
         <% } else if (post.get("attr") === "Quote") { %>
-          <%= post.escape("quotetitle") %>
+        <em class="quote-text">"<%= post.escape("quotetitle") %>" </em>
         <% } else if(post.get("attr") === "Link") { %>
           <%= post.escape("linkurl") %>
       </p>
@@ -53,7 +53,7 @@
       <% if (post.get("attr") === "Text") {%>
         <%= post.escape("body") %>
       <% } else if (post.get("attr") === "Quote") { %>
-        <%= post.escape("quotesource") %>
+        <p class="quote-source"><%= post.escape("quotesource") %></p>
       <% } else if(post.get("attr") === "Link") { %>
         <%= post.escape("linkbody") %>
       <% } else if(post.get("attr") === "Image") { %>

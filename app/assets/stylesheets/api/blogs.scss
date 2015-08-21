@@ -2,23 +2,79 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.blog-show{
-  margin:0 auto;
-  width: 600px;
-}
-
-
-.blog-title{
-  width: 120px;
-  margin:0 auto;
-}
 
 .blog-show{
+  margin:0 auto;
+  width: 548px;
+
+  .user-profile-pic{
+      text-align: center;
+      margin-bottom: 33px;
+  }
+
+  .username-header{
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
   .thumbnail-user{
     display: none;
   }
 
+  .thumbnail-user-blog{
+    width: 170px;
+    height: 170px;
+  }
+
   .index-post-image{
     max-width: 100%;
+  }
+
+  .blog-title{
+    width: 120px;
+    margin:0 auto;
+    text-align:center;
+    color: white;
+  }
+
+  .follow-button{
+    display: none;
+  }
+
+  .post-item {
+    background-color: white;
+  }
+
+  .video-post {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .bottom-right-container{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+  }
+  .reblog-image{
+    float: left;
+  }
+  .like-button {
+    float: left;
+  }
+
+  .bottom-right-container:after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  .post-text-header p{
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  .posts:last-child{
+    margin-bottom: 50px;
   }
 }

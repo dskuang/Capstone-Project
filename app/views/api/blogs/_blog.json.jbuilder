@@ -9,6 +9,7 @@ json.extract!(
   blog.user,
   :username,
   :profileUrl
+  
 )
 
 
