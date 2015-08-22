@@ -1,12 +1,13 @@
 class Api::PostsController < ApplicationController
-
   def index
     if params[:trending].present?
-      @posts = Post.preload(:tags, :likes, :user, :taggings, :notes).joins(:notes).group(:id).order(count: :desc).limit(5)
+      @posts = Post.preload(:tags, :likes, :user, :taggings, :notes).joins(:notes).group(:id).order(count: :desc).limit(5).page(params[:page]).per(5)
+      @bool = false
     elsif params[:tag].present?
       @posts = Post.includes(:likes, :taggings, :tags, :notes, :user).references(:tags).where(tags: {label: params[:tag]})
     else
-      @posts = Post.includes(:likes, :taggings, :tags, :notes, :user).where(og_post_id: nil)
+      @posts = Post.includes(:likes, :taggings, :tags, :notes, :user).where(og_post_id: nil).page(params[:page]).per(6)
+      @bool = true
     end
     render "index"
   end

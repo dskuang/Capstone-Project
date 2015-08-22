@@ -12,5 +12,11 @@ Tumblr.Collections.Posts = Backbone.Collection.extend({
     postModel.fetch();
 
     return postModel;
-  }
+  },
+
+  parse: function(response) {
+     this.page = response.page;
+     this.total_pages = response.total_pages;
+     return response.models;
+   }
 });
