@@ -19,6 +19,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     "click .cancel-post": "removeNewPostView",
     "click .post-item .user-blog-icon": "performSlide",
     "click .blog-shade": "removeSlide"
+    
   },
 
   performSlide: function(e) {
