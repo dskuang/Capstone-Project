@@ -33,14 +33,15 @@
 
     <% } else if (post.get("attr") === "Quote") { %>
       <label for='quotetitle'></label><br>
-        <input class="form-control header-input"
+        <textarea class="form-control body-input"
+               style="margin-bottom: -15px;"
                type='text'
                name='post[quotetitle]'
                id='quotetitle'
                placeholder="Quote"
-               value=''><br>
+               value=''></textarea><br>
       <label for='quotesource'></label><br>
-        <input class="form-control body-input"
+        <input class="form-control quote-source"
               type='text'
               name='post[quotesource]'
               id='quotesource'
@@ -50,6 +51,7 @@
               type='text'
               name='post[tag]'
               id='tokenfield'
+              placeholder="Tags"
 
               value=''><br>
       <button class="cancel-post btn btn-primary">Close</button>
@@ -74,6 +76,7 @@
               type='text'
               name='post[tag]'
               id='tokenfield'
+              placeholder="Tags"
 
               value=''><br>
       <button class="cancel-post btn btn-primary">Close</button>
@@ -81,7 +84,7 @@
     <% } else if (post.get("attr") === "Image") { %>
 
       <button data-attr="Image"
-              class="filepicker-button btn btn-primary"></button>
+              class="filepicker-button btn btn-primary">Upload</button>
       <input class= "image-input form-control"
               name='post[imageUrl]'
               type='text'
@@ -99,7 +102,7 @@
               type='text'
               name='post[tag]'
               id='tokenfield'
-
+              placeholder="Tags"
               value=''><br>
       <button class="cancel-post btn btn-primary">Close</button>
       <button class="submit-post btn btn-primary">Post</button>
@@ -107,7 +110,7 @@
       <% } else if (post.get("attr") === "Song") { %>
 
           <button data-attr= "Song"
-                  class="filepicker-button btn btn-primary"></button>
+                  class="filepicker-button btn btn-primary">Upload</button>
           <input class= "song-input form-control"
                   name='post[songUrl]'
                   type='text'
@@ -125,14 +128,14 @@
                 type='text'
                 name='post[tag]'
                 id='tokenfield'
-
+                placeholder="Tags"
                 value=''><br>
         <button class="cancel-post btn btn-primary">Close</button>
         <button class="submit-post btn btn-primary">Post</button>
     <% } else if (post.get("attr") === "Video") { %>
 
         <button data-attr= "Video"
-                class="filepicker-button btn btn-primary"></button>
+                class="filepicker-button btn btn-primary">Upload</button>
         <input class= "video-input form-control"
                 name='post[videoUrl]'
                 type='text'
@@ -150,7 +153,7 @@
               type='text'
               name='post[tag]'
               id='tokenfield'
-
+              placeholder="Tags"
               value=''><br>
       <button class="cancel-post btn btn-primary">Close</button>
       <button class="submit-post btn btn-primary">Post</button>

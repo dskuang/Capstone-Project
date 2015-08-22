@@ -22,19 +22,20 @@ Tumblr.Views.postNew = Backbone.View.extend({
     var attr = $(e.currentTarget).data("attr")
     var type;
     var selector;
+    var options;
     if(attr === "Image"){
-      type = {mimetype: 'image/*'};
+      options = {mimetype: 'image/*', service: "computer", maxSize: 15728640}
       selector = $(".image-input");
     } else if (attr === "Song") {
-      type = {mimetype: 'audio/*'};
+      options = {service: "computer", maxSize: 15728640, extensions: ['.mp3','.flac','.wav','.mp4','.gp5','.ogg','.mpgg']};
       selector = $(".song-input");
     } else if (attr === "Video") {
-      type = {mimetype: 'video/*'};
-      selector = $(".video-input");
+      options = {service: "computer", maxSize: 15728640, extensions: ['.mp4','.avi', '.mov', '.mkv', '.flv', '.avc', '.swf']};
+      selector = $(".video-input")
     }
-    filepicker.pick({type, service: "computer"},
+    filepicker.pick(options,
       function(Blob) {
-        debugger
+
           selector.val(Blob.url);
       }.bind(this)
     );

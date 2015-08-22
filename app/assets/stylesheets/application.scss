@@ -94,6 +94,11 @@
   border-radius: 0;
 }
 
+.quote-source{
+  margin: 0 auto;
+  width: 500px;
+}
+
 
 .search-input {
   background-color: #36465D;
@@ -130,6 +135,10 @@
   border-radius: 2px;
 }
 
+.submit-post{
+  margin-bottom: 10px;
+}
+
 .cred-button a{
   color: white;
 }
@@ -139,6 +148,7 @@
 }
 
 .cancel-post{
+  margin-bottom: 10px;
   background-color: grey;
   border-color: grey;
 }
