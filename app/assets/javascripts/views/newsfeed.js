@@ -18,9 +18,13 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     "click .button-post": "renderNewForm",
     "click .cancel-post": "removeNewPostView",
     "click .post-item .user-blog-icon": "performSlide",
-    "click .blog-shade": "removeSlide"
+    "click .blog-shade": "removeSlide",
+    "click .edit-post": "renderEditForm",
+    "click .edit-submit-post": "submitEditPost",
+    "click .edit-cancel-post": "cancelEditPost"
   },
 
+  
   performSlide: function(e) {
     e.preventDefault();
     var blog_id = $(e.currentTarget).data("blog-id");

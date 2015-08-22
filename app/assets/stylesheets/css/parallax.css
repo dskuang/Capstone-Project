@@ -38,9 +38,9 @@ hr {
   height: 600px;
 }
 
-.bg1 { background-image: url('/images/parallax2.jpg'); }
-.bg2 { background-image: url('/images/photo2.jpeg'); }
-.bg3 { background-image: url('/images/bbsimpsons.jpg'); }
+.bg1 { background-image: url('/images/bg1.jpg'); }
+.bg2 { background-image: url('/images/bg2.jpg'); }
+.bg3 { background-image: url('/images/bg3.jpg'); }
 
 section {
   position: relative;
