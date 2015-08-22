@@ -3,25 +3,7 @@ class Api::BlogsController < ApplicationController
     if params[:query].present?
       @blogs = Blog.where("title ~ ?", params[:query])
     elsif params[:trending].present?
-      @blogs = Blog.includes(:user).joins(:notes).group(:id).order(count: :desc).limit(5)
-      # @blogs = Blog.includes({ posts: [:tags, :likes] }, :notes).group(:id).order(:count).limit(5)
-      #
-      # sql = <<-SQL
-      #   select
-      #     blogs.*,
-      #     posts.*,
-      #     likes.*,
-      #     tags.*
-      #   from
-      #     blogs inner join posts on blogs.post_id = posts.id
-      #     inner join notes on posts.note_id = notes.id
-      #   group by blogs.id
-      #   order by count(blogs.id) desc
-      #   limit 5
-      # SQL
-
-      # @blogs = Blog.find_by_sql([ sql ])
-
+      @blogs = Blog.joins(:posts).joins(:notes).group(:id).order(:count).limit(5)
     else
       @blogs = Blog.all
     end
@@ -29,7 +11,7 @@ class Api::BlogsController < ApplicationController
   end
 
   def show
-    @blog = Blog.includes({ posts: [:tags, :likes, :notes] }).find(params[:id])
+    @blog = Blog.find(params[:id])
     @posts = @blog.posts
     render "show"
   end

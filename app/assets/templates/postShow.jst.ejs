@@ -5,8 +5,12 @@
     <% var followState = "Follow"; %>
   <% } %>
 
+  <% if (post.get("like_relation_id") !== null) { %>
+    <% var likeState = "unLike"; %>
 
-
+  <% } else { %>
+    <% var likeState = "Like"; %>
+  <% } %>
 <div class="user-profile-pic">
   <img class = "thumbnail-user" src="<%= post.get("profileUrl") %>"
        data-blog-id="<%=post.get("blog_id")%>">
@@ -81,14 +85,7 @@
     </div>
     <div class="bottom-right-container">
       <div class="reblog-image" data-post-id="<%=post.id%>"></div>
-      <% if (post.get("like_relation_id") !== null) { %>
-
-        <div class="pink-heart like-button"></div>
-
-      <% } else { %>
-        <div class="reg-heart like-button"></div>
-
-      <% } %>
+      <button class="btn btn-primary like-button"><%= likeState %></button>
     </div>
   </div>
     <div class="clear"></div>

@@ -100,7 +100,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
         success: function() {
           // this.createNewNote();
           this.model.fetch();
-          // this.$el.find(".like-button").text("unLike");
+          this.$el.find(".like-button").text("unLike");
         }.bind(this)
       });
     } else {
@@ -109,7 +109,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
         success: function() {
           this.destroyNote(likeId);
           this.model.destroyLike();
-          // this.$el.find(".like_button").text("Like");
+          this.$el.find(".like_button").text("Like");
 
         }.bind(this)
       });

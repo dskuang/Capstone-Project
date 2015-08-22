@@ -107,8 +107,8 @@
 }
 
 .posts-index .like-button {
-  right: 16px;
-  bottom: 19px;
+  right: 14px;
+  bottom: 12px;
   position:absolute;
 
 }
@@ -137,13 +137,12 @@
 }
 
 
-.posts-index .reblog-image {
+.reblog-image {
   height: 26px;
   width: 30px;
   display: block;
   background-image: url("/images/reblog.png");
   background-size: 30px;
-  margin-left: 190px;
 
 }
 
@@ -211,8 +210,4 @@
   color: white;
   border-radius: 10px;
 
-}
-
-.username-header {
-  font-weight: bolder;
 }

@@ -52,18 +52,12 @@
 
   .bottom-right-container{
     position: absolute;
-    right: 12px;
-    bottom: 10px;
+    right: 0;
+    bottom: 0;
 
   }
   .reblog-image{
     float: left;
-    height: 26px;
-    width: 30px;
-    display: block;
-    background-image: url("/images/reblog.png");
-    background-size: 30px;
-    margin-right: 10px;
   }
   .like-button {
     float: left;
