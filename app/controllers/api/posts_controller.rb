@@ -6,7 +6,8 @@ class Api::PostsController < ApplicationController
     elsif params[:tag].present?
       @posts = Post.includes(:likes, :taggings, :tags, :notes, :user).references(:tags).where(tags: {label: params[:tag]})
     else
-      @posts = Post.includes(:likes, :taggings, :tags, :notes, :user).where(og_post_id: nil)
+      @posts = Post.includes(:likes, :taggings, :tags, :notes, :user).where(og_post_id: nil).page(params[:page]).per(6)
+
     end
     render "index"
   end
