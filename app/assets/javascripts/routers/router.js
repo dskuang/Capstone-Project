@@ -33,7 +33,7 @@ Tumblr.Routers.Router = Backbone.Router.extend({
   postIndex: function() {
     this.postCollection.fetch();
     var view = new Tumblr.Views.postIndex({blogCollection: this.blogCollection,
-    collection: this.postCollection, feedCollection: this.feedCollection});
+      collection: this.postCollection, feedCollection: this.feedCollection});
     this._swapView(view);
   },
 

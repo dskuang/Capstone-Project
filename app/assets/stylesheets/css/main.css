@@ -1,170 +1,168 @@
 
 
-	.session-form {
-		width: 300px;
-		margin: 0 auto;
-		height: 300px;
-	}
-	.session-form label{
-		height: 46px;
-	}
+.session-form {
+	width: 300px;
+	margin: 0 auto;
+	height: 300px;
+}
+.session-form label{
+	height: 46px;
+}
 
-	
+.sign-in-button{
+	background-color:none;
+	width:300px;
+	height: 50px;
+	margin-top: 20px;
+}
 
-	.sign-in-button{
-		background-color:none;
-		width:300px;
-		height: 50px;
-		margin-top: 20px;
-	}
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 
-	.outer {
-    display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-	}
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
 
-	.middle {
-	    display: table-cell;
-	    vertical-align: middle;
-	}
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
 
-	.inner {
-	    margin-left: auto;
-	    margin-right: auto;
-	    width: 300px;
-	}
+.session-form-container {
+	position: absolute;
+	top: 50%;
+	margin-top: -200px;
+	left: 0;
+	width: 100%;
+}
 
-	.session-form-container {
-		position: absolute;
-		top: 50%;
-		margin-top: -200px;
-		left: 0;
-		width: 100%;
-	}
+.topcorner{
+  position:absolute;
+  top: 10px;
+  right: 10px;
+}
 
-	.topcorner{
-    position:absolute;
-    top: 10px;
-    right: 10px;
- }
+.credential-background {
+ height: 1500px;
+ background-position: center;
+ background-size: cover;
+ background-image: url("/images/camera-girl.jpeg");
+}
 
- .credential-background {
-	 height: 1500px;
-	 background-position: center;
-	 background-size: cover;
-	 background-image: url("/images/camera-girl.jpeg");
- }
+.blue-sky-bg {
+ height: 600px;
+ background-position: center;
+ background-size: cover;
+ background-image: url("/images/blue-sky.jpeg");
+}
 
- .blue-sky-bg {
-	 height: 600px;
-	 background-position: center;
-	 background-size: cover;
-	 background-image: url("/images/blue-sky.jpeg");
- }
+.brick-building-bg {
+ height: 600px;
 
- .brick-building-bg {
-	 height: 600px;
+ background-position: center;
+ background-size: cover;
+ background-image: url("/images/brick-building.jpeg");
+}
+.coffee-bg {
+height: 600px;
+background-position: center;
+background-size: cover;
+background-image: url("/images/coffee.jpeg");
+}
+.danglingroof-bg {
+height: 600px;
+background-position: center;
+background-size: cover;
+background-image: url("/images/danglingroof.jpeg");
+}
 
-	 background-position: center;
-	 background-size: cover;
-	 background-image: url("/images/brick-building.jpeg");
- }
- .coffee-bg {
-	height: 600px;
-	background-position: center;
-	background-size: cover;
-	background-image: url("/images/coffee.jpeg");
- }
- .danglingroof-bg {
-	height: 600px;
-	background-position: center;
-	background-size: cover;
-	background-image: url("/images/danglingroof.jpeg");
- }
+.credential-div a {
+ text-decoration: none;
+}
 
- .credential-div a {
-	 text-decoration: none;
- }
+.post-text-image {
+ border-bottom-left-radius: 7px;
+ border-top-left-radius: 7px;
+ cursor: pointer;
+ margin-right: -281px;
+ height: 118px;
+ width: 103px;
+ display:block;
+ background-image: url("/images/icons/text-icon.png");
+ background-size: 83px;
+ background-position: 6px 11px;
+ float:left;
+}
 
- .post-text-image {
-	 border-bottom-left-radius: 7px;
-	 border-top-left-radius: 7px;
-	 cursor: pointer;
-	 margin-right: -281px;
+.post-quote-image {
+ cursor: pointer;
+  margin-right: -280px;
+	height: 118px;
+	width: 99px;
+	background-size: 82px;
+	display:block;
+	background-image: url("/images/icons/quote-icon.png");
+	float:left;
+	background-position: 8px 4px;
+
+}
+
+.post-link-image {
+ cursor: pointer;
+ margin-right: 0px;
 	 height: 118px;
-	 width: 103px;
-	 display:block;
-	 background-image: url("/images/icons/text-icon.png");
+	 width: 99px;
 	 background-size: 83px;
-	 background-position: 6px 11px;
-	 float:left;
- }
+	display:block;
+	background-image: url("/images/icons/link-icon.png");
+	float:left;
+	background-position: 8px 4px;
 
- .post-quote-image {
-	 cursor: pointer;
-	  margin-right: -280px;
-		height: 118px;
-		width: 99px;
-		background-size: 82px;
-		display:block;
-		background-image: url("/images/icons/quote-icon.png");
-		float:left;
-		background-position: 8px 4px;
+}
 
- }
+.post-picture-image {
+ cursor: pointer;
+ height: 118px;
+ width: 99px;
+ background-size: 86px;
+ display:block;
+ background-image: url("/images/icons/image-icon.png");
+ float:left;
+ background-position: 7px 1px;
 
- .post-link-image {
-	 cursor: pointer;
-	 margin-right: 0px;
-		 height: 118px;
-		 width: 99px;
-		 background-size: 83px;
-		display:block;
-		background-image: url("/images/icons/link-icon.png");
-		float:left;
-		background-position: 8px 4px;
+}
 
- }
+.post-song-image {
+ cursor: pointer;
+ height: 118px;
+ width: 99px;
+ background-size: 86px;
+ display:block;
+ background-image: url("/images/icons/audio-icon.png");
+ float:left;
+  background-position: 7px 1px;
 
- .post-picture-image {
-	 cursor: pointer;
-	 height: 118px;
-	 width: 99px;
-	 background-size: 86px;
-	 display:block;
-	 background-image: url("/images/icons/image-icon.png");
-	 float:left;
-	 background-position: 7px 1px;
+}
 
- }
+.post-video-image {
+ cursor: pointer;
+ border-bottom-right-radius: 7px;
+ border-top-right-radius: 7px;
+ height: 118px;
+ width: 103px;
+ background-size: 86px;
+ display:block;
+ background-image: url("/images/icons/video-icon.png");
+ background-position: 9px 3px;
+ float:left;
 
- .post-song-image {
-	 cursor: pointer;
-	 height: 118px;
-	 width: 99px;
-	 background-size: 86px;
-	 display:block;
-	 background-image: url("/images/icons/audio-icon.png");
-	 float:left;
-	  background-position: 7px 1px;
-
- }
-
- .post-video-image {
-	 cursor: pointer;
-	 border-bottom-right-radius: 7px;
-	 border-top-right-radius: 7px;
-	 height: 118px;
-	 width: 103px;
-	 background-size: 86px;
-	 display:block;
-	 background-image: url("/images/icons/video-icon.png");
-	 background-position: 9px 3px;
-	 float:left;
-
- }
+}
 
  @-webkit-keyframes pulse {
      0% {
@@ -281,38 +279,32 @@
 
 
 
-.red-heart:hover{
-	height: 29px;
-	width: 35px;
-	display:block;
-	background-image: url("/images/hover-heart.png");
-	background-size: 35px;
-}
-
 .reg-heart:hover{
 	height: 29px;
 	width: 35px;
 	display:block;
-	background-image: url("/images/hover-heart.png");
+	background-image: url("/images/icons/hover-heart.png");
 	background-size: 35px;
-	background-position: 0px 0px;
-}
-
-.red-heart{
-	height: 29px;
-	width: 35px;
-	display:block;
-	background-image: url("/images/red-heart.png");
-	background-size: 35px;
+	cursor: pointer;
 }
 
 .reg-heart{
-	height: 34px;
-	width: 36px;
+	height: 29px;
+	width: 35px;
 	display:block;
-	background-image: url("/images/icons2.png");
-	background-size: 189px;
-	background-position: -101px 181px;
+	background-image: url("/images/icons/reg-heart.png");
+	background-size: 35px;
+	background-position: 0px 0px;
+	cursor: pointer;
+}
+
+.pink-heart{
+	height: 29px;
+	width: 35px;
+	display:block;
+	background-image: url("/images/icons/pink-heart.png");
+	background-size: 35px;
+	cursor: pointer;
 }
 
 

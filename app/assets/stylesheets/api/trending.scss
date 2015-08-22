@@ -55,7 +55,16 @@
   }
 
   .side-username{color: #717A8C; font-weight: normal;}
-  .reblog-image { float: left; cursor: pointer; }
+  .reblog-image { float: left; cursor: pointer;
+    height: 26px;
+    width: 30px;
+    display: block;
+    background-image: url("/images/reblog.png");
+    background-size: 30px;
+    margin-left: 124px;
+    margin-top: 2px;
+   }
+   
   .post-text-header {
     min-height: 114px;
     margin-top: 52px;
