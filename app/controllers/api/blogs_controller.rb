@@ -12,7 +12,8 @@ class Api::BlogsController < ApplicationController
 
   def show
     @blog = Blog.includes({ posts: [:tags, :likes, :notes] }).find(params[:id])
-    @posts = @blog.posts
+    # @posts = @blog.posts
+    # @bool = true
     render "show"
   end
 

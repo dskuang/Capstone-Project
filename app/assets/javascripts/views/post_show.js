@@ -3,13 +3,14 @@ Tumblr.Views.postShow = Backbone.View.extend({
     this.feedCollection = options.feedCollection;
     this.listenTo(this.model.follow(), "sync", this.render);
     this.listenTo(this.model.like(), "sync remove", this.render);
+    this.listenTo(this.note, "sync destroy", this.render);
+    this.listenTo(this.model.tags(), "sync add", this.render);
+
     this.listenTo(this.model, "sync add remove", this.render);
     this.listenTo(this.model.collection, "sync add remove", this.render);
 
     // this.listenTo(this.model.collection, 'remove', this.remove);
     // this.listenTo(this.model.notes(), "sync remove", this.render);
-    this.listenTo(this.model.tags(), "sync add", this.render);
-    this.listenTo(this.note, "sync destroy", this.render);
 
   },
 

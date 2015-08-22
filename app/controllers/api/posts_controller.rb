@@ -5,6 +5,10 @@ class Api::PostsController < ApplicationController
       @bool = false
     elsif params[:tag].present?
       @posts = Post.includes(:likes, :taggings, :tags, :notes, :user).references(:tags).where(tags: {label: params[:tag]})
+    elsif params[:id].present?
+
+      @posts = Blog.find(params[:id]).posts.page(params[:page]).per(3)
+      @bool = true
     else
       @posts = Post.includes(:likes, :taggings, :tags, :notes, :user).where(og_post_id: nil).page(params[:page]).per(6)
       @bool = true
