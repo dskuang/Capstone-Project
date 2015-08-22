@@ -78,6 +78,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     var content = this.template({posts: this.feedCollection});
     this.$el.html(content);
     this.attachSubviews();
+    this.listenForScroll();
     return this;
   },
 
@@ -128,6 +129,23 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
         }
       });
     })
+  },
+  listenForScroll: function () {
+    $(window).off("scroll"); // remove previous listeners
+    var throttledCallback = _.throttle(this.nextPage.bind(this), 200);
+    $(window).on("scroll", throttledCallback);
+  },
+
+  nextPage: function () {
+    var view = this;
+    if ($(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+      if (view.feedCollection.page < view.feedCollection.total_pages) {
+        view.feedCollection.fetch({
+          data: { page: parseInt(view.feedCollection.page) + 1 },
+          remove: false
+        });
+      }
+    }
   },
 
   addTrendingBlogs: function() {
