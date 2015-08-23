@@ -12,6 +12,14 @@ Tumblr.Views.NavShow = Backbone.View.extend({
     this.followCollection.fetch({data: {user: true}, processData:true,
       success: function() {
       this.follow_object = arguments[1];
+      this.follow_object.followees.forEach(function(followee) {
+                          followee.type = "followee" })
+      this.follow_object.followers.forEach(function(follower) {
+                          follower.type = "follower" })
+      this.notif_array = this.likeCollection.toJSON().
+              concat(this.follow_object.followees).
+              concat(this.follow_object.followers)
+              this.notif_array = this.dateSort(this.notif_array);
     }.bind(this)});
     this.listenTo(this.likeCollection, "sync", this.render);
     this.listenTo(this.followCollection,"sync", this.render);
@@ -27,9 +35,38 @@ Tumblr.Views.NavShow = Backbone.View.extend({
   },
 
   renderFollowers: function() {
-
     Backbone.history.navigate("#followers/", {trigger: true})
+  },
 
+  dateSort: function(array) {
+    if (array.length <= 1) { return array; }
+      comparator = function (x, y) {
+        if (x === y) {
+          return 0;
+        } else if (x < y) {
+          return -1;
+        } else {
+          return 1;
+        }
+      }
+    var pivot = array[0];
+    var left = [];
+    var right = [];
+
+    for (var i = 1; i < array.length; i++) {
+      if (comparator(new Date(array[i].created_at),
+          new Date(pivot).created_at) === -1) {
+        left.push(array[i]);
+      } else {
+        right.push(array[i]);
+      }
+    }
+
+    return this.dateSort(left).
+      concat([pivot]).
+      concat(this.dateSort(right));
+
+    return new Date(b.date) - new Date(a.date);
   },
 
   renderFollowees: function() {
@@ -94,8 +131,8 @@ Tumblr.Views.NavShow = Backbone.View.extend({
   },
 
   render: function () {
-
-    var content = this.template({likes: this.likeCollection,
+    var content = this.template({notifications: this.notif_array,
+                                likes: this.likeCollection,
                                 followObj: this.follow_object});
     this.$el.html(content);
     return this;

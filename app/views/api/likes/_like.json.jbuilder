@@ -2,31 +2,14 @@ json.extract!(
   like,
   :id,
   :user_id,
-  :post_id
+  :post_id,
+  :created_at,
+
 )
-# 
-# json.extract!(
-#   like.post,
-#   :title,
-#   :blog_id,
-#   :id,
-#   :body,
-#   :user_id,
-#   :attr,
-#   :quotesource,
-#   :quotetitle,
-#   :linkurl,
-#   :linkbody,
-#   :imagebody,
-#   :imageUrl,
-#   :songUrl,
-#   :songbody,
-#   :videoUrl,
-#   :videobody
-# )
-#
-# json.extract!(
-#   like.user,
-#   :username,
-#   :profileUrl
-# )
+json.post_user Post.find(like.post_id).user.username;
+
+
+json.extract!(
+  like.user,
+  :username
+)

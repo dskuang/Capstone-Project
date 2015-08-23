@@ -45,6 +45,30 @@
   margin-right: 42px;
 }
 
+.notification {
+  margin-top: 12px;
+  height: 27px;
+  width: 20px;
+  display:block;
+  background-image: url("/images/icons/notification.png");
+  background-size: 20px;
+  cursor: pointer;
+  float:left;
+  margin-right: 42px;
+}
+
+.notification:hover {
+  margin-top: 12px;
+  height: 27px;
+  width: 20px;
+  display:block;
+  background-image: url("/images/icons/notification-hover.png");
+  background-size: 20px;
+  cursor: pointer;
+  float:left;
+  margin-right: 42px;
+}
+
 .explore-icon {
    height: 30px;
    width: 30px;
@@ -89,14 +113,16 @@
   float:left;
 }
 
-
-
 .followers-filler {
   cursor: pointer;
-
 }
 
 .followees-filler {
   cursor: pointer;
+}
 
+.li-drop {
+  width: 228px;
+  height: 33px;
+  padding-top: 8px;
 }

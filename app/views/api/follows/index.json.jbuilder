@@ -3,7 +3,8 @@ json.followees do
     json.extract!(
       followee,
       :id,
-      :username
+      :username,
+      :created_at
     )
   end
 end
@@ -12,7 +13,8 @@ json.followers do
     json.extract!(
       follower,
       :id,
-      :username
+      :username,
+      :created_at
     )
 
   end

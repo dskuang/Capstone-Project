@@ -84,7 +84,7 @@
 }
 
 .navbar-right {
-  width: 217px;
+  width: 273px;
   margin-right: 123px;
 }
 
@@ -174,3 +174,10 @@
   text-decoration: none !important;
   color: black;
 }
+
+.notif-drop {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.notif-drop::-webkit-scrollbar { display: none; }
