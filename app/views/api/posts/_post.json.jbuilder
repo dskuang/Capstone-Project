@@ -15,7 +15,8 @@ json.extract!(
   :songUrl,
   :songbody,
   :videoUrl,
-  :videobody
+  :videobody,
+  :created_at
 
 )
 

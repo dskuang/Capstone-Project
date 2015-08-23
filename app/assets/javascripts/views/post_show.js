@@ -75,7 +75,6 @@ Tumblr.Views.postShow = Backbone.View.extend({
     if(followID == null) {
       this.model.follow().save({}, {
         success: function() {
-
           this.model.collection.fetch();
           this.$el.find(".follow-button").text("unFollow");
         }.bind(this)
@@ -99,9 +98,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
     if(likeID == null) {
       this.model.like().save({}, {
         success: function() {
-          // this.createNewNote();
           this.model.fetch();
-          // this.$el.find(".like-button").text("unLike");
         }.bind(this)
       });
     } else {
@@ -110,8 +107,6 @@ Tumblr.Views.postShow = Backbone.View.extend({
         success: function() {
           this.destroyNote(likeId);
           this.model.destroyLike();
-          // this.$el.find(".like_button").text("Like");
-
         }.bind(this)
       });
     }
@@ -122,9 +117,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
     var noteText = Tumblr.CURRENT_USER.username + " liked this";
     var attrs = {post_id: this.model.id, note_text: noteText, like_id: this.model.like().id};
     this.model.set('notes', this.model.escape('notes') + 1);
-
     this.newNote.save(attrs, {success: function() {
-      // debugger
       this.model.notes().add(this.newNote);
     }.bind(this)});
   },
@@ -166,7 +159,6 @@ Tumblr.Views.postShow = Backbone.View.extend({
         reblogModel.save({}, {
             success: function() {
               that.model.tags().each(function(tag) {
-                // debugger
                 var label = {label: tag.attributes.label};
                 var newTag = new Tumblr.Models.Tag(label);
                 newTag.save({}, {
@@ -180,6 +172,10 @@ Tumblr.Views.postShow = Backbone.View.extend({
             that.feedCollection.add(reblogModel);
         }});
       }});
+      // this.feedCollection.fetch({ success: function(){
+      //
+      // }});
+        Backbone.history.navigate("#feed/", {trigger: true});
     },
 
 

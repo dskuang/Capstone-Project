@@ -80,7 +80,9 @@
     font-weight: normal;
 
   }
-  .reblog-image { float: left; cursor: pointer;
+  .reblog-image {
+    float: left;
+    cursor: pointer;
     height: 26px;
     width: 30px;
     display: block;
@@ -89,6 +91,19 @@
     margin-left: 124px;
     margin-top: 2px;
    }
+
+   .reblog-image:hover {
+     float: left;
+     cursor: pointer;
+     height: 26px;
+     width: 30px;
+     display: block;
+     background-image: url("/images/icons/arrow-hover.png");
+     background-size: 30px;
+     margin-left: 124px;
+     margin-top: 2px;
+    }
+
 
   .post-text-header {
     min-height: 114px;

@@ -187,6 +187,18 @@ width: 601px;
   background-size: 30px;
 }
 
+.newsfeed-posts .reblog-image:hover {
+  float:left;
+  left:20px;
+  cursor: pointer;
+  height: 26px;
+  width: 30px;
+  display: block;
+  background-image: url("/images/icons/arrow-hover.png");
+  background-size: 30px;
+}
+
+
 .newsfeed-posts .follow-button {
   padding: 0;
   background: none;

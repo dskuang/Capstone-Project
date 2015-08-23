@@ -17,6 +17,10 @@ Tumblr.Collections.NewsFeeds = Backbone.Collection.extend({
      }
      postModel.fetch();
      return postModel;
+   },
+
+   comparator: function(item) {
+     return item.get("id");
    }
 
 });

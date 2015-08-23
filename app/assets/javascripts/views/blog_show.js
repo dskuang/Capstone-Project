@@ -1,7 +1,7 @@
 Tumblr.Views.blogShow = Backbone.CompositeView.extend({
   initialize: function(options) {
+    this.feedCollection = options.feedCollection;
     this.model.posts().fetch({data: {id: this.model.id}, success: function(){
-      // debugger
     }.bind(this)});
     // this.listenTo(this.model, "sync", this.render);
     this.listenTo(this.model.posts(), "sync", this.render);
@@ -29,7 +29,8 @@ Tumblr.Views.blogShow = Backbone.CompositeView.extend({
   },
 
   addPostView: function(post) {
-    var subPostView = new Tumblr.Views.postShow({model: post});
+    var subPostView = new Tumblr.Views.postShow({feedCollection: this.feedCollection,
+                                                model: post});
     this.addSubview(".posts", subPostView);
   },
 

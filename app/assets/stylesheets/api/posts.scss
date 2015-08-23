@@ -147,7 +147,18 @@
   background-image: url("/images/reblog.png");
   background-size: 30px;
   margin-left: 190px;
+  cursor: pointer;
 
+}
+
+.posts-index .reblog-image:hover{
+  height: 26px;
+  width: 30px;
+  display: block;
+  background-image: url("/images/icons/arrow-hover.png");
+  background-size: 30px;
+  margin-left: 190px;
+  cursor: pointer;
 }
 
 .post-text-header {

@@ -33,6 +33,18 @@
 
 }
 
+.home-icon:hover{
+  margin-top: 12px;
+  height: 26px;
+  width: 25px;
+  display:block;
+  background-image: url("/images/icons/home-hover.png");
+  background-size: 25px;
+  cursor: pointer;
+  float:left;
+  margin-right: 42px;
+}
+
 .explore-icon {
    height: 30px;
    width: 30px;
@@ -43,7 +55,18 @@
    margin-right: 44px;
    background-size: 30px;
    margin-top: 10px;
+}
 
+.explore-icon:hover{
+  height: 30px;
+  width: 30px;
+  display:block;
+  background-image: url("/images/icons/explore-hover.png");
+  cursor: pointer;
+  float:left;
+  margin-right: 44px;
+  background-size: 30px;
+  margin-top: 10px;
 }
 
 .log-icon {
@@ -56,8 +79,17 @@
    float:left;
 }
 
-.likes-filler {
+.log-icon:hover{
+  margin-top: 12px;
+  height: 26px;
+  width: 21px;
+  display:block;
+  background-image: url("/images/icons/profile-hover.png");
+  background-size: 21px;
+  float:left;
 }
+
+
 
 .followers-filler {
   cursor: pointer;
