@@ -26,8 +26,22 @@
     height: 170px;
   }
 
+  .edit-button{
+    display: none;
+  }
+
+  .quote-text{
+      font-weight: bold;
+      font-size: 26px;
+      color: grey;
+      width:500px;
+      margin: 0 auto;
+
+  }
+
   .index-post-image{
     max-width: 100%;
+    width: 100%;
   }
 
   .blog-title{

@@ -19,12 +19,36 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     "click .cancel-post": "removeNewPostView",
     "click .post-item .user-blog-icon": "performSlide",
     "click .blog-shade": "removeSlide",
-    "click .edit-post": "renderEditForm",
-    "click .edit-submit-post": "submitEditPost",
-    "click .edit-cancel-post": "cancelEditPost"
+    "click .edit-button": "addEditPostView",
+    "click .submit-edit": "submitEdit"
   },
 
-  
+  addEditPostView: function(e) {
+    e.preventDefault();
+    var id = $(e.currentTarget).data("id");
+    this.postModel = this.feedCollection.getOrFetch(id);
+    this.subNewView = new Tumblr.Views.postEdit({model: this.postModel});
+    this.addSubview(".new-form-view", this.subNewView);
+    $('#tokenfield').tokenfield();
+
+  },
+
+  submitEdit: function(e) {
+    e.preventDefault();
+    var tokens = $('#tokenfield').tokenfield('getTokens').map(function(token){
+                  return token.value;
+                });
+    var formData= $('.new-post').serializeJSON();
+    formData.post.tag = tokens;
+
+    this.postModel.save(formData, { success: function(model) {
+      if(tokens.length > 0) {
+        this.createTagsAndTaggings(this.postModel, tokens);
+      }
+    }.bind(this)});
+    this.removeNewPostView(e);
+  },
+
   performSlide: function(e) {
     e.preventDefault();
     var blog_id = $(e.currentTarget).data("blog-id");
@@ -94,6 +118,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
   removePostView: function(post) {
     this.removeModelSubview(".newsfeed-posts", post)
   },
+
 
   addNewPostView: function(attr) {
     this.postModel = new Tumblr.Models.Post(attr);

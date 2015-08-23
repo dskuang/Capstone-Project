@@ -1,5 +1,5 @@
-<section class="full-height bg1" data-type="parallax" data-bg-height="500">
-  <div style="height: 800px;">
+<section class="full-height bg1"  data-type="parallax" data-bg-height="500">
+  <div style="height: 1000px;">
     <div class="session-container">
 
              <div class= "credential-div topcorner">
@@ -12,12 +12,13 @@
                  <form action="<%=users_url%>" method="post">
                      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
                    <label class="username-input">
-                     <input class="form-control input-lg" style= "" type="text" name="user[username]" placeholder="Username"></label>
+                     <input class="form-control input-lg" style= "" type="text" name="user[username]" placeholder="Username" value=""></label>
                    <label class= "password-input">
-                     <input class="form-control input-lg" style= "" type="password" name="user[password]" placeHolder= "Password"></label>
+                     <input class="form-control input-lg" style= "" type="password" name="user[password]" placeHolder= "Password" value=""></label>
                    <label class= "blog-title-input">
-                     <input class="form-control input-lg" style= "" type="text" name="blog[title]" placeHolder= "Title - optional"></label>
+                     <input class="form-control input-lg blog-input" style= "" type="text" name="blog[title]" placeHolder= "Title - optional"></label>
                      <input class="sign-in-button btn btn-primary" type ="submit" value = "Sign Up">
+
                  </form>
                </div>
              </div>
@@ -33,3 +34,7 @@
   <div style="height:600px;">
 </div>
 </section>
+
+<script>
+  Guest.initialize();
+</script>

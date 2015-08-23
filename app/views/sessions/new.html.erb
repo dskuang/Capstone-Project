@@ -12,10 +12,11 @@
                  <form action="<%=session_url%>" method="post">
                      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
                    <label class="username-input">
-                     <input class="form-control input-lg" style= "" type="text" name="user[username]" placeholder="Username"></label>
+                     <input class="form-control auto-user input-lg" style= "" type="text" name="user[username]" placeholder="Username"></label>
                    <label class= "password-input">
-                     <input class="form-control input-lg" style= "" type="password" name="user[password]" placeHolder= "Password"></label>
-                     <input class="sign-in-button btn btn-primary" type ="submit" value = "Sign In">
+                     <input class="form-control auto-pass input-lg" style= "" type="password" name="user[password]" placeHolder= "Password"></label>
+                     <input class="sign-in-button btn btn-primary sign" type ="submit" value = "Sign In">
+                     <input class="sign-in-button btn btn-primary demo-button" value = "Demo">
                  </form>
                </div>
              </div>
@@ -31,3 +32,8 @@
 		<div style="height:600px;">
 	</div>
 </section>
+
+
+<script>
+  Guest.initialize();
+</script>

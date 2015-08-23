@@ -15,10 +15,14 @@
 
   <div class='post-header'>
 
-      <div class="user-header">
-        <p class="username-header"><%= post.escape("username") %></p>
+      <div class="user-header" >
+        <p  class="username-header" data-blog-id="<%=post.get("blog_id")%>"><%= post.escape("username") %></p>
         <div class="user-blog-icon" data-blog-id="<%=post.get("blog_id")%>"></div>
-        <button class="follow-button"><%= followState %></button>
+        <%if (post.get("user_id") == Tumblr.CURRENT_USER.id) { %>
+          <button data-id="<%=post.id%>" class="edit-button">Edit</button>
+        <% } else { %>
+          <button class="follow-button"><%= followState %></button>
+        <% } %>
       </div>
 
 
@@ -27,7 +31,7 @@
       <p>
           <%= post.escape("title") %>
         <% } else if (post.get("attr") === "Quote") { %>
-        <em class="quote-text">"<%= post.escape("quotetitle") %>" </em>
+        <div class="quote-text"><em class="inner-quote"> "<%= post.escape("quotetitle") %>"</em> </div>
         <% } else if(post.get("attr") === "Link") { %>
           <div class="link-square">
               <div class="square">

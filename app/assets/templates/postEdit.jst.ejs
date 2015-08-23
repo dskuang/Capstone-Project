@@ -1,0 +1,167 @@
+<div class="shade">
+
+    <form class="new-post">
+    <input class="form-control"
+              type = "hidden"
+              name='post[attr]'
+              value= "<%= post.escape("attr") %>" >
+    <%if (post.get("attr") === "Text") {%>
+      <label for='title'></label><br>
+        <input class="header-input form-control"
+               type='text'
+               name='post[title]'
+               id='title'
+               value="<%=post.escape('title')%>"
+               placeholder="Title"><br>
+      <label for='body'></label><br>
+        <textarea class="body-input form-control"
+              type='text'
+              name='post[body]'
+              id='title'
+              value="<%=post.escape('body')%>"
+              placeholder="Body"></textarea><br>
+        <input class="form-control"
+              type='text'
+              name='post[tag]'
+              id='tokenfield'
+              placeholder="Tags"
+
+              value=''><br>
+      <button class="cancel-post btn btn-primary">Close</button>
+      <button class="submit-edit btn btn-primary">Post</button>
+
+
+    <% } else if (post.get("attr") === "Quote") { %>
+      <label for='quotetitle'></label><br>
+        <textarea class="form-control body-input"
+               style="margin-bottom: -15px;"
+               type='text'
+               name='post[quotetitle]'
+               id='quotetitle'
+               placeholder="Quote"
+               value="<%=post.escape('quotetitle')%>"></textarea><br>
+      <label for='quotesource'></label><br>
+        <input class="form-control quote-source"
+              type='text'
+              name='post[quotesource]'
+              id='quotesource'
+              placeholder="-source"
+              value="<%=post.escape('quotesource')%>"><br>
+        <input class="form-control"
+              type='text'
+              name='post[tag]'
+              id='tokenfield'
+              placeholder="Tags"
+
+              value=''><br>
+      <button class="cancel-post btn btn-primary">Close</button>
+      <button class="submit-edit btn btn-primary">Post</button>
+
+    <% } else if (post.get("attr") === "Link") { %>
+      <label for='linkurl'></label><br>
+        <input class="form-control header-input"
+               type='text'
+               name='post[linkurl]'
+               id='linkurl'
+               value="<%=post.escape('linkurl')%>"
+               placeholder="Url"><br>
+      <label for='linkbody'></label><br>
+        <textarea class="form-control body-input"
+              type='text'
+              name='post[linkbody]'
+              id='linkbody'
+              value="<%=post.escape('linkbody')%>"
+              placeholder="Description"></textarea><br>
+        <input class="form-control"
+              type='text'
+              name='post[tag]'
+              id='tokenfield'
+              placeholder="Tags"
+
+              value=''><br>
+      <button class="cancel-post btn btn-primary">Close</button>
+      <button class="submit-edit btn btn-primary">Post</button>
+    <% } else if (post.get("attr") === "Image") { %>
+
+      <button data-attr="Image"
+              class="filepicker-button btn btn-primary">Upload</button>
+      <input class= "image-input form-control"
+              name='post[imageUrl]'
+              type='text'
+              id = 'imageurl'
+              value="<%=post.escape('imageUrl')%>"
+              placeholder="Image Url">
+             <br>
+      <label for='imagebody'></label><br>
+        <textarea class="form-control body-input"
+              type='text'
+              name='post[imagebody]'
+              id='imagebody'
+              value="<%=post.escape('imagebody')%>"
+              placeholder="Description"></textarea><br>
+        <input class="form-control"
+              type='text'
+              name='post[tag]'
+              id='tokenfield'
+              placeholder="Tags"
+              value=''><br>
+      <button class="cancel-post btn btn-primary">Close</button>
+      <button class="submit-edit btn btn-primary">Post</button>
+
+      <% } else if (post.get("attr") === "Song") { %>
+
+          <button data-attr= "Song"
+                  class="filepicker-button btn btn-primary">Upload</button>
+          <input class= "song-input form-control"
+                  name='post[songUrl]'
+                  type='text'
+                  id = 'songurl' value="<%=post.escape('songUrl')%>"
+                  placeholder="Song Url">
+                   <br>
+          <label for='songbody'></label><br>
+          <textarea class="form-control body-input"
+                type='text'
+                name='post[songbody]'
+                id='songbody'
+                value="<%=post.escape('songbody')%>"
+                placeholder="Description"></textarea><br>
+          <input class="form-control"
+                type='text'
+                name='post[tag]'
+                id='tokenfield'
+                placeholder="Tags"
+                value=''><br>
+        <button class="cancel-post btn btn-primary">Close</button>
+        <button class="submit-edit btn btn-primary">Post</button>
+    <% } else if (post.get("attr") === "Video") { %>
+
+        <button data-attr= "Video"
+                class="filepicker-button btn btn-primary">Upload</button>
+        <input class= "video-input form-control"
+                name='post[videoUrl]'
+                type='text'
+                id = 'videourl'
+                value="<%=post.escape('videoUrl')%>"
+                placeholder="Video Url">
+                 <br>
+        <label for='videobody'></label><br>
+        <textarea class="form-control body-input"
+              type='text'
+              name='post[videobody]'
+              id='videobody'
+              value="<%=post.escape('videobody')%>"
+              placeholder="Description"></textarea><br>
+        <input class="form-control"
+              type='text'
+              name='post[tag]'
+              id='tokenfield'
+              placeholder="Tags"
+              value=""><br>
+      <button class="cancel-post btn btn-primary">Close</button>
+      <button class="submit-edit btn btn-primary">Post</button>
+    <% } %>
+
+</form>
+
+
+</div>

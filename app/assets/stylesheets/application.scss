@@ -25,6 +25,10 @@
    background-color: #36465D;
  }
 
+ .tokenfield .token-input {
+   width: 471.5px;
+ }
+
  .header-input{
    margin:0 auto;
    width:500px;
@@ -118,6 +122,7 @@
   background-color: #3292B2;
   border-color: #3292B2;
   border-radius: 2px;
+  margin-bottom: -10px;
 
 }
 
@@ -139,6 +144,10 @@
   margin-bottom: 10px;
 }
 
+.submit-edit{
+  margin-bottom: 10px;
+}
+
 .cred-button a{
   color: white;
 }
@@ -153,9 +162,15 @@
   border-color: grey;
 }
 
-.side-title a{
+.side-title {
   color: #9CA2AE;
-  font-weight: bold;
+  padding-left: 26px;
+  color: black;
   text-decoration:none;
-  // padding-left: 40px;
+  font-weight:bold
+
+}
+.side-title:hover {
+  text-decoration: none !important;
+  color: black;
 }

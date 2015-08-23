@@ -1,4 +1,4 @@
-<p>Recommended Blogs</p>
+<p class=blog-trending-title>Recommended Blogs</p>
 <div class="blog-container">
 
   <% blogs.each(function(blog) { %>
@@ -9,8 +9,8 @@
       <div class="rec-blog">
         <a class="side-title" href="#/blogs/<%= blog.id %>"><%= blog.escape("title") %>
           <br>
-          <p class="side-username"><%=blog.escape("username")%></p>
         </a>
+          <p class="side-username"><%=blog.escape("username")%></p>
       </div>
     </div>
 

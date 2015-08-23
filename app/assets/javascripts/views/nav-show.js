@@ -83,7 +83,7 @@ Tumblr.Views.NavShow = Backbone.View.extend({
     this.$ul.empty();
     for(var i = 0; i < searchCollection.length; i++) {
       var blogModel = searchCollection.at(i);
-      var $a = $("<a></a>");
+      var $a = $("<a class='search-list-anchor'></a>");
       $a.text(blogModel.get('title'));
       $a.attr("href", "#blogs/" + blogModel.id);
       var $li = $("<li></li>");

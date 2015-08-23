@@ -77,6 +77,10 @@
   top: 20px;
 }
 
+.posts-index .edit-button {
+  display: none;
+}
+
 
 .posts-index .user-blog-icon{
   display: none;
@@ -113,7 +117,7 @@
 
 .posts-index .follow-button {
   top: -30px;
-  right: -58px;
+  right: -142px;
   position: relative;
   padding: 0;
   background: none;
@@ -159,6 +163,11 @@
   margin-left: 374px;
 }
 
+.submit-edit {
+  margin-left: 374px;
+
+}
+
 .clear {
   clear: both;
   content: "";
@@ -181,11 +190,12 @@
 
 }
 
-.quote-text{
+.posts-index .quote-text{
   font-weight: bold;
   font-size: 26px;
   color: grey;
-  word-break: break-all;
+  width: 253px;
+  margin: 0 auto;
 }
 
 .quote-source{
@@ -214,4 +224,5 @@
 
 .username-header {
   font-weight: bolder;
+  cursor: pointer;
 }

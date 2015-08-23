@@ -7,6 +7,16 @@ Tumblr.Collections.NewsFeeds = Backbone.Collection.extend({
      this.page = response.page;
      this.total_pages = response.total_pages;
      return response.models;
+   },
+
+   getOrFetch: function(id) {
+     var postModel = this.get(id);
+     if(!postModel) {
+       postModel = new Tumblr.Models.Post({id: id});
+       this.add(postModel);
+     }
+     postModel.fetch();
+     return postModel;
    }
 
 });

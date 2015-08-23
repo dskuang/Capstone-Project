@@ -17,13 +17,14 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
   },
 
   events: {
-    "click .post-item .thumbnail-user": "performSlide",
+    "click .posts-index .username-header": "performSlide",
     "click .blog-shade": "removeSlide"
   },
 
   template: JST["postIndex"],
 
   performSlide: function(e) {
+    // debugger
     e.preventDefault();
     var blog_id = $(e.currentTarget).data("blog-id");
     this.addSideView(blog_id);

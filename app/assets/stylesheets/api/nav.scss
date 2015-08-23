@@ -5,6 +5,18 @@
 
 .search-list-item {
   background: white;
+  color: grey;
+  text-decoration: none;
+}
+
+.search-list-anchor{
+  color: grey;
+  text-decoration: none;
+}
+
+.search-list-anchor:hover{
+  text-decoration: none;
+  color: #36465D;
 }
 
 
