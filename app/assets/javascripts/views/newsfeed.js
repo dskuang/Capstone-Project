@@ -20,7 +20,8 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     "click .post-item .user-blog-icon": "performSlide",
     "click .blog-shade": "removeSlide",
     "click .edit-button": "addEditPostView",
-    "click .submit-edit": "submitEdit"
+    "click .submit-edit": "submitEdit",
+    "click .thumbnail-user": "renderUserPage"
   },
 
   addEditPostView: function(e) {
@@ -31,6 +32,11 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     this.addSubview(".new-form-view", this.subNewView);
     $('#tokenfield').tokenfield();
 
+  },
+
+  renderUserPage: function(e){
+    var id = $(e.currentTarget).data("user-id");
+    Backbone.history.navigate("#user/" + id, {trigger: true})
   },
 
   submitEdit: function(e) {

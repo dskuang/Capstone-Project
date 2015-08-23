@@ -3,7 +3,7 @@
 
   <% blogs.each(function(blog) { %>
     <div class="blog-item-content">
-      <div class="user-thumbnail-pic">
+      <div data-user-id="<%=blog.get('user_id')%>" class="user-thumbnail-pic">
         <img class = "thumbnail-user" src="<%= blog.get("profileUrl") %>">
       </div>
       <div class="rec-blog">

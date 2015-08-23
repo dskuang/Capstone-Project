@@ -16,8 +16,17 @@ Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
     });
 
   },
-
   template: JST["trending"],
+
+  events: {
+    "click .user-thumbnail-pic": "renderUserPage"
+  },
+
+  renderUserPage: function(e){
+    var id = $(e.currentTarget).data("user-id");
+    Backbone.history.navigate("#user/" + id, {trigger: true})
+  },
+
 
   render: function() {
     var content = this.template({blogs: this.blogCollection,
