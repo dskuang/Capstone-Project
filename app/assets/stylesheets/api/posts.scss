@@ -75,6 +75,7 @@
   position: absolute;
   left: 20px;
   top: 20px;
+  cursor: pointer;
 }
 
 .posts-index .edit-button {
@@ -225,4 +226,9 @@
 .username-header {
   font-weight: bolder;
   cursor: pointer;
+}
+
+.username-header:hover{
+  cursor: pointer;
+  color: #7DA7C8
 }

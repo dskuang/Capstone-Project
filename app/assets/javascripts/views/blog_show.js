@@ -11,12 +11,21 @@ Tumblr.Views.blogShow = Backbone.CompositeView.extend({
   className: "blog-show",
   template: JST["blogShow"],
 
+  events: {
+      "click .thumbnail-user-blog": "renderUserPage"
+  },
+
   render: function() {
     this.$el.html(this.template({blog: this.model}));
     // debugger
     this.attachSubviews();
     this.listenForScroll();
     return this;
+  },
+
+  renderUserPage: function(e){
+    var id = $(e.currentTarget).data("user-id");
+    Backbone.history.navigate("#user/" + id, {trigger: true})
   },
 
   addPostView: function(post) {

@@ -18,7 +18,8 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
 
   events: {
     "click .posts-index .username-header": "performSlide",
-    "click .blog-shade": "removeSlide"
+    "click .blog-shade": "removeSlide",
+    "click .thumbnail-user": "renderUserPage"
   },
 
   template: JST["postIndex"],
@@ -35,6 +36,11 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
       "distance": "575px"
     }, "fast");
     $('#parent-form').toggleClass('left-float');
+  },
+
+  renderUserPage: function(e){
+    var id = $(e.currentTarget).data("user-id");
+    Backbone.history.navigate("#user/" + id, {trigger: true})
   },
 
   addTrendingTags: function() {
