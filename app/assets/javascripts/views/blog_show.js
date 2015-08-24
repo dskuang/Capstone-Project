@@ -20,7 +20,6 @@ Tumblr.Views.blogShow = Backbone.CompositeView.extend({
 
   render: function() {
     this.$el.html(this.template({blog: this.model}));
-    // debugger
     this.attachSubviews();
     this.listenForScroll();
     return this;

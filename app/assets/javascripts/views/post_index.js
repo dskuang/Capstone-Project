@@ -25,7 +25,6 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
   template: JST["postIndex"],
 
   performSlide: function(e) {
-    // debugger
     e.preventDefault();
     var blog_id = $(e.currentTarget).data("blog-id");
     this.addSideView(blog_id);
