@@ -2,7 +2,11 @@ json.extract!(
   user,
   :id,
   :username,
-  :profileUrl
+  :profileUrl,
+  :firstname,
+  :lastname,
+  :city,
+  :state
 
 )
 json.blog do

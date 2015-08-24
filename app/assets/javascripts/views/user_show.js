@@ -1,6 +1,7 @@
 Tumblr.Views.userShow = Backbone.View.extend({
   initialize: function() {
     this.listenTo(this.model, "sync", this.render);
+
   },
 
   className: "user-show-page",
@@ -16,7 +17,15 @@ Tumblr.Views.userShow = Backbone.View.extend({
   render: function(){
     var content = this.template({user: this.model});
     this.$el.html(content);
+    this.startSlider();
     return this;
+  },
+
+  startSlider: function() {
+    $('.upSideBar').toggle("slide", {
+      "direction": "down",
+      "distance": "60px"
+    }, "slow");
   },
 
   pickFile: function (e) {

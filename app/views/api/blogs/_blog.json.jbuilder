@@ -11,21 +11,8 @@ json.extract!(
   :profileUrl
 
 )
-#
-# if bool
-#     json.models do
-#     json.posts do
-#       json.array! posts do |post|
-#           json.partial!("api/posts/post", post: post)
-#       end
-#     end
-#   end
-#   json.page params[:page] || 1
-#   json.total_pages posts.total_pages
-# else
-#   json.posts do
-#     json.array! posts do |post|
-#         json.partial!("api/posts/post", post: post)
-#     end
-#   end
-# end
+
+follow_id = Follow.find_follow_by_user(current_user.id, blog.user_id)[0]
+follow_id = follow_id ? follow_id.id : nil
+
+json.follow_relation_id follow_id

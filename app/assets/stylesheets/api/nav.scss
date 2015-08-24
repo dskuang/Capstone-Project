@@ -101,6 +101,7 @@
    background-image: url("/images/icons/profile-icon.png");
    background-size: 21px;
    float:left;
+   margin-right: 44px;
 }
 
 .log-icon:hover{
@@ -111,6 +112,29 @@
   background-image: url("/images/icons/profile-hover.png");
   background-size: 21px;
   float:left;
+  margin-right: 44px;
+}
+
+.create-post{
+  margin-top: 7px;
+  height: 35px;
+  width: 49px;
+  display:block;
+  background-image: url("/images/icons/new-post.png");
+  background-size: 49px;
+  float:left;
+  cursor: pointer;
+}
+
+.create-post:hover{
+  margin-top: 7px;
+  height: 35px;
+  width: 49px;
+  display:block;
+  background-image: url("/images/icons/new-post-hover.png");
+  background-size: 49px;
+  float:left;
+  cursor: pointer;
 }
 
 .followers-filler {

@@ -16,16 +16,14 @@
 
   .thumbnail-user-blog{
     margin-top: 34px;
-
   }
 
   .quote-text{
-
-      font-weight: bold;
-      font-size: 26px;
-      color: grey;
-      width: 427px;
-      margin: 0 auto;
+    font-weight: bold;
+    font-size: 26px;
+    color: grey;
+    width: 427px;
+    margin: 0 auto;
 
   }
 
@@ -92,11 +90,29 @@
   }
 
   .blog-title{
-    width: 547px;
+    width: 159px;
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     color: white;
+    height: 120px;
+  }
+  .blog-follow{
+    // margin-left: 46px;
+  }
+
+  .user-profile-pic{
+    text-align: center;
+    margin-bottom: 33px;
+    float: left;
+    margin-left: 51px;
+  }
+
+  .blog-text{
+    float: left;
+    margin-left: 5px;
+    width: 154px;
+    margin-top: 8px;
   }
 }

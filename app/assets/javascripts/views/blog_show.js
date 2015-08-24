@@ -3,7 +3,7 @@ Tumblr.Views.blogShow = Backbone.CompositeView.extend({
     this.feedCollection = options.feedCollection;
     this.model.posts().fetch({data: {id: this.model.id}, success: function(){
     }.bind(this)});
-    // this.listenTo(this.model, "sync", this.render);
+    this.listenTo(this.model, "sync", this.render);
     this.listenTo(this.model.posts(), "sync", this.render);
     this.listenTo(this.model.posts(), 'add', this.addPostView);
     this.model.posts().each(this.addPostView.bind(this));
@@ -12,7 +12,8 @@ Tumblr.Views.blogShow = Backbone.CompositeView.extend({
   template: JST["blogShow"],
 
   events: {
-      "click .thumbnail-user-blog": "renderUserPage"
+      "click .thumbnail-user-blog": "renderUserPage",
+      "click .blog-follow": "toggleFollowBlog"
   },
 
   render: function() {
@@ -49,6 +50,29 @@ Tumblr.Views.blogShow = Backbone.CompositeView.extend({
           remove: false
         });
       }
+    }
+  },
+
+  toggleFollowBlog: function(e) {
+    e.preventDefault();
+    var followID = this.model.get("follow_relation_id");
+    this.model.follow().set({followee_id: this.model.get("user_id")});
+    if(followID == null) {
+      this.model.follow().save({}, {
+        success: function() {
+          this.model.fetch();
+          this.$el.find(".follow-button").text("unFollow");
+        }.bind(this)
+      });
+    } else {
+      this.model.follow().destroy({
+        success: function () {
+          this.model.fetch();
+          this.model.destroyFollow();
+          this.$el.find(".follow-button").text("Follow");
+
+        }.bind(this)
+      });
     }
   }
 

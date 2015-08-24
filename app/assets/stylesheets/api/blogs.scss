@@ -10,6 +10,25 @@
   .user-profile-pic{
       text-align: center;
       margin-bottom: 33px;
+      float: left;
+  }
+
+  .blog-text{
+    float: left;
+    margin-left: 30px;
+    width: 154px;
+  }
+
+  .blog-header:after{
+    clear:both;
+    display: block;
+    content: "";
+  }
+
+  .blog-header{
+    margin: 0 auto;
+    text-align: center;
+    width: 417px;
   }
 
   .username-header{
@@ -25,6 +44,8 @@
     width: 170px;
     height: 170px;
     cursor: pointer;
+    margin-top: 33px;
+    margin-left: 8px;
   }
 
   .edit-button{
@@ -50,6 +71,8 @@
     margin:0 auto;
     text-align:center;
     color: white;
+    padding-bottom: 25px;
+    padding-top: 42px;
   }
 
   .follow-button{
@@ -118,5 +141,9 @@
     width: 100%;
     max-width: 100%;
     max-height: 100%;
+  }
+
+  .blog-follow{
+    margin-right: -6px;
   }
 }

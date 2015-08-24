@@ -1,5 +1,29 @@
-<p class="user-name" value=" <%= user.escape("username") %> "> <%= user.escape("username") %> </p>
-<p class="user-blog" value=" <%= user.blog().escape("title") %> "> <%= user.blog().escape("title") %> </p>
-<div class="user-img">
-  <img class= "profile-pic" name= "user[profileUrl]" src="<%= user.escape("profileUrl") %>" width="160" height="160"  value="">
+
+<% if(user.id == Tumblr.CURRENT_USER.id) { %>
+  <div class="upSideBar">
+    <p class="instructions">Double click on field to edit</p>
+  </div>
+<% } %>
+
+<div class="user-container">
+  <div class="inner-container">
+    <div class="left-user">
+      <div class="user-img">
+        <img class= "profile-pic" name= "user[profileUrl]" src="<%= user.escape("profileUrl") %>" width="160" height="160"  value="">
+      </div>
+      <p class="user-blog" value=" <%= user.blog().escape("title") %> "> <%= user.blog().escape("title") %> </p>
+      <p class="user-name" value=" <%= user.escape("username") %> "> <%= user.escape("username") %> </p>
+    </div>
+    <div class="right-user">
+      <div class="name-box">
+      <p class="first-name" value=" <%= user.escape("firstname") %> "> <%= user.escape("firstname") %>  </p>
+      <p class="last-name" value=" <%= user.escape("lastname") %> "> <%= user.escape("lastname") %> </p>
+    </div>
+      <br>
+      <p class="city-text" value=" <%= user.escape("city") %> "> <%= user.escape("city") %> </p>
+      <p class="state-text" value=" <%= user.escape("state") %> "> /<%= user.escape("state") %> </p>
+
+
+    </div>
+  </div>
 </div>

@@ -5,46 +5,46 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-User.create({username: "myUser", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9"})
+User.create({username: "myUser", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9", firstname: "My", lastname: "Name", city: "Oklahoma City", state: "OK"})
 Blog.create({user_id: 1, title: "myBlog"})
 
-User.create({username: "seamoreskies25", password: 123456, profileUrl: "https://www.filepicker.io/api/file/OyOD74lpT9OqngDh1MKy"})
+User.create({username: "seamoreskies25", password: 123456, profileUrl: "https://www.filepicker.io/api/file/OyOD74lpT9OqngDh1MKy", firstname: "Stacy", lastname: "Kim", city: "Cupertino", state: "CA"})
 Blog.create({user_id: 2, title: "I Just Want You"})
 
-User.create({username: "lawdylawdylawd", password: 123456, profileUrl: "https://www.filepicker.io/api/file/mPQjUD3Qp23yGOjFax4A"})
+User.create({username: "lawdylawdylawd", password: 123456, profileUrl: "https://www.filepicker.io/api/file/mPQjUD3Qp23yGOjFax4A", firstname: "Delilah", lastname: "Hope", city: "Mountain View", state:"CA"})
 Blog.create({user_id: 3, title: "Love me?"})
 
-User.create({username: "hoaxcoaxy", password: 123456, profileUrl: "https://www.filepicker.io/api/file/xrQ6DW54TpSUW0FXf6ys"})
+User.create({username: "hoaxcoaxy", password: 123456, profileUrl: "https://www.filepicker.io/api/file/xrQ6DW54TpSUW0FXf6ys", firstname: "Timothy", lastname: "Kree", city: "SF", state: "CA"})
 Blog.create({user_id: 4, title: "Give Me Another Chance"})
 
-User.create({username: "justintimbawhat", password: 123456, profileUrl: "https://www.filepicker.io/api/file/n5J6ZlXHSL2D8DuacC2D"})
+User.create({username: "justintimbawhat", password: 123456, profileUrl: "https://www.filepicker.io/api/file/n5J6ZlXHSL2D8DuacC2D", firstname: "George", lastname: "Washington", city: "San Jose", state:"CA"})
 Blog.create({user_id: 5, title: "LakeHeadOrArrowHead"})
 
-User.create({username: "hereIAm", password: 123456, profileUrl: "https://www.filepicker.io/api/file/fSHZQU5QxC213Rfbg1yg"})
+User.create({username: "hereIAm", password: 123456, profileUrl: "https://www.filepicker.io/api/file/fSHZQU5QxC213Rfbg1yg", firstname: "Caster", lastname: "Jordan", city: "Santa Barbara", state: "CA"})
 Blog.create({user_id: 6, title: "DropitlowLikeIt'sHot"})
 
-User.create({username: "WorkingAsdaSlave", password: 123456, profileUrl: "https://www.filepicker.io/api/file/yS5UlSvbQSmaqCE6bw9X"})
+User.create({username: "WorkingAsdaSlave", password: 123456, profileUrl: "https://www.filepicker.io/api/file/yS5UlSvbQSmaqCE6bw9X", firstname: "Keaton", lastname: "Dan", city: "San Diego", state: "CA"})
 Blog.create({user_id: 7, title: "Justification"})
 
-User.create({username: "Hypeman15", password: 123456, profileUrl: "https://www.filepicker.io/api/file/ymBMuanLSVCr8N6w9Ob3"})
+User.create({username: "Hypeman15", password: 123456, profileUrl: "https://www.filepicker.io/api/file/ymBMuanLSVCr8N6w9Ob3", firstname: "Jason", lastname: "Tan", city: "Encinitas", state: "CA"})
 Blog.create({user_id: 8, title: "Living The Life Abroad"})
 
-User.create({username: "Jackson's Here", password: 123456, profileUrl: "https://www.filepicker.io/api/file/eCOrLF4RT6EulSzz3ImR"})
+User.create({username: "Jackson's Here", password: 123456, profileUrl: "https://www.filepicker.io/api/file/eCOrLF4RT6EulSzz3ImR", firstname: "Jackson", lastname: "Tran", city: "Austin", state: "TX"})
 Blog.create({user_id: 9, title: "WildPonders"})
 
-User.create({username: "JasonBlack", password: 123456, profileUrl: "https://www.filepicker.io/api/file/7QjtNdn9RjSkWt30TYve"})
+User.create({username: "JasonBlack", password: 123456, profileUrl: "https://www.filepicker.io/api/file/7QjtNdn9RjSkWt30TYve", firstname: "Jason", lastname: "Black", city: "Salem", state: "OR"})
 Blog.create({user_id: 10, title: "LivingALie"})
 
-User.create({username: "Queenadie", password: 123456, profileUrl: "https://www.filepicker.io/api/file/2J3s9rDyQamKHgxlzhTQ"})
+User.create({username: "Queenadie", password: 123456, profileUrl: "https://www.filepicker.io/api/file/2J3s9rDyQamKHgxlzhTQ", firstname: "Kuiyane", lastname: "Tepipa", city: "Nowhere", state: "IDK"})
 Blog.create({user_id: 11, title: "Kingdead"})
 
-User.create({username: "NowYouSeeMe", password: 123456, profileUrl: "https://www.filepicker.io/api/file/oHchscK1TbSeohqqPJRZ"})
+User.create({username: "NowYouSeeMe", password: 123456, profileUrl: "https://www.filepicker.io/api/file/oHchscK1TbSeohqqPJRZ", firstname: "Damien", lastname: "Sean", city: "Miami", state: "FL"})
 Blog.create({user_id: 12, title: "NowYouDont"})
 
-User.create({username: "TeamWerkIt", password: 123456, profileUrl: "https://www.filepicker.io/api/file/BK4QK5yoQFesaqRaYZIP"})
+User.create({username: "TeamWerkIt", password: 123456, profileUrl: "https://www.filepicker.io/api/file/BK4QK5yoQFesaqRaYZIP", firstname: "Pamela", lastname: "Hamilton", city: "Chicago", state: "IL"})
 Blog.create({user_id: 13, title: "Now Team Just You"})
 
-User.create({username: "aaaaRon12", password: 123456, profileUrl: "https://www.filepicker.io/api/file/MKyuPsTAqyRu8jWSL8Og"})
+User.create({username: "aaaaRon12", password: 123456, profileUrl: "https://www.filepicker.io/api/file/MKyuPsTAqyRu8jWSL8Og", firstname: "Aaron", lastname: "Trust", city: "Phoenix", state: "AZ"})
 Blog.create({user_id: 14, title: "What is Life?"})
 
 

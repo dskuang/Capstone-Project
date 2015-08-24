@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .user-show-page{
-    width: 800px;
+    // width: 800px;
     margin: 0 auto;
     text-align: center;
     color: white;
@@ -14,17 +14,95 @@
   width: 160px;
   height: 160px;
   margin: 0 auto;
+  margin-bottom: 21px;
 }
 
 .user-name {
-
+  cursor: pointer;
 }
 
 .user-blog {
-
+  cursor: pointer;
 }
 
 .profile-pic{
   max-width:100%;
   max-height:100%;
+  width: 100%;
+  cursor: pointer;
+
+}
+
+.user-container {
+  width: 427px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.inner-container {
+  width: 383px;
+  margin: 0 auto;
+}
+
+.user-container:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.left-user{
+  float: left;
+}
+
+.right-user{
+  float: left;
+  margin-left: 40px;
+  width: 178px;
+}
+
+.first-name {
+  float: left;
+  padding-right: 6px;
+  cursor: pointer;
+
+}
+
+.last-name {
+  float: left;
+  cursor: pointer;
+}
+
+.city-text{
+  float: left;
+}
+
+.state-text{
+  float: left;
+}
+
+.name-box{
+  padding-top: 43px;
+  width: 174px;
+}
+.name-box:after{
+  clear:both;
+  content: "";
+  display: block;
+}
+
+.upSideBar{
+  display: none;
+  height: 60px;
+  width: 100%;
+
+  background-color: orange;
+  bottom: 0;
+  position: fixed;
+}
+
+.instructions{
+  // text-align: center;
+  font-size: 30px;
+padding-top: 11px;
+text-align: center;
 }

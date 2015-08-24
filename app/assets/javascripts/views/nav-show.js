@@ -1,4 +1,4 @@
-Tumblr.Views.NavShow = Backbone.View.extend({
+Tumblr.Views.NavShow = Backbone.CompositeView.extend({
   template: JST["nav"],
 
   initialize: function (options) {
@@ -13,9 +13,9 @@ Tumblr.Views.NavShow = Backbone.View.extend({
       success: function() {
       this.follow_object = arguments[1];
       this.follow_object.followees.forEach(function(followee) {
-                          followee.type = "followee" })
+                          followee.type = "followee" });
       this.follow_object.followers.forEach(function(follower) {
-                          follower.type = "follower" })
+                          follower.type = "follower" });
       this.notif_array = this.likeCollection.toJSON().
               concat(this.follow_object.followees).
               concat(this.follow_object.followers)
@@ -31,11 +31,65 @@ Tumblr.Views.NavShow = Backbone.View.extend({
     "input input[name=query]": "findBlog",
     "blur .search-input": "resetSearch",
     "click .followers-filler": "renderFollowers",
-    "click .followees-filler": "renderFollowees"
+    "click .followees-filler": "renderFollowees",
+    "click .create-post": "renderCreatePost",
+    "click .modal-text-icon": "renderNewPost",
+    "click .modal-quote-icon": "renderNewQuote",
+    "click .modal-link-icon": "renderNewLink",
+    "click .modal-image-icon": "renderNewImage",
+    "click .modal-song-icon": "renderNewSong",
+    "click .modal-video-icon": "renderNewVideo",
+    "click .shade": "removeBallView"
+
+  },
+
+  removeBallView: function(e) {
+    this.removeSubview(".bouncing-balls", this.ballView);
+  },
+
+  renderNewPost: function() {
+    this.removeBallView();
+    Backbone.history.navigate("#/feed/", {trigger: true});
+    $(".post-text-image").click();
+  },
+
+  renderNewQuote: function() {
+    this.removeBallView();
+    Backbone.history.navigate("#/feed/", {trigger: true});
+    $(".post-quote-image").click();
+  },
+
+  renderNewLink: function() {
+    this.removeBallView();
+    Backbone.history.navigate("#/feed/", {trigger: true});
+    $(".post-link-image").click();
+  },
+
+  renderNewSong: function() {
+    this.removeBallView();
+    Backbone.history.navigate("#/feed/", {trigger: true});
+    $(".post-song-image").click();
+  },
+
+  renderNewVideo: function() {
+    this.removeBallView();
+    Backbone.history.navigate("#/feed/", {trigger: true});
+    $(".post-video-image").click();
+  },
+
+  renderNewImage: function() {
+    this.removeBallView();
+    Backbone.history.navigate("#/feed/", {trigger: true});
+    $(".post-picture-image").click();
   },
 
   renderFollowers: function() {
     Backbone.history.navigate("#followers/", {trigger: true})
+  },
+
+  renderCreatePost: function(e) {
+    this.ballView = new Tumblr.Views.BouncingBalls();
+    this.addSubview(".bouncing-balls", this.ballView);
   },
 
   dateSort: function(array) {

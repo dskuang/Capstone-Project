@@ -388,5 +388,170 @@ background-image: url("/images/danglingroof.jpeg");
 .solid-line {
 	height: 1px;
 	width: 10px;
-	background: #ccc
+	background: #ccc;
+}
+
+
+#ballWrapper {
+    width: 140px;
+    height: 300px;
+    position: fixed;
+    left: 48%;
+    top: 50%;
+    margin: -150px 0 0 -70px;
+		z-index: 500;
+		position: absolute;
+}
+
+.balls {
+    width: 136px;
+    height: 137px;
+    border-radius: 80px;
+    background: linear-gradient(top,  rgba(187,187,187,1) 0%,rgba(119,119,119,1) 99%);
+
+		position: absolute;
+}
+
+.balls::after {
+    content: "";
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    background: linear-gradient(top,  rgba(232,232,232,1) 0%,rgba(232,232,232,1) 1%,rgba(255,255,255,0) 100%);
+    border-radius: 40px / 20px;
+		position: absolute;
+}
+
+.ballShadow {
+    width: 60px;
+    height: 75px;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -30px;
+    background: rgba(20, 20, 20, .1);
+    box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+    border-radius: 30px / 40px;
+		position: absolute;
+}
+
+.balls {
+    animation: jump 4s infinite;
+
+}
+
+
+
+@keyframes jump {
+    0% {
+        top: -100px;
+    }
+    50% {
+        top: 140px;
+        height: 140px;
+    }
+    55% {
+        top: 160px;
+        height: 140px;
+        border-radius: 70px / 60px;
+    }
+    65% {
+        top: 120px;
+        height: 140px;
+        border-radius: 70px;
+    }
+		/*80%{
+			top: 0;
+		}
+    95% {
+        top: -50px;
+    }*/
+    100% {
+        top: -100px;
+    }
+}
+
+#ballShadow {
+    /*animation: shrink 1s infinite;*/
+}
+/*
+@-keyframes shrink {
+    0% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 60px;
+        height: 75px;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+        border-radius: 30px / 40px;
+    }
+    50% {
+        bottom: 30px;
+        margin-left: -10px;
+        width: 20px;
+        height: 5px;
+        background: rgba(20, 20, 20, .3);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.3);
+        border-radius: 20px / 20px;
+    }
+    100% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 60px;
+        height: 75px;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+        border-radius: 30px / 40px;
+    }
+}*/
+
+#ballWrapper {
+    transform: scale(1);
+    transition: all 5s linear 0s;
+}
+
+#ballWrapper:active {
+    transform: scale(0);
+}
+
+
+.modal-text-icon{
+	background-image: url("/images/icons2/text-modal-icon.png");
+	background-size: 139px;
+	cursor: pointer;
+
+}
+
+.modal-link-icon{
+	background-image: url("/images/icons2/link-modal-icon.png");
+	background-size: 139px;
+	cursor: pointer;
+
+}
+.modal-song-icon{
+	background-image: url("/images/icons2/song-modal-icon.png");
+	background-size: 139px;
+	cursor: pointer;
+
+}
+.modal-video-icon{
+	background-image: url("/images/icons2/video-modal-icon.png");
+	background-size: 139px;
+	cursor: pointer;
+
+}
+.modal-image-icon{
+	background-image: url("/images/icons2/image-modal-icon.png");
+	background-size: 139px;
+	cursor: pointer;
+
+}
+.modal-quote-icon{
+	background-image: url("/images/icons2/quote-modal-icon.png");
+	background-size: 139px;
+	cursor: pointer;
+
 }
