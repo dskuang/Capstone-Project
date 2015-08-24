@@ -40,8 +40,8 @@ Tumblr.Routers.Router = Backbone.Router.extend({
   postsForTag: function(tag) {
     var postCollection = new Tumblr.Collections.TagPosts();
     postCollection.fetch({data: {tag: tag}, processData: true });
-    var view = new Tumblr.Views.postIndex({blogCollection: this.blogCollection,
-      collection: postCollection, feedCollection: this.feedCollection});
+    var view = new Tumblr.Views.trendingTagPosts({blogCollection: this.blogCollection,
+      collection: postCollection, feedCollection: this.feedCollection, tag: tag});
     this._swapView(view);
   },
 

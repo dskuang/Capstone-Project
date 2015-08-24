@@ -4,7 +4,8 @@ class Api::PostsController < ApplicationController
       @posts = Post.preload(:tags, :likes, :user, :taggings, :notes).joins(:notes).group(:id).order(count: :desc).limit(5).page(params[:page]).per(5)
       @bool = false
     elsif params[:tag].present?
-      @posts = Post.includes(:likes, :taggings, :tags, :notes, :user).references(:tags).where(tags: {label: params[:tag]})
+      @tagpost = true
+      @posts = Post.includes(:taggings, :tags, :user).references(:tags).where(tags: {label: params[:tag]})
     elsif params[:id].present?
 
       @posts = Blog.find(params[:id]).posts.page(params[:page]).per(3)
