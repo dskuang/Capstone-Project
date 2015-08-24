@@ -46,16 +46,14 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
                 });
     var formData= $('.new-post').serializeJSON();
     formData.post.tag = tokens;
-
-
+    debugger
     this.postModel.save(formData.post, { success: function(model) {
       if(tokens.length > 0) {
         this.createTagsAndTaggings(this.postModel, tokens);
       }
     }.bind(this),
-
     error: function(mode, response){
-    
+      debugger
     }
   });
     this.removeNewPostView(e);
@@ -124,7 +122,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
 
   addPostView: function(post) {
     var subPostView = new Tumblr.Views.postShow({model: post, feedCollection: this.feedCollection});
-    this.addSubview(".newsfeed-posts", subPostView);
+    this.addSubview(".newsfeed-posts", subPostView, true);
   },
 
   removePostView: function(post) {

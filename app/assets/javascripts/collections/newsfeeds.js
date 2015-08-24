@@ -20,7 +20,7 @@ Tumblr.Collections.NewsFeeds = Backbone.Collection.extend({
    },
 
    comparator: function(item) {
-     return item.get("id");
+     return -(new Date(item.get("created_at")));
    }
 
 });

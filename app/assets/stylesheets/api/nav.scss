@@ -1,12 +1,17 @@
 .search-ac {
     padding: 0;
     list-style-type: none;
+    position: absolute;
 }
 
 .search-list-item {
   background: white;
   color: grey;
   text-decoration: none;
+  z-index: 100;
+  width: 500px;
+  position: relative;
+
 }
 
 .search-list-anchor{

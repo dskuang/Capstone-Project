@@ -74,6 +74,11 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
     this.windowWidth = $(window).width();
     this.colWidth = $('.post-item').outerWidth();
     this.colCount = Math.floor(this.windowWidth/(this.colWidth+this.margin)) - 1;
+    if (this.colCount == 3) {
+      $('.posts-index').css({'width': 955 +'px' });
+    } else if (this.colCount == 2) {
+      $('.posts-index').css({'width': 634 +'px' });
+    }
     this.blocks = [];
     for(var i = 0; i < this.colCount; i++) {
         this.blocks.push(this.margin);

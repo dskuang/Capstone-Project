@@ -20,7 +20,7 @@ Blog.create({user_id: 4, title: "Give Me Another Chance"})
 User.create({username: "justintimbawhat", password: 123456, profileUrl: "http://www.gettyimages.com/gi-resources/images/ImageCollections/image5_170127819.jpg", firstname: "George", lastname: "Washington", city: "San Jose", state:"CA"})
 Blog.create({user_id: 5, title: "LakeHeadOrArrowHead"})
 
-User.create({username: "hereIAm", password: 123456, profileUrl: "http://s1008.photobucket.com/user/visuallightbox/media/Butterfly/12.jpg.html", firstname: "Caster", lastname: "Jordan", city: "Santa Barbara", state: "CA"})
+User.create({username: "hereIAm", password: 123456, profileUrl: "http://smallbiztrends.com/wp-content/uploads/2012/07/tax-squeeze.jpg", firstname: "Caster", lastname: "Jordan", city: "Santa Barbara", state: "CA"})
 Blog.create({user_id: 6, title: "DropitlowLikeIt'sHot"})
 
 User.create({username: "WorkingAsdaSlave", password: 123456, profileUrl: "http://zoarchurch.co.uk/content/pages/uploaded_images/91.png", firstname: "Keaton", lastname: "Dan", city: "San Diego", state: "CA"})

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="text/javascript" src="//api.filepicker.io/v2/filepicker.js"></script>
-  <script> filepicker.setKey("<%=ENV["filepicker"]%>") </script>
 
 
-  <title>Tumblr</title>
+  <title>stumblr</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <script type="text/javascript" src="//api.filepicker.io/v2/filepicker.js"></script>
+  <script> filepicker.setKey("<%=ENV['filepicker']%>") </script>
 </head>
 <body>
 

@@ -1,7 +1,7 @@
 class Api::BlogsController < ApplicationController
   def index
     if params[:query].present?
-      @blogs = Blog.where("title ~ ?", params[:query])
+      @blogs = Blog.where("lower(title) ~ ?", params[:query].downcase)
     elsif params[:trending].present?
       @blogs = Blog.includes(:user).joins(:notes).group(:id).order(count: :desc).limit(5)
     else
@@ -12,8 +12,6 @@ class Api::BlogsController < ApplicationController
 
   def show
     @blog = Blog.includes({ posts: [:tags, :likes, :notes] }).find(params[:id])
-    # @posts = @blog.posts
-    # @bool = true
     render "show"
   end
 

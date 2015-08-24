@@ -119,7 +119,6 @@ Tumblr.Views.NavShow = Backbone.CompositeView.extend({
     return this.dateSort(left).
       concat([pivot]).
       concat(this.dateSort(right));
-
     return new Date(b.date) - new Date(a.date);
   },
 
