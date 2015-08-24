@@ -7,7 +7,7 @@
 
 
 #rightSideContent .side-username{
-  width: 202px;
+
   color: #A7AEB0;
 
 }
@@ -78,11 +78,7 @@
     width: 136px;
   }
 
-  .side-username{
-    color: #717A8C;
-    font-weight: normal;
 
-  }
   .reblog-image {
     float: left;
     cursor: pointer;
@@ -196,9 +192,9 @@
   display: block;
 }
 .rec-blog {
-  margin: 0 auto;
-  width: 177px;
+  padding-left: 39px;
   float: left;
+  text-align: left;
 }
 
 .user-thumbnail-pic{
@@ -208,7 +204,7 @@
 
 .blog-item-content{
   margin-bottom: 9px;
-  width: 204px;
+  width: 237px;
   height: 59px;
   border-bottom: 1px solid #505E72;
   padding-top: 0px;

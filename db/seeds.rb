@@ -15,19 +15,19 @@ User.create({username: "lawdylawdylawd", password: 123456, profileUrl: "http://a
 Blog.create({user_id: 3, title: "Love me?"})
 
 User.create({username: "hoaxcoaxy", password: 123456, profileUrl: "http://www.artisteer.com/media/p4/images/tutorial/source_image.jpg", firstname: "Timothy", lastname: "Kree", city: "SF", state: "CA"})
-Blog.create({user_id: 4, title: "Give Me Another Chance"})
+Blog.create({user_id: 4, title: "Give Me Another"})
 
 User.create({username: "justintimbawhat", password: 123456, profileUrl: "http://www.gettyimages.com/gi-resources/images/ImageCollections/image5_170127819.jpg", firstname: "George", lastname: "Washington", city: "San Jose", state:"CA"})
 Blog.create({user_id: 5, title: "LakeHeadOrArrowHead"})
 
-User.create({username: "hereIAm", password: 123456, profileUrl: "http://smallbiztrends.com/wp-content/uploads/2012/07/tax-squeeze.jpg", firstname: "Caster", lastname: "Jordan", city: "Santa Barbara", state: "CA"})
-Blog.create({user_id: 6, title: "DropitlowLikeIt'sHot"})
+User.create({username: "hereIAm", password: 123456, profileUrl: "http://www.gettyimages.co.uk/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg", firstname: "Caster", lastname: "Jordan", city: "Santa Barbara", state: "CA"})
+Blog.create({user_id: 6, title: "DropitlowLikeHot"})
 
-User.create({username: "WorkingAsdaSlave", password: 123456, profileUrl: "http://zoarchurch.co.uk/content/pages/uploaded_images/91.png", firstname: "Keaton", lastname: "Dan", city: "San Diego", state: "CA"})
+User.create({username: "WorkinAsdaSlave", password: 123456, profileUrl: "http://zoarchurch.co.uk/content/pages/uploaded_images/91.png", firstname: "Keaton", lastname: "Dan", city: "San Diego", state: "CA"})
 Blog.create({user_id: 7, title: "Justification"})
 
 User.create({username: "Hypeman15", password: 123456, profileUrl: "https://pbs.twimg.com/profile_images/463525719683764224/71Oe_sTw.jpeg", firstname: "Jason", lastname: "Tan", city: "Encinitas", state: "CA"})
-Blog.create({user_id: 8, title: "Living The Life Abroad"})
+Blog.create({user_id: 8, title: "Living My Life"})
 
 User.create({username: "Jackson's Here", password: 123456, profileUrl: "http://andrefrommalta.com/wp-content/uploads/2014/09/137392976177.jpg", firstname: "Jackson", lastname: "Tran", city: "Austin", state: "TX"})
 Blog.create({user_id: 9, title: "WildPonders"})
@@ -42,7 +42,7 @@ User.create({username: "NowYouSeeMe", password: 123456, profileUrl: "https://ben
 Blog.create({user_id: 12, title: "NowYouDont"})
 
 User.create({username: "TeamWerkIt", password: 123456, profileUrl: "http://picdn.net/assets/cms/3934dd5c0ac80a167e5118c4ea52d925eea34b85-stofro_offset_0.png", firstname: "Pamela", lastname: "Hamilton", city: "Chicago", state: "IL"})
-Blog.create({user_id: 13, title: "Now Team Just You"})
+Blog.create({user_id: 13, title: "NoTeamJustYou"})
 
 User.create({username: "aaaaRon12", password: 123456, profileUrl: "http://static.tumblr.com/44e684098f0ac7c33a6640c20556b923/jxahzkb/fZ5mod2rw/tumblr_static_dog-logo.jpg", firstname: "Aaron", lastname: "Trust", city: "Phoenix", state: "AZ"})
 Blog.create({user_id: 14, title: "What is Life?"})
