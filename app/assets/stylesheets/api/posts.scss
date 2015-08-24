@@ -49,6 +49,8 @@
 .posts-index{
   position: relative;
   top: 81px;
+  width: 1300px;
+      
 }
 
 
@@ -88,9 +90,7 @@
 }
 .posts-index .index-post-image {
   height: auto;
-  min-height: 300px;
   max-width: 100%;
-  // position: absolute;
 }
 
 .posts-index .post-text-header p {
@@ -133,10 +133,14 @@
   font-weight: bold;
 }
 
+.border-index{
+  display: flex;
+  justify-content: center;
 
+}
 .inner-post-frame {
   margin: 0 auto;
-  width: 1272px;
+  width: 90vw;
 }
 
 
