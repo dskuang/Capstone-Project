@@ -34,10 +34,7 @@
         <div class="quote-text"><em class="inner-quote"> "<%= post.escape("quotetitle") %>"</em> </div>
         <% } else if(post.get("attr") === "Link") { %>
           <div class="link-square">
-              <div class="square">
-                <%= post.escape("linkurl") %>
-            <a href="<%= post.escape('linkurl') %>" ></a>
-            </div>
+            <a href="http://<%= post.escape('linkurl') %>" class="button square">  <%= post.escape("linkurl") %></a>
           </div>
       </p>
       <% } else if(post.get("attr") === "Image") { %>

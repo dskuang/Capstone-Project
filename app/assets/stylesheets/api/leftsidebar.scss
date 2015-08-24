@@ -90,16 +90,13 @@
   }
 
   .blog-title{
-    width: 159px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 41px;
     color: white;
     height: 120px;
-  }
-  .blog-follow{
-    // margin-left: 46px;
   }
 
   .user-profile-pic{
@@ -112,7 +109,18 @@
   .blog-text{
     float: left;
     margin-left: 5px;
-    width: 154px;
-    margin-top: 8px;
+    width: 52%;
+    margin-top: -16px;
+  }
+
+  .blog-follow {
+    margin-right: -6px;
+  }
+
+  .blog-header{
+    margin: 0 auto;
+    text-align: center;
+    width: 491px;
+
   }
 }

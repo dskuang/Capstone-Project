@@ -38,7 +38,7 @@ hr {
   height: 600px;
 }
 
-.bg1 { background-image: url('/images/bg1.jpg'); }
+.bg1 { background-image: url('/images/bg4.jpg'); }
 .bg2 { background-image: url('/images/bg2.jpg'); }
 .bg3 { background-image: url('/images/bg3.jpg'); }
 
@@ -51,4 +51,45 @@ section > article {
   min-height: 100%;
   padding: 20px 50px;
   margin: 0 auto;
+}
+
+.live {
+  position: absolute;
+  bottom: 41px;
+  right: 124px;
+  font-size: 308px;
+  color: white;
+  opacity: 1.0;
+  text-shadow: 1px 1px #000;
+  
+}
+
+.love{
+  bottom: 12px;
+  left: 80px;
+  position: absolute;
+  font-size: 236px;
+  color: white;
+  text-shadow: 1px 1px #000;
+
+
+}
+
+.laugh {
+  bottom: 41px;
+  right: 107px;
+  position: absolute;
+  font-size: 222px;
+  color: white;
+  text-shadow: 1px 1px #000;
+
+}
+
+.stumblr {
+  top: -21%;
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    right: 46%;
+    text-shadow: 1px 1px #000;
 }

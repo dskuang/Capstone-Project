@@ -12,9 +12,11 @@ Tumblr.Views.blogShow = Backbone.CompositeView.extend({
   template: JST["blogShow"],
 
   events: {
-      "click .thumbnail-user-blog": "renderUserPage",
-      "click .blog-follow": "toggleFollowBlog"
+    "click .thumbnail-user-blog": "renderUserPage",
+
   },
+
+
 
   render: function() {
     this.$el.html(this.template({blog: this.model}));

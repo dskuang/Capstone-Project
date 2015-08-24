@@ -11,7 +11,9 @@
   </div>
   <div class="blog-text">
     <h1 class="blog-title"><%= blog.escape('title') %></h1>
-    <button class="blog-follow btn btn-primary"><%= followState %></button>
+    <%if (blog.escape("user_id") !== Tumblr.CURRENT_USER.id) { %>
+      <button class="blog-follow btn btn-primary"><%= followState %></button>
+    <% } %>
   </div>
 </div>
 

@@ -16,7 +16,6 @@
   .blog-text{
     float: left;
     margin-left: 30px;
-    width: 154px;
   }
 
   .blog-header:after{
@@ -28,7 +27,7 @@
   .blog-header{
     margin: 0 auto;
     text-align: center;
-    width: 417px;
+    width: 551px;
   }
 
   .username-header{
@@ -45,7 +44,7 @@
     height: 170px;
     cursor: pointer;
     margin-top: 33px;
-    margin-left: 8px;
+    margin-left: 1px;
   }
 
   .edit-button{
@@ -67,12 +66,12 @@
   }
 
   .blog-title{
-    width: 120px;
-    margin:0 auto;
+
     text-align:center;
     color: white;
     padding-bottom: 25px;
     padding-top: 42px;
+    font-size: 29px;
   }
 
   .follow-button{

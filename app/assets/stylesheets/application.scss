@@ -17,10 +17,13 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "bootstrap-tokenfield";
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 
 
  // @import "api/newsfeed"
-
+html{
+  font-family: 'Open Sans', sans-serif;
+}
  body {
    background-color: #36465D;
  }
@@ -122,7 +125,7 @@
   background-color: #3292B2;
   border-color: #3292B2;
   border-radius: 2px;
-  margin-bottom: -10px;
+  margin-bottom: -16px;
 
 }
 
@@ -181,3 +184,13 @@
 }
 
 .notif-drop::-webkit-scrollbar { display: none; }
+
+.square:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.square:active {
+  text-decoration: none;
+  color: white;
+}

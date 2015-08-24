@@ -5,46 +5,46 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-User.create({username: "myUser", password: 123456, profileUrl: "https://www.filepicker.io/api/file/95ittMOURGiaDqsjgGB9", firstname: "My", lastname: "Name", city: "Oklahoma City", state: "OK"})
+User.create({username: "myUser", password: 123456, profileUrl: "http://i.telegraph.co.uk/multimedia/archive/03025/saatchi-plug-hole_3025834k.jpg", firstname: "My", lastname: "Name", city: "Oklahoma City", state: "OK"})
 Blog.create({user_id: 1, title: "myBlog"})
 
-User.create({username: "seamoreskies25", password: 123456, profileUrl: "https://www.filepicker.io/api/file/OyOD74lpT9OqngDh1MKy", firstname: "Stacy", lastname: "Kim", city: "Cupertino", state: "CA"})
+User.create({username: "seamoreskies25", password: 123456, profileUrl: "http://2.bp.blogspot.com/-CMIQjovvgcQ/VOy4zOpkW3I/AAAAAAAAAH4/8cE_5moqRFQ/s1600/happy%2Bholi%2Bphotos.jpg", firstname: "Stacy", lastname: "Kim", city: "Cupertino", state: "CA"})
 Blog.create({user_id: 2, title: "I Just Want You"})
 
-User.create({username: "lawdylawdylawd", password: 123456, profileUrl: "https://www.filepicker.io/api/file/mPQjUD3Qp23yGOjFax4A", firstname: "Delilah", lastname: "Hope", city: "Mountain View", state:"CA"})
+User.create({username: "lawdylawdylawd", password: 123456, profileUrl: "http://assets-s3.usmagazine.com/uploads/assets/articles/85460-jennifer-lopez-grammys-dress-google-images/1428524814_jennifer-lopez-article.jpg", firstname: "Delilah", lastname: "Hope", city: "Mountain View", state:"CA"})
 Blog.create({user_id: 3, title: "Love me?"})
 
-User.create({username: "hoaxcoaxy", password: 123456, profileUrl: "https://www.filepicker.io/api/file/xrQ6DW54TpSUW0FXf6ys", firstname: "Timothy", lastname: "Kree", city: "SF", state: "CA"})
+User.create({username: "hoaxcoaxy", password: 123456, profileUrl: "http://www.artisteer.com/media/p4/images/tutorial/source_image.jpg", firstname: "Timothy", lastname: "Kree", city: "SF", state: "CA"})
 Blog.create({user_id: 4, title: "Give Me Another Chance"})
 
-User.create({username: "justintimbawhat", password: 123456, profileUrl: "https://www.filepicker.io/api/file/n5J6ZlXHSL2D8DuacC2D", firstname: "George", lastname: "Washington", city: "San Jose", state:"CA"})
+User.create({username: "justintimbawhat", password: 123456, profileUrl: "http://www.gettyimages.com/gi-resources/images/ImageCollections/image5_170127819.jpg", firstname: "George", lastname: "Washington", city: "San Jose", state:"CA"})
 Blog.create({user_id: 5, title: "LakeHeadOrArrowHead"})
 
-User.create({username: "hereIAm", password: 123456, profileUrl: "https://www.filepicker.io/api/file/fSHZQU5QxC213Rfbg1yg", firstname: "Caster", lastname: "Jordan", city: "Santa Barbara", state: "CA"})
+User.create({username: "hereIAm", password: 123456, profileUrl: "http://s1008.photobucket.com/user/visuallightbox/media/Butterfly/12.jpg.html", firstname: "Caster", lastname: "Jordan", city: "Santa Barbara", state: "CA"})
 Blog.create({user_id: 6, title: "DropitlowLikeIt'sHot"})
 
-User.create({username: "WorkingAsdaSlave", password: 123456, profileUrl: "https://www.filepicker.io/api/file/yS5UlSvbQSmaqCE6bw9X", firstname: "Keaton", lastname: "Dan", city: "San Diego", state: "CA"})
+User.create({username: "WorkingAsdaSlave", password: 123456, profileUrl: "http://zoarchurch.co.uk/content/pages/uploaded_images/91.png", firstname: "Keaton", lastname: "Dan", city: "San Diego", state: "CA"})
 Blog.create({user_id: 7, title: "Justification"})
 
-User.create({username: "Hypeman15", password: 123456, profileUrl: "https://www.filepicker.io/api/file/ymBMuanLSVCr8N6w9Ob3", firstname: "Jason", lastname: "Tan", city: "Encinitas", state: "CA"})
+User.create({username: "Hypeman15", password: 123456, profileUrl: "https://pbs.twimg.com/profile_images/463525719683764224/71Oe_sTw.jpeg", firstname: "Jason", lastname: "Tan", city: "Encinitas", state: "CA"})
 Blog.create({user_id: 8, title: "Living The Life Abroad"})
 
-User.create({username: "Jackson's Here", password: 123456, profileUrl: "https://www.filepicker.io/api/file/eCOrLF4RT6EulSzz3ImR", firstname: "Jackson", lastname: "Tran", city: "Austin", state: "TX"})
+User.create({username: "Jackson's Here", password: 123456, profileUrl: "http://andrefrommalta.com/wp-content/uploads/2014/09/137392976177.jpg", firstname: "Jackson", lastname: "Tran", city: "Austin", state: "TX"})
 Blog.create({user_id: 9, title: "WildPonders"})
 
-User.create({username: "JasonBlack", password: 123456, profileUrl: "https://www.filepicker.io/api/file/7QjtNdn9RjSkWt30TYve", firstname: "Jason", lastname: "Black", city: "Salem", state: "OR"})
+User.create({username: "JasonBlack", password: 123456, profileUrl: "https://pbs.twimg.com/profile_images/530782121389203457/TJE4TneP_400x400.jpeg", firstname: "Jason", lastname: "Black", city: "Salem", state: "OR"})
 Blog.create({user_id: 10, title: "LivingALie"})
 
-User.create({username: "Queenadie", password: 123456, profileUrl: "https://www.filepicker.io/api/file/2J3s9rDyQamKHgxlzhTQ", firstname: "Kuiyane", lastname: "Tepipa", city: "Nowhere", state: "IDK"})
+User.create({username: "Queenadie", password: 123456, profileUrl: "http://www.publishingtechnology.com/wp-content/uploads/2013/12/I._1._Dan_Franklin_Random_House2.jpgicon", firstname: "Kuiyane", lastname: "Tepipa", city: "Nowhere", state: "IDK"})
 Blog.create({user_id: 11, title: "Kingdead"})
 
-User.create({username: "NowYouSeeMe", password: 123456, profileUrl: "https://www.filepicker.io/api/file/oHchscK1TbSeohqqPJRZ", firstname: "Damien", lastname: "Sean", city: "Miami", state: "FL"})
+User.create({username: "NowYouSeeMe", password: 123456, profileUrl: "https://benigngirl.files.wordpress.com/2007/11/random-phases.jpg", firstname: "Damien", lastname: "Sean", city: "Miami", state: "FL"})
 Blog.create({user_id: 12, title: "NowYouDont"})
 
-User.create({username: "TeamWerkIt", password: 123456, profileUrl: "https://www.filepicker.io/api/file/BK4QK5yoQFesaqRaYZIP", firstname: "Pamela", lastname: "Hamilton", city: "Chicago", state: "IL"})
+User.create({username: "TeamWerkIt", password: 123456, profileUrl: "http://picdn.net/assets/cms/3934dd5c0ac80a167e5118c4ea52d925eea34b85-stofro_offset_0.png", firstname: "Pamela", lastname: "Hamilton", city: "Chicago", state: "IL"})
 Blog.create({user_id: 13, title: "Now Team Just You"})
 
-User.create({username: "aaaaRon12", password: 123456, profileUrl: "https://www.filepicker.io/api/file/MKyuPsTAqyRu8jWSL8Og", firstname: "Aaron", lastname: "Trust", city: "Phoenix", state: "AZ"})
+User.create({username: "aaaaRon12", password: 123456, profileUrl: "http://static.tumblr.com/44e684098f0ac7c33a6640c20556b923/jxahzkb/fZ5mod2rw/tumblr_static_dog-logo.jpg", firstname: "Aaron", lastname: "Trust", city: "Phoenix", state: "AZ"})
 Blog.create({user_id: 14, title: "What is Life?"})
 
 

@@ -1,8 +1,12 @@
 <% follows.each(function(follow) { %>
   <div class="follow-container">
     <p class="follow-username"><%= follow.escape("username") %></p>
+    <p data-blog-id="<%=follow.blog().id%>" class="follow-blog"> <%= follow.blog().escape("title") %></p>
     <div class="user-img">
-        <img class= "profile-pic" src="<%= follow.escape("profileUrl") %>" width="160" height="160">
+        <img data-user-id="<%=follow.id%>"
+              class= "profile-pic"
+              src="<%= follow.escape("profileUrl") %>"
+              width="160" height="160">
     </div>
   </div>
 <% }) %>
