@@ -3,7 +3,8 @@ class Api::BlogsController < ApplicationController
     if params[:query].present?
       @blogs = Blog.where("lower(title) ~ ?", params[:query].downcase)
     elsif params[:trending].present?
-      @blogs = Blog.includes(:user).joins(:notes).group(:id).order(count: :desc).limit(5)
+      @blogs = Blog.includes(:user).joins(:notes).
+               group(:id).order(count: :desc).limit(5)
     else
       @blogs = Blog.all
     end
@@ -44,14 +45,6 @@ class Api::BlogsController < ApplicationController
    params.require(:blog).permit(:title)
  end
 
-
- private
-
-  def require_login
-    unless logged_in?
-      render json: ["Unauthorized"], status: 400
-    end
-  end
 
 
 end

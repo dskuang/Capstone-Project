@@ -1,5 +1,4 @@
 class Api::UsersController < ApplicationController
-
   def index
     if params[:followees].present?
       @users = current_user.followees
@@ -25,14 +24,6 @@ class Api::UsersController < ApplicationController
     end
 
   end
-
-  # def edit
-  # end
-
-  # def update
-  #   @user = User.find(params[:id])
-  #   @user = User.update()
-  # end
 
   def destroy
     @user = User.find(params[:id])

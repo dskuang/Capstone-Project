@@ -1,7 +1,9 @@
 class Api::TagsController < ApplicationController
   def index
     if params[:trending].present?
-      @tags = Tag.joins(:taggings).select(:label).group(:label).order(:count).reverse_order.limit(8)
+      @tags = Tag.joins(:taggings).select(:label)
+              .group(:label).order(:count)
+              .reverse_order.limit(8)
     else
       @tags = Tag.all
     end
@@ -32,11 +34,4 @@ class Api::TagsController < ApplicationController
     params.require(:tag).permit(:label)
   end
 
-  private
-
-   def require_login
-     unless logged_in?
-      redirect_to new_session_url
-     end
-   end
 end

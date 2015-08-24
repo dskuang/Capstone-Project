@@ -1,5 +1,4 @@
 class Api::FollowsController < ApplicationController
-
   def index
     if params[:user].present?
       @followers = current_user.followers
@@ -33,7 +32,7 @@ class Api::FollowsController < ApplicationController
   def follow_params
     params.require(:follow).permit(:followee_id)
   end
-  private
+
 
 
 end

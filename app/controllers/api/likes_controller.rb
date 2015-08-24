@@ -40,11 +40,4 @@ class Api::LikesController < ApplicationController
     params.require(:like).permit(:post_id)
   end
 
-  private
-
-   def require_login
-     unless logged_in?
-        render json: ["Unauthorized"], status: 400
-     end
-   end
 end

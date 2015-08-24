@@ -1,5 +1,4 @@
 Tumblr.Collections.Tags = Backbone.Collection.extend({
-
   initialize: function(options) {
     this.post = options.post;
   },

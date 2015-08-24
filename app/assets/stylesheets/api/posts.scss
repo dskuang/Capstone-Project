@@ -33,25 +33,7 @@
 
 }
 
-/*post-item for feed*/
 
-.new-post {
-  background-color: white;
-  position: relative;
-  text-align:center;
-  width: 545px;
-  margin: 0 auto;
-  margin-top: 200px;
-  min-height: 322px;
-  border-radius: 5px;
-}
-
-.posts-index{
-  position: relative;
-  top: 81px;
-  width: 1300px;
-
-}
 
 
 
@@ -71,67 +53,100 @@
 
 }
 
-.posts-index .thumbnail-user{
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  cursor: pointer;
-}
+.posts-index {
+   .thumbnail-user{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
 
-.posts-index .edit-button {
-  display: none;
-}
-
-
-.posts-index .user-blog-icon{
-  display: none;
-}
-.posts-index .index-post-image {
-  height: auto;
-  max-width: 100%;
-  width: 100%;
-}
-
-.posts-index .post-text-header p {
-  padding-left: 21px;
-  padding-right: 21px;
-}
-
-.posts-index .post-text-header {
-  padding-top: 10px;
-  margin-bottom: 18px;
-}
+  .edit-button {
+    display: none;
+  }
 
 
-.posts-index .audio-post {
-  max-width: 100%;
-  max-height: 100%;
-}
+  .user-blog-icon{
+    display: none;
+  }
 
-.posts-index .like-button {
-  right: 16px;
-  bottom: 19px;
-  position:absolute;
+  .index-post-image {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+  }
 
-}
+  .post-text-header p {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
 
-.posts-index .follow-button {
-  top: -30px;
-  right: -142px;
-  position: relative;
-  padding: 0;
-  background: none;
-  border: none;
-  color: #659BCF
-}
+  .post-text-header {
+    padding-top: 10px;
+    margin-bottom: 18px;
+  }
 
-.posts-index .user-header{
-  position: absolute;
-  top: 28px;
-  left: 71px;
-  font-weight: bold;
+
+   .audio-post {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+   .like-button {
+    right: 16px;
+    bottom: 19px;
+    position:absolute;
+
+  }
+
+  .follow-button {
+    top: -30px;
+    right: -142px;
+    position: relative;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #659BCF
+  }
+
+  .user-header{
+    position: absolute;
+    top: 28px;
+    left: 71px;
+    font-weight: bold;
+  }
+  .quote-text{
+    font-weight: bold;
+    font-size: 26px;
+    color: grey;
+    width: 253px;
+    margin: 0 auto;
+  }
+
+   .reblog-image {
+    height: 26px;
+    width: 30px;
+    display: block;
+    background-image: url("/images/reblog.png");
+    background-size: 30px;
+    margin-left: 190px;
+    cursor: pointer;
+
+  }
+
+   .reblog-image:hover{
+    height: 26px;
+    width: 30px;
+    display: block;
+    background-image: url("/images/icons/arrow-hover.png");
+    background-size: 30px;
+    margin-left: 190px;
+    cursor: pointer;
+  }
+
+
 }
 
 .border-index{
@@ -145,26 +160,7 @@
 }
 
 
-.posts-index .reblog-image {
-  height: 26px;
-  width: 30px;
-  display: block;
-  background-image: url("/images/reblog.png");
-  background-size: 30px;
-  margin-left: 190px;
-  cursor: pointer;
 
-}
-
-.posts-index .reblog-image:hover{
-  height: 26px;
-  width: 30px;
-  display: block;
-  background-image: url("/images/icons/arrow-hover.png");
-  background-size: 30px;
-  margin-left: 190px;
-  cursor: pointer;
-}
 
 .post-text-header {
   max-height: 100%;
@@ -207,13 +203,6 @@
 
 }
 
-.posts-index .quote-text{
-  font-weight: bold;
-  font-size: 26px;
-  color: grey;
-  width: 253px;
-  margin: 0 auto;
-}
 
 .quote-source{
   color: #ccc;
@@ -247,4 +236,12 @@
 .username-header:hover{
   cursor: pointer;
   color: #7DA7C8
+}
+
+.tag-posts .follow-button {
+  display: none;
+}
+
+.tag-posts .note-text{
+  display: none;
 }

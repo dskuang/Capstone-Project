@@ -1,17 +1,20 @@
 class Api::PostsController < ApplicationController
   def index
     if params[:trending].present?
-      @posts = Post.preload(:tags, :likes, :user, :taggings, :notes).joins(:notes).group(:id).order(count: :desc).limit(5).page(params[:page]).per(5)
+      @posts = Post.preload(:tags, :likes, :user, :taggings, :notes)
+               .joins(:notes).group(:id).order(count: :desc).limit(5)
+               .page(params[:page]).per(5)
       @bool = false
     elsif params[:tag].present?
+      @posts = Post.includes(:taggings, :tags, :user).references(:tags)
+               .where(tags: {label: params[:tag]})
       @tagpost = true
-      @posts = Post.includes(:taggings, :tags, :user).references(:tags).where(tags: {label: params[:tag]})
     elsif params[:id].present?
-
       @posts = Blog.find(params[:id]).posts.page(params[:page]).per(3)
       @bool = true
     else
-      @posts = Post.includes(:likes, :taggings, :tags, :notes, :user).where(og_post_id: nil).page(params[:page]).per(6)
+      @posts = Post.includes(:likes, :taggings, :tags, :notes, :user)
+               .where(og_post_id: nil).page(params[:page]).per(6)
       @bool = true
     end
     render "index"
@@ -56,11 +59,5 @@ class Api::PostsController < ApplicationController
    :videobody, :og_post_id)
  end
 
- private
 
-  def require_login
-    unless logged_in?
-      render json: ["Unauthorized"], status: 400
-    end
-  end
 end

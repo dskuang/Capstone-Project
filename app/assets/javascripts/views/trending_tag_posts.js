@@ -17,6 +17,8 @@ Tumblr.Views.trendingTagPosts = Backbone.CompositeView.extend({
     this.addTrendingTags();
   },
 
+  className: "tag-posts",
+
   events: {
     "click .posts-index .username-header": "performSlide",
     "click .blog-shade": "removeSlide",
@@ -110,26 +112,7 @@ Tumblr.Views.trendingTagPosts = Backbone.CompositeView.extend({
     this.attachSubviews();
     this.setupBlocks();
     this.positionBlocks();
-    // this.listenForScroll();
     return this;
-  },
-
-  listenForScroll: function () {
-    $(window).off("scroll"); // remove previous listeners
-    var throttledCallback = _.throttle(this.nextPage.bind(this), 200);
-    $(window).on("scroll", throttledCallback);
-  },
-
-  nextPage: function () {
-    var view = this;
-    if ($(window).scrollTop() > $(document).height() - $(window).height() - 50) {
-      if (view.collection.page < view.collection.total_pages) {
-        view.collection.fetch({
-          data: {tag: tag, page: parseInt(view.collection.page) + 1 },
-          remove: false
-        });
-      }
-    }
   },
 
 

@@ -122,7 +122,7 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
 
   addPostView: function(post) {
     var subPostView = new Tumblr.Views.postShow({model: post, feedCollection: this.feedCollection});
-    this.addSubview(".newsfeed-posts", subPostView, true);
+    this.addSubview(".newsfeed-posts", subPostView);
   },
 
   removePostView: function(post) {

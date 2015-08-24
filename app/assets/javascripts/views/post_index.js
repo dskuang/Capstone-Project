@@ -106,25 +106,22 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
   render: function() {
     var content = this.template({posts: this.collection});
     this.$el.html(content);
-    // this.addTrendingTags();
     this.attachSubviews();
-    // this.invokeMasonry();
     this.setupBlocks();
     this.positionBlocks();
     this.listenForScroll();
-    // this.onRender();
     return this;
   },
 
   listenForScroll: function () {
-    $(window).off("scroll"); // remove previous listeners
+    $(window).off("scroll");
     var throttledCallback = _.throttle(this.nextPage.bind(this), 200);
     $(window).on("scroll", throttledCallback);
   },
 
   nextPage: function () {
     var view = this;
-    if ($(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+    if ($(window).scrollTop() > $(document).height() - $(window).height() - 50){
       if (view.collection.page < view.collection.total_pages) {
         view.collection.fetch({
           data: { page: parseInt(view.collection.page) + 1 },
@@ -148,7 +145,9 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
   },
 
   addPostView: function(post) {
-    var subPostView = new Tumblr.Views.postShow({blogcollection: this.blogCollection, model: post, feedCollection: this.feedCollection});
+    var subPostView = new Tumblr.Views.postShow({
+              blogcollection: this.blogCollection,
+              model: post, feedCollection: this.feedCollection});
     this.addSubview(".posts-index", subPostView);
   },
 

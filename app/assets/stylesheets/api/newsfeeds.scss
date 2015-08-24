@@ -2,12 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.newsfeed-posts {
-  margin:0 auto;
-  padding: 0;
-  list-style-type: none;
-  width: 601px;
-  height: 300px;
+
+.new-post {
+  background-color: white;
+  position: relative;
+  text-align:center;
+  width: 545px;
+  margin: 0 auto;
+  margin-top: 200px;
+  min-height: 322px;
+  border-radius: 5px;
+}
+
+.posts-index{
+  position: relative;
+  top: 81px;
+  width: 1300px;
+
 }
 
 .parent-form{
@@ -35,12 +46,10 @@
 
 .text-post{
   margin: 0 auto;
-
 }
 
 .link-post{
   margin: 0 auto;
-
 }
 
 .quote-post{
@@ -82,192 +91,188 @@
 }
 
 
-.newsfeed-posts .post-item{
-width: 601px;
-
-}
-
-.newsfeed-posts .post-item .user-blog-icon {
-  height: 23px;
-  width: 17px;
-  display: block;
-  background-image: url("/images/icons3.png");
-  background-size: 118px;
-  background-position: 109px 28px;
-  float: left;
-  cursor: pointer;
-  margin-left: 11px;
-
-}
-
-
-.newsfeed-posts .post-item:last-child{
-  margin-bottom: 95px;
-
-}
-
-.newsfeed-posts .user-profile-pic{
-  float: left;
-}
-
-.newsfeed-posts .thumbnail-user{
-  cursor: pointer;
-  width: 71px;
-  height: 71px;
-  position: absolute;
-  margin-left: -89px;
-
-}
-.newsfeed-posts .post-item-border{
-  border-radius: 5px;
-  background: #FFF;
-  width: 600px;
-  margin: 0 auto;
-  float: left;
-  margin-bottom: 21px;
-}
-
-.newsfeed-posts .inner-quote{
-
-}
-.newsfeed-posts .post-header{
-   width: 100%;
-   min-height: 55px;
-   margin: 0 auto;
-   margin-top: -7px;
-
-}
-
-.newsfeed-posts .edit-button {
+.newsfeed-posts {
+  margin:0 auto;
   padding: 0;
-  background: none;
-  border: none;
-  float: left;
-  right: 19px;
-  top: -4px;
-  color: #659BCF;
-  font-weight: bold;
-  position: absolute;
-}
-.newsfeed-posts .post-item:after{
-  clear:both;
-  content: '';
-  display: block;
-}
+  list-style-type: none;
+  width: 601px;
+  height: 300px;
 
-.newsfeed-posts .video-post{
-  width: 100%;
-}
+  .post-item {
+    width: 601px;
+  }
 
-.newsfeed-posts .quote-text{
+  .post-item .user-blog-icon {
+    height: 23px;
+    width: 17px;
+    display: block;
+    background-image: url("/images/icons3.png");
+    background-size: 118px;
+    background-position: 109px 28px;
+    float: left;
+    cursor: pointer;
+    margin-left: 11px;
+
+  }
+  .post-item:last-child {
+      margin-bottom: 95px;
+  }
+
+  .user-profile-pic {
+    float: left;
+  }
+
+  .thumbnail-user {
+    cursor: pointer;
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    margin-left: -89px;
+  }
+
+  .post-item-border{
+    border-radius: 5px;
+    background: #FFF;
+    width: 600px;
+    margin: 0 auto;
+    float: left;
+    margin-bottom: 21px;
+  }
+
+  .post-header {
+    width: 100%;
+    min-height: 55px;
+    margin: 0 auto;
+    margin-top: -7px;
+  }
+
+  .edit-button {
+    padding: 0;
+    background: none;
+    border: none;
+    float: left;
+    right: 19px;
+    top: -4px;
+    color: #659BCF;
+    font-weight: bold;
+    position: absolute;
+  }
+
+  .post-item:after{
+    clear:both;
+    content: '';
+    display: block;
+  }
+
+   .video-post{
+    width: 100%;
+  }
+
+   .quote-text{
     font-weight: bold;
     font-size: 26px;
     color: grey;
     width: 555px;
     margin: 0 auto;
+  }
 
-}
+   .like-button {
+    float:left;
+    margin-left:10px;
+  }
 
+   .reblog-image {
+    float:left;
+    left:20px;
+    cursor: pointer;
+    height: 26px;
+    width: 30px;
+    display: block;
+    background-image: url("/images/reblog.png");
+    background-size: 30px;
+  }
 
-.newsfeed-posts .like-button {
-  float:left;
-  margin-left:10px;
-}
-
-.newsfeed-posts .reblog-image {
-  float:left;
-  left:20px;
-  cursor: pointer;
-  height: 26px;
-  width: 30px;
-  display: block;
-  background-image: url("/images/reblog.png");
-  background-size: 30px;
-}
-
-.newsfeed-posts .reblog-image:hover {
-  float:left;
-  left:20px;
-  cursor: pointer;
-  height: 26px;
-  width: 30px;
-  display: block;
-  background-image: url("/images/icons/arrow-hover.png");
-  background-size: 30px;
-}
+   .reblog-image:hover {
+    float:left;
+    left:20px;
+    cursor: pointer;
+    height: 26px;
+    width: 30px;
+    display: block;
+    background-image: url("/images/icons/arrow-hover.png");
+    background-size: 30px;
+  }
 
 
-.newsfeed-posts .follow-button {
-  padding: 0;
-  background: none;
-  border: none;
-  float: left;
-  right: 19px;
-  top: -9px;
-  position: absolute;
-  color: #659BCF;
-  font-weight: bolder;
+  .follow-button {
+    padding: 0;
+    background: none;
+    border: none;
+    float: left;
+    right: 19px;
+    top: -9px;
+    position: absolute;
+    color: #659BCF;
+    font-weight: bolder;
+  }
 
-}
+   .user-header {
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+  }
 
-.newsfeed-posts .user-header {
-  padding-left: 24px;
-  padding-right: 24px;
-  position: relative;
-}
+   .user-header:after {
+    clear: both;
+    content: "";
+    display: block;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+   .username-header {
+    float:left;
 
-.newsfeed-posts .user-header:after {
-  clear: both;
-  content: "";
-  display: block;
-  padding-left: 24px;
-  padding-right: 24px;
-}
+  }
 
-.newsfeed-posts .username-header {
-  float:left;
+   .post-text-header {
+    margin-top: 5px;
+    margin-bottom: 13px;
+  }
 
-}
+  .post-text-header p{
+    padding-left: 24px;
+  }
 
-.newsfeed-posts .post-text-header {
-  margin-top: 5px;
-  margin-bottom: 13px;
-}
+  .post-body{
+    min-height: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    word-break: break-all;
+    margin: 0 auto;
+  }
 
-.newsfeed-posts .post-text-header p{
-  padding-left: 24px;
-}
+   .tag-notes {
 
-.newsfeed-posts .post-body{
+  }
 
-  min-height: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  width: 100%;
+   .bottom-right-container{
+    width: 96px;
+    float: left;
+    bottom: -11px;
+    right: -7px;
+    position: absolute;
+    padding-bottom: 22px;
+  }
 
-  word-break: break-all;
-  margin: 0 auto;
-}
+  .index-post-image {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
 
-.newsfeed-posts .tag-notes {
+   .audio-post {
+    width: 100%;
+  }
 
-}
-
-.newsfeed-posts .bottom-right-container{
-  width: 96px;
-  float: left;
-  bottom: -11px;
-  right: 13px;
-  position: absolute;
-  padding-bottom: 22px;
-}
-
-.newsfeed-posts .index-post-image {
-  max-height: 100%;
-  max-width: 100%;
-  width: 100%;
-}
-
-.newsfeed-posts .audio-post {
-  width: 100%;
 }
