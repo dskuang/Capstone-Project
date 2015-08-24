@@ -5,6 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+users = ["myUser", "seamoreskies25", "lawdylawdylawd", "hoaxcoaxy","justintimbawhat", "hereIam", "WorkinAsdaSlave", "Hypeman15", "Jackson's Here", "JasonBlack", "Queenadie", "NowYouSeeMe", "TeamWerkIt", "aaaaRon12"]
 User.create({username: "myUser", password: 123456, profileUrl: "http://i.telegraph.co.uk/multimedia/archive/03025/saatchi-plug-hole_3025834k.jpg", firstname: "My", lastname: "Name", city: "Oklahoma City", state: "OK"})
 Blog.create({user_id: 1, title: "myBlog"})
 
@@ -35,7 +37,7 @@ Blog.create({user_id: 9, title: "WildPonders"})
 User.create({username: "JasonBlack", password: 123456, profileUrl: "https://pbs.twimg.com/profile_images/530782121389203457/TJE4TneP_400x400.jpeg", firstname: "Jason", lastname: "Black", city: "Salem", state: "OR"})
 Blog.create({user_id: 10, title: "LivingALie"})
 
-User.create({username: "Queenadie", password: 123456, profileUrl: "http://www.publishingtechnology.com/wp-content/uploads/2013/12/I._1._Dan_Franklin_Random_House2.jpgicon", firstname: "Kuiyane", lastname: "Tepipa", city: "Nowhere", state: "IDK"})
+User.create({username: "Queenadie", password: 123456, profileUrl: "http://i.huffpost.com/gen/1856788/thumbs/o-IMAGE-PHOTOSHOP-570.jpg?1", firstname: "Kuiyane", lastname: "Tepipa", city: "Nowhere", state: "IDK"})
 Blog.create({user_id: 11, title: "Kingdead"})
 
 User.create({username: "NowYouSeeMe", password: 123456, profileUrl: "https://benigngirl.files.wordpress.com/2007/11/random-phases.jpg", firstname: "Damien", lastname: "Sean", city: "Miami", state: "FL"})
@@ -85,12 +87,12 @@ Post.create({user_id: 2, blog_id: 2, videoUrl: "https://www.filepicker.io/api/fi
 Post.create({user_id: 3, blog_id: 3, videoUrl: "https://www.filepicker.io/api/file/sGmBykE9Rqmd70AZA9Lf", videobody: "The MTV Europe Music Award for Best Video initially awarded to Best Director, but in 1997 the category was renamed to Best Video. ", attr: "Video"})
 Post.create({user_id: 4, blog_id: 4, videoUrl: "https://www.filepicker.io/api/file/sGmBykE9Rqmd70AZA9Lf", videobody: "In 2012, Psy became the first Asian artist and the first non-American act to win this after of four consecutive years of American winners.", attr: "Video"})
 Post.create({user_id: 1, blog_id: 1, imageUrl: "https://www.filepicker.io/api/file/OhSs2xYiSOuBRlH0wo9q", imagebody: "OMG ON FIREEEEEEEEEE. CAN I GET SOMEEE?", attr: "Image"})
-Post.create({user_id: 12, blog_id: 1, imageUrl: "http://www.outerbankspublishing.com/69.89.31.52/public_html/wp-content/uploads/2015/06/Pride-BooksIII.jpg", imagebody: "I need to read more. clearly.", attr: "Image"})
+Post.create({user_id: 1, blog_id: 1, imageUrl: "http://www.outerbankspublishing.com/69.89.31.52/public_html/wp-content/uploads/2015/06/Pride-BooksIII.jpg", imagebody: "I need to read more. clearly.", attr: "Image"})
 Post.create({user_id: 12, blog_id: 2, imageUrl: "http://rack.2.mshcdn.com/media/ZgkyMDEzLzA3LzA1LzBmLzMwUm9jay5jZmQ0OS5naWYKcAl0aHVtYgkxMjAweDk2MDA-/5a25e419/efa/30-Rock.gif", imagebody: "Happiness is like pee. No one else can see it. And only you can feel it.", attr: "Image"})
-Post.create({user_id: 13, blog_id: 3, imageUrl: "https://media4.giphy.com/media/eHOxorWR8d1mM/200_s.gif", imagebody: "ALl the memories I hold dear are in that one moment that will never come back.", attr: "Image"})
+Post.create({user_id: 2, blog_id: 3, imageUrl: "https://media4.giphy.com/media/eHOxorWR8d1mM/200_s.gif", imagebody: "ALl the memories I hold dear are in that one moment that will never come back.", attr: "Image"})
 Post.create({user_id: 14, blog_id: 4, imageUrl: "http://floridasquaredance.com/convention/59/images/bouncing%20ball.gif", imagebody: "Sometimes. I just want to be a happy ball with no worry in the world.", attr: "Image"})
 Post.create({user_id: 14, blog_id: 5, imageUrl: "http://media0.giphy.com/media/wRmOK4J2261gI/giphy.gif", imagebody: "KIRBYS SO FLUFFY IM GONNA DIE", attr: "Image"})
-Post.create({user_id: 14, blog_id: 14, imageUrl: "http://24.media.tumblr.com/tumblr_ll0lbrefI71qiqegzo1_500.gif", imagebody: "my moneys on buu. Lezzbehonest. Hes got the weight along with the color.", attr: "Image"})
+Post.create({user_id: 3, blog_id: 14, imageUrl: "http://24.media.tumblr.com/tumblr_ll0lbrefI71qiqegzo1_500.gif", imagebody: "my moneys on buu. Lezzbehonest. Hes got the weight along with the color.", attr: "Image"})
 Post.create({user_id: 14, blog_id: 14, imageUrl: "http://p1.pichost.me/i/63/1874779.jpg", imagebody: "Dragons are mans best friend", attr: "Image"})
 Post.create({user_id: 14, blog_id: 14, quotetitle: "Anytime I feel lost, I pull out a map and stare. I stare until I have reminded myself that life is a giant adventure, so much to do, to see", quotesource: "-Angelina Jolie", attr: "Quote"})
 Post.create({user_id: 1, blog_id: 1, quotetitle: "I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.", quotesource: "-Marilyn Monroe", attr: "Quote"})
@@ -134,16 +136,16 @@ end
   Like.create({user_id: (num + 1), post_id: 20})
 end
 
-10.times do |num|
+9.times do |num|
   Like.create({user_id: (num + 1), post_id: 22})
 end
-10.times do |num|
+8.times do |num|
   Like.create({user_id: (num + 1), post_id: 23})
 end
-10.times do |num|
+7.times do |num|
   Like.create({user_id: (num + 1), post_id: 27})
 end
-10.times do |num|
+6.times do |num|
   Like.create({user_id: (num + 1), post_id: 28})
 end
 10.times do |num|
@@ -202,63 +204,146 @@ end
 #note creation
 like_id = 1
 10.times do |num|
-  Note.create({post_id: 1, like_id: like_id, note_text: "liked"})
+  Note.create({post_id: 1, like_id: like_id, note_text: "#{users[num]} liked this"})
   like_id += 1
 end
 
 10.times do |num|
-  Note.create({post_id: 3, like_id: like_id, note_text: "liked"})
+  Note.create({post_id: 3, like_id: like_id, note_text: "#{users[num]} liked this"})
   like_id += 1
 end
 
 10.times do |num|
-  Note.create({post_id: 4, like_id: like_id, note_text: "liked"})
+  Note.create({post_id: 4, like_id: like_id, note_text: "#{users[num]} liked this"})
   like_id += 1
 end
 
 8.times do |num|
-  Note.create({post_id: 8, like_id: like_id, note_text: "liked"})
+  Note.create({post_id: 8, like_id: like_id, note_text: "#{users[num]} liked this"})
   like_id += 1
 end
 
 8.times do |num|
-  Note.create({post_id: 14, like_id: like_id, note_text: "liked"})
+  Note.create({post_id: 14, like_id: like_id, note_text: "#{users[num]} liked this"})
   like_id += 1
 end
-
-
 
 8.times do |num|
-  Note.create({post_id: 18, like_id: like_id, note_text: "liked"})
+  Note.create({post_id: 18, like_id: like_id, note_text: "#{users[num]} liked this"})
   like_id += 1
 end
 
 10.times do |num|
-  Note.create({post_id: 20, like_id: like_id, note_text: "liked"})
+  Note.create({post_id: 20, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+9.times do |num|
+  Note.create({post_id: 22, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+8.times do |num|
+  Note.create({post_id: 23, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+7.times do |num|
+  Note.create({post_id: 25, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+6.times do |num|
+  Note.create({post_id: 27, like_id: like_id, note_text: "#{users[num]} liked this"})
   like_id += 1
 end
 
 10.times do |num|
-  Note.create({post_id: 22, like_id: like_id, note_text: "liked"})
+  Note.create({post_id: 29, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+10.times do |num|
+  Note.create({post_id: 30, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+10.times do |num|
+  Note.create({post_id: 31, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+10.times do |num|
+  Note.create({post_id: 32, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+10.times do |num|
+  Note.create({post_id: 33, like_id: like_id, note_text: "#{users[num]} liked this"})
   like_id += 1
 end
 
 4.times do |num|
-  Note.create({post_id: 24, like_id: like_id, note_text: "liked"})
+  Note.create({post_id: 34, like_id: like_id, note_text:  "#{users[num]} liked this"})
   like_id += 1
 end
 
 4.times do |num|
-  Note.create({post_id: 25, like_id: like_id, note_text: "liked"})
+  Note.create({post_id: 35, like_id: like_id, note_text: "#{users[num]} liked this"})
   like_id += 1
 end
+
+4.times do |num|
+  Note.create({post_id: 36, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+5.times do |num|
+  Note.create({post_id: 37, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+6.times do |num|
+  Note.create({post_id: 38, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+7.times do |num|
+  Note.create({post_id: 39, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+7.times do |num|
+  Note.create({post_id: 40, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+7.times do |num|
+  Note.create({post_id: 41, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+7.times do |num|
+  Note.create({post_id: 42, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+4.times do |num|
+  Note.create({post_id: 25, like_id: like_id, note_text: "#{users[num]} liked this"})
+  like_id += 1
+end
+
+
+
+
+
 
 40.times do |num|
   Tag.create!(label: Faker::Address.city)
 end
 
 value = 1
-20.times do |repeat|
+12.times do |repeat|
   post_count = rand(50)
   post_count.times do |num|
     Tagging.create({post_id: num + 1, tag_id: repeat + 1})

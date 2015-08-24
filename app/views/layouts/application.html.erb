@@ -12,11 +12,13 @@
 </head>
 <body>
 
+<div class="errors">
 <% if flash[:errors] %>
-<% flash[:errors].each do |error| %>
-<%= error %>
+  <% flash[:errors].each do |error| %>
+    <%= error %>
+  <% end %>
 <% end %>
-<% end %>
+</div>
 
 <%= yield %>
 
