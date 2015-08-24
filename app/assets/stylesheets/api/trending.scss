@@ -12,8 +12,6 @@
 
 }
 
-
-
 .radar-text {
   margin-bottom: -29px;
   padding-right: 99px;
@@ -28,10 +26,13 @@
 
 .rightSubPost {
 
+  margin-top: 39px;
+
   .post-item {
     width: 199px;
-    height: 362px;
+    height: 506px;
     font-size: 1em;
+    border-radius:5px;
     background-color: white
   }
 
@@ -41,10 +42,11 @@
 
   .thumbnail-user {
     width: 56px;
-    position: absolute;
+
     left: 1306px;
     bottom: 377px;
     height: 56px;
+    margin-top: 10px;
     cursor: pointer;
   }
 
@@ -67,6 +69,7 @@
     position: absolute;
     top: 12px;
     right: 0px;
+    margin-right: 7px;
 
   }
 
