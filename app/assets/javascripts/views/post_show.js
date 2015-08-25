@@ -9,9 +9,7 @@ Tumblr.Views.postShow = Backbone.View.extend({
     this.listenTo(this.model, "sync add remove", this.render);
     this.listenTo(this.model.collection, "sync add remove", this.render);
 
-    // this.listenTo(this.model.collection, 'remove', this.remove);
-    // this.listenTo(this.model.notes(), "sync remove", this.render);
-
+    $("#content").on("click", this.removeNotes.bind(this));
   },
 
 
@@ -23,9 +21,14 @@ Tumblr.Views.postShow = Backbone.View.extend({
     "click .like-button": "toggleLike",
     "click .reblog-image": "reblogPost",
     "click .tag-post-index": "renderTagPostIndex",
-    "click .note-text": "fetchNotes",
-    "mouseout .notes-li": "removeNotes",
-    "mouseout .newsfeed-posts": "removeNotes"
+    "click .delete-button": "deletePost",
+    // "click .note-text": "fetchNotes",
+
+  },
+
+  deletePost: function(e) {
+    e.preventDefault();
+    this.model.destroy();
   },
 
   render: function(){
@@ -42,15 +45,23 @@ Tumblr.Views.postShow = Backbone.View.extend({
   },
 
   fetchNotes: function(e) {
+    var offset = $(this.$el).offset();
+    var left = e.pageX;
+    var top = e.pageY;
     this.model.notes().fetch({data: {"post_id": this.model.id}, processData: true,
     success: function() {
-          this.renderNotes();
+          this.renderNotes(left, top);
     }.bind(this)});
 
   },
 
-  renderNotes: function() {
-    $ul = $("*[data-id='"+ this.model.id +"']")
+  renderNotes: function(left, top) {
+    // $ul = $("*[data-id='"+ this.model.id +"']")
+    var $ul = $(".notes-ul");
+      top = top + 5
+      debugger
+      $ul.css({'left': left +'px' });
+      $ul.css({'top': top +'px' });
       this.model.notes().each(function(note) {
 
         $li = $("<li></li>");
@@ -62,11 +73,11 @@ Tumblr.Views.postShow = Backbone.View.extend({
   },
 
   removeNotes: function() {
-
-    $ul = $("*[data-id='"+ this.model.id +"']")
+    var $ul = $(".notes-ul");
     $ul.empty();
     this.model.notes().reset(null)
   },
+
 
   toggleFollow: function(e) {
     e.preventDefault();
@@ -172,9 +183,6 @@ Tumblr.Views.postShow = Backbone.View.extend({
             that.feedCollection.add(reblogModel);
         }});
       }});
-      // this.feedCollection.fetch({ success: function(){
-      //
-      // }});
         Backbone.history.navigate("#feed/", {trigger: true});
     },
 

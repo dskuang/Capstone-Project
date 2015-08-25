@@ -55,13 +55,13 @@ section > article {
 
 .live {
   position: absolute;
-  bottom: 41px;
-  right: 124px;
+  bottom: 11px;
+  right: 128px;
   font-size: 308px;
   color: white;
   opacity: 1.0;
   text-shadow: 1px 1px #000;
-  
+
 }
 
 .love{
@@ -87,9 +87,10 @@ section > article {
 
 .stumblr {
   top: -21%;
-    position: absolute;
-    font-size: 40px;
-    color: white;
-    right: 46%;
-    text-shadow: 1px 1px #000;
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  text-shadow: 1px 1px #000;
+  left: 50%;
+  transform: translate(-50%);
 }

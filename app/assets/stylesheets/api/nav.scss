@@ -11,6 +11,8 @@
   z-index: 100;
   width: 500px;
   position: relative;
+  padding-left:10px;
+  padding-bottom: 3px;
 
 }
 
@@ -151,7 +153,9 @@
 }
 
 .li-drop {
-  width: 228px;
+  padding-right: 8px;
+  padding-left: 12px;
+  width: 255px;
   height: 33px;
   padding-top: 8px;
 }

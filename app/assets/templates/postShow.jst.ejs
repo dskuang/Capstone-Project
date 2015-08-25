@@ -8,7 +8,8 @@
 
 
 <div class="user-profile-pic">
-  <img data-user-id="<%=post.get('user_id')%>" class = "thumbnail-user" src="<%= post.get("profileUrl") %>"
+  <img data-user-id="<%=post.get('user_id')%>" class = "thumbnail-user"
+        src="<%= post.get("profileUrl") %>"
        data-blog-id="<%=post.get("blog_id")%>">
 </div>
 <div class= "post-item-border">
@@ -16,10 +17,11 @@
   <div class='post-header'>
 
       <div class="user-header" >
-        <p  class="username-header" data-blog-id="<%=post.get("blog_id")%>"><%= post.escape("username") %></p>
+        <p  class="username-header" data-blog-id="<%=post.get("blog_id")%>">
+                                          <%= post.escape("username") %></p>
         <div class="user-blog-icon" data-blog-id="<%=post.get("blog_id")%>"></div>
         <%if (post.get("user_id") == Tumblr.CURRENT_USER.id) { %>
-          <button data-id="<%=post.id%>" class="edit-button">Edit</button>
+          <button data-id="<%=post.id%>" class="delete-button">Delete</button>
         <% } else { %>
           <button class="follow-button"><%= followState %></button>
         <% } %>
@@ -31,10 +33,12 @@
       <p>
           <%= post.escape("title") %>
         <% } else if (post.get("attr") === "Quote") { %>
-        <div class="quote-text"><em class="inner-quote"> "<%= post.escape("quotetitle") %>"</em> </div>
+        <div class="quote-text"><em class="inner-quote">
+                    "<%= post.escape("quotetitle") %>"</em> </div>
         <% } else if(post.get("attr") === "Link") { %>
           <div class="link-square">
-            <a href="http://<%= post.escape('linkurl') %>" class="button square">  <%= post.escape("linkurl") %></a>
+            <a href="http://<%= post.escape('linkurl') %>"
+              class="button square">  <%= post.escape("linkurl") %></a>
           </div>
       </p>
       <% } else if(post.get("attr") === "Image") { %>
@@ -71,14 +75,12 @@
   <div class="bottom-container">
     <div class="tag-notes">
       <% post.tags().forEach(function(tag) { %>
-        <a data-tag="<%= tag.escape("label") %>" class="tag-post-index"><%= tag.escape("label") %></a>
+        <a data-tag="<%= tag.escape("label") %>"
+            class="tag-post-index"><%= tag.escape("label") %></a>
       <% }) %>
       <% var notetext = post.notes === 1 ? "Note" : "Notes" %>
       <p class="note-text"><%=post.escape("notes")%> <%=notetext%> </p>
 
-      <ul data-id="<%=post.id%>" class="notes-ul">
-
-      </ul>
     </div>
     <div class="bottom-right-container">
       <div class="reblog-image" data-post-id="<%=post.id%>"></div>

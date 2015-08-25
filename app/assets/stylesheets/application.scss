@@ -167,14 +167,20 @@ html{
 
 .side-title {
   color: #9CA2AE;
-  color: black;
+  color: white;
   text-decoration:none;
-  font-weight:bold
+  font-weight: 500
 
 }
 .side-title:hover {
   text-decoration: none !important;
-  color: black;
+  color: #7DA7C8;
+}
+
+.side-title:active{
+  text-decoration: none !important;
+  color: #7DA7C8;
+
 }
 
 .notif-drop {
@@ -182,7 +188,7 @@ html{
   overflow-y: scroll;
 }
 
-.notif-drop::-webkit-scrollbar { display: none; }
+
 
 .square:hover{
   text-decoration: none;

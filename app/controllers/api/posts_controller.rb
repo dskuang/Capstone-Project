@@ -10,11 +10,11 @@ class Api::PostsController < ApplicationController
                .where(tags: {label: params[:tag]})
       @tagpost = true
     elsif params[:id].present?
-      @posts = Blog.find(params[:id]).posts.page(params[:page]).per(3)
+      @posts = Blog.find(params[:id]).posts.page(params[:page]).per(4)
       @bool = true
     else
       @posts = Post.includes(:likes, :taggings, :tags, :notes, :user)
-               .where(og_post_id: nil).page(params[:page]).per(6)
+              .page(params[:page]).per(8)
       @bool = true
     end
     render "index"

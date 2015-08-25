@@ -4,6 +4,7 @@ Tumblr.Views.followShowing = Backbone.View.extend({
     this.listenTo(this.collection, "sync reset", this.render);
   },
 
+  
   events: {
     "click .profile-pic": "renderUserPage",
     "click .follow-blog": "renderBlogPage"

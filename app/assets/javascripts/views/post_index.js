@@ -20,6 +20,8 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
     "click .posts-index .username-header": "performSlide",
     "click .blog-shade": "removeSlide",
     "click .thumbnail-user": "renderUserPage"
+    // "mouseout .border-index.notes-li": "removeNotes",
+    // "click ": "removeNotes"
   },
 
   template: JST["postIndex"],
@@ -41,6 +43,15 @@ Tumblr.Views.postIndex = Backbone.CompositeView.extend({
     var id = $(e.currentTarget).data("user-id");
     Backbone.history.navigate("#user/" + id, {trigger: true})
   },
+
+  removeNotes: function() {
+    var $ul = $(".index-notes-ul");
+    $ul.empty();
+
+  },
+
+
+
 
   addTrendingTags: function() {
     var subPostView = new Tumblr.Views.trendingTags();

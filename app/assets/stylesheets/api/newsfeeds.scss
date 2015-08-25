@@ -146,7 +146,7 @@
     margin-top: -7px;
   }
 
-  .edit-button {
+  .delete-button {
     padding: 0;
     background: none;
     border: none;
@@ -231,7 +231,13 @@
   }
    .username-header {
     float:left;
+    cursor: auto;
 
+  }
+
+  .username-header:hover {
+    color: black;
+    cursor: auto;
   }
 
    .post-text-header {

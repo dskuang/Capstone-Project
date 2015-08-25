@@ -36,14 +36,18 @@
     background-color: white;
   }
 
-  .edit-button{
+  .audio-post {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .delete-button{
     display: none;
   }
 
   .thumbnail-user {
     width: 56px;
-    left: 1306px;
-    bottom: 377px;
+
     margin-bottom: -25px;
     height: 56px;
     margin-top: 17px;
@@ -204,7 +208,7 @@
 
 .blog-item-content{
   margin-bottom: 9px;
-  width: 237px;
+  width: 200px;
   height: 59px;
   border-bottom: 1px solid #505E72;
   padding-top: 0px;

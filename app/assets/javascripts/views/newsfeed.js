@@ -19,45 +19,47 @@ Tumblr.Views.newsFeed = Backbone.CompositeView.extend({
     "click .cancel-post": "removeNewPostView",
     "click .post-item .user-blog-icon": "performSlide",
     "click .blog-shade": "removeSlide",
-    "click .edit-button": "addEditPostView",
-    "click .submit-edit": "submitEdit",
+
+    // "click .submit-edit": "submitEdit",
     "click .thumbnail-user": "renderUserPage"
   },
 
-  addEditPostView: function(e) {
-    e.preventDefault();
-    var id = $(e.currentTarget).data("id");
-    this.postModel = this.feedCollection.getOrFetch(id);
-    this.subNewView = new Tumblr.Views.postEdit({model: this.postModel});
-    this.addSubview(".new-form-view", this.subNewView);
-    $('#tokenfield').tokenfield();
-
-  },
+  // addEditPostView: function(e) {
+  //   e.preventDefault();
+  //   var id = $(e.currentTarget).data("id");
+  //   this.postModel = this.feedCollection.getOrFetch(id);
+  //   this.subNewView = new Tumblr.Views.postEdit({model: this.postModel});
+  //   this.addSubview(".new-form-view", this.subNewView);
+  //   $('#tokenfield').tokenfield();
+  //
+  // },
 
   renderUserPage: function(e){
     var id = $(e.currentTarget).data("user-id");
     Backbone.history.navigate("#user/" + id, {trigger: true})
   },
 
-  submitEdit: function(e) {
-    e.preventDefault();
-    var tokens = $('#tokenfield').tokenfield('getTokens').map(function(token){
-                  return token.value;
-                });
-    var formData= $('.new-post').serializeJSON();
-    formData.post.tag = tokens;
-    debugger
-    this.postModel.save(formData.post, { success: function(model) {
-      if(tokens.length > 0) {
-        this.createTagsAndTaggings(this.postModel, tokens);
-      }
-    }.bind(this),
-    error: function(mode, response){
-      debugger
-    }
-  });
-    this.removeNewPostView(e);
-  },
+
+  //
+  // submitEdit: function(e) {
+  //   e.preventDefault();
+  //   var tokens = $('#tokenfield').tokenfield('getTokens').map(function(token){
+  //                 return token.value;
+  //               });
+  //   var formData= $('.new-post').serializeJSON();
+  //   formData.post.tag = tokens;
+  //   debugger
+  //   this.postModel.save(formData.post, { success: function(model) {
+  //     if(tokens.length > 0) {
+  //       this.createTagsAndTaggings(this.postModel, tokens);
+  //     }
+  //   }.bind(this),
+  //   error: function(mode, response){
+  //     debugger
+  //   }
+  // });
+  //   this.removeNewPostView(e);
+  // },
 
   performSlide: function(e) {
     e.preventDefault();

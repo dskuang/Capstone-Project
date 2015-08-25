@@ -27,7 +27,7 @@
 
   }
 
-  .edit-button{
+  .delete-button{
     display: none;
   }
 
@@ -90,11 +90,11 @@
   }
 
   .blog-title{
-    width: 100%;
+    width: 240px;
     margin: 0 auto;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 41px;
+    text-align: left;
+    margin-top: 43px;
+    //margin-bottom: 41px;
     color: white;
     height: 120px;
   }
@@ -108,19 +108,17 @@
 
   .blog-text{
     float: left;
-    margin-left: 5px;
-    width: 52%;
     margin-top: -16px;
   }
 
   .blog-follow {
-    margin-right: -6px;
+    margin-top:-32px;
   }
 
   .blog-header{
     margin: 0 auto;
     text-align: center;
-    width: 491px;
+
 
   }
 }

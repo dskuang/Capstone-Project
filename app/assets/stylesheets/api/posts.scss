@@ -63,8 +63,14 @@
     cursor: pointer;
   }
 
-  .edit-button {
-    display: none;
+  .delete-button {
+    top: -30px;
+    right: -142px;
+    position: relative;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #659BCF
   }
 
 
