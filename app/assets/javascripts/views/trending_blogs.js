@@ -4,7 +4,7 @@ Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
     this.postCollection = new Tumblr.Collections.TrendingPosts();
     this.blogCollection = options.blogCollection;
     this.listenTo(this.blogCollection, "sync", this.render);
-  
+
     this.blogCollection.fetch({data: {trending: true}, processData:true,
       success: function () {
       }.bind(this)
@@ -27,8 +27,27 @@ Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
     Backbone.history.navigate("#user/" + id, {trigger: true})
   },
 
+  checkIfIncluded:function(value) {
+    for(var i = 0; i < this.numbers.length; i++) {
+      if (this.numbers[i] == value) {
+        return true;
+      }
+    }
+    return false;
+  },
 
   render: function() {
+
+    this.numbers = [];
+
+    while(this.numbers.length < 3) {
+      var value = this.getRandomInt(0,7);
+      if (!this.checkIfIncluded(value)){
+        this.blogCollection.remove(this.blogCollection.at(value));
+        this.numbers.push(value);
+      }
+    }
+    
     var content = this.template({blogs: this.blogCollection,
                                  posts: this.postCollection});
     this.$el.html(content);

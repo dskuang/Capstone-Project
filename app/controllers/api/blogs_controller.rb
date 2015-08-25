@@ -4,7 +4,7 @@ class Api::BlogsController < ApplicationController
       @blogs = Blog.where("lower(title) ~ ?", params[:query].downcase)
     elsif params[:trending].present?
       @blogs = Blog.includes(:user).joins(:notes).
-               group(:id).order(count: :desc).limit(5)
+               group(:id).order(count: :desc).limit(8)
     else
       @blogs = Blog.all
     end

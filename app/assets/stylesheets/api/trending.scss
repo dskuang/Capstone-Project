@@ -199,6 +199,7 @@
   padding-left: 39px;
   float: left;
   text-align: left;
+  padding-top: 5px;
 }
 
 .user-thumbnail-pic{
@@ -208,9 +209,15 @@
 
 .blog-item-content{
   margin-bottom: 9px;
-  width: 200px;
+  width: 228px;
   height: 59px;
-  border-bottom: 1px solid #505E72;
+
   padding-top: 0px;
 
+}
+
+.blog-item-border{
+  width: 131px;
+  border-bottom: 1px solid #505E72;
+  padding-top: 2px;
 }
