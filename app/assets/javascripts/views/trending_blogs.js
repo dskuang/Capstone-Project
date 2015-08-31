@@ -29,7 +29,7 @@ Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
 
   checkIfIncluded:function(value) {
     for(var i = 0; i < this.numbers.length; i++) {
-      if (this.numbers[i] == value) {
+      if (this.numbers[i] ===  value) {
         return true;
       }
     }
@@ -37,17 +37,17 @@ Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
   },
 
   render: function() {
-
     this.numbers = [];
-
-    while(this.numbers.length < 3) {
-      var value = this.getRandomInt(0,7);
-      if (!this.checkIfIncluded(value)){
-        this.blogCollection.remove(this.blogCollection.at(value));
-        this.numbers.push(value);
+    if(this.blogCollection.length > 0) {
+      while(this.numbers.length < 3) {
+        var value = this.getRandomInt(0, this.blogCollection.length - 1);
+        if (!this.checkIfIncluded(value)){
+          this.blogCollection.remove(this.blogCollection.at(value));
+          this.numbers.push(value);
+        }
       }
     }
-    
+
     var content = this.template({blogs: this.blogCollection,
                                  posts: this.postCollection});
     this.$el.html(content);
