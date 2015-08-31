@@ -27,7 +27,7 @@ json.extract!(
   :profileUrl
 )
 
-
+json.notes post.notes.length
 
 json.tags do
   json.array! post.tags do |tag|

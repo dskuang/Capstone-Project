@@ -68,7 +68,6 @@ Tumblr.Views.trendingBlogs = Backbone.CompositeView.extend({
       this.removeModelSubview(".rightSubPost", this.currentPost);
     }
     this.currentPost = this.postCollection.at(this.getRandomInt(0, 4));
-
     var subPostView = new Tumblr.Views.postShow({model: this.currentPost,
                                           feedCollection: this.feedCollection});
     this.addSubview(".rightSubPost", subPostView);

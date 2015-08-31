@@ -6,7 +6,7 @@ class Api::PostsController < ApplicationController
                .page(params[:page]).per(5)
       @bool = false
     elsif params[:tag].present?
-      @posts = Post.includes(:taggings, :tags, :user).references(:tags)
+      @posts = Post.includes(:taggings, :tags, :user, :notes, :likes).references(:tags)
                .where(tags: {label: params[:tag]})
       @tagpost = true
     elsif params[:id].present?
