@@ -14,7 +14,18 @@ Backbone.CompositeView = Backbone.View.extend({
     if (prepend) {
       this.$(selector).prepend(subview.$el);
     } else {
-      this.$(selector).append(subview.$el);
+      if(selector === ".newsfeed-posts") {
+        var subViews = this.obtainViews(selector);
+        var currentTime = subview.model.get("created_at");
+        var lastTime = subViews[subViews.length - 1].get("created_at");
+        if(Date.parse(currentTime) < Date.parse(lastTime)) {
+          this.$(selector).append(subview.$el);
+        } else {
+          this.$(selector).prepend(subview.$el);
+        }
+      } else {
+        this.$(selector).append(subview.$el);
+      }
     }
     // Bind events in case `subview` has previously been removed from
     // DOM.
@@ -24,6 +35,22 @@ Backbone.CompositeView = Backbone.View.extend({
       subview.attachSubviews();
     }
   },
+
+  obtainViews: function(selector) {
+    var subViews = [];
+    this.subviews(selector)._wrapped.forEach(function(subview) {
+      subViews.push(subview.model)
+    });
+    var subViews = subViews.sort(this.sortViews)
+    return subViews;
+  },
+
+  sortViews: function(a, b) {
+    var dateA = new Date(a.attributes.created_at).getTime();
+    var dateB = new Date(b.attributes.created_at).getTime();
+    return dateA > dateB ? 1 : -1;
+  },
+
 
   attachSubviews: function () {
     // I decided I didn't want a function that renders ALL the
