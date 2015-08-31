@@ -85,11 +85,10 @@ collections, but they will fetch from the new `search` routes.
 [Details][phase-five]
 
 ### Bonus Features (TBD
-- [ ] Create Messaging System
-- [ ] Custom blog urls
-- [ ] pop-out different user showpage
-- [ ] Pagination/infinite scroll
-- [ ] Typeahead search bar
+
+- [x] pop-out different user showpage
+- [x] Pagination/infinite scroll
+- [x] Typeahead search bar
 
 [phase-one]: ./docs/phases/phase1.md
 [phase-two]: ./docs/phases/phase2.md
