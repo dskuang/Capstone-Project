@@ -2,8 +2,8 @@
 
 [here]: http://www.stumblr.xyz
 
-## Minimum Viable Product
-Tumblir is a blogging and content-sharing website inspired by Tumblr built
+
+Stumblr is a blogging and content-sharing website inspired by Tumblr built
 with Backbone.js on rails. To view this app, please click [here].
 Users can:
 
@@ -21,12 +21,49 @@ Users can:
 - [x] Search for blogs by title
 
 
-Optimized queries in SQL by preloading tables to improve load time and parsing of mass posts
-Dynamically re-positioned stacked DOM elements in real time based on changing window and margin width to remove any unnecessary white space
-Integrated filepicker API in backbone to allow users to upload files in posts with any extension
-Implemented a custom quicksort to swiftly parse notifications based on when they were created
+The main functionalities include user authentication, creating posts with
+different types of file uploads based on Filepicker API, trending blogs and posts,
+reblogging, and following/liking capabilities. Notifications are ordered based
+on created at using a custom quicksort implementation.
+
+Since most of the data is held in the posts, the sql queries were optimized by
+preloading tables to improve load and parsing of mass posts. The explore page h
+as dynamically re-positioned stacking posts based on changing window and margin
+width.Dynamically re-positioned stacked DOM elements in real time based on
+changing window and margin width to remove any unnecessary white space.
+
+The front page allows a user to either sign up for an account or click on the
+guest log in button.
+
+![start]
+
+The user is automatically redirected to his or her feed where the user will
+be able to to see his or her own posts along with the posts the user is
+following. The user will also be able to make a new post by clicking on
+one of the top icons.
+
+![makePost]
+
+Furthermore, a user can make a post from anywhere on the map by clicking
+on the blue pencil logo in the top right corner which will redirect the user
+back to the feed and open a new post form.
+
+![makePostA]
+
+Full following and liking functionality is available, which can be seen
+below.
+
+![like_follow]
+
+To check out more features such as trending blogs, trending tags,
+reblogging,  etc. Check out stumblr now!
 
 
+
+
+
+
+---------------------------------------------------------------------------------
 
 ## Design Docs
 * [View Wireframes][views]
@@ -101,3 +138,7 @@ collections, but they will fetch from the new `search` routes.
 [phase-four]: ./docs/phases/phase4.md
 [phase-five]: ./docs/phases/phase5.md
 [heroku-link]: www.stumblr.xyz
+[start]: ./photos/start.gif
+[like_follow]: ./photos/like_follow.gif
+[makePost]: ./photos/makingAPost.gif
+[makePostA]: ./photos/makePostAnywhere.gif
