@@ -1,13 +1,11 @@
 # Stumblr
 
-
-
-[heroku]: http://tumblrapplication.herokuapp.com/
+[here]: http://www.stumblr.xyz
 
 ## Minimum Viable Product
-Tumblir is an app inspired by Tumblr built on Rails and Backbone. Users can:
-
-<!-- This is a Markdown checklist. Use it to keep track of your progress! -->
+Tumblir is a blogging and content-sharing website inspired by Tumblr built
+with Backbone.js on rails. To view this app, please click [here].
+Users can:
 
 - [x] Create accounts
 - [x] Create sessions (log in)
@@ -15,12 +13,19 @@ Tumblir is an app inspired by Tumblr built on Rails and Backbone. Users can:
 - [x] Create blog posts
 - [x] View blogs and posts
 - [x] View a feed
-- [x] Follow Users
+- [x] Create Notes
 - [x] Follow users
 - [x] Reblog posts
 - [x] Like posts
 - [x] Tag blog posts
 - [x] Search for blogs by title
+
+
+Optimized queries in SQL by preloading tables to improve load time and parsing of mass posts
+Dynamically re-positioned stacked DOM elements in real time based on changing window and margin width to remove any unnecessary white space
+Integrated filepicker API in backbone to allow users to upload files in posts with any extension
+Implemented a custom quicksort to swiftly parse notifications based on when they were created
+
 
 
 ## Design Docs

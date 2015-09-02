@@ -40,5 +40,33 @@
 
 
 <script>
-  Guest.initialize();
+$('.demo-button').click(
+  function(e) {
+    e.preventDefault();
+   $user = $('.auto-user');
+   $password = $('.auto-pass');
+   $submitButton = $('.sign');
+
+   $user.val('');
+   $password.val('');
+
+   slowtype($user, 'myUser', function(){
+     slowtype($password, '123456', function() {
+       $submitButton.click();
+     });
+   });
+  }
+);
+
+function slowtype($el, word, callback) {
+  var typing = setInterval(function(){
+   $el.val( $el.val() + word.slice(0,1) );
+   word = word.substr(1);
+
+   if (!word){
+     clearInterval(typing);
+     callback();
+   }
+  }, 60);
+}
 </script>
