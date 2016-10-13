@@ -1,6 +1,6 @@
 # Stumblr
 
-[here]: http://www.stumblr.xyz
+[here]: http://www.stumblr.io
 
 
 Stumblr is a blogging and content-sharing website inspired by Tumblr built
@@ -137,7 +137,7 @@ collections, but they will fetch from the new `search` routes.
 [phase-three]: ./docs/phases/phase3.md
 [phase-four]: ./docs/phases/phase4.md
 [phase-five]: ./docs/phases/phase5.md
-[heroku-link]: www.stumblr.xyz
+[heroku-link]: www.stumblr.io
 [start]: ./photos/start.gif
 [like_follow]: ./photos/like_follow.gif
 [makePost]: ./photos/makingAPost.gif
